@@ -44,8 +44,8 @@ ifh.close()
 delta = 0.2
 ofh = open('data/case24_flex.csv','w')
 # Write header
-ofh.write('# Note: A*[p|q] <= b')
-ofh.write('load,A,b\n')
+# Note: A*[p|q] <= b
+ofh.write('load_name,A,b\n')
 for load in loadPs.keys():
 	# write load name
 	ofh.write(load)
@@ -53,9 +53,9 @@ for load in loadPs.keys():
 	ofh.write(',[1 0|-1 0|0 1|0 -1]')
 	# write B
 	ofh.write(',['+\
-		str(loadPs[load]*(1+delta))+'|'+\
-		str(loadPs[load]*(1-delta))+'|'+\
-		str(loadQs[load]*(1+delta))+'|'+\
-		str(loadQs[load]*(1-delta))+']')
+		str(loadPs[load]*+1*(1+delta))+'|'+\
+		str(loadPs[load]*-1*(1-delta))+'|'+\
+		str(loadQs[load]*+1*(1+delta))+'|'+\
+		str(loadQs[load]*-1*(1-delta))+']')
 	ofh.write('\n')
 	
