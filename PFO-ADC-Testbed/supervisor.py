@@ -64,8 +64,8 @@ while system_time_seconds <= max_system_time_seconds:
 	# -----------
 	# call Julia using the system command line, passing runtime parameters
 	os.system('echo --- Run Julia Here ---')
-	os.system('julia PFO/PFO.jl PFO/data/case24_ieee_rts.m')
-	# os.system('PFO_Julia_function.jl persistent_params param1 param2')
+	# os.system('julia PFO/PFO.jl PFO/data/case24_ieee_rts.m')
+	os.system('julia PFO/PFO.jl PFO/data/case24_ieee_rts.m testbed/data/case24_flex.csv')
 
 #	# read output file(s) written by Julia
 #	fh = open('PFO_output.csv','r')
