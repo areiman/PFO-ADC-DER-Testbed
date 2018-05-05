@@ -1,0 +1,85 @@
+<html><meta charset="UTF-8"><pre>
+<font color=blue>mcc -W cpplib:MyProduct -T link:lib -d /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing -v /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct.m </font>
+Compiler version: 6.3 (R2016b)
+
+Dependency analysis by REQUIREMENTS.
+
+[Warning: The name of a shared library should begin with the letters "lib".
+'MyProduct' does not.] 
+[Warning: Adding path
+"/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct" to
+Compiler path instance.] 
+Parsing file "/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.h".
+Generating file "/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.cpp".
+Generating file "/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.exports".
+Generating file "/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/readme.txt".
+Executing command: "/usr/local/matlab/r2016b/bin/mbuild"  -client mbuild -O -v -output "MyProduct" -I"/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing" "/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.cpp" CXXFLAGS="-fPIC -ansi -pthread -std=c++11" LDEXT=".so" LDTYPE="-shared " -outdir "/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing"Verbose mode is on.
+No MEX options file identified; looking for an implicit selection.
+... Looking for compiler 'g++' ...
+... Executing command 'which g++' ...Yes ('/usr/bin/g++').
+... Executing command 'g++ -print-file-name=libstdc++.so' ...Yes ('/usr/lib/gcc/x86_64-linux-gnu/5/libstdc++.so').
+Found installed compiler 'g++'.
+Options file details
+-------------------------------------------------------------------
+	Compiler location: /usr/bin/g++
+	Options file: /usr/local/matlab/r2016b/bin/glnxa64/mexopts/g++_glnxa64.xml
+	CMDLINE1 : /usr/bin/g++ -c -D_GNU_SOURCE  -DUNIX -DX11 -DGLNXA64 -DGCC -UMX_COMPAT_SC -I/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing  -I"/usr/local/matlab/r2016b/extern/include" -I"/usr/local/matlab/r2016b/simulink/include" -I"/usr/local/matlab/r2016b/extern/include/cpp" -fPIC -ansi -pthread -std=c++11 -O -DNDEBUG /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.cpp -o /tmp/mex_44345156328797_7433/MyProduct.o
+	CMDLINE2 : /usr/bin/g++ -pthread -Wl,-rpath-link,/usr/local/matlab/r2016b/bin/glnxa64 -shared -O  /tmp/mex_44345156328797_7433/MyProduct.o   "/usr/local/matlab/r2016b/sys/os/glnxa64/libstdc++.so.6" -L"/usr/local/matlab/r2016b/runtime/glnxa64" -lm -lmwmclmcrrt -o /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.so
+	CXX : /usr/bin/g++
+	DEFINES : -D_GNU_SOURCE  -DUNIX -DX11 -DGLNXA64 -DGCC -UMX_COMPAT_SC
+	MATLABMEX : 
+	CXXFLAGS : -fPIC -ansi -pthread -std=c++11
+	INCLUDE : -I/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing  -I"/usr/local/matlab/r2016b/extern/include" -I"/usr/local/matlab/r2016b/simulink/include" -I"/usr/local/matlab/r2016b/extern/include/cpp"
+	CXXOPTIMFLAGS : -O -DNDEBUG
+	CXXDEBUGFLAGS : -g
+	LDXX : /usr/bin/g++
+	LDFLAGS : -pthread -Wl,-rpath-link,/usr/local/matlab/r2016b/bin/glnxa64
+	LDTYPE : -shared
+	LINKEXPORT : 
+	LINKEXPORTVER : 
+	LINKLIBS : "/usr/local/matlab/r2016b/sys/os/glnxa64/libstdc++.so.6" -L"/usr/local/matlab/r2016b/runtime/glnxa64" -lm -lmwmclmcrrt
+	LDOPTIMFLAGS : -O
+	LDDEBUGFLAGS : -g
+	MWCPPLIB : "/usr/local/matlab/r2016b/sys/os/glnxa64/libstdc++.so.6"
+	OBJEXT : .o
+	LDEXT : .so
+	SETENV : CXX="/usr/bin/g++"
+CXXFLAGS="-fPIC -ansi -pthread -std=c++11 -D_GNU_SOURCE  -DUNIX -DX11 -DGLNXA64 -DGCC -UMX_COMPAT_SC"
+CXXOPTIMFLAGS="-O -DNDEBUG"
+CXXDEBUGFLAGS="-g"
+LDXX="/usr/bin/g++"
+LDFLAGS="-pthread -Wl,-rpath-link,/usr/local/matlab/r2016b/bin/glnxa64 -shared "/usr/local/matlab/r2016b/sys/os/glnxa64/libstdc++.so.6" -L"/usr/local/matlab/r2016b/runtime/glnxa64" -lm -lmwmclmcrrt "
+LDDEBUGFLAGS="-g"
+	GCC : /usr/bin/g++
+	CPPLIB_DIR : /usr/lib/gcc/x86_64-linux-gnu/5/libstdc++.so
+	MATLABROOT : /usr/local/matlab/r2016b
+	ARCH : glnxa64
+	SRC : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.cpp
+	OBJ : /tmp/mex_44345156328797_7433/MyProduct.o
+	OBJS : /tmp/mex_44345156328797_7433/MyProduct.o 
+	SRCROOT : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct
+	DEF : /tmp/mex_44345156328797_7433/MyProduct.def
+	EXP : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.exp
+	LIB : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.lib
+	EXE : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.so
+	ILK : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.ilk
+	MANIFEST : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.so.manifest
+	TEMPNAME : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct
+	EXEDIR : /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/
+	EXENAME : MyProduct
+	OPTIM : -O -DNDEBUG
+	LINKOPTIM : -O
+-------------------------------------------------------------------
+Building with 'g++'.
+Warning: You are using gcc version '5.4.0'. The version of gcc is not supported. The version currently supported with MEX is '4.9.x'. For a list of currently supported compilers see: http://www.mathworks.com/support/compilers/current_release.
+/usr/bin/g++ -c -D_GNU_SOURCE  -DUNIX -DX11 -DGLNXA64 -DGCC -UMX_COMPAT_SC -I/home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing  -I"/usr/local/matlab/r2016b/extern/include" -I"/usr/local/matlab/r2016b/simulink/include" -I"/usr/local/matlab/r2016b/extern/include/cpp" -fPIC -ansi -pthread -std=c++11 -O -DNDEBUG /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.cpp -o /tmp/mex_44345156328797_7433/MyProduct.o
+/usr/bin/g++ -pthread -Wl,-rpath-link,/usr/local/matlab/r2016b/bin/glnxa64 -shared -O  /tmp/mex_44345156328797_7433/MyProduct.o   "/usr/local/matlab/r2016b/sys/os/glnxa64/libstdc++.so.6" -L"/usr/local/matlab/r2016b/runtime/glnxa64" -lm -lmwmclmcrrt -o /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_testing/MyProduct.so
+<font color=blue>Packaging...</font>
+Creating the bundle...
+Web based installer created at /home/areiman/PFO-ADC-DER-Testbed/related/shared_lib_test/MyProduct/MyProduct/for_redistribution/MyAppInstaller_web.install.
+Packaging complete.
+Elapsed packaging time was: 38 seconds.
+</pre></html>

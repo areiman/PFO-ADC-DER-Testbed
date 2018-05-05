@@ -1,0 +1,1 @@
+disp(MyProduct(5,5));
