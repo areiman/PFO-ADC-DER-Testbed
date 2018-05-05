@@ -1,0 +1,10 @@
+# file...... output/IEEE_123_feeder_0_swing_node.csv
+# date...... Thu May  3 14:06:01 2018
+# user...... gld
+# host...... (null)
+# target.... meter 188
+# trigger... (none)
+# interval.. 60
+# limit..... 0
+# timestamp,measured_current_A,measured_current_B,measured_current_C,measured_voltage_A,measured_voltage_B,measured_voltage_C,measured_power
+2013-07-29 00:00:00 PST,+340.012-144.747j,-238.616-140.122j,-34.0701+303.317j,+2401.35-0.696461j,-1201.12-2079.43j,-1200.21+2079.97j,+2.06635e+06+968414j
