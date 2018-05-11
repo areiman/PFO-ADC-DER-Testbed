@@ -9,10 +9,10 @@ echo "Building"
 mkdir /tmp/MyProduct/
 
 echo "Compiling..."
-g++-5 -std=c++11 -c -o /tmp/MyProduct/fncs_shared_lib_test.o -I/usr/local/MATLAB/MATLAB_Runtime/v91/extern/include/ -I/$HOME/fncs/src/ fncs_shared_lib_test.cpp
+g++-5 -std=c++11 -c -o /tmp/MyProduct/fncs_shared_lib_test.o -I/usr/local/MATLAB/MATLAB_Runtime/v91/extern/include/ -I $FNCS_INSTALL/include fncs_shared_lib_test.cpp
 
 echo "Linking..."
-g++-5 -pthread -Wl,-rpath-link,/usr/local/MATLAB/MATLAB_Runtime/v91/bin/glnxa64 -O /tmp/MyProduct/fncs_shared_lib_test.o MyProduct.so /usr/local/MATLAB/MATLAB_Runtime/v91/sys/os/glnxa64/libstdc++.so.6 -L/usr/local/MATLAB/MATLAB_Runtime/v91/runtime/glnxa64 -lm -lmwmclmcrrt -o fncs_shared_lib_test.out
+g++-5 -pthread -Wl,-rpath-link,/usr/local/MATLAB/MATLAB_Runtime/v91/bin/glnxa64 -O /tmp/MyProduct/fncs_shared_lib_test.o MyProduct.so $FNCS_INSTALL/lib/libfncs.so /usr/local/MATLAB/MATLAB_Runtime/v91/sys/os/glnxa64/libstdc++.so.6 -L/usr/local/MATLAB/MATLAB_Runtime/v91/runtime/glnxa64 -lm -lmwmclmcrrt -o fncs_shared_lib_test.out
 
 echo "Cleaning up..."
 rm -rf /tmp/MyProduct/
