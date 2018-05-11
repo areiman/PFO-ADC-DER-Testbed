@@ -1,8 +1,10 @@
 #include "MyProduct.h"
 
+#include <vector>
 #include <string>
 #include <iostream>
 
+#include <fncs.hpp>
 
 int run_main (int argc, const char **argv) {
 	if ( !MyProductInitialize() ) {
@@ -10,6 +12,10 @@ int run_main (int argc, const char **argv) {
 		return -1;
 	} else {
 		try {
+			// INITIALIZE FNCS
+			
+
+
 			// Create input dat
 			double data[] = {5};
 			mwArray aa(1,1,mxDOUBLE_CLASS,mxREAL);
