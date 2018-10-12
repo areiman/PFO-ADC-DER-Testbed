@@ -1413,7 +1413,8 @@ object overhead_line {
 	phases "BN";
 	from n105;
 	name linobj105106;
-	to l106;
+//	to l106;
+	to adc106;
 	length 225;
 	configuration lc10010;
 	groupid Distribution_Line;
@@ -6102,9 +6103,21 @@ object triplex_line {
 	groupid Triplex_Line;
 };
 
+object meter {
+	phases "BN";
+	name adc106;
+	voltage_B -1200.8886-2080.000j;
+	voltage_C -1200.8886+2080.000j;
+	voltage_A 2401.7771;
+	nominal_voltage 2401.7771;
+};
+
+
+
 object load {
 	phases "BN";
 	name l106;
+	parent adc106;
 	voltage_B -1200.8886-2080.000j;
 	voltage_C -1200.8886+2080.000j;
 	voltage_A 2401.7771;
