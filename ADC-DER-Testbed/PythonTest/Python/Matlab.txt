@@ -1,0 +1,130 @@
+GLD/house5_wh_l107_tm_temperature   +132.991 degF
+GLD/house4_wh_l107_tm_temperature   +139.789 degF
+GLD/house1_wh_l107_tm_temperature   +131.148 degF
+GLD/house11_wh_l106_tm_temperature   +137.578 degF
+GLD/house10_wh_l106_tm_temperature   +140.78 degF
+GLD/house9_wh_l106_tm_temperature   +135.993 degF
+GLD/house8_wh_l106_tm_temperature   +132.401 degF
+GLD/house7_wh_l106_tm_temperature   +140.187 degF
+GLD/house6_wh_l106_tm_temperature   +133.876 degF
+GLD/house5_wh_l106_tm_temperature   +132.222 degF
+GLD/house4_wh_l106_tm_temperature   +136.39 degF
+GLD/house3_wh_l106_tm_temperature   +140.591 degF
+GLD/house1_wh_l106_tm_temperature   +134.162 degF
+GLD/house0_wh_l106_tm_temperature   +141.886 degF
+GLD/meter_n150_measured_real_power   +2.13511e+06 W
+GLD/house13_l107_tm_mass_temperature   +70.8763 degF
+GLD/house13_l107_tm_air_temperature   +71.2706 degF
+GLD/house13_l107_tm_hvac_load   +0.213629 kW
+GLD/house12_l107_tm_mass_temperature   +71.327 degF
+GLD/house12_l107_tm_air_temperature   +71.7072 degF
+GLD/house11_l107_tm_mass_temperature   +69.7269 degF
+GLD/house11_l107_tm_air_temperature   +70.0347 degF
+GLD/house11_l107_tm_hvac_load   +0.213629 kW
+GLD/house10_l107_tm_mass_temperature   +69.0563 degF
+GLD/house10_l107_tm_air_temperature   +69.277 degF
+GLD/house9_l107_tm_mass_temperature   +68.1956 degF
+GLD/house9_l107_tm_air_temperature   +68.5743 degF
+GLD/house9_l107_tm_hvac_load   +0.213629 kW
+GLD/house8_l107_tm_mass_temperature   +71.0958 degF
+GLD/house8_l107_tm_air_temperature   +71.3443 degF
+GLD/house7_l107_tm_mass_temperature   +71.5354 degF
+GLD/house7_l107_tm_air_temperature   +71.7865 degF
+GLD/house6_l107_tm_mass_temperature   +68.4023 degF
+GLD/house6_l107_tm_air_temperature   +68.6608 degF
+GLD/house5_l107_tm_mass_temperature   +68.8067 degF
+GLD/house5_l107_tm_air_temperature   +69.2351 degF
+GLD/house5_l107_tm_Qm   +807.653
+GLD/house5_l107_tm_Qa   +21530.5
+GLD/house5_l107_tm_Qi   +1615.31
+GLD/house5_l107_tm_hvac_load   +0.213629 kW
+GLD/house4_l107_tm_mass_temperature   +68.1053 degF
+GLD/house4_l107_tm_air_temperature   +68.4223 degF
+GLD/house4_l107_tm_Qm   +1163.52
+GLD/house4_l107_tm_Qa   +1163.52
+GLD/house4_l107_tm_Qi   +2327.05
+GLD/house2_l107_tm_mass_temperature   +70.9775 degF
+GLD/house2_l107_tm_air_temperature   +71.4315 degF
+GLD/house2_l107_tm_hvac_load   +0.213629 kW
+GLD/house1_l107_tm_mass_temperature   +70.6576 degF
+GLD/house1_l107_tm_air_temperature   +71.0909 degF
+GLD/house1_l107_tm_Qm   +949.209
+GLD/house1_l107_tm_Qa   +949.209
+GLD/house1_l107_tm_Qi   +1898.42
+GLD/house0_l107_tm_mass_temperature   +71.3072 degF
+GLD/house0_l107_tm_air_temperature   +71.5953 degF
+GLD/house0_l107_tm_hvac_load   +0.213629 kW
+GLD/house14_l106_tm_mass_temperature   +69.5567 degF
+GLD/house14_l106_tm_air_temperature   +70.0428 degF
+GLD/house14_l106_tm_Qa   +22275.2
+GLD/house14_l106_tm_hvac_load   +6.11519 kW
+GLD/house13_l106_tm_mass_temperature   +68.2774 degF
+GLD/house13_l106_tm_air_temperature   +68.6329 degF
+GLD/house12_l106_tm_mass_temperature   +70.36 degF
+GLD/house12_l106_tm_air_temperature   +70.7209 degF
+GLD/house12_l106_tm_hvac_load   +0.2133 kW
+GLD/house11_l106_tm_mass_temperature   +69.1167 degF
+GLD/house11_l106_tm_air_temperature   +69.3532 degF
+GLD/house11_l106_tm_Qm   +1136.06
+GLD/house11_l106_tm_Qa   +1136.06
+GLD/house11_l106_tm_Qi   +2272.13
+GLD/house10_l106_tm_mass_temperature   +71.0777 degF
+GLD/house10_l106_tm_air_temperature   +71.4851 degF
+GLD/house10_l106_tm_Qm   +916.913
+GLD/house10_l106_tm_Qa   +21639.7
+GLD/house10_l106_tm_Qi   +1833.83
+GLD/house10_l106_tm_hvac_load   +0.2133 kW
+GLD/house9_l106_tm_mass_temperature   +69.487 degF
+GLD/house9_l106_tm_air_temperature   +69.926 degF
+GLD/house9_l106_tm_Qm   +1249.69
+GLD/house9_l106_tm_Qa   +21972.5
+GLD/house9_l106_tm_Qi   +2499.38
+GLD/house9_l106_tm_hvac_load   +0.2133 kW
+GLD/house8_l106_tm_mass_temperature   +71.0875 degF
+GLD/house8_l106_tm_air_temperature   +71.3895 degF
+GLD/house8_l106_tm_Qm   +785.535
+GLD/house8_l106_tm_Qa   +11508.4
+GLD/house8_l106_tm_Qi   +1571.07
+GLD/house8_l106_tm_hvac_load   +0.2133 kW
+GLD/house7_l106_tm_mass_temperature   +70.7681 degF
+GLD/house7_l106_tm_air_temperature   +70.9983 degF
+GLD/house7_l106_tm_Qm   +1041.98
+GLD/house7_l106_tm_Qa   +1041.98
+GLD/house7_l106_tm_Qi   +2083.96
+GLD/house6_l106_tm_mass_temperature   +69.7873 degF
+GLD/house6_l106_tm_air_temperature   +70.0383 degF
+GLD/house6_l106_tm_Qm   +983.95
+GLD/house6_l106_tm_Qa   +11706.8
+GLD/house6_l106_tm_Qi   +1967.9
+GLD/house6_l106_tm_hvac_load   +0.2133 kW
+GLD/house5_l106_tm_mass_temperature   +68.1079 degF
+GLD/house5_l106_tm_air_temperature   +68.4856 degF
+GLD/house5_l106_tm_Qm   +1459.22
+GLD/house5_l106_tm_Qa   +22182
+GLD/house5_l106_tm_Qi   +2918.45
+GLD/house5_l106_tm_hvac_load   +0.2133 kW
+GLD/house4_l106_tm_mass_temperature   +71.485 degF
+GLD/house4_l106_tm_air_temperature   +71.7817 degF
+GLD/house4_l106_tm_Qm   +1198.21
+GLD/house4_l106_tm_Qa   +1198.21
+GLD/house4_l106_tm_Qi   +2396.42
+GLD/house3_l106_tm_mass_temperature   +71.2462 degF
+GLD/house3_l106_tm_air_temperature   +71.6235 degF
+GLD/house3_l106_tm_Qm   +975.456
+GLD/house3_l106_tm_Qa   +21698.3
+GLD/house3_l106_tm_Qi   +1950.91
+GLD/house3_l106_tm_hvac_load   +0.2133 kW
+GLD/house2_l106_tm_mass_temperature   +70.206 degF
+GLD/house2_l106_tm_air_temperature   +70.4088 degF
+GLD/house1_l106_tm_mass_temperature   +70.2455 degF
+GLD/house1_l106_tm_air_temperature   +70.6447 degF
+GLD/house1_l106_tm_Qm   +787.876
+GLD/house1_l106_tm_Qa   +21510.7
+GLD/house1_l106_tm_Qi   +1575.75
+GLD/house1_l106_tm_hvac_load   +0.2133 kW
+GLD/house0_l106_tm_mass_temperature   +70.3557 degF
+GLD/house0_l106_tm_air_temperature   +70.7468 degF
+GLD/house0_l106_tm_Qm   +785.791
+GLD/house0_l106_tm_Qa   +21508.6
+GLD/house0_l106_tm_Qi   +1571.58
+GLD/house0_l106_tm_hvac_load   +0.2133 kW
