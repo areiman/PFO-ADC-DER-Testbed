@@ -1,0 +1,3 @@
+solar_PVinv_house8_l106_tm,inverter=PVinv_house8_l106_tm
+solar_PVinv_house4_l107_tm,inverter=PVinv_house4_l107_tm
+solar_PVinv_house12_l107_tm,inverter=PVinv_house12_l107_tm
