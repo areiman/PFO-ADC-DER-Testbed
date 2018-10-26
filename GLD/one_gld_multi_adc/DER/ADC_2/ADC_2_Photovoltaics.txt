@@ -1,0 +1,2 @@
+solar_PVinv_house2_l2_tm,inverter=PVinv_house2_l2_tm
+solar_PVinv_house3_l2_tm,inverter=PVinv_house3_l2_tm

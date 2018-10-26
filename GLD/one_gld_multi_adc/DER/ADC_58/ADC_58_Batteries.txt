@@ -1,0 +1,4 @@
+batt_Binv_house1_l58_tm,inverter=Binv_house1_l58_tm
+batt_Binv_house3_l58_tm,inverter=Binv_house3_l58_tm
+batt_Binv_house2_l58_tm,inverter=Binv_house2_l58_tm
+batt_Binv_house4_l58_tm,inverter=Binv_house4_l58_tm
