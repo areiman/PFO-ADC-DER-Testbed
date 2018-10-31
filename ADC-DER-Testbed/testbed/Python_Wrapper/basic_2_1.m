@@ -6,8 +6,8 @@ function [Fout_adc,Dout_adc] = ...
 
     for ewh = ewh_pop
 		ewh
-        fprintf('%s\n',ewh.name);
-        fprintf('\tprated: %f\n',ewh.prated);
+%        fprintf('%s\n',ewh.name);
+%        fprintf('\tprated: %f\n',ewh.prated);
 		Pmax = Pmax + ewh.prated;
     end
     
@@ -23,18 +23,18 @@ function [Fout_adc,Dout_adc] = ...
     
     for batt = battery_pop
 		batt
-        fprintf('%s\n',batt.name);
-        fprintf('\tprated: %f\n',batt.prated);
-        fprintf('\tinvcap: %f\n',batt.invcap);
+%        fprintf('%s\n',batt.name);
+%        fprintf('\tprated: %f\n',batt.prated);
+%        fprintf('\tinvcap: %f\n',batt.invcap);
 		Pmax = Pmax + batt.prated;
 		Qmax = Qmax + batt.prated;
     end
     
     for pv = photovoltaic_pop
 		pv
-        fprintf('%s\n',pv.name);
-        fprintf('\tpgenmax: %f\n',pv.pgenmax);
-        fprintf('\tinvcap: %f\n',pv.invcap);
+%        fprintf('%s\n',pv.name);
+%        fprintf('\tpgenmax: %f\n',pv.pgenmax);
+%        fprintf('\tinvcap: %f\n',pv.invcap);
 		Pmax = Pmax + pv.pgenmax;
 		Qmax = Qmax + pv.invcap;
     end

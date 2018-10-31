@@ -11,8 +11,8 @@ function [Fout_adc,Dout_adc] = ...
 		fprintf('WARNING: ewh vectors not same length\n');
 	else
 		for ii = 1:length(ewh_name)
-			ewh_pop.name = ewh_name{ii};
-			ewh_pop.prated = ewh_prated{ii};
+			ewh_pop(ii).name = ewh_name{ii};
+			ewh_pop(ii).prated = ewh_prated{ii};
 		end
 	end
 
@@ -22,9 +22,9 @@ function [Fout_adc,Dout_adc] = ...
 		fprintf('WARNING: ac vectors are not the same length\n');
 	else
 		for ii = 1:length(ac_name)
-			ac_pop.name = ac_name{ii};
-			ac_pop.prated = ac_prated{ii};
-			ac_pop.powfac = ac_powfac{ii};
+			ac_pop(ii).name = ac_name{ii};
+			ac_pop(ii).prated = ac_prated{ii};
+			ac_pop(ii).powfac = ac_powfac{ii};
 		end
 	end
 
@@ -34,9 +34,9 @@ function [Fout_adc,Dout_adc] = ...
 		fprintf('WARNING: batt vectors are not the same length\n');
 	else
 		for ii = 1:length(batt_name)
-			batt_pop.name = batt_name{ii};
-			batt_pop.prated = batt_prated{ii};
-			batt_pop.invcap = batt_invcap{ii};
+			batt_pop(ii).name = batt_name{ii};
+			batt_pop(ii).prated = batt_prated{ii};
+			batt_pop(ii).invcap = batt_invcap{ii};
 		end
 	end
 
@@ -46,9 +46,9 @@ function [Fout_adc,Dout_adc] = ...
 		fprintf('WARNING: batt vectors are not the same length\n');
 	else
 		for ii = 1:length(pv_name)
-			pv_pop.name = pv_name{ii};
-			pv_pop.pgenmax = pv_pgenmax{ii};
-			pv_pop.invcap = pv_invcap{ii};
+			pv_pop(ii).name = pv_name{ii};
+			pv_pop(ii).pgenmax = pv_pgenmax{ii};
+			pv_pop(ii).invcap = pv_invcap{ii};
 		end
 	end
 
