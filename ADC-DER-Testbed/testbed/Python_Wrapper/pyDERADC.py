@@ -169,8 +169,10 @@ while time_granted < time_stop:
 		print(str(ac_on_ctr)+" of "+str(ac_ctr)+\
 			" or "+str(ac_on_ctr/ac_ctr*100)+"% of ACs are on")
 		# report the battery ouput
-		print("Battery P: "+str(batt_p))
-		print("Battery Q: "+str(batt_q))
+		print("Battery P: ")
+		print(batt_p)
+		print("Battery Q: ")
+		print(batt_q)
 		# report the pv inverter output
 		print("PV Inverter P: "+str(pv_p))
 		print("PV Inverter Q: "+str(pv_q))

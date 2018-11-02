@@ -110,12 +110,19 @@ function [new_ewh_state,new_ac_state,batt_p,batt_q,pv_p,pv_q] = ...
 
 
 	% UPDATE BATTERY P AND Q
-	batt_p = usage * batt_prated_tot;
-	batt_q = usage * batt_qrated_tot;
-
+	batt_p = zeros(length(batt_prated),1);
+	batt_q = zeros(length(batt_prated),1);
+	for ii = 1:length(batt_prated)
+		batt_p(ii) = usage * batt_prated{ii};
+		batt_q(ii) = usage * batt_qrated{ii};
+	end
 
 	% UPDATE PV INVERTER P AND Q
-	pv_p = usage * pv_prated_tot;
-	pv_q = usage * pv_qrated_tot;
+	pv_p = zeros(length(pv_prated),1);
+	pv_q = zeros(length(pv_prated),1);
+	for ii = 1:length(pv_prated)
+		pv_p(ii) = usage * pv_prated{ii};
+		pv_q(ii) = usage * pv_qrated{ii};
+	end
 
 
