@@ -6,35 +6,35 @@ function [Fout_adc,Dout_adc] = ...
 
     for ewh = ewh_pop
 		ewh
-%        fprintf('%s\n',ewh.name);
-%        fprintf('\tprated: %f\n',ewh.prated);
+%    	fprintf('%s\n',ewh.name);
+%    	fprintf('\tprated: %f\n',ewh.prated);
 		Pmax = Pmax + ewh.prated;
     end
     
-    for hvac = hvac_pop
+	for hvac = hvac_pop
 		hvac
-        fprintf('%s\n',hvac.name);
-        fprintf('\tprated: %f\n',hvac.prated);
-        fprintf('\tpowfac: %f\n',hvac.powfac);
+%	    fprintf('%s\n',hvac.name);
+%	    fprintf('\tprated: %f\n',hvac.prated);
+%       fprintf('\tpowfac: %f\n',hvac.powfac);
 		Pmax = Pmax + hvac.prated;
 		Qmax = Qmax + hvac.prated * hvac.powfac;
 		fprintf('\tQ_calc: %f\n',hvac.prated*hvac.powfac);
-    end
+	end
     
     for batt = battery_pop
 		batt
-%        fprintf('%s\n',batt.name);
-%        fprintf('\tprated: %f\n',batt.prated);
-%        fprintf('\tinvcap: %f\n',batt.invcap);
+%    	fprintf('%s\n',batt.name);
+%    	fprintf('\tprated: %f\n',batt.prated);
+%    	fprintf('\tinvcap: %f\n',batt.invcap);
 		Pmax = Pmax + batt.prated;
 		Qmax = Qmax + batt.prated;
-    end
+	end
     
     for pv = photovoltaic_pop
 		pv
-%        fprintf('%s\n',pv.name);
-%        fprintf('\tpgenmax: %f\n',pv.pgenmax);
-%        fprintf('\tinvcap: %f\n',pv.invcap);
+%    	fprintf('%s\n',pv.name);
+%    	fprintf('\tpgenmax: %f\n',pv.pgenmax);
+%    	fprintf('\tinvcap: %f\n',pv.invcap);
 		Pmax = Pmax + pv.pgenmax;
 		Qmax = Qmax + pv.invcap;
     end

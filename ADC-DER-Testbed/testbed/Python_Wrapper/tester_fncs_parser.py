@@ -18,6 +18,6 @@ for line in fh:
 			keys.append(key)
 			vals.append(val)
 
-a,b = fncs_parser.synch(keys,vals)
-print(a)
-print(b)
+keys_from_adc_mgr,vals_from_adc_mgr = fncs_parser.synch(keys,vals)
+print(keys_from_adc_mgr)
+print(vals_from_adc_mgr)

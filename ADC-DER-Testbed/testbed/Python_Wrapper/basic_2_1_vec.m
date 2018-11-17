@@ -6,7 +6,7 @@ function [Fout_adc,Dout_adc] = ...
 	pv_name,pv_pgenmax,pv_invcap )
 
 	% build struct array ewh_pop
-	ewh_pop = struct();
+	ewh_pop = struct('name',{});
 	if length(ewh_name) ~= length(ewh_prated)
 		fprintf('WARNING: ewh vectors not same length\n');
 	else
@@ -17,7 +17,7 @@ function [Fout_adc,Dout_adc] = ...
 	end
 
 	% build struct array ac_pop
-	ac_pop = struct();
+	ac_pop = struct('name',{});
 	if length(ac_name) ~= length(ac_prated) || length(ac_name) ~= length(ac_powfac)
 		fprintf('WARNING: ac vectors are not the same length\n');
 	else
@@ -29,7 +29,7 @@ function [Fout_adc,Dout_adc] = ...
 	end
 
 	% build struct array batt_pop
-	batt_pop = struct();
+	batt_pop = struct('name',{});
 	if length(batt_name) ~= length(batt_prated) || length(batt_name) ~= length(batt_invcap)
 		fprintf('WARNING: batt vectors are not the same length\n');
 	else
@@ -41,7 +41,7 @@ function [Fout_adc,Dout_adc] = ...
 	end
 
 	% build struct array pv_pop
-	pv_pop = struct();
+	pv_pop = struct('name',{});
 	if length(pv_name) ~= length(pv_pgenmax) || length(pv_name) ~= length(pv_invcap)
 		fprintf('WARNING: batt vectors are not the same length\n');
 	else
