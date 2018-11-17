@@ -161,7 +161,7 @@ def synch(dat):
 				print('\t'+str(idx))
 				o = ewh_names[idx]
 				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint[idx]
+				pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint[idx][0]
 
 		# Populate the HVACs
 		t = "HVAC"
@@ -175,8 +175,8 @@ def synch(dat):
 			for idx in range(len(ac_names)):
 				o = ac_names[idx]
 				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["cooling_setpoint"] = new_ac_cool_set[idx]
-				pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set[idx]
+				pub_dat[adc][t][o]["cooling_setpoint"] = new_ac_cool_set[idx][0]
+				pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set[idx][0]
 
 		# Populate the battery inverters
 		t = "BATT"
@@ -185,15 +185,15 @@ def synch(dat):
 		if len(batt_names) == 1:
 			o = batt_names[0]
 			pub_dat[adc][t][o] = {}
-			pub_dat[adc][t][o]["P_Out"] = batt_p
-			pub_dat[adc][t][o]["Q_Out"] = batt_q
+			pub_dat[adc][t][o]["inverter.P_Out"] = batt_p
+			pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q
 		else:
 			for idx in range(len(batt_names)):
 				print('\t'+str(idx))
 				o = batt_names[idx]
 				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["P_Out"] = batt_p[idx]
-				pub_dat[adc][t][o]["Q_Out"] = batt_q[idx]
+				pub_dat[adc][t][o]["inverter.P_Out"] = batt_p[idx][0]
+				pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q[idx][0]
 
 		# Populate the PV inverters
 		t = "PV"
@@ -202,15 +202,15 @@ def synch(dat):
 		if len(pv_names) == 1:
 			o = pv_names[0]
 			pub_dat[adc][t][o] = {}
-			pub_dat[adc][t][o]["P_Out"] = pv_p
-			pub_dat[adc][t][o]["Q_Out"] = pv_q
+			pub_dat[adc][t][o]["inverter.P_Out"] = pv_p
+			pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q
 		else:
 			for idx in range(len(pv_names)):
 				print(idx)
 				o = pv_names[idx]
 				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["P_Out"] = pv_p[idx]
-				pub_dat[adc][t][o]["Q_Out"] = pv_q[idx]
+				pub_dat[adc][t][o]["inverter.P_Out"] = pv_p[idx][0]
+				pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q[idx][0]
 
 	return pub_dat
 
