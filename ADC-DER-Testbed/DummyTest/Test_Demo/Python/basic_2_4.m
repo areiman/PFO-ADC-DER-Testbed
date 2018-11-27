@@ -124,19 +124,19 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	% UPDATE BATTERY P AND Q
 	batt_p = zeros(length(batt_prated),1);
 	batt_q = zeros(length(batt_prated),1);
-	for ii = 1:length(batt_prated)
-		batt_p(ii) = usage * batt_prated{ii};
-		batt_q(ii) = usage * batt_qrated{ii};
-	end
+	%for ii = 1:length(batt_prated)
+	%	batt_p(ii) = usage * batt_prated{ii};
+	%	batt_q(ii) = usage * batt_qrated{ii};
+	%end
 
 	% UPDATE PV INVERTER P AND Q
 	pv_p = zeros(length(pv_prated),1);
 	pv_q = zeros(length(pv_prated),1);
-	for ii = 1:length(pv_prated)
-		pv_prated{ii}
-		pv_qrated{ii}
-		pv_p(ii) = usage * pv_prated{ii}
-		pv_q(ii) = usage * pv_qrated{ii}
-	end
+	%for ii = 1:length(pv_prated)
+	%	pv_prated{ii}
+	%	pv_qrated{ii}
+	%	pv_p(ii) = usage * pv_prated{ii}
+	%	pv_q(ii) = usage * pv_qrated{ii}
+	%end
 
 
