@@ -31,6 +31,14 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	end
 	usage = Popt / prated_tot
 
+	if usage > 1
+		usage = 1
+	end
+
+	if usage < 0
+		usage = 0
+	end
+
 	% UPDATE THE EWH STATE VECTOR
 	num_ewh = length(ewh_prated);
 	target_ewh_on = floor( num_ewh * usage );
@@ -55,7 +63,7 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 			off_idxs(idx) = [];
 		end
 	end
-	if target_ewh_on < length(on_idxs)
+	if target_ewh_on < length(on_idxs) % && (length(on_idxs)~=0 )
 		% we need to turn devices off
 		for ctr = 1:( length(on_idxs) - target_ewh_on )
 			% determine which device to turn off
