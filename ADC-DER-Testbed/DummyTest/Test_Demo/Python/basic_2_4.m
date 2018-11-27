@@ -31,6 +31,14 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	end
 	usage = Popt / prated_tot
 
+	if usage > 1
+		usage = 1
+	end
+
+	if usage < 0
+		usage = 0
+	end
+
 	% UPDATE THE EWH STATE VECTOR
 	num_ewh = length(ewh_prated);
 	target_ewh_on = floor( num_ewh * usage );
