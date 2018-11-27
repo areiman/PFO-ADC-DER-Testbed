@@ -8,7 +8,7 @@ import matlab.engine
 eng = matlab.engine.start_matlab()
 time_stop = int(sys.argv[1])
 time_granted = 0
-op = open (sys.argv[2], "a")
+op = open (sys.argv[2], "w")
 
 
 # requires the zpl/yaml file
