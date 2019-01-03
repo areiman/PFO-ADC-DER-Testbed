@@ -125,8 +125,8 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	batt_p = zeros(length(batt_prated),1);
 	batt_q = zeros(length(batt_prated),1);
 	for ii = 1:length(batt_prated)
-		batt_p(ii) = usage * batt_prated{ii}/1000*0; % Divided by 1000
-		batt_q(ii) = usage * batt_qrated{ii}/1000*0; % Divided by 1000
+		batt_p(ii) = usage * batt_prated{ii}; % Divided by 1000
+		batt_q(ii) = usage * batt_qrated{ii}; % Divided by 1000
 	end
 
 	% UPDATE PV INVERTER P AND Q
@@ -135,8 +135,8 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	for ii = 1:length(pv_prated)
 		pv_prated{ii}
 		pv_qrated{ii}
-		pv_p(ii) = usage * pv_prated{ii}/1000 % Divided by 1000
-		pv_q(ii) = usage * pv_qrated{ii}/1000 % divided by 1000 
+		pv_p(ii) = usage * pv_prated{ii}; % Divided by 1000
+		pv_q(ii) = usage * pv_qrated{ii}; % divided by 1000 
 	end
 
 

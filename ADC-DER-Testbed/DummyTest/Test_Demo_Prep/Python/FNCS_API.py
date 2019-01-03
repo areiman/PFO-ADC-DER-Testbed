@@ -31,8 +31,8 @@ while time_granted < time_stop:
 
 	for i in range(len(keys)):
 		print(str(keys[i]))
-		print(key_val[i])
-		fncs.publish(str(keys[i]), key_val[i])   
+		print(str(key_val[i]))
+		fncs.publish(str(keys[i]), str(key_val[i]))   
 	time.sleep(5)
 
 fncs.finalize()
