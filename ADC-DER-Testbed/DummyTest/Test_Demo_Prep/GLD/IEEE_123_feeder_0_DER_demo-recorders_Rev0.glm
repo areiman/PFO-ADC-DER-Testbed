@@ -38,7 +38,7 @@ module connection {
 object fncs_msg {
 	 name GLD;
 	 option "transport:hostname localhost, port 5570";
-	 configure fncs_configure.cfg;
+	 configure fncs_configure_new.cfg;
 }
 
 object climate {

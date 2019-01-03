@@ -1,11 +1,11 @@
-function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
-			batt_p,batt_q,pv_p,pv_q] = ...
-		basic_2_4_ac(Popt,Qopt,ewh_state, ...
-		ac_temp,ac_heat_set,ac_cool_set,ac_deadband, ...
+function [new_ewh_state,new_ac_state,batt_p,batt_q,pv_p,pv_q] = ...
+		basic_2_4_ac(Popt,Qopt,ewh_state,ac_state, ...
 		ewh_prated,ewh_qrated,ac_prated,ac_qrated, ...
 		batt_prated,batt_qrated,pv_prated,pv_qrated)
 	Popt
 	Qopt
+
+	new_state = zeros(length(ac_state),1);
 
 	% Determine total power and usage ratio
 	prated_tot = 0.0;
@@ -31,14 +31,6 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	end
 	usage = Popt / prated_tot
 
-	if usage > 1
-		usage = 1
-	end
-
-	if usage < 0
-		usage = 0
-	end
-
 	% UPDATE THE EWH STATE VECTOR
 	num_ewh = length(ewh_prated);
 	target_ewh_on = floor( num_ewh * usage );
@@ -63,7 +55,7 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 			off_idxs(idx) = [];
 		end
 	end
-	if target_ewh_on < length(on_idxs) % && (length(on_idxs)~=0 )
+	if target_ewh_on < length(on_idxs)
 		% we need to turn devices off
 		for ctr = 1:( length(on_idxs) - target_ewh_on )
 			% determine which device to turn off
@@ -74,9 +66,8 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 		end
 	end
 	% create the new ewh state vector
-	new_ewh_tank_setpoint = zeros(length(ewh_state),1);
-	new_ewh_tank_setpoint(on_idxs) = 32;	% freezing setpoint for always on
-	new_ewh_tank_setpoint(off_idxs) = 212;	% boiling setpoint for always off
+	new_ewh_state = zeros(num_ewh,1);
+	new_ewh_state(on_idxs) = 1;
 
 		
 
@@ -86,7 +77,7 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	on_idxs = [];
 	off_idxs = [];
 	for idx = 1:num_ac
-		if ac_temp{idx} > ac_cool_set{idx}
+		if ac_state{idx}
 			on_idxs(end+1) = idx;
 		else
 			off_idxs(end+1) = idx;
@@ -107,36 +98,32 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 		% we need to turn devices off
 		for ctr = 1:( length(on_idxs) - target_ac_on )
 			% determine which device to turn off
-			idx = randi( length(on_idxs) , 1);
+			idx = rani( length(on_idxs) , 1);
 			% turn that device off
 			off_idxs(end+1) = on_idxs(idx);
 			on_idxs(idx) = [];
 		end
 	end
 	% create the new ac state vector
-	new_ac_heat_set = zeros(num_ac,1);
-	new_ac_cool_set = zeros(num_ac,1);
-	new_ac_heat_set([on_idxs off_idxs]) = 0;	% we aren't using the heater
-	new_ac_cool_set(on_idxs) = 32;				% low setpoint for always on
-	new_ac_cool_set(off_idxs) = 212;			% high setpoint for always off
-
+	new_ac_state = zeros(num_ac,1);
+	new_ac_state(on_idxs) = 1;
+	% Here we need to have setpoint
+	
 
 	% UPDATE BATTERY P AND Q
 	batt_p = zeros(length(batt_prated),1);
 	batt_q = zeros(length(batt_prated),1);
-	%for ii = 1:length(batt_prated)
-	%	batt_p(ii) = usage * batt_prated{ii};
-	%	batt_q(ii) = usage * batt_qrated{ii};
-	%end
+	for ii = 1:length(batt_prated)
+		batt_p(ii) = usage * batt_prated{ii};
+		batt_q(ii) = usage * batt_qrated{ii};
+	end
 
 	% UPDATE PV INVERTER P AND Q
 	pv_p = zeros(length(pv_prated),1);
 	pv_q = zeros(length(pv_prated),1);
-	%for ii = 1:length(pv_prated)
-	%	pv_prated{ii}
-	%	pv_qrated{ii}
-	%	pv_p(ii) = usage * pv_prated{ii}
-	%	pv_q(ii) = usage * pv_qrated{ii}
-	%end
+	for ii = 1:length(pv_prated)
+		pv_p(ii) = usage * pv_prated{ii};
+		pv_q(ii) = usage * pv_qrated{ii};
+	end
 
 
