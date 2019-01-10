@@ -21,30 +21,44 @@ def oprint(dat,adc,t,o):
 
 def synch(dat):
 	pub_dat = {}
-	
+
+#	eng.eval('addpath ../ADC/test',nargout=0)
+#	eng.hello('you',nargout=0)
+	eng.eval('addpath ../ADC/ADC_jamie',nargout=0)
+#	eng.eval('addpath ../ADC/ADC_NREL',nargout=0)
+
 	# -------------------------------------------------------------------------
-	# ITERATE OVER ADCS
+	# PROCESS UPDATE PERSISTENT DATA
 	# -------------------------------------------------------------------------
 	for adc in dat:
 		if adc not in mem:
 			mem[adc] = {}
-			mem[adc]["WH"] = {}
-			mem[adc]["HVAC"] = {}
-			mem[adc]["BATT"] = {}
-			mem[adc]["PV"] = {}
-		
+		for t in dat[adc]:
+			if t not in mem[adc]:
+				mem[adc][t] = {}
+			for o in dat[adc][t]:
+				if o not in mem[adc][t]:
+					mem[adc][t] = {}
+				for p in dat[adc][t][o]:
+					mem[adc][t][o][p] = p
+					
+	# -------------------------------------------------------------------------
+	# ITERATE OVER UPDATED ADCS
+	# -------------------------------------------------------------------------
+	for adc in mem:
+
 		# Set up the water heaters
 		t = "WH"
 		ewh_names = []
 		ewh_prated = []
 		ewh_qrated = []
 		ewh_state = []
-		for o in dat[adc][t]:
-			oprint(dat,adc,t,o)
+		for o in mem[adc][t]:
+			oprint(mem,adc,t,o)
 			ewh_names.append(o)
-			ewh_prated.append(dat[adc][t][o]["heating_element_capacity"])
+			ewh_prated.append(mem[adc][t][o]["heating_element_capacity"])
 			ewh_qrated.append(0.0)
-			ewh_state.append(dat[adc][t][o]["is_waterheater_on"])
+			ewh_state.append(mem[adc][t][o]["is_waterheater_on"])
 
 		# Set up HVAC systems
 		t = "HVAC"
@@ -56,20 +70,20 @@ def synch(dat):
 		ac_heat_set = []
 		ac_cool_set = []
 		ac_deadband = []
-		for o in dat[adc][t]:
+		for o in mem[adc][t]:
 			if o not in mem[adc][t]:
 				mem[adc][t][o] = {}
 				mem[adc][t][o]["heating_setpoint"] = 65
 				mem[adc][t][o]["cooling_setpoint"] = 72
-			oprint(dat,adc,t,o)
+			oprint(mem,adc,t,o)
 			ac_names.append(o)
-			ac_prated.append(dat[adc][t][o]["design_cooling_capacity"] * 1/3412)
+			ac_prated.append(mem[adc][t][o]["design_cooling_capacity"] * 1/3412)
 			ac_powfac.append(0.6197)
 			ac_qrated.append(0.6197 * ac_prated[-1])
-			ac_temp.append(dat[adc][t][o]["air_temperature"])
+			ac_temp.append(mem[adc][t][o]["air_temperature"])
 			ac_heat_set.append(mem[adc][t][o]["heating_setpoint"])
 			ac_cool_set.append(mem[adc][t][o]["cooling_setpoint"])
-			ac_deadband.append(dat[adc][t][o]["thermostat_deadband"])
+			ac_deadband.append(mem[adc][t][o]["thermostat_deadband"])
 
 		# Set up batteries (o is the inverter)
 		t = "BATT"
@@ -77,12 +91,12 @@ def synch(dat):
 		batt_prated = []
 		batt_invcap = []
 		batt_qrated = []
-		for o in dat[adc][t]:
-			oprint(dat,adc,t,o)
+		for o in mem[adc][t]:
+			oprint(mem,adc,t,o)
 			batt_names.append(o)
-			batt_prated.append(dat[adc][t][o]["battery.rated_power"])
-			batt_invcap.append(dat[adc][t][o]["inverter.rated_power"])
-			batt_qrated.append(dat[adc][t][o]["battery.rated_power"])
+			batt_prated.append(mem[adc][t][o]["battery.rated_power"])
+			batt_invcap.append(mem[adc][t][o]["inverter.rated_power"])
+			batt_qrated.append(mem[adc][t][o]["battery.rated_power"])
 
 		# Set up PV systems (o is the inverter)
 		t = "PV"
@@ -91,13 +105,13 @@ def synch(dat):
 		pv_invcap = []
 		pv_prated = []
 		pv_qrated = []
-		for o in dat[adc][t]:
-			oprint(dat,adc,t,o)
+		for o in mem[adc][t]:
+			oprint(mem,adc,t,o)
 			pv_names.append(o)
-			pv_pgenmax.append(dat[adc][t][o]["solar.rated_power"])
-			pv_invcap.append(dat[adc][t][o]["solar.rated_power"])
-			pv_prated.append(dat[adc][t][o]["solar.rated_power"])
-			pv_qrated.append(dat[adc][t][o]["solar.rated_power"])
+			pv_pgenmax.append(mem[adc][t][o]["solar.rated_power"])
+			pv_invcap.append(mem[adc][t][o]["solar.rated_power"])
+			pv_prated.append(mem[adc][t][o]["solar.rated_power"])
+			pv_qrated.append(mem[adc][t][o]["solar.rated_power"])
 
 
 		# Run task 2.1 ADC domain approximation
@@ -129,6 +143,7 @@ def synch(dat):
 		print("Popt is "+str(Popt))
 		print("Qopt is "+str(Qopt))
 
+'''
 		# Call the dummy task 2.4 code
 		eng.eval('help basic_2_4',nargout=0)
 		new_state = eng.basic_2_4(Popt,Qopt,ewh_state,\
@@ -143,9 +158,40 @@ def synch(dat):
 		pv_p = new_state[5]; pv_q = new_state[6];
 
 		print(new_state)
+'''
+		# Set up inputs for AC-based task 2.4 code
+		Q_ref = Qopt
+		para = {}
+		para['Tmin'] = 
+		para['Tmax'] = 
+		para['Tdesired'] = 
+		para['ratio'] = 
+		para['C_a'] = 
+		para['C_m'] = 
+		para['H_m'] = 
+		para['U_A'] = 
+		para['mass_internal_gain_fraction'] = 
+		para['mass_solar_gain_fraction'] = 
 
-		
+		Q_h = 
+		Q_i = 
+		Q_s = 
+		Dtemp = 
+		halfband = 
+		Dstatus = 
+		P_h = 
+		P_cap = 
+		mdt = 
+		# Call the AC-based task 2.4 code
+		out = eng.Task_2_4_PNNL(Q_ref,para,\
+			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,nargout=2)
+		# Parse outputs from the ac-based task 2.4 code
+		T_set = out[0]
+		P_h = out[1]
+
+		# ---------------------------------------------------------------------------
 		# BUILD THE PUBLISH DATA STRUCTURE
+		# ---------------------------------------------------------------------------
 		pub_dat[adc] = {}
 	
 		# Populate water heaters
@@ -211,6 +257,5 @@ def synch(dat):
 				pub_dat[adc][t][o] = {}
 				pub_dat[adc][t][o]["inverter.P_Out"] = pv_p[idx][0]
 				pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q[idx][0]
-
 	return pub_dat
 
