@@ -24,7 +24,7 @@ def synch(dat):
 
 #	eng.eval('addpath ../ADC/test',nargout=0)
 #	eng.hello('you',nargout=0)
-	eng.eval('addpath ../ADC/ADC_jamie',nargout=0)
+#	eng.eval('addpath ../ADC/ADC_jamie',nargout=0)
 #	eng.eval('addpath ../ADC/ADC_NREL',nargout=0)
 
 	# -------------------------------------------------------------------------
@@ -38,9 +38,9 @@ def synch(dat):
 				mem[adc][t] = {}
 			for o in dat[adc][t]:
 				if o not in mem[adc][t]:
-					mem[adc][t] = {}
+					mem[adc][t][o] = {}
 				for p in dat[adc][t][o]:
-					mem[adc][t][o][p] = p
+					mem[adc][t][o][p] = dat[adc][t][o][p]
 					
 	# -------------------------------------------------------------------------
 	# ITERATE OVER UPDATED ADCS
@@ -71,10 +71,10 @@ def synch(dat):
 		ac_cool_set = []
 		ac_deadband = []
 		for o in mem[adc][t]:
-			if o not in mem[adc][t]:
-				mem[adc][t][o] = {}
-				mem[adc][t][o]["heating_setpoint"] = 65
-				mem[adc][t][o]["cooling_setpoint"] = 72
+			# if o not in mem[adc][t]:
+			# 	mem[adc][t][o] = {}
+			mem[adc][t][o]["heating_setpoint"] = 65
+			mem[adc][t][o]["cooling_setpoint"] = 72
 			oprint(mem,adc,t,o)
 			ac_names.append(o)
 			ac_prated.append(mem[adc][t][o]["design_cooling_capacity"] * 1/3412)
@@ -143,7 +143,6 @@ def synch(dat):
 		print("Popt is "+str(Popt))
 		print("Qopt is "+str(Qopt))
 
-'''
 		# Call the dummy task 2.4 code
 		eng.eval('help basic_2_4',nargout=0)
 		new_state = eng.basic_2_4(Popt,Qopt,ewh_state,\
@@ -158,36 +157,36 @@ def synch(dat):
 		pv_p = new_state[5]; pv_q = new_state[6];
 
 		print(new_state)
-'''
-		# Set up inputs for AC-based task 2.4 code
-		Q_ref = Qopt
-		para = {}
-		para['Tmin'] = 
-		para['Tmax'] = 
-		para['Tdesired'] = 
-		para['ratio'] = 
-		para['C_a'] = 
-		para['C_m'] = 
-		para['H_m'] = 
-		para['U_A'] = 
-		para['mass_internal_gain_fraction'] = 
-		para['mass_solar_gain_fraction'] = 
 
-		Q_h = 
-		Q_i = 
-		Q_s = 
-		Dtemp = 
-		halfband = 
-		Dstatus = 
-		P_h = 
-		P_cap = 
-		mdt = 
-		# Call the AC-based task 2.4 code
-		out = eng.Task_2_4_PNNL(Q_ref,para,\
-			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,nargout=2)
-		# Parse outputs from the ac-based task 2.4 code
-		T_set = out[0]
-		P_h = out[1]
+# Set up inputs for AC-based task 2.4 code
+# 		Q_ref = Qopt
+# 		para = {}
+# 		para['Tmin'] =
+# 		para['Tmax'] =
+# 		para['Tdesired'] =
+# 		para['ratio'] =
+# 		para['C_a'] =
+# 		para['C_m'] =
+# 		para['H_m'] =
+# 		para['U_A'] =
+# 		para['mass_internal_gain_fraction'] =
+# 		para['mass_solar_gain_fraction'] =
+#
+# 		Q_h =
+# 		Q_i =
+# 		Q_s =
+# 		Dtemp =
+# 		halfband =
+# 		Dstatus =
+# 		P_h =
+# 		P_cap =
+# 		mdt =
+# 		# Call the AC-based task 2.4 code
+# 		out = eng.Task_2_4_PNNL(Q_ref,para,\
+# 			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,nargout=2)
+# 		# Parse outputs from the ac-based task 2.4 code
+# 		T_set = out[0]
+# 		P_h = out[1]
 
 		# ---------------------------------------------------------------------------
 		# BUILD THE PUBLISH DATA STRUCTURE

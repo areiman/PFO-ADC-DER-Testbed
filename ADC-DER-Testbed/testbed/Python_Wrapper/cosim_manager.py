@@ -3,25 +3,41 @@ This will be the production Co-Simulation Manager
 '''
 
 import re
-
+import time
 import fncs_parser
+import sys
+import fncs
 
-keys = []
-vals = []
+time_stop = int(sys.argv[1])
+time_granted = 0
+op = open (sys.argv[2], "w")
 
-# Read the test output file fo build key and value lists
-fh = open("get_states.txt",'r')
-for line in fh:
-	line = line.rstrip()
-	m = re.search(r'/(\S+)\s+(.+)',line,re.IGNORECASE)
-	if m:
-		key = m.group(1)
-		val = m.group(2)
-		if re.match('1\s',line):
-#			print(key+" -> "+val)
-			keys.append(key)
-			vals.append(val)
+# requires the zpl/yaml file
+fncs.initialize()
+print('*****FNCS HAS INITIALIZED******')
+print("# time      key       value", file=op)
 
-keys_from_adc_mgr,vals_from_adc_mgr = fncs_parser.synch(keys,vals)
-print(keys_from_adc_mgr)
-print(vals_from_adc_mgr)
+while time_granted < time_stop:
+	time_granted = fncs.time_request(time_stop)
+	events = fncs.get_events()
+	SubKeys = []
+	SubKeyVals = []
+	for key in events:
+		print(time_granted, key.decode(), fncs.get_value(key).decode(), file=op)
+		Temp = str( key.decode())
+		SubKeys.append(Temp)
+		Temp=str( fncs.get_value(key).decode() )
+		SubKeyVals.append(Temp)
+	print("****SubKeys*****")
+	print(SubKeys)
+	keys,key_val = fncs_parser.synch(SubKeys,SubKeyVals)
+
+	for i in range(len(keys)):
+		print(str(keys[i]))
+		print(str(key_val[i]))
+		fncs.publish(str(keys[i]), str(key_val[i]))
+	time.sleep(5)
+
+fncs.finalize()
+op.close()
+print('*****FNCS HAS ENDED******')

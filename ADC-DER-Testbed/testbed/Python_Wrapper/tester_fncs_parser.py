@@ -6,7 +6,7 @@ keys = []
 vals = []
 
 # Read the test output file fo build key and value lists
-fh = open("get_states.txt",'r')
+fh = open("get_states_old.txt",'r')
 for line in fh:
 	line = line.rstrip()
 	m = re.search(r'/(\S+)\s+(.+)',line,re.IGNORECASE)

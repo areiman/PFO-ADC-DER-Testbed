@@ -1,1 +1,1 @@
-python3.6 pyDERADC.py
+python3.6 pyDERADC.py &> pyDERADC.log
