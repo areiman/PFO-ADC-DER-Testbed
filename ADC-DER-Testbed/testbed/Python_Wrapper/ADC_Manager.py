@@ -5,14 +5,24 @@ from matlab import double as MATRIX
 
 import random as rand
 from random import gauss
+from random import uniform
 
 from math import sqrt
 
 # Start up the matlab engine
 eng = matlab.engine.start_matlab()
 
-# This object will track persistent data
+# These objects will track persistent data
 mem = {}
+ewh_ranges = {}
+ac_ranges = {}
+pv_ranges = {}
+batt_ranges = {}
+
+# This object will track persistent data
+buff = {}
+buff['AC_Tdesired'] = {}
+buff['AC_P_h'] = {}
 
 def oprint(dat,adc,t,o):
 	print("Object:")
@@ -22,10 +32,11 @@ def oprint(dat,adc,t,o):
 def synch(dat):
 	pub_dat = {}
 
-#	eng.eval('addpath ../ADC/test',nargout=0)
+	eng.eval('addpath ../ADC/test',nargout=0)
 #	eng.hello('you',nargout=0)
-	eng.eval('addpath ../ADC/ADC_jamie',nargout=0)
-#	eng.eval('addpath ../ADC/ADC_NREL',nargout=0)
+	eng.eval('addpath ../ADC/ADC_flex',nargout=0)
+	eng.eval('addpath ../ADC/ADC_AC',nargout=0)
+	eng.eval('addpath ../ADC/ADC_NREL',nargout=0)
 
 	# -------------------------------------------------------------------------
 	# PROCESS UPDATE PERSISTENT DATA
@@ -38,14 +49,30 @@ def synch(dat):
 				mem[adc][t] = {}
 			for o in dat[adc][t]:
 				if o not in mem[adc][t]:
-					mem[adc][t] = {}
+					mem[adc][t][o] = {}
 				for p in dat[adc][t][o]:
-					mem[adc][t][o][p] = p
+					mem[adc][t][o][p] = dat[adc][t][o][p]
+
+	# Store the desired AC temperatures	
+	rand.seed(None)
+	for adc in dat:
+		for o in dat[adc]['HVAC']:
+			if o not in buff['AC_Tdesired']:
+#				buff['AC_Tdesired'][o] = dat[adc]['HVAC'][o]['cooling_setpoint']
+				# Randomize the desired temperature
+				buff['AC_Tdesired'][o] = uniform(65,75)
+
+				
+
 					
 	# -------------------------------------------------------------------------
 	# ITERATE OVER UPDATED ADCS
 	# -------------------------------------------------------------------------
+#	print(mem)
 	for adc in mem:
+#	if (1):
+#		adc = 'M1_ADC12'
+		print(adc)
 
 		# Set up the water heaters
 		t = "WH"
@@ -71,9 +98,9 @@ def synch(dat):
 		ac_cool_set = []
 		ac_deadband = []
 		for o in mem[adc][t]:
-			if o not in mem[adc][t]:
-				mem[adc][t][o] = {}
+			if "heating_setpoint" not in mem[adc][t][o]:
 				mem[adc][t][o]["heating_setpoint"] = 65
+			if "cooling_setpoint" not in mem[adc][t][o]:
 				mem[adc][t][o]["cooling_setpoint"] = 72
 			oprint(mem,adc,t,o)
 			ac_names.append(o)
@@ -94,9 +121,9 @@ def synch(dat):
 		for o in mem[adc][t]:
 			oprint(mem,adc,t,o)
 			batt_names.append(o)
-			batt_prated.append(mem[adc][t][o]["battery.rated_power"])
-			batt_invcap.append(mem[adc][t][o]["inverter.rated_power"])
-			batt_qrated.append(mem[adc][t][o]["battery.rated_power"])
+			batt_prated.append( mem[adc][t][o]["battery.rated_power"] / 1000 )
+			batt_invcap.append( mem[adc][t][o]["inverter.rated_power"] / 1000 )
+			batt_qrated.append( mem[adc][t][o]["battery.rated_power"] / 1000 )
 
 		# Set up PV systems (o is the inverter)
 		t = "PV"
@@ -108,24 +135,49 @@ def synch(dat):
 		for o in mem[adc][t]:
 			oprint(mem,adc,t,o)
 			pv_names.append(o)
-			pv_pgenmax.append(mem[adc][t][o]["solar.rated_power"])
-			pv_invcap.append(mem[adc][t][o]["solar.rated_power"])
-			pv_prated.append(mem[adc][t][o]["solar.rated_power"])
-			pv_qrated.append(mem[adc][t][o]["solar.rated_power"])
+			pv_pgenmax.append( mem[adc][t][o]["solar.rated_power"] / 1000 )
+			pv_invcap.append( mem[adc][t][o]["solar.rated_power"] / 1000 )
+			pv_prated.append( mem[adc][t][o]["solar.rated_power"] / 1000 )
+			pv_qrated.append( mem[adc][t][o]["solar.rated_power"] / 1000 )
 
 
 		# Run task 2.1 ADC domain approximation
 		eng.eval('help basic_2_1',nargout=0)
 		eng.eval('help basic_2_1_vec',nargout=0)
-		FandD = eng.basic_2_1_vec(ewh_names,ewh_prated,\
+#		FandD = eng.basic_2_1_vec(ewh_names,ewh_prated,\
+#			ac_names,ac_prated,ac_powfac,\
+#			batt_names,batt_prated,batt_invcap,\
+#			pv_names,pv_pgenmax,pv_invcap,nargout=2)
+		print(ewh_names)
+		print(ac_names)
+		print(pv_names)
+		print(batt_names)
+		flex_agg = eng.testbed_2_1_vec(ewh_names,ewh_prated,\
 			ac_names,ac_prated,ac_powfac,\
 			batt_names,batt_prated,batt_invcap,\
-			pv_names,pv_pgenmax,pv_invcap,nargout=2)
-		Fadc = FandD[0]
-		Dadc = FandD[1]
+			pv_names,pv_pgenmax,pv_invcap,nargout=6)
+		Fadc = flex_agg[0]
+		Dadc = flex_agg[1]
+		ewh_range = flex_agg[2]
+		ac_range = flex_agg[3]
+		pv_range = flex_agg[4]
+		batt_range = flex_agg[5]
+		print(Fadc)
+		print(Dadc)
+		print(ewh_range)
+		print(ac_range)
+		print(pv_range)
+		print(batt_range)
 
-
+		ewh_ranges[adc] = ewh_range
+		ac_ranges[adc] = ac_range
+		pv_ranges[adc] = pv_range
+		batt_ranges[adc] = batt_range
+		
+		
+		# ---------------------------------------------------------------------
 		# PFO EMULATOR
+		# ---------------------------------------------------------------------
 		# Assuming rectangular flexibility
 		rand.seed(None) 	# seed with system time
 #		tmp = MATRIX([[-1.0,0.0],[0.0,-1.0],[1.0,0.0],[0.0,1.0]])
@@ -136,14 +188,29 @@ def synch(dat):
 				and Fadc[3][0] == 0.0 and Fadc[3][1] == 1.0:
 			Popt = ( Dadc[0][0] + Dadc[2][0] ) / 2.0 * ( 1 + gauss(0,1)/3.0 )
 			Qopt = ( Dadc[1][0] + Dadc[3][0] ) / 2.0 * ( 1 + gauss(0,1)/3.0 )
+		elif Fadc[0][0] == 1.0 and Fadc[0][1] == 0.0 \
+				and Fadc[1][0] == -1.0 and Fadc[1][1] == 0.0 \
+				and Fadc[2][0] == 0.0 and Fadc[2][1] == 1.0 \
+				and Fadc[3][0] == 0.0 and Fadc[3][1] == -1.0:
+			Popt = ( Dadc[0][0] + Dadc[1][0] ) / 2.0 * ( 1 + gauss(0,1)/3.0 )
+			Qopt = ( Dadc[2][0] + Dadc[3][0] ) / 2.0 * ( 1 + gauss(0,1)/3.0 )
 		else:
-			print("unexpected Fadc")
+			print("Error: unexpected Fadc")
 			Popt = 0
 			Qopt = 0
+			exit()
 		print("Popt is "+str(Popt))
 		print("Qopt is "+str(Qopt))
 
-'''
+		
+		# ----------------------------------------------------------------------
+		# DISAGGREGATION
+		# ----------------------------------------------------------------------
+
+
+		# ----------------------------------------------------------------------
+		# DUMMY TASK 2.4
+		# ----------------------------------------------------------------------
 		# Call the dummy task 2.4 code
 		eng.eval('help basic_2_4',nargout=0)
 		new_state = eng.basic_2_4(Popt,Qopt,ewh_state,\
@@ -158,42 +225,132 @@ def synch(dat):
 		pv_p = new_state[5]; pv_q = new_state[6];
 
 		print(new_state)
-'''
-		# Set up inputs for AC-based task 2.4 code
+
+		"""
+		# ---------------------------------------------------------------------------
+		# TASK 2.4 FOR HVAC
+		# ---------------------------------------------------------------------------
+		# Set up inputs
 		Q_ref = Qopt
 		para = {}
-		para['Tmin'] = 
-		para['Tmax'] = 
-		para['Tdesired'] = 
-		para['ratio'] = 
-		para['C_a'] = 
-		para['C_m'] = 
-		para['H_m'] = 
-		para['U_A'] = 
-		para['mass_internal_gain_fraction'] = 
-		para['mass_solar_gain_fraction'] = 
+		para['Tmin'] = []
+		para['Tmax'] = []
+		para['Tdesired'] = []
+		para['ratio'] = []
+		para['power'] = []
+		para['C_a'] = []
+		para['C_m'] = []
+		para['H_m'] = []
+		para['U_A'] = []
+		para['mass_internal_gain_fraction'] = []
+		para['mass_solar_gain_fraction'] = []
 
-		Q_h = 
-		Q_i = 
-		Q_s = 
-		Dtemp = 
-		halfband = 
-		Dstatus = 
-		P_h = 
-		P_cap = 
-		mdt = 
+		Q_h = []
+		Q_i = []
+		Q_s = []
+		Dtemp = []
+		halfband = []
+		Dstatus = []
+		P_h = []
+		P_cap = 0
+		mdt = 0
+
+		t = 'HVAC'
+		for o in mem[adc][t]:
+
+			# para is a structure of vectors
+
+			# To be randomized?
+			para['Tmin'].append(65)
+			para['Tmax'].append(75)
+
+			# initial 'cooling_setpoint'
+#			para['Tdesired'].append(buff['AC_Tdesired'][o])
+			para['Tdesired'].append(mem[adc][t][o]['cooling_setpoint'])
+
+			# [0.5 to 15] uniform distribution -- to be randomized
+			para['ratio'].append(1.0)
+
+			# hvac_load
+			para['power'].append(mem[adc][t][o]['hvac_load'])
+
+			para['C_a'].append(mem[adc][t][o]['air_heat_capacity'])
+			para['C_m'].append(mem[adc][t][o]['mass_heat_capacity'])
+			para['H_m'].append(mem[adc][t][o]['mass_heat_coeff'])
+			para['U_A'].append(mem[adc][t][o]['UA'])
+
+			# Are these two part of the interface?
+			para['mass_internal_gain_fraction'].append(mem[adc][t][o]['mass_internal_gain_fraction'])
+			para['mass_solar_gain_fraction'].append(mem[adc][t][o]['mass_solar_gain_fraction'])
+
+			# These two exist
+			Q_h.append(mem[adc][t][o]['Qh'])
+			Q_i.append(mem[adc][t][o]['Qi'])
+
+			# vector of calculated values
+			Q_s.append(mem[adc][t][o]['incident_solar_radiation'] *\
+				mem[adc][t][o]['solar_heatgain_factor'])
+
+			# This is a list/vector of [ air_temperature , mass_temperature ]
+			Dtemp.append([])
+			Dtemp[-1].append( mem[adc][t][o]['air_temperature'] )
+			Dtemp[-1].append( mem[adc][t][o]['mass_temperature'] )
+
+			halfband.append( mem[adc][t][o]['thermostat_deadband'] / 2.0 )
+
+			# Device status? what are the options? how do we know? historical term?
+			# should be mem[adc][t][o]['is_COOL_on'] (new parameter)a
+			if mem[adc][t][o]['is_COOL_on']:
+				Dstatus.append('ON')
+			else:
+				Dstatus.append('OFF')
+
+		# Test the struct of vectors
+		eng.PrintStructVec(para,nargout=0)
+		sys.exit()
+
+		# Historical power - vector of past 24 hours @ 5 minutes
+		P_h = (24*12*[0.07])
+
+
+		# P_cap scalar price units /[$/kW] -> 1 for $/kW; 1000 for $/MW
+		P_cap = 1
+
+		# Market period in hours (@5-min)
+		mdt = 1/3600*300
+
 		# Call the AC-based task 2.4 code
-		out = eng.Task_2_4_PNNL(Q_ref,para,\
-			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,nargout=2)
+#		out = eng.Task_2_4_PNNL(Q_ref,para,\
+#			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,nargout=2)
 		# Parse outputs from the ac-based task 2.4 code
-		T_set = out[0]
-		P_h = out[1]
+#		T_set = out[0]
+#		P_h = out[1]
+
+		# ---------------------------------------------------------------------------
+		# TASK 2.4 FOR PV AND BATTERIES
+		# ---------------------------------------------------------------------------
+		
+		# Control time
+		deltat = 30
+
+		# Number of PV-inverters and bettery inverters under control
+		n_pv = 10
+		n_ba = 12
+
+		# PV capacity
+		cap_pv = [4410.43,4480.22,4381.46,4462.06,4401.66,4439.82,4425.14,4429.96,4495.07,4506.36]
+
+		# PV available power
+#		pv_av = 
+
+		# Call the PV and Battery implementation of task 2.4
+		eng.eval('ADC_20180815',nargout=0)
+		"""
 
 		# ---------------------------------------------------------------------------
 		# BUILD THE PUBLISH DATA STRUCTURE
 		# ---------------------------------------------------------------------------
 		pub_dat[adc] = {}
-	
 		# Populate water heaters
 		t = "WH"
 		pub_dat[adc][t] = {}

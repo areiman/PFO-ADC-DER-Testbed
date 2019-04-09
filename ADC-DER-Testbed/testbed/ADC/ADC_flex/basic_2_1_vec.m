@@ -55,6 +55,4 @@ function [Fout_adc,Dout_adc] = ...
 	% call the function
 	[F,D] = basic_2_1(ewh_pop,ac_pop,batt_pop,pv_pop)
 	Fout_adc = F
-	Dout_adc = D
-
-
+Dout_adc = D
