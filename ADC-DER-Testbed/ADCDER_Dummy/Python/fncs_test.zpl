@@ -227,6 +227,7 @@ values
     GLD/M1_ADC102_house0_l102_tm_air_temperature
     GLD/M1_ADC102_house0_l102_tm_mass_temperature
     GLD/M1_ADC102_house0_l102_tm_thermostat_mode
+    GLD/M1_ADC102_house0_l102_tm_is_COOL_on
     GLD/M1_ADC102_house1_l102_tm_mass_heat_coeff
     GLD/M1_ADC102_house1_l102_tm_UA
     GLD/M1_ADC102_house1_l102_tm_heating_system_type
@@ -252,6 +253,7 @@ values
     GLD/M1_ADC102_house1_l102_tm_air_temperature
     GLD/M1_ADC102_house1_l102_tm_mass_temperature
     GLD/M1_ADC102_house1_l102_tm_thermostat_mode
+    GLD/M1_ADC102_house1_l102_tm_is_COOL_on
     GLD/M1_ADC102_house2_l102_tm_mass_heat_coeff
     GLD/M1_ADC102_house2_l102_tm_UA
     GLD/M1_ADC102_house2_l102_tm_heating_system_type
@@ -277,6 +279,7 @@ values
     GLD/M1_ADC102_house2_l102_tm_air_temperature
     GLD/M1_ADC102_house2_l102_tm_mass_temperature
     GLD/M1_ADC102_house2_l102_tm_thermostat_mode
+    GLD/M1_ADC102_house2_l102_tm_is_COOL_on
     GLD/M1_ADC102_house3_l102_tm_mass_heat_coeff
     GLD/M1_ADC102_house3_l102_tm_UA
     GLD/M1_ADC102_house3_l102_tm_heating_system_type
@@ -302,6 +305,7 @@ values
     GLD/M1_ADC102_house3_l102_tm_air_temperature
     GLD/M1_ADC102_house3_l102_tm_mass_temperature
     GLD/M1_ADC102_house3_l102_tm_thermostat_mode
+    GLD/M1_ADC102_house3_l102_tm_is_COOL_on
     GLD/M1_ADC102_house4_l102_tm_mass_heat_coeff
     GLD/M1_ADC102_house4_l102_tm_UA
     GLD/M1_ADC102_house4_l102_tm_heating_system_type
@@ -327,6 +331,7 @@ values
     GLD/M1_ADC102_house4_l102_tm_air_temperature
     GLD/M1_ADC102_house4_l102_tm_mass_temperature
     GLD/M1_ADC102_house4_l102_tm_thermostat_mode
+    GLD/M1_ADC102_house4_l102_tm_is_COOL_on
     GLD/M1_ADC102_house5_l102_tm_mass_heat_coeff
     GLD/M1_ADC102_house5_l102_tm_UA
     GLD/M1_ADC102_house5_l102_tm_heating_system_type
@@ -352,6 +357,7 @@ values
     GLD/M1_ADC102_house5_l102_tm_air_temperature
     GLD/M1_ADC102_house5_l102_tm_mass_temperature
     GLD/M1_ADC102_house5_l102_tm_thermostat_mode
+    GLD/M1_ADC102_house5_l102_tm_is_COOL_on
     GLD/M1_ADC102_house6_l102_tm_mass_heat_coeff
     GLD/M1_ADC102_house6_l102_tm_UA
     GLD/M1_ADC102_house6_l102_tm_heating_system_type
@@ -377,6 +383,7 @@ values
     GLD/M1_ADC102_house6_l102_tm_air_temperature
     GLD/M1_ADC102_house6_l102_tm_mass_temperature
     GLD/M1_ADC102_house6_l102_tm_thermostat_mode
+    GLD/M1_ADC102_house6_l102_tm_is_COOL_on
     GLD/M1_ADC102_house0_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house0_l103_tm_UA
     GLD/M1_ADC102_house0_l103_tm_heating_system_type
@@ -402,6 +409,7 @@ values
     GLD/M1_ADC102_house0_l103_tm_air_temperature
     GLD/M1_ADC102_house0_l103_tm_mass_temperature
     GLD/M1_ADC102_house0_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house0_l103_tm_is_COOL_on
     GLD/M1_ADC102_house1_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house1_l103_tm_UA
     GLD/M1_ADC102_house1_l103_tm_heating_system_type
@@ -427,6 +435,7 @@ values
     GLD/M1_ADC102_house1_l103_tm_air_temperature
     GLD/M1_ADC102_house1_l103_tm_mass_temperature
     GLD/M1_ADC102_house1_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house1_l103_tm_is_COOL_on
     GLD/M1_ADC102_house2_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house2_l103_tm_UA
     GLD/M1_ADC102_house2_l103_tm_heating_system_type
@@ -452,6 +461,7 @@ values
     GLD/M1_ADC102_house2_l103_tm_air_temperature
     GLD/M1_ADC102_house2_l103_tm_mass_temperature
     GLD/M1_ADC102_house2_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house2_l103_tm_is_COOL_on
     GLD/M1_ADC102_house3_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house3_l103_tm_UA
     GLD/M1_ADC102_house3_l103_tm_heating_system_type
@@ -477,6 +487,7 @@ values
     GLD/M1_ADC102_house3_l103_tm_air_temperature
     GLD/M1_ADC102_house3_l103_tm_mass_temperature
     GLD/M1_ADC102_house3_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house3_l103_tm_is_COOL_on
     GLD/M1_ADC102_house4_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house4_l103_tm_UA
     GLD/M1_ADC102_house4_l103_tm_heating_system_type
@@ -502,6 +513,7 @@ values
     GLD/M1_ADC102_house4_l103_tm_air_temperature
     GLD/M1_ADC102_house4_l103_tm_mass_temperature
     GLD/M1_ADC102_house4_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house4_l103_tm_is_COOL_on
     GLD/M1_ADC102_house5_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house5_l103_tm_UA
     GLD/M1_ADC102_house5_l103_tm_heating_system_type
@@ -527,6 +539,7 @@ values
     GLD/M1_ADC102_house5_l103_tm_air_temperature
     GLD/M1_ADC102_house5_l103_tm_mass_temperature
     GLD/M1_ADC102_house5_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house5_l103_tm_is_COOL_on
     GLD/M1_ADC102_house6_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house6_l103_tm_UA
     GLD/M1_ADC102_house6_l103_tm_heating_system_type
@@ -552,6 +565,7 @@ values
     GLD/M1_ADC102_house6_l103_tm_air_temperature
     GLD/M1_ADC102_house6_l103_tm_mass_temperature
     GLD/M1_ADC102_house6_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house6_l103_tm_is_COOL_on
     GLD/M1_ADC102_house7_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house7_l103_tm_UA
     GLD/M1_ADC102_house7_l103_tm_heating_system_type
@@ -577,6 +591,7 @@ values
     GLD/M1_ADC102_house7_l103_tm_air_temperature
     GLD/M1_ADC102_house7_l103_tm_mass_temperature
     GLD/M1_ADC102_house7_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house7_l103_tm_is_COOL_on
     GLD/M1_ADC102_house8_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house8_l103_tm_UA
     GLD/M1_ADC102_house8_l103_tm_heating_system_type
@@ -602,6 +617,7 @@ values
     GLD/M1_ADC102_house8_l103_tm_air_temperature
     GLD/M1_ADC102_house8_l103_tm_mass_temperature
     GLD/M1_ADC102_house8_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house8_l103_tm_is_COOL_on
     GLD/M1_ADC102_house9_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house9_l103_tm_UA
     GLD/M1_ADC102_house9_l103_tm_heating_system_type
@@ -627,6 +643,7 @@ values
     GLD/M1_ADC102_house9_l103_tm_air_temperature
     GLD/M1_ADC102_house9_l103_tm_mass_temperature
     GLD/M1_ADC102_house9_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house9_l103_tm_is_COOL_on
     GLD/M1_ADC102_house10_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house10_l103_tm_UA
     GLD/M1_ADC102_house10_l103_tm_heating_system_type
@@ -652,6 +669,7 @@ values
     GLD/M1_ADC102_house10_l103_tm_air_temperature
     GLD/M1_ADC102_house10_l103_tm_mass_temperature
     GLD/M1_ADC102_house10_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house10_l103_tm_is_COOL_on
     GLD/M1_ADC102_house11_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house11_l103_tm_UA
     GLD/M1_ADC102_house11_l103_tm_heating_system_type
@@ -677,6 +695,7 @@ values
     GLD/M1_ADC102_house11_l103_tm_air_temperature
     GLD/M1_ADC102_house11_l103_tm_mass_temperature
     GLD/M1_ADC102_house11_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house11_l103_tm_is_COOL_on
     GLD/M1_ADC102_house12_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house12_l103_tm_UA
     GLD/M1_ADC102_house12_l103_tm_heating_system_type
@@ -702,6 +721,7 @@ values
     GLD/M1_ADC102_house12_l103_tm_air_temperature
     GLD/M1_ADC102_house12_l103_tm_mass_temperature
     GLD/M1_ADC102_house12_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house12_l103_tm_is_COOL_on
     GLD/M1_ADC102_house13_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house13_l103_tm_UA
     GLD/M1_ADC102_house13_l103_tm_heating_system_type
@@ -727,6 +747,7 @@ values
     GLD/M1_ADC102_house13_l103_tm_air_temperature
     GLD/M1_ADC102_house13_l103_tm_mass_temperature
     GLD/M1_ADC102_house13_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house13_l103_tm_is_COOL_on
     GLD/M1_ADC102_house14_l103_tm_mass_heat_coeff
     GLD/M1_ADC102_house14_l103_tm_UA
     GLD/M1_ADC102_house14_l103_tm_heating_system_type
@@ -752,6 +773,7 @@ values
     GLD/M1_ADC102_house14_l103_tm_air_temperature
     GLD/M1_ADC102_house14_l103_tm_mass_temperature
     GLD/M1_ADC102_house14_l103_tm_thermostat_mode
+    GLD/M1_ADC102_house14_l103_tm_is_COOL_on
     GLD/M1_ADC102_house0_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house0_l104_tm_UA
     GLD/M1_ADC102_house0_l104_tm_heating_system_type
@@ -777,6 +799,7 @@ values
     GLD/M1_ADC102_house0_l104_tm_air_temperature
     GLD/M1_ADC102_house0_l104_tm_mass_temperature
     GLD/M1_ADC102_house0_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house0_l104_tm_is_COOL_on
     GLD/M1_ADC102_house1_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house1_l104_tm_UA
     GLD/M1_ADC102_house1_l104_tm_heating_system_type
@@ -802,6 +825,7 @@ values
     GLD/M1_ADC102_house1_l104_tm_air_temperature
     GLD/M1_ADC102_house1_l104_tm_mass_temperature
     GLD/M1_ADC102_house1_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house1_l104_tm_is_COOL_on
     GLD/M1_ADC102_house2_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house2_l104_tm_UA
     GLD/M1_ADC102_house2_l104_tm_heating_system_type
@@ -827,6 +851,7 @@ values
     GLD/M1_ADC102_house2_l104_tm_air_temperature
     GLD/M1_ADC102_house2_l104_tm_mass_temperature
     GLD/M1_ADC102_house2_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house2_l104_tm_is_COOL_on
     GLD/M1_ADC102_house3_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house3_l104_tm_UA
     GLD/M1_ADC102_house3_l104_tm_heating_system_type
@@ -852,6 +877,7 @@ values
     GLD/M1_ADC102_house3_l104_tm_air_temperature
     GLD/M1_ADC102_house3_l104_tm_mass_temperature
     GLD/M1_ADC102_house3_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house3_l104_tm_is_COOL_on
     GLD/M1_ADC102_house4_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house4_l104_tm_UA
     GLD/M1_ADC102_house4_l104_tm_heating_system_type
@@ -877,6 +903,7 @@ values
     GLD/M1_ADC102_house4_l104_tm_air_temperature
     GLD/M1_ADC102_house4_l104_tm_mass_temperature
     GLD/M1_ADC102_house4_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house4_l104_tm_is_COOL_on
     GLD/M1_ADC102_house5_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house5_l104_tm_UA
     GLD/M1_ADC102_house5_l104_tm_heating_system_type
@@ -902,6 +929,7 @@ values
     GLD/M1_ADC102_house5_l104_tm_air_temperature
     GLD/M1_ADC102_house5_l104_tm_mass_temperature
     GLD/M1_ADC102_house5_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house5_l104_tm_is_COOL_on
     GLD/M1_ADC102_house6_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house6_l104_tm_UA
     GLD/M1_ADC102_house6_l104_tm_heating_system_type
@@ -927,6 +955,7 @@ values
     GLD/M1_ADC102_house6_l104_tm_air_temperature
     GLD/M1_ADC102_house6_l104_tm_mass_temperature
     GLD/M1_ADC102_house6_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house6_l104_tm_is_COOL_on
     GLD/M1_ADC102_house7_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house7_l104_tm_UA
     GLD/M1_ADC102_house7_l104_tm_heating_system_type
@@ -952,6 +981,7 @@ values
     GLD/M1_ADC102_house7_l104_tm_air_temperature
     GLD/M1_ADC102_house7_l104_tm_mass_temperature
     GLD/M1_ADC102_house7_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house7_l104_tm_is_COOL_on
     GLD/M1_ADC102_house8_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house8_l104_tm_UA
     GLD/M1_ADC102_house8_l104_tm_heating_system_type
@@ -977,6 +1007,7 @@ values
     GLD/M1_ADC102_house8_l104_tm_air_temperature
     GLD/M1_ADC102_house8_l104_tm_mass_temperature
     GLD/M1_ADC102_house8_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house8_l104_tm_is_COOL_on
     GLD/M1_ADC102_house9_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house9_l104_tm_UA
     GLD/M1_ADC102_house9_l104_tm_heating_system_type
@@ -1002,6 +1033,7 @@ values
     GLD/M1_ADC102_house9_l104_tm_air_temperature
     GLD/M1_ADC102_house9_l104_tm_mass_temperature
     GLD/M1_ADC102_house9_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house9_l104_tm_is_COOL_on
     GLD/M1_ADC102_house10_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house10_l104_tm_UA
     GLD/M1_ADC102_house10_l104_tm_heating_system_type
@@ -1027,6 +1059,7 @@ values
     GLD/M1_ADC102_house10_l104_tm_air_temperature
     GLD/M1_ADC102_house10_l104_tm_mass_temperature
     GLD/M1_ADC102_house10_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house10_l104_tm_is_COOL_on
     GLD/M1_ADC102_house11_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house11_l104_tm_UA
     GLD/M1_ADC102_house11_l104_tm_heating_system_type
@@ -1052,6 +1085,7 @@ values
     GLD/M1_ADC102_house11_l104_tm_air_temperature
     GLD/M1_ADC102_house11_l104_tm_mass_temperature
     GLD/M1_ADC102_house11_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house11_l104_tm_is_COOL_on
     GLD/M1_ADC102_house12_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house12_l104_tm_UA
     GLD/M1_ADC102_house12_l104_tm_heating_system_type
@@ -1077,6 +1111,7 @@ values
     GLD/M1_ADC102_house12_l104_tm_air_temperature
     GLD/M1_ADC102_house12_l104_tm_mass_temperature
     GLD/M1_ADC102_house12_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house12_l104_tm_is_COOL_on
     GLD/M1_ADC102_house13_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house13_l104_tm_UA
     GLD/M1_ADC102_house13_l104_tm_heating_system_type
@@ -1102,6 +1137,7 @@ values
     GLD/M1_ADC102_house13_l104_tm_air_temperature
     GLD/M1_ADC102_house13_l104_tm_mass_temperature
     GLD/M1_ADC102_house13_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house13_l104_tm_is_COOL_on
     GLD/M1_ADC102_house14_l104_tm_mass_heat_coeff
     GLD/M1_ADC102_house14_l104_tm_UA
     GLD/M1_ADC102_house14_l104_tm_heating_system_type
@@ -1127,30 +1163,23 @@ values
     GLD/M1_ADC102_house14_l104_tm_air_temperature
     GLD/M1_ADC102_house14_l104_tm_mass_temperature
     GLD/M1_ADC102_house14_l104_tm_thermostat_mode
+    GLD/M1_ADC102_house14_l104_tm_is_COOL_on
     GLD/M1_ADC102_solar_PVinv_house0_l102_tm_rated_power
-    GLD/M1_ADC102_solar_PVinv_house0_l102_tm_latitude
-    GLD/M1_ADC102_solar_PVinv_house0_l102_tm_longitude
     GLD/M1_ADC102_solar_PVinv_house0_l102_tm_tilt_angle
     GLD/M1_ADC102_solar_PVinv_house0_l102_tm_orientation_azimuth
     GLD/M1_ADC102_solar_PVinv_house0_l102_tm_VA_Out
     GLD/M1_ADC102_PVinv_house0_l102_tm_inverter_efficiency
     GLD/M1_ADC102_solar_PVinv_house1_l102_tm_rated_power
-    GLD/M1_ADC102_solar_PVinv_house1_l102_tm_latitude
-    GLD/M1_ADC102_solar_PVinv_house1_l102_tm_longitude
     GLD/M1_ADC102_solar_PVinv_house1_l102_tm_tilt_angle
     GLD/M1_ADC102_solar_PVinv_house1_l102_tm_orientation_azimuth
     GLD/M1_ADC102_solar_PVinv_house1_l102_tm_VA_Out
     GLD/M1_ADC102_PVinv_house1_l102_tm_inverter_efficiency
     GLD/M1_ADC102_solar_PVinv_house9_l103_tm_rated_power
-    GLD/M1_ADC102_solar_PVinv_house9_l103_tm_latitude
-    GLD/M1_ADC102_solar_PVinv_house9_l103_tm_longitude
     GLD/M1_ADC102_solar_PVinv_house9_l103_tm_tilt_angle
     GLD/M1_ADC102_solar_PVinv_house9_l103_tm_orientation_azimuth
     GLD/M1_ADC102_solar_PVinv_house9_l103_tm_VA_Out
     GLD/M1_ADC102_PVinv_house9_l103_tm_inverter_efficiency
     GLD/M1_ADC102_solar_PVinv_house12_l104_tm_rated_power
-    GLD/M1_ADC102_solar_PVinv_house12_l104_tm_latitude
-    GLD/M1_ADC102_solar_PVinv_house12_l104_tm_longitude
     GLD/M1_ADC102_solar_PVinv_house12_l104_tm_tilt_angle
     GLD/M1_ADC102_solar_PVinv_house12_l104_tm_orientation_azimuth
     GLD/M1_ADC102_solar_PVinv_house12_l104_tm_VA_Out
@@ -1586,6 +1615,7 @@ values
     GLD/M1_ADC106_house0_l106_tm_air_temperature
     GLD/M1_ADC106_house0_l106_tm_mass_temperature
     GLD/M1_ADC106_house0_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house0_l106_tm_is_COOL_on
     GLD/M1_ADC106_house1_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house1_l106_tm_UA
     GLD/M1_ADC106_house1_l106_tm_heating_system_type
@@ -1611,6 +1641,7 @@ values
     GLD/M1_ADC106_house1_l106_tm_air_temperature
     GLD/M1_ADC106_house1_l106_tm_mass_temperature
     GLD/M1_ADC106_house1_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house1_l106_tm_is_COOL_on
     GLD/M1_ADC106_house2_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house2_l106_tm_UA
     GLD/M1_ADC106_house2_l106_tm_heating_system_type
@@ -1636,6 +1667,7 @@ values
     GLD/M1_ADC106_house2_l106_tm_air_temperature
     GLD/M1_ADC106_house2_l106_tm_mass_temperature
     GLD/M1_ADC106_house2_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house2_l106_tm_is_COOL_on
     GLD/M1_ADC106_house3_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house3_l106_tm_UA
     GLD/M1_ADC106_house3_l106_tm_heating_system_type
@@ -1661,6 +1693,7 @@ values
     GLD/M1_ADC106_house3_l106_tm_air_temperature
     GLD/M1_ADC106_house3_l106_tm_mass_temperature
     GLD/M1_ADC106_house3_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house3_l106_tm_is_COOL_on
     GLD/M1_ADC106_house4_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house4_l106_tm_UA
     GLD/M1_ADC106_house4_l106_tm_heating_system_type
@@ -1686,6 +1719,7 @@ values
     GLD/M1_ADC106_house4_l106_tm_air_temperature
     GLD/M1_ADC106_house4_l106_tm_mass_temperature
     GLD/M1_ADC106_house4_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house4_l106_tm_is_COOL_on
     GLD/M1_ADC106_house5_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house5_l106_tm_UA
     GLD/M1_ADC106_house5_l106_tm_heating_system_type
@@ -1711,6 +1745,7 @@ values
     GLD/M1_ADC106_house5_l106_tm_air_temperature
     GLD/M1_ADC106_house5_l106_tm_mass_temperature
     GLD/M1_ADC106_house5_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house5_l106_tm_is_COOL_on
     GLD/M1_ADC106_house6_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house6_l106_tm_UA
     GLD/M1_ADC106_house6_l106_tm_heating_system_type
@@ -1736,6 +1771,7 @@ values
     GLD/M1_ADC106_house6_l106_tm_air_temperature
     GLD/M1_ADC106_house6_l106_tm_mass_temperature
     GLD/M1_ADC106_house6_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house6_l106_tm_is_COOL_on
     GLD/M1_ADC106_house7_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house7_l106_tm_UA
     GLD/M1_ADC106_house7_l106_tm_heating_system_type
@@ -1761,6 +1797,7 @@ values
     GLD/M1_ADC106_house7_l106_tm_air_temperature
     GLD/M1_ADC106_house7_l106_tm_mass_temperature
     GLD/M1_ADC106_house7_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house7_l106_tm_is_COOL_on
     GLD/M1_ADC106_house8_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house8_l106_tm_UA
     GLD/M1_ADC106_house8_l106_tm_heating_system_type
@@ -1786,6 +1823,7 @@ values
     GLD/M1_ADC106_house8_l106_tm_air_temperature
     GLD/M1_ADC106_house8_l106_tm_mass_temperature
     GLD/M1_ADC106_house8_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house8_l106_tm_is_COOL_on
     GLD/M1_ADC106_house9_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house9_l106_tm_UA
     GLD/M1_ADC106_house9_l106_tm_heating_system_type
@@ -1811,6 +1849,7 @@ values
     GLD/M1_ADC106_house9_l106_tm_air_temperature
     GLD/M1_ADC106_house9_l106_tm_mass_temperature
     GLD/M1_ADC106_house9_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house9_l106_tm_is_COOL_on
     GLD/M1_ADC106_house10_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house10_l106_tm_UA
     GLD/M1_ADC106_house10_l106_tm_heating_system_type
@@ -1836,6 +1875,7 @@ values
     GLD/M1_ADC106_house10_l106_tm_air_temperature
     GLD/M1_ADC106_house10_l106_tm_mass_temperature
     GLD/M1_ADC106_house10_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house10_l106_tm_is_COOL_on
     GLD/M1_ADC106_house11_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house11_l106_tm_UA
     GLD/M1_ADC106_house11_l106_tm_heating_system_type
@@ -1861,6 +1901,7 @@ values
     GLD/M1_ADC106_house11_l106_tm_air_temperature
     GLD/M1_ADC106_house11_l106_tm_mass_temperature
     GLD/M1_ADC106_house11_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house11_l106_tm_is_COOL_on
     GLD/M1_ADC106_house12_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house12_l106_tm_UA
     GLD/M1_ADC106_house12_l106_tm_heating_system_type
@@ -1886,6 +1927,7 @@ values
     GLD/M1_ADC106_house12_l106_tm_air_temperature
     GLD/M1_ADC106_house12_l106_tm_mass_temperature
     GLD/M1_ADC106_house12_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house12_l106_tm_is_COOL_on
     GLD/M1_ADC106_house13_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house13_l106_tm_UA
     GLD/M1_ADC106_house13_l106_tm_heating_system_type
@@ -1911,6 +1953,7 @@ values
     GLD/M1_ADC106_house13_l106_tm_air_temperature
     GLD/M1_ADC106_house13_l106_tm_mass_temperature
     GLD/M1_ADC106_house13_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house13_l106_tm_is_COOL_on
     GLD/M1_ADC106_house14_l106_tm_mass_heat_coeff
     GLD/M1_ADC106_house14_l106_tm_UA
     GLD/M1_ADC106_house14_l106_tm_heating_system_type
@@ -1936,6 +1979,7 @@ values
     GLD/M1_ADC106_house14_l106_tm_air_temperature
     GLD/M1_ADC106_house14_l106_tm_mass_temperature
     GLD/M1_ADC106_house14_l106_tm_thermostat_mode
+    GLD/M1_ADC106_house14_l106_tm_is_COOL_on
     GLD/M1_ADC106_house0_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house0_l107_tm_UA
     GLD/M1_ADC106_house0_l107_tm_heating_system_type
@@ -1961,6 +2005,7 @@ values
     GLD/M1_ADC106_house0_l107_tm_air_temperature
     GLD/M1_ADC106_house0_l107_tm_mass_temperature
     GLD/M1_ADC106_house0_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house0_l107_tm_is_COOL_on
     GLD/M1_ADC106_house1_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house1_l107_tm_UA
     GLD/M1_ADC106_house1_l107_tm_heating_system_type
@@ -1986,6 +2031,7 @@ values
     GLD/M1_ADC106_house1_l107_tm_air_temperature
     GLD/M1_ADC106_house1_l107_tm_mass_temperature
     GLD/M1_ADC106_house1_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house1_l107_tm_is_COOL_on
     GLD/M1_ADC106_house2_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house2_l107_tm_UA
     GLD/M1_ADC106_house2_l107_tm_heating_system_type
@@ -2011,6 +2057,7 @@ values
     GLD/M1_ADC106_house2_l107_tm_air_temperature
     GLD/M1_ADC106_house2_l107_tm_mass_temperature
     GLD/M1_ADC106_house2_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house2_l107_tm_is_COOL_on
     GLD/M1_ADC106_house4_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house4_l107_tm_UA
     GLD/M1_ADC106_house4_l107_tm_heating_system_type
@@ -2036,6 +2083,7 @@ values
     GLD/M1_ADC106_house4_l107_tm_air_temperature
     GLD/M1_ADC106_house4_l107_tm_mass_temperature
     GLD/M1_ADC106_house4_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house4_l107_tm_is_COOL_on
     GLD/M1_ADC106_house5_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house5_l107_tm_UA
     GLD/M1_ADC106_house5_l107_tm_heating_system_type
@@ -2061,6 +2109,7 @@ values
     GLD/M1_ADC106_house5_l107_tm_air_temperature
     GLD/M1_ADC106_house5_l107_tm_mass_temperature
     GLD/M1_ADC106_house5_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house5_l107_tm_is_COOL_on
     GLD/M1_ADC106_house6_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house6_l107_tm_UA
     GLD/M1_ADC106_house6_l107_tm_heating_system_type
@@ -2086,6 +2135,7 @@ values
     GLD/M1_ADC106_house6_l107_tm_air_temperature
     GLD/M1_ADC106_house6_l107_tm_mass_temperature
     GLD/M1_ADC106_house6_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house6_l107_tm_is_COOL_on
     GLD/M1_ADC106_house7_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house7_l107_tm_UA
     GLD/M1_ADC106_house7_l107_tm_heating_system_type
@@ -2111,6 +2161,7 @@ values
     GLD/M1_ADC106_house7_l107_tm_air_temperature
     GLD/M1_ADC106_house7_l107_tm_mass_temperature
     GLD/M1_ADC106_house7_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house7_l107_tm_is_COOL_on
     GLD/M1_ADC106_house8_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house8_l107_tm_UA
     GLD/M1_ADC106_house8_l107_tm_heating_system_type
@@ -2136,6 +2187,7 @@ values
     GLD/M1_ADC106_house8_l107_tm_air_temperature
     GLD/M1_ADC106_house8_l107_tm_mass_temperature
     GLD/M1_ADC106_house8_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house8_l107_tm_is_COOL_on
     GLD/M1_ADC106_house9_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house9_l107_tm_UA
     GLD/M1_ADC106_house9_l107_tm_heating_system_type
@@ -2161,6 +2213,7 @@ values
     GLD/M1_ADC106_house9_l107_tm_air_temperature
     GLD/M1_ADC106_house9_l107_tm_mass_temperature
     GLD/M1_ADC106_house9_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house9_l107_tm_is_COOL_on
     GLD/M1_ADC106_house10_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house10_l107_tm_UA
     GLD/M1_ADC106_house10_l107_tm_heating_system_type
@@ -2186,6 +2239,7 @@ values
     GLD/M1_ADC106_house10_l107_tm_air_temperature
     GLD/M1_ADC106_house10_l107_tm_mass_temperature
     GLD/M1_ADC106_house10_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house10_l107_tm_is_COOL_on
     GLD/M1_ADC106_house11_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house11_l107_tm_UA
     GLD/M1_ADC106_house11_l107_tm_heating_system_type
@@ -2211,6 +2265,7 @@ values
     GLD/M1_ADC106_house11_l107_tm_air_temperature
     GLD/M1_ADC106_house11_l107_tm_mass_temperature
     GLD/M1_ADC106_house11_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house11_l107_tm_is_COOL_on
     GLD/M1_ADC106_house12_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house12_l107_tm_UA
     GLD/M1_ADC106_house12_l107_tm_heating_system_type
@@ -2236,6 +2291,7 @@ values
     GLD/M1_ADC106_house12_l107_tm_air_temperature
     GLD/M1_ADC106_house12_l107_tm_mass_temperature
     GLD/M1_ADC106_house12_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house12_l107_tm_is_COOL_on
     GLD/M1_ADC106_house13_l107_tm_mass_heat_coeff
     GLD/M1_ADC106_house13_l107_tm_UA
     GLD/M1_ADC106_house13_l107_tm_heating_system_type
@@ -2261,23 +2317,18 @@ values
     GLD/M1_ADC106_house13_l107_tm_air_temperature
     GLD/M1_ADC106_house13_l107_tm_mass_temperature
     GLD/M1_ADC106_house13_l107_tm_thermostat_mode
+    GLD/M1_ADC106_house13_l107_tm_is_COOL_on
     GLD/M1_ADC106_solar_PVinv_house8_l106_tm_rated_power
-    GLD/M1_ADC106_solar_PVinv_house8_l106_tm_latitude
-    GLD/M1_ADC106_solar_PVinv_house8_l106_tm_longitude
     GLD/M1_ADC106_solar_PVinv_house8_l106_tm_tilt_angle
     GLD/M1_ADC106_solar_PVinv_house8_l106_tm_orientation_azimuth
     GLD/M1_ADC106_solar_PVinv_house8_l106_tm_VA_Out
     GLD/M1_ADC106_PVinv_house8_l106_tm_inverter_efficiency
     GLD/M1_ADC106_solar_PVinv_house4_l107_tm_rated_power
-    GLD/M1_ADC106_solar_PVinv_house4_l107_tm_latitude
-    GLD/M1_ADC106_solar_PVinv_house4_l107_tm_longitude
     GLD/M1_ADC106_solar_PVinv_house4_l107_tm_tilt_angle
     GLD/M1_ADC106_solar_PVinv_house4_l107_tm_orientation_azimuth
     GLD/M1_ADC106_solar_PVinv_house4_l107_tm_VA_Out
     GLD/M1_ADC106_PVinv_house4_l107_tm_inverter_efficiency
     GLD/M1_ADC106_solar_PVinv_house12_l107_tm_rated_power
-    GLD/M1_ADC106_solar_PVinv_house12_l107_tm_latitude
-    GLD/M1_ADC106_solar_PVinv_house12_l107_tm_longitude
     GLD/M1_ADC106_solar_PVinv_house12_l107_tm_tilt_angle
     GLD/M1_ADC106_solar_PVinv_house12_l107_tm_orientation_azimuth
     GLD/M1_ADC106_solar_PVinv_house12_l107_tm_VA_Out
@@ -2719,6 +2770,7 @@ values
     GLD/M1_ADC109_house0_l109_tm_air_temperature
     GLD/M1_ADC109_house0_l109_tm_mass_temperature
     GLD/M1_ADC109_house0_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house0_l109_tm_is_COOL_on
     GLD/M1_ADC109_house1_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house1_l109_tm_UA
     GLD/M1_ADC109_house1_l109_tm_heating_system_type
@@ -2744,6 +2796,7 @@ values
     GLD/M1_ADC109_house1_l109_tm_air_temperature
     GLD/M1_ADC109_house1_l109_tm_mass_temperature
     GLD/M1_ADC109_house1_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house1_l109_tm_is_COOL_on
     GLD/M1_ADC109_house2_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house2_l109_tm_UA
     GLD/M1_ADC109_house2_l109_tm_heating_system_type
@@ -2769,6 +2822,7 @@ values
     GLD/M1_ADC109_house2_l109_tm_air_temperature
     GLD/M1_ADC109_house2_l109_tm_mass_temperature
     GLD/M1_ADC109_house2_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house2_l109_tm_is_COOL_on
     GLD/M1_ADC109_house3_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house3_l109_tm_UA
     GLD/M1_ADC109_house3_l109_tm_heating_system_type
@@ -2794,6 +2848,7 @@ values
     GLD/M1_ADC109_house3_l109_tm_air_temperature
     GLD/M1_ADC109_house3_l109_tm_mass_temperature
     GLD/M1_ADC109_house3_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house3_l109_tm_is_COOL_on
     GLD/M1_ADC109_house4_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house4_l109_tm_UA
     GLD/M1_ADC109_house4_l109_tm_heating_system_type
@@ -2819,6 +2874,7 @@ values
     GLD/M1_ADC109_house4_l109_tm_air_temperature
     GLD/M1_ADC109_house4_l109_tm_mass_temperature
     GLD/M1_ADC109_house4_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house4_l109_tm_is_COOL_on
     GLD/M1_ADC109_house5_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house5_l109_tm_UA
     GLD/M1_ADC109_house5_l109_tm_heating_system_type
@@ -2844,6 +2900,7 @@ values
     GLD/M1_ADC109_house5_l109_tm_air_temperature
     GLD/M1_ADC109_house5_l109_tm_mass_temperature
     GLD/M1_ADC109_house5_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house5_l109_tm_is_COOL_on
     GLD/M1_ADC109_house6_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house6_l109_tm_UA
     GLD/M1_ADC109_house6_l109_tm_heating_system_type
@@ -2869,6 +2926,7 @@ values
     GLD/M1_ADC109_house6_l109_tm_air_temperature
     GLD/M1_ADC109_house6_l109_tm_mass_temperature
     GLD/M1_ADC109_house6_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house6_l109_tm_is_COOL_on
     GLD/M1_ADC109_house7_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house7_l109_tm_UA
     GLD/M1_ADC109_house7_l109_tm_heating_system_type
@@ -2894,6 +2952,7 @@ values
     GLD/M1_ADC109_house7_l109_tm_air_temperature
     GLD/M1_ADC109_house7_l109_tm_mass_temperature
     GLD/M1_ADC109_house7_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house7_l109_tm_is_COOL_on
     GLD/M1_ADC109_house8_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house8_l109_tm_UA
     GLD/M1_ADC109_house8_l109_tm_heating_system_type
@@ -2919,6 +2978,7 @@ values
     GLD/M1_ADC109_house8_l109_tm_air_temperature
     GLD/M1_ADC109_house8_l109_tm_mass_temperature
     GLD/M1_ADC109_house8_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house8_l109_tm_is_COOL_on
     GLD/M1_ADC109_house9_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house9_l109_tm_UA
     GLD/M1_ADC109_house9_l109_tm_heating_system_type
@@ -2944,6 +3004,7 @@ values
     GLD/M1_ADC109_house9_l109_tm_air_temperature
     GLD/M1_ADC109_house9_l109_tm_mass_temperature
     GLD/M1_ADC109_house9_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house9_l109_tm_is_COOL_on
     GLD/M1_ADC109_house10_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house10_l109_tm_UA
     GLD/M1_ADC109_house10_l109_tm_heating_system_type
@@ -2969,6 +3030,7 @@ values
     GLD/M1_ADC109_house10_l109_tm_air_temperature
     GLD/M1_ADC109_house10_l109_tm_mass_temperature
     GLD/M1_ADC109_house10_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house10_l109_tm_is_COOL_on
     GLD/M1_ADC109_house11_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house11_l109_tm_UA
     GLD/M1_ADC109_house11_l109_tm_heating_system_type
@@ -2994,6 +3056,7 @@ values
     GLD/M1_ADC109_house11_l109_tm_air_temperature
     GLD/M1_ADC109_house11_l109_tm_mass_temperature
     GLD/M1_ADC109_house11_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house11_l109_tm_is_COOL_on
     GLD/M1_ADC109_house12_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house12_l109_tm_UA
     GLD/M1_ADC109_house12_l109_tm_heating_system_type
@@ -3019,6 +3082,7 @@ values
     GLD/M1_ADC109_house12_l109_tm_air_temperature
     GLD/M1_ADC109_house12_l109_tm_mass_temperature
     GLD/M1_ADC109_house12_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house12_l109_tm_is_COOL_on
     GLD/M1_ADC109_house13_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house13_l109_tm_UA
     GLD/M1_ADC109_house13_l109_tm_heating_system_type
@@ -3044,6 +3108,7 @@ values
     GLD/M1_ADC109_house13_l109_tm_air_temperature
     GLD/M1_ADC109_house13_l109_tm_mass_temperature
     GLD/M1_ADC109_house13_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house13_l109_tm_is_COOL_on
     GLD/M1_ADC109_house14_l109_tm_mass_heat_coeff
     GLD/M1_ADC109_house14_l109_tm_UA
     GLD/M1_ADC109_house14_l109_tm_heating_system_type
@@ -3069,6 +3134,7 @@ values
     GLD/M1_ADC109_house14_l109_tm_air_temperature
     GLD/M1_ADC109_house14_l109_tm_mass_temperature
     GLD/M1_ADC109_house14_l109_tm_thermostat_mode
+    GLD/M1_ADC109_house14_l109_tm_is_COOL_on
     GLD/M1_ADC109_house0_l111_tm_mass_heat_coeff
     GLD/M1_ADC109_house0_l111_tm_UA
     GLD/M1_ADC109_house0_l111_tm_heating_system_type
@@ -3094,6 +3160,7 @@ values
     GLD/M1_ADC109_house0_l111_tm_air_temperature
     GLD/M1_ADC109_house0_l111_tm_mass_temperature
     GLD/M1_ADC109_house0_l111_tm_thermostat_mode
+    GLD/M1_ADC109_house0_l111_tm_is_COOL_on
     GLD/M1_ADC109_house1_l111_tm_mass_heat_coeff
     GLD/M1_ADC109_house1_l111_tm_UA
     GLD/M1_ADC109_house1_l111_tm_heating_system_type
@@ -3119,6 +3186,7 @@ values
     GLD/M1_ADC109_house1_l111_tm_air_temperature
     GLD/M1_ADC109_house1_l111_tm_mass_temperature
     GLD/M1_ADC109_house1_l111_tm_thermostat_mode
+    GLD/M1_ADC109_house1_l111_tm_is_COOL_on
     GLD/M1_ADC109_house2_l111_tm_mass_heat_coeff
     GLD/M1_ADC109_house2_l111_tm_UA
     GLD/M1_ADC109_house2_l111_tm_heating_system_type
@@ -3144,6 +3212,7 @@ values
     GLD/M1_ADC109_house2_l111_tm_air_temperature
     GLD/M1_ADC109_house2_l111_tm_mass_temperature
     GLD/M1_ADC109_house2_l111_tm_thermostat_mode
+    GLD/M1_ADC109_house2_l111_tm_is_COOL_on
     GLD/M1_ADC109_house3_l111_tm_mass_heat_coeff
     GLD/M1_ADC109_house3_l111_tm_UA
     GLD/M1_ADC109_house3_l111_tm_heating_system_type
@@ -3169,6 +3238,7 @@ values
     GLD/M1_ADC109_house3_l111_tm_air_temperature
     GLD/M1_ADC109_house3_l111_tm_mass_temperature
     GLD/M1_ADC109_house3_l111_tm_thermostat_mode
+    GLD/M1_ADC109_house3_l111_tm_is_COOL_on
     GLD/M1_ADC109_house4_l111_tm_mass_heat_coeff
     GLD/M1_ADC109_house4_l111_tm_UA
     GLD/M1_ADC109_house4_l111_tm_heating_system_type
@@ -3194,6 +3264,7 @@ values
     GLD/M1_ADC109_house4_l111_tm_air_temperature
     GLD/M1_ADC109_house4_l111_tm_mass_temperature
     GLD/M1_ADC109_house4_l111_tm_thermostat_mode
+    GLD/M1_ADC109_house4_l111_tm_is_COOL_on
     GLD/M1_ADC109_house5_l111_tm_mass_heat_coeff
     GLD/M1_ADC109_house5_l111_tm_UA
     GLD/M1_ADC109_house5_l111_tm_heating_system_type
@@ -3219,6 +3290,7 @@ values
     GLD/M1_ADC109_house5_l111_tm_air_temperature
     GLD/M1_ADC109_house5_l111_tm_mass_temperature
     GLD/M1_ADC109_house5_l111_tm_thermostat_mode
+    GLD/M1_ADC109_house5_l111_tm_is_COOL_on
     GLD/M1_ADC109_house6_l111_tm_mass_heat_coeff
     GLD/M1_ADC109_house6_l111_tm_UA
     GLD/M1_ADC109_house6_l111_tm_heating_system_type
@@ -3244,6 +3316,7 @@ values
     GLD/M1_ADC109_house6_l111_tm_air_temperature
     GLD/M1_ADC109_house6_l111_tm_mass_temperature
     GLD/M1_ADC109_house6_l111_tm_thermostat_mode
+    GLD/M1_ADC109_house6_l111_tm_is_COOL_on
     GLD/M1_ADC109_house0_l112_tm_mass_heat_coeff
     GLD/M1_ADC109_house0_l112_tm_UA
     GLD/M1_ADC109_house0_l112_tm_heating_system_type
@@ -3269,6 +3342,7 @@ values
     GLD/M1_ADC109_house0_l112_tm_air_temperature
     GLD/M1_ADC109_house0_l112_tm_mass_temperature
     GLD/M1_ADC109_house0_l112_tm_thermostat_mode
+    GLD/M1_ADC109_house0_l112_tm_is_COOL_on
     GLD/M1_ADC109_house1_l112_tm_mass_heat_coeff
     GLD/M1_ADC109_house1_l112_tm_UA
     GLD/M1_ADC109_house1_l112_tm_heating_system_type
@@ -3294,6 +3368,7 @@ values
     GLD/M1_ADC109_house1_l112_tm_air_temperature
     GLD/M1_ADC109_house1_l112_tm_mass_temperature
     GLD/M1_ADC109_house1_l112_tm_thermostat_mode
+    GLD/M1_ADC109_house1_l112_tm_is_COOL_on
     GLD/M1_ADC109_house2_l112_tm_mass_heat_coeff
     GLD/M1_ADC109_house2_l112_tm_UA
     GLD/M1_ADC109_house2_l112_tm_heating_system_type
@@ -3319,6 +3394,7 @@ values
     GLD/M1_ADC109_house2_l112_tm_air_temperature
     GLD/M1_ADC109_house2_l112_tm_mass_temperature
     GLD/M1_ADC109_house2_l112_tm_thermostat_mode
+    GLD/M1_ADC109_house2_l112_tm_is_COOL_on
     GLD/M1_ADC109_house3_l112_tm_mass_heat_coeff
     GLD/M1_ADC109_house3_l112_tm_UA
     GLD/M1_ADC109_house3_l112_tm_heating_system_type
@@ -3344,6 +3420,7 @@ values
     GLD/M1_ADC109_house3_l112_tm_air_temperature
     GLD/M1_ADC109_house3_l112_tm_mass_temperature
     GLD/M1_ADC109_house3_l112_tm_thermostat_mode
+    GLD/M1_ADC109_house3_l112_tm_is_COOL_on
     GLD/M1_ADC109_house4_l112_tm_mass_heat_coeff
     GLD/M1_ADC109_house4_l112_tm_UA
     GLD/M1_ADC109_house4_l112_tm_heating_system_type
@@ -3369,6 +3446,7 @@ values
     GLD/M1_ADC109_house4_l112_tm_air_temperature
     GLD/M1_ADC109_house4_l112_tm_mass_temperature
     GLD/M1_ADC109_house4_l112_tm_thermostat_mode
+    GLD/M1_ADC109_house4_l112_tm_is_COOL_on
     GLD/M1_ADC109_house5_l112_tm_mass_heat_coeff
     GLD/M1_ADC109_house5_l112_tm_UA
     GLD/M1_ADC109_house5_l112_tm_heating_system_type
@@ -3394,6 +3472,7 @@ values
     GLD/M1_ADC109_house5_l112_tm_air_temperature
     GLD/M1_ADC109_house5_l112_tm_mass_temperature
     GLD/M1_ADC109_house5_l112_tm_thermostat_mode
+    GLD/M1_ADC109_house5_l112_tm_is_COOL_on
     GLD/M1_ADC109_house6_l112_tm_mass_heat_coeff
     GLD/M1_ADC109_house6_l112_tm_UA
     GLD/M1_ADC109_house6_l112_tm_heating_system_type
@@ -3419,6 +3498,7 @@ values
     GLD/M1_ADC109_house6_l112_tm_air_temperature
     GLD/M1_ADC109_house6_l112_tm_mass_temperature
     GLD/M1_ADC109_house6_l112_tm_thermostat_mode
+    GLD/M1_ADC109_house6_l112_tm_is_COOL_on
     GLD/M1_ADC109_house0_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house0_l113_tm_UA
     GLD/M1_ADC109_house0_l113_tm_heating_system_type
@@ -3444,6 +3524,7 @@ values
     GLD/M1_ADC109_house0_l113_tm_air_temperature
     GLD/M1_ADC109_house0_l113_tm_mass_temperature
     GLD/M1_ADC109_house0_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house0_l113_tm_is_COOL_on
     GLD/M1_ADC109_house1_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house1_l113_tm_UA
     GLD/M1_ADC109_house1_l113_tm_heating_system_type
@@ -3469,6 +3550,7 @@ values
     GLD/M1_ADC109_house1_l113_tm_air_temperature
     GLD/M1_ADC109_house1_l113_tm_mass_temperature
     GLD/M1_ADC109_house1_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house1_l113_tm_is_COOL_on
     GLD/M1_ADC109_house2_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house2_l113_tm_UA
     GLD/M1_ADC109_house2_l113_tm_heating_system_type
@@ -3494,6 +3576,7 @@ values
     GLD/M1_ADC109_house2_l113_tm_air_temperature
     GLD/M1_ADC109_house2_l113_tm_mass_temperature
     GLD/M1_ADC109_house2_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house2_l113_tm_is_COOL_on
     GLD/M1_ADC109_house5_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house5_l113_tm_UA
     GLD/M1_ADC109_house5_l113_tm_heating_system_type
@@ -3519,6 +3602,7 @@ values
     GLD/M1_ADC109_house5_l113_tm_air_temperature
     GLD/M1_ADC109_house5_l113_tm_mass_temperature
     GLD/M1_ADC109_house5_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house5_l113_tm_is_COOL_on
     GLD/M1_ADC109_house6_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house6_l113_tm_UA
     GLD/M1_ADC109_house6_l113_tm_heating_system_type
@@ -3544,6 +3628,7 @@ values
     GLD/M1_ADC109_house6_l113_tm_air_temperature
     GLD/M1_ADC109_house6_l113_tm_mass_temperature
     GLD/M1_ADC109_house6_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house6_l113_tm_is_COOL_on
     GLD/M1_ADC109_house7_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house7_l113_tm_UA
     GLD/M1_ADC109_house7_l113_tm_heating_system_type
@@ -3569,6 +3654,7 @@ values
     GLD/M1_ADC109_house7_l113_tm_air_temperature
     GLD/M1_ADC109_house7_l113_tm_mass_temperature
     GLD/M1_ADC109_house7_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house7_l113_tm_is_COOL_on
     GLD/M1_ADC109_house8_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house8_l113_tm_UA
     GLD/M1_ADC109_house8_l113_tm_heating_system_type
@@ -3594,6 +3680,7 @@ values
     GLD/M1_ADC109_house8_l113_tm_air_temperature
     GLD/M1_ADC109_house8_l113_tm_mass_temperature
     GLD/M1_ADC109_house8_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house8_l113_tm_is_COOL_on
     GLD/M1_ADC109_house9_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house9_l113_tm_UA
     GLD/M1_ADC109_house9_l113_tm_heating_system_type
@@ -3619,6 +3706,7 @@ values
     GLD/M1_ADC109_house9_l113_tm_air_temperature
     GLD/M1_ADC109_house9_l113_tm_mass_temperature
     GLD/M1_ADC109_house9_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house9_l113_tm_is_COOL_on
     GLD/M1_ADC109_house10_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house10_l113_tm_UA
     GLD/M1_ADC109_house10_l113_tm_heating_system_type
@@ -3644,6 +3732,7 @@ values
     GLD/M1_ADC109_house10_l113_tm_air_temperature
     GLD/M1_ADC109_house10_l113_tm_mass_temperature
     GLD/M1_ADC109_house10_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house10_l113_tm_is_COOL_on
     GLD/M1_ADC109_house11_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house11_l113_tm_UA
     GLD/M1_ADC109_house11_l113_tm_heating_system_type
@@ -3669,6 +3758,7 @@ values
     GLD/M1_ADC109_house11_l113_tm_air_temperature
     GLD/M1_ADC109_house11_l113_tm_mass_temperature
     GLD/M1_ADC109_house11_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house11_l113_tm_is_COOL_on
     GLD/M1_ADC109_house12_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house12_l113_tm_UA
     GLD/M1_ADC109_house12_l113_tm_heating_system_type
@@ -3694,6 +3784,7 @@ values
     GLD/M1_ADC109_house12_l113_tm_air_temperature
     GLD/M1_ADC109_house12_l113_tm_mass_temperature
     GLD/M1_ADC109_house12_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house12_l113_tm_is_COOL_on
     GLD/M1_ADC109_house13_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house13_l113_tm_UA
     GLD/M1_ADC109_house13_l113_tm_heating_system_type
@@ -3719,6 +3810,7 @@ values
     GLD/M1_ADC109_house13_l113_tm_air_temperature
     GLD/M1_ADC109_house13_l113_tm_mass_temperature
     GLD/M1_ADC109_house13_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house13_l113_tm_is_COOL_on
     GLD/M1_ADC109_house14_l113_tm_mass_heat_coeff
     GLD/M1_ADC109_house14_l113_tm_UA
     GLD/M1_ADC109_house14_l113_tm_heating_system_type
@@ -3744,6 +3836,7 @@ values
     GLD/M1_ADC109_house14_l113_tm_air_temperature
     GLD/M1_ADC109_house14_l113_tm_mass_temperature
     GLD/M1_ADC109_house14_l113_tm_thermostat_mode
+    GLD/M1_ADC109_house14_l113_tm_is_COOL_on
     GLD/M1_ADC109_house0_l114_tm_mass_heat_coeff
     GLD/M1_ADC109_house0_l114_tm_UA
     GLD/M1_ADC109_house0_l114_tm_heating_system_type
@@ -3769,6 +3862,7 @@ values
     GLD/M1_ADC109_house0_l114_tm_air_temperature
     GLD/M1_ADC109_house0_l114_tm_mass_temperature
     GLD/M1_ADC109_house0_l114_tm_thermostat_mode
+    GLD/M1_ADC109_house0_l114_tm_is_COOL_on
     GLD/M1_ADC109_house1_l114_tm_mass_heat_coeff
     GLD/M1_ADC109_house1_l114_tm_UA
     GLD/M1_ADC109_house1_l114_tm_heating_system_type
@@ -3794,6 +3888,7 @@ values
     GLD/M1_ADC109_house1_l114_tm_air_temperature
     GLD/M1_ADC109_house1_l114_tm_mass_temperature
     GLD/M1_ADC109_house1_l114_tm_thermostat_mode
+    GLD/M1_ADC109_house1_l114_tm_is_COOL_on
     GLD/M1_ADC109_house2_l114_tm_mass_heat_coeff
     GLD/M1_ADC109_house2_l114_tm_UA
     GLD/M1_ADC109_house2_l114_tm_heating_system_type
@@ -3819,6 +3914,7 @@ values
     GLD/M1_ADC109_house2_l114_tm_air_temperature
     GLD/M1_ADC109_house2_l114_tm_mass_temperature
     GLD/M1_ADC109_house2_l114_tm_thermostat_mode
+    GLD/M1_ADC109_house2_l114_tm_is_COOL_on
     GLD/M1_ADC109_house3_l114_tm_mass_heat_coeff
     GLD/M1_ADC109_house3_l114_tm_UA
     GLD/M1_ADC109_house3_l114_tm_heating_system_type
@@ -3844,6 +3940,7 @@ values
     GLD/M1_ADC109_house3_l114_tm_air_temperature
     GLD/M1_ADC109_house3_l114_tm_mass_temperature
     GLD/M1_ADC109_house3_l114_tm_thermostat_mode
+    GLD/M1_ADC109_house3_l114_tm_is_COOL_on
     GLD/M1_ADC109_house4_l114_tm_mass_heat_coeff
     GLD/M1_ADC109_house4_l114_tm_UA
     GLD/M1_ADC109_house4_l114_tm_heating_system_type
@@ -3869,6 +3966,7 @@ values
     GLD/M1_ADC109_house4_l114_tm_air_temperature
     GLD/M1_ADC109_house4_l114_tm_mass_temperature
     GLD/M1_ADC109_house4_l114_tm_thermostat_mode
+    GLD/M1_ADC109_house4_l114_tm_is_COOL_on
     GLD/M1_ADC109_house5_l114_tm_mass_heat_coeff
     GLD/M1_ADC109_house5_l114_tm_UA
     GLD/M1_ADC109_house5_l114_tm_heating_system_type
@@ -3894,6 +3992,7 @@ values
     GLD/M1_ADC109_house5_l114_tm_air_temperature
     GLD/M1_ADC109_house5_l114_tm_mass_temperature
     GLD/M1_ADC109_house5_l114_tm_thermostat_mode
+    GLD/M1_ADC109_house5_l114_tm_is_COOL_on
     GLD/M1_ADC109_house6_l114_tm_mass_heat_coeff
     GLD/M1_ADC109_house6_l114_tm_UA
     GLD/M1_ADC109_house6_l114_tm_heating_system_type
@@ -3919,93 +4018,68 @@ values
     GLD/M1_ADC109_house6_l114_tm_air_temperature
     GLD/M1_ADC109_house6_l114_tm_mass_temperature
     GLD/M1_ADC109_house6_l114_tm_thermostat_mode
+    GLD/M1_ADC109_house6_l114_tm_is_COOL_on
     GLD/M1_ADC109_solar_PVinv_house4_l109_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house4_l109_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house4_l109_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house4_l109_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house4_l109_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house4_l109_tm_VA_Out
     GLD/M1_ADC109_PVinv_house4_l109_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house5_l109_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house5_l109_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house5_l109_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house5_l109_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house5_l109_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house5_l109_tm_VA_Out
     GLD/M1_ADC109_PVinv_house5_l109_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house12_l109_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house12_l109_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house12_l109_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house12_l109_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house12_l109_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house12_l109_tm_VA_Out
     GLD/M1_ADC109_PVinv_house12_l109_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house0_l111_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house0_l111_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house0_l111_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house0_l111_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house0_l111_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house0_l111_tm_VA_Out
     GLD/M1_ADC109_PVinv_house0_l111_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house1_l111_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house1_l111_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house1_l111_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house1_l111_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house1_l111_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house1_l111_tm_VA_Out
     GLD/M1_ADC109_PVinv_house1_l111_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house4_l111_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house4_l111_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house4_l111_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house4_l111_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house4_l111_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house4_l111_tm_VA_Out
     GLD/M1_ADC109_PVinv_house4_l111_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house5_l111_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house5_l111_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house5_l111_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house5_l111_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house5_l111_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house5_l111_tm_VA_Out
     GLD/M1_ADC109_PVinv_house5_l111_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house0_l112_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house0_l112_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house0_l112_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house0_l112_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house0_l112_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house0_l112_tm_VA_Out
     GLD/M1_ADC109_PVinv_house0_l112_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house6_l113_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house6_l113_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house6_l113_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house6_l113_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house6_l113_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house6_l113_tm_VA_Out
     GLD/M1_ADC109_PVinv_house6_l113_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house7_l113_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house7_l113_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house7_l113_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house7_l113_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house7_l113_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house7_l113_tm_VA_Out
     GLD/M1_ADC109_PVinv_house7_l113_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house10_l113_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house10_l113_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house10_l113_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house10_l113_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house10_l113_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house10_l113_tm_VA_Out
     GLD/M1_ADC109_PVinv_house10_l113_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house12_l113_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house12_l113_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house12_l113_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house12_l113_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house12_l113_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house12_l113_tm_VA_Out
     GLD/M1_ADC109_PVinv_house12_l113_tm_inverter_efficiency
     GLD/M1_ADC109_solar_PVinv_house2_l114_tm_rated_power
-    GLD/M1_ADC109_solar_PVinv_house2_l114_tm_latitude
-    GLD/M1_ADC109_solar_PVinv_house2_l114_tm_longitude
     GLD/M1_ADC109_solar_PVinv_house2_l114_tm_tilt_angle
     GLD/M1_ADC109_solar_PVinv_house2_l114_tm_orientation_azimuth
     GLD/M1_ADC109_solar_PVinv_house2_l114_tm_VA_Out
@@ -4227,6 +4301,7 @@ values
     GLD/M1_ADC12_house0_l12_tm_air_temperature
     GLD/M1_ADC12_house0_l12_tm_mass_temperature
     GLD/M1_ADC12_house0_l12_tm_thermostat_mode
+    GLD/M1_ADC12_house0_l12_tm_is_COOL_on
     GLD/M1_ADC12_house1_l12_tm_mass_heat_coeff
     GLD/M1_ADC12_house1_l12_tm_UA
     GLD/M1_ADC12_house1_l12_tm_heating_system_type
@@ -4252,6 +4327,7 @@ values
     GLD/M1_ADC12_house1_l12_tm_air_temperature
     GLD/M1_ADC12_house1_l12_tm_mass_temperature
     GLD/M1_ADC12_house1_l12_tm_thermostat_mode
+    GLD/M1_ADC12_house1_l12_tm_is_COOL_on
     GLD/M1_ADC12_house2_l12_tm_mass_heat_coeff
     GLD/M1_ADC12_house2_l12_tm_UA
     GLD/M1_ADC12_house2_l12_tm_heating_system_type
@@ -4277,6 +4353,7 @@ values
     GLD/M1_ADC12_house2_l12_tm_air_temperature
     GLD/M1_ADC12_house2_l12_tm_mass_temperature
     GLD/M1_ADC12_house2_l12_tm_thermostat_mode
+    GLD/M1_ADC12_house2_l12_tm_is_COOL_on
     GLD/M1_ADC12_house3_l12_tm_mass_heat_coeff
     GLD/M1_ADC12_house3_l12_tm_UA
     GLD/M1_ADC12_house3_l12_tm_heating_system_type
@@ -4302,6 +4379,7 @@ values
     GLD/M1_ADC12_house3_l12_tm_air_temperature
     GLD/M1_ADC12_house3_l12_tm_mass_temperature
     GLD/M1_ADC12_house3_l12_tm_thermostat_mode
+    GLD/M1_ADC12_house3_l12_tm_is_COOL_on
     GLD/M1_ADC12_house4_l12_tm_mass_heat_coeff
     GLD/M1_ADC12_house4_l12_tm_UA
     GLD/M1_ADC12_house4_l12_tm_heating_system_type
@@ -4327,6 +4405,7 @@ values
     GLD/M1_ADC12_house4_l12_tm_air_temperature
     GLD/M1_ADC12_house4_l12_tm_mass_temperature
     GLD/M1_ADC12_house4_l12_tm_thermostat_mode
+    GLD/M1_ADC12_house4_l12_tm_is_COOL_on
     GLD/M1_ADC12_house5_l12_tm_mass_heat_coeff
     GLD/M1_ADC12_house5_l12_tm_UA
     GLD/M1_ADC12_house5_l12_tm_heating_system_type
@@ -4352,6 +4431,7 @@ values
     GLD/M1_ADC12_house5_l12_tm_air_temperature
     GLD/M1_ADC12_house5_l12_tm_mass_temperature
     GLD/M1_ADC12_house5_l12_tm_thermostat_mode
+    GLD/M1_ADC12_house5_l12_tm_is_COOL_on
     GLD/M1_ADC12_house6_l12_tm_mass_heat_coeff
     GLD/M1_ADC12_house6_l12_tm_UA
     GLD/M1_ADC12_house6_l12_tm_heating_system_type
@@ -4377,9 +4457,8 @@ values
     GLD/M1_ADC12_house6_l12_tm_air_temperature
     GLD/M1_ADC12_house6_l12_tm_mass_temperature
     GLD/M1_ADC12_house6_l12_tm_thermostat_mode
+    GLD/M1_ADC12_house6_l12_tm_is_COOL_on
     GLD/M1_ADC12_solar_PVinv_house4_l12_tm_rated_power
-    GLD/M1_ADC12_solar_PVinv_house4_l12_tm_latitude
-    GLD/M1_ADC12_solar_PVinv_house4_l12_tm_longitude
     GLD/M1_ADC12_solar_PVinv_house4_l12_tm_tilt_angle
     GLD/M1_ADC12_solar_PVinv_house4_l12_tm_orientation_azimuth
     GLD/M1_ADC12_solar_PVinv_house4_l12_tm_VA_Out
@@ -5585,6 +5664,7 @@ values
     GLD/M1_ADC18_house0_l19_tm_air_temperature
     GLD/M1_ADC18_house0_l19_tm_mass_temperature
     GLD/M1_ADC18_house0_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l19_tm_is_COOL_on
     GLD/M1_ADC18_house1_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l19_tm_UA
     GLD/M1_ADC18_house1_l19_tm_heating_system_type
@@ -5610,6 +5690,7 @@ values
     GLD/M1_ADC18_house1_l19_tm_air_temperature
     GLD/M1_ADC18_house1_l19_tm_mass_temperature
     GLD/M1_ADC18_house1_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l19_tm_is_COOL_on
     GLD/M1_ADC18_house2_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l19_tm_UA
     GLD/M1_ADC18_house2_l19_tm_heating_system_type
@@ -5635,6 +5716,7 @@ values
     GLD/M1_ADC18_house2_l19_tm_air_temperature
     GLD/M1_ADC18_house2_l19_tm_mass_temperature
     GLD/M1_ADC18_house2_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l19_tm_is_COOL_on
     GLD/M1_ADC18_house3_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l19_tm_UA
     GLD/M1_ADC18_house3_l19_tm_heating_system_type
@@ -5660,6 +5742,7 @@ values
     GLD/M1_ADC18_house3_l19_tm_air_temperature
     GLD/M1_ADC18_house3_l19_tm_mass_temperature
     GLD/M1_ADC18_house3_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l19_tm_is_COOL_on
     GLD/M1_ADC18_house4_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l19_tm_UA
     GLD/M1_ADC18_house4_l19_tm_heating_system_type
@@ -5685,6 +5768,7 @@ values
     GLD/M1_ADC18_house4_l19_tm_air_temperature
     GLD/M1_ADC18_house4_l19_tm_mass_temperature
     GLD/M1_ADC18_house4_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l19_tm_is_COOL_on
     GLD/M1_ADC18_house6_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l19_tm_UA
     GLD/M1_ADC18_house6_l19_tm_heating_system_type
@@ -5710,6 +5794,7 @@ values
     GLD/M1_ADC18_house6_l19_tm_air_temperature
     GLD/M1_ADC18_house6_l19_tm_mass_temperature
     GLD/M1_ADC18_house6_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l19_tm_is_COOL_on
     GLD/M1_ADC18_house7_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l19_tm_UA
     GLD/M1_ADC18_house7_l19_tm_heating_system_type
@@ -5735,6 +5820,7 @@ values
     GLD/M1_ADC18_house7_l19_tm_air_temperature
     GLD/M1_ADC18_house7_l19_tm_mass_temperature
     GLD/M1_ADC18_house7_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l19_tm_is_COOL_on
     GLD/M1_ADC18_house9_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l19_tm_UA
     GLD/M1_ADC18_house9_l19_tm_heating_system_type
@@ -5760,6 +5846,7 @@ values
     GLD/M1_ADC18_house9_l19_tm_air_temperature
     GLD/M1_ADC18_house9_l19_tm_mass_temperature
     GLD/M1_ADC18_house9_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l19_tm_is_COOL_on
     GLD/M1_ADC18_house12_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l19_tm_UA
     GLD/M1_ADC18_house12_l19_tm_heating_system_type
@@ -5785,6 +5872,7 @@ values
     GLD/M1_ADC18_house12_l19_tm_air_temperature
     GLD/M1_ADC18_house12_l19_tm_mass_temperature
     GLD/M1_ADC18_house12_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l19_tm_is_COOL_on
     GLD/M1_ADC18_house13_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l19_tm_UA
     GLD/M1_ADC18_house13_l19_tm_heating_system_type
@@ -5810,6 +5898,7 @@ values
     GLD/M1_ADC18_house13_l19_tm_air_temperature
     GLD/M1_ADC18_house13_l19_tm_mass_temperature
     GLD/M1_ADC18_house13_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l19_tm_is_COOL_on
     GLD/M1_ADC18_house14_l19_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l19_tm_UA
     GLD/M1_ADC18_house14_l19_tm_heating_system_type
@@ -5835,6 +5924,7 @@ values
     GLD/M1_ADC18_house14_l19_tm_air_temperature
     GLD/M1_ADC18_house14_l19_tm_mass_temperature
     GLD/M1_ADC18_house14_l19_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l19_tm_is_COOL_on
     GLD/M1_ADC18_house0_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l20_tm_UA
     GLD/M1_ADC18_house0_l20_tm_heating_system_type
@@ -5860,6 +5950,7 @@ values
     GLD/M1_ADC18_house0_l20_tm_air_temperature
     GLD/M1_ADC18_house0_l20_tm_mass_temperature
     GLD/M1_ADC18_house0_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l20_tm_is_COOL_on
     GLD/M1_ADC18_house1_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l20_tm_UA
     GLD/M1_ADC18_house1_l20_tm_heating_system_type
@@ -5885,6 +5976,7 @@ values
     GLD/M1_ADC18_house1_l20_tm_air_temperature
     GLD/M1_ADC18_house1_l20_tm_mass_temperature
     GLD/M1_ADC18_house1_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l20_tm_is_COOL_on
     GLD/M1_ADC18_house2_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l20_tm_UA
     GLD/M1_ADC18_house2_l20_tm_heating_system_type
@@ -5910,6 +6002,7 @@ values
     GLD/M1_ADC18_house2_l20_tm_air_temperature
     GLD/M1_ADC18_house2_l20_tm_mass_temperature
     GLD/M1_ADC18_house2_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l20_tm_is_COOL_on
     GLD/M1_ADC18_house3_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l20_tm_UA
     GLD/M1_ADC18_house3_l20_tm_heating_system_type
@@ -5935,6 +6028,7 @@ values
     GLD/M1_ADC18_house3_l20_tm_air_temperature
     GLD/M1_ADC18_house3_l20_tm_mass_temperature
     GLD/M1_ADC18_house3_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l20_tm_is_COOL_on
     GLD/M1_ADC18_house4_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l20_tm_UA
     GLD/M1_ADC18_house4_l20_tm_heating_system_type
@@ -5960,6 +6054,7 @@ values
     GLD/M1_ADC18_house4_l20_tm_air_temperature
     GLD/M1_ADC18_house4_l20_tm_mass_temperature
     GLD/M1_ADC18_house4_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l20_tm_is_COOL_on
     GLD/M1_ADC18_house5_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l20_tm_UA
     GLD/M1_ADC18_house5_l20_tm_heating_system_type
@@ -5985,6 +6080,7 @@ values
     GLD/M1_ADC18_house5_l20_tm_air_temperature
     GLD/M1_ADC18_house5_l20_tm_mass_temperature
     GLD/M1_ADC18_house5_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l20_tm_is_COOL_on
     GLD/M1_ADC18_house6_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l20_tm_UA
     GLD/M1_ADC18_house6_l20_tm_heating_system_type
@@ -6010,6 +6106,7 @@ values
     GLD/M1_ADC18_house6_l20_tm_air_temperature
     GLD/M1_ADC18_house6_l20_tm_mass_temperature
     GLD/M1_ADC18_house6_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l20_tm_is_COOL_on
     GLD/M1_ADC18_house8_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l20_tm_UA
     GLD/M1_ADC18_house8_l20_tm_heating_system_type
@@ -6035,6 +6132,7 @@ values
     GLD/M1_ADC18_house8_l20_tm_air_temperature
     GLD/M1_ADC18_house8_l20_tm_mass_temperature
     GLD/M1_ADC18_house8_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l20_tm_is_COOL_on
     GLD/M1_ADC18_house9_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l20_tm_UA
     GLD/M1_ADC18_house9_l20_tm_heating_system_type
@@ -6060,6 +6158,7 @@ values
     GLD/M1_ADC18_house9_l20_tm_air_temperature
     GLD/M1_ADC18_house9_l20_tm_mass_temperature
     GLD/M1_ADC18_house9_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l20_tm_is_COOL_on
     GLD/M1_ADC18_house10_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l20_tm_UA
     GLD/M1_ADC18_house10_l20_tm_heating_system_type
@@ -6085,6 +6184,7 @@ values
     GLD/M1_ADC18_house10_l20_tm_air_temperature
     GLD/M1_ADC18_house10_l20_tm_mass_temperature
     GLD/M1_ADC18_house10_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l20_tm_is_COOL_on
     GLD/M1_ADC18_house11_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l20_tm_UA
     GLD/M1_ADC18_house11_l20_tm_heating_system_type
@@ -6110,6 +6210,7 @@ values
     GLD/M1_ADC18_house11_l20_tm_air_temperature
     GLD/M1_ADC18_house11_l20_tm_mass_temperature
     GLD/M1_ADC18_house11_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l20_tm_is_COOL_on
     GLD/M1_ADC18_house12_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l20_tm_UA
     GLD/M1_ADC18_house12_l20_tm_heating_system_type
@@ -6135,6 +6236,7 @@ values
     GLD/M1_ADC18_house12_l20_tm_air_temperature
     GLD/M1_ADC18_house12_l20_tm_mass_temperature
     GLD/M1_ADC18_house12_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l20_tm_is_COOL_on
     GLD/M1_ADC18_house13_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l20_tm_UA
     GLD/M1_ADC18_house13_l20_tm_heating_system_type
@@ -6160,6 +6262,7 @@ values
     GLD/M1_ADC18_house13_l20_tm_air_temperature
     GLD/M1_ADC18_house13_l20_tm_mass_temperature
     GLD/M1_ADC18_house13_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l20_tm_is_COOL_on
     GLD/M1_ADC18_house14_l20_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l20_tm_UA
     GLD/M1_ADC18_house14_l20_tm_heating_system_type
@@ -6185,6 +6288,7 @@ values
     GLD/M1_ADC18_house14_l20_tm_air_temperature
     GLD/M1_ADC18_house14_l20_tm_mass_temperature
     GLD/M1_ADC18_house14_l20_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l20_tm_is_COOL_on
     GLD/M1_ADC18_house0_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l22_tm_UA
     GLD/M1_ADC18_house0_l22_tm_heating_system_type
@@ -6210,6 +6314,7 @@ values
     GLD/M1_ADC18_house0_l22_tm_air_temperature
     GLD/M1_ADC18_house0_l22_tm_mass_temperature
     GLD/M1_ADC18_house0_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l22_tm_is_COOL_on
     GLD/M1_ADC18_house1_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l22_tm_UA
     GLD/M1_ADC18_house1_l22_tm_heating_system_type
@@ -6235,6 +6340,7 @@ values
     GLD/M1_ADC18_house1_l22_tm_air_temperature
     GLD/M1_ADC18_house1_l22_tm_mass_temperature
     GLD/M1_ADC18_house1_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l22_tm_is_COOL_on
     GLD/M1_ADC18_house2_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l22_tm_UA
     GLD/M1_ADC18_house2_l22_tm_heating_system_type
@@ -6260,6 +6366,7 @@ values
     GLD/M1_ADC18_house2_l22_tm_air_temperature
     GLD/M1_ADC18_house2_l22_tm_mass_temperature
     GLD/M1_ADC18_house2_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l22_tm_is_COOL_on
     GLD/M1_ADC18_house3_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l22_tm_UA
     GLD/M1_ADC18_house3_l22_tm_heating_system_type
@@ -6285,6 +6392,7 @@ values
     GLD/M1_ADC18_house3_l22_tm_air_temperature
     GLD/M1_ADC18_house3_l22_tm_mass_temperature
     GLD/M1_ADC18_house3_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l22_tm_is_COOL_on
     GLD/M1_ADC18_house4_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l22_tm_UA
     GLD/M1_ADC18_house4_l22_tm_heating_system_type
@@ -6310,6 +6418,7 @@ values
     GLD/M1_ADC18_house4_l22_tm_air_temperature
     GLD/M1_ADC18_house4_l22_tm_mass_temperature
     GLD/M1_ADC18_house4_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l22_tm_is_COOL_on
     GLD/M1_ADC18_house5_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l22_tm_UA
     GLD/M1_ADC18_house5_l22_tm_heating_system_type
@@ -6335,6 +6444,7 @@ values
     GLD/M1_ADC18_house5_l22_tm_air_temperature
     GLD/M1_ADC18_house5_l22_tm_mass_temperature
     GLD/M1_ADC18_house5_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l22_tm_is_COOL_on
     GLD/M1_ADC18_house7_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l22_tm_UA
     GLD/M1_ADC18_house7_l22_tm_heating_system_type
@@ -6360,6 +6470,7 @@ values
     GLD/M1_ADC18_house7_l22_tm_air_temperature
     GLD/M1_ADC18_house7_l22_tm_mass_temperature
     GLD/M1_ADC18_house7_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l22_tm_is_COOL_on
     GLD/M1_ADC18_house8_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l22_tm_UA
     GLD/M1_ADC18_house8_l22_tm_heating_system_type
@@ -6385,6 +6496,7 @@ values
     GLD/M1_ADC18_house8_l22_tm_air_temperature
     GLD/M1_ADC18_house8_l22_tm_mass_temperature
     GLD/M1_ADC18_house8_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l22_tm_is_COOL_on
     GLD/M1_ADC18_house9_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l22_tm_UA
     GLD/M1_ADC18_house9_l22_tm_heating_system_type
@@ -6410,6 +6522,7 @@ values
     GLD/M1_ADC18_house9_l22_tm_air_temperature
     GLD/M1_ADC18_house9_l22_tm_mass_temperature
     GLD/M1_ADC18_house9_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l22_tm_is_COOL_on
     GLD/M1_ADC18_house10_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l22_tm_UA
     GLD/M1_ADC18_house10_l22_tm_heating_system_type
@@ -6435,6 +6548,7 @@ values
     GLD/M1_ADC18_house10_l22_tm_air_temperature
     GLD/M1_ADC18_house10_l22_tm_mass_temperature
     GLD/M1_ADC18_house10_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l22_tm_is_COOL_on
     GLD/M1_ADC18_house11_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l22_tm_UA
     GLD/M1_ADC18_house11_l22_tm_heating_system_type
@@ -6460,6 +6574,7 @@ values
     GLD/M1_ADC18_house11_l22_tm_air_temperature
     GLD/M1_ADC18_house11_l22_tm_mass_temperature
     GLD/M1_ADC18_house11_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l22_tm_is_COOL_on
     GLD/M1_ADC18_house12_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l22_tm_UA
     GLD/M1_ADC18_house12_l22_tm_heating_system_type
@@ -6485,6 +6600,7 @@ values
     GLD/M1_ADC18_house12_l22_tm_air_temperature
     GLD/M1_ADC18_house12_l22_tm_mass_temperature
     GLD/M1_ADC18_house12_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l22_tm_is_COOL_on
     GLD/M1_ADC18_house13_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l22_tm_UA
     GLD/M1_ADC18_house13_l22_tm_heating_system_type
@@ -6510,6 +6626,7 @@ values
     GLD/M1_ADC18_house13_l22_tm_air_temperature
     GLD/M1_ADC18_house13_l22_tm_mass_temperature
     GLD/M1_ADC18_house13_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l22_tm_is_COOL_on
     GLD/M1_ADC18_house14_l22_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l22_tm_UA
     GLD/M1_ADC18_house14_l22_tm_heating_system_type
@@ -6535,6 +6652,7 @@ values
     GLD/M1_ADC18_house14_l22_tm_air_temperature
     GLD/M1_ADC18_house14_l22_tm_mass_temperature
     GLD/M1_ADC18_house14_l22_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l22_tm_is_COOL_on
     GLD/M1_ADC18_house0_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l24_tm_UA
     GLD/M1_ADC18_house0_l24_tm_heating_system_type
@@ -6560,6 +6678,7 @@ values
     GLD/M1_ADC18_house0_l24_tm_air_temperature
     GLD/M1_ADC18_house0_l24_tm_mass_temperature
     GLD/M1_ADC18_house0_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l24_tm_is_COOL_on
     GLD/M1_ADC18_house1_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l24_tm_UA
     GLD/M1_ADC18_house1_l24_tm_heating_system_type
@@ -6585,6 +6704,7 @@ values
     GLD/M1_ADC18_house1_l24_tm_air_temperature
     GLD/M1_ADC18_house1_l24_tm_mass_temperature
     GLD/M1_ADC18_house1_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l24_tm_is_COOL_on
     GLD/M1_ADC18_house2_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l24_tm_UA
     GLD/M1_ADC18_house2_l24_tm_heating_system_type
@@ -6610,6 +6730,7 @@ values
     GLD/M1_ADC18_house2_l24_tm_air_temperature
     GLD/M1_ADC18_house2_l24_tm_mass_temperature
     GLD/M1_ADC18_house2_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l24_tm_is_COOL_on
     GLD/M1_ADC18_house3_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l24_tm_UA
     GLD/M1_ADC18_house3_l24_tm_heating_system_type
@@ -6635,6 +6756,7 @@ values
     GLD/M1_ADC18_house3_l24_tm_air_temperature
     GLD/M1_ADC18_house3_l24_tm_mass_temperature
     GLD/M1_ADC18_house3_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l24_tm_is_COOL_on
     GLD/M1_ADC18_house4_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l24_tm_UA
     GLD/M1_ADC18_house4_l24_tm_heating_system_type
@@ -6660,6 +6782,7 @@ values
     GLD/M1_ADC18_house4_l24_tm_air_temperature
     GLD/M1_ADC18_house4_l24_tm_mass_temperature
     GLD/M1_ADC18_house4_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l24_tm_is_COOL_on
     GLD/M1_ADC18_house5_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l24_tm_UA
     GLD/M1_ADC18_house5_l24_tm_heating_system_type
@@ -6685,6 +6808,7 @@ values
     GLD/M1_ADC18_house5_l24_tm_air_temperature
     GLD/M1_ADC18_house5_l24_tm_mass_temperature
     GLD/M1_ADC18_house5_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l24_tm_is_COOL_on
     GLD/M1_ADC18_house6_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l24_tm_UA
     GLD/M1_ADC18_house6_l24_tm_heating_system_type
@@ -6710,6 +6834,7 @@ values
     GLD/M1_ADC18_house6_l24_tm_air_temperature
     GLD/M1_ADC18_house6_l24_tm_mass_temperature
     GLD/M1_ADC18_house6_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l24_tm_is_COOL_on
     GLD/M1_ADC18_house7_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l24_tm_UA
     GLD/M1_ADC18_house7_l24_tm_heating_system_type
@@ -6735,6 +6860,7 @@ values
     GLD/M1_ADC18_house7_l24_tm_air_temperature
     GLD/M1_ADC18_house7_l24_tm_mass_temperature
     GLD/M1_ADC18_house7_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l24_tm_is_COOL_on
     GLD/M1_ADC18_house8_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l24_tm_UA
     GLD/M1_ADC18_house8_l24_tm_heating_system_type
@@ -6760,6 +6886,7 @@ values
     GLD/M1_ADC18_house8_l24_tm_air_temperature
     GLD/M1_ADC18_house8_l24_tm_mass_temperature
     GLD/M1_ADC18_house8_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l24_tm_is_COOL_on
     GLD/M1_ADC18_house9_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l24_tm_UA
     GLD/M1_ADC18_house9_l24_tm_heating_system_type
@@ -6785,6 +6912,7 @@ values
     GLD/M1_ADC18_house9_l24_tm_air_temperature
     GLD/M1_ADC18_house9_l24_tm_mass_temperature
     GLD/M1_ADC18_house9_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l24_tm_is_COOL_on
     GLD/M1_ADC18_house10_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l24_tm_UA
     GLD/M1_ADC18_house10_l24_tm_heating_system_type
@@ -6810,6 +6938,7 @@ values
     GLD/M1_ADC18_house10_l24_tm_air_temperature
     GLD/M1_ADC18_house10_l24_tm_mass_temperature
     GLD/M1_ADC18_house10_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l24_tm_is_COOL_on
     GLD/M1_ADC18_house11_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l24_tm_UA
     GLD/M1_ADC18_house11_l24_tm_heating_system_type
@@ -6835,6 +6964,7 @@ values
     GLD/M1_ADC18_house11_l24_tm_air_temperature
     GLD/M1_ADC18_house11_l24_tm_mass_temperature
     GLD/M1_ADC18_house11_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l24_tm_is_COOL_on
     GLD/M1_ADC18_house12_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l24_tm_UA
     GLD/M1_ADC18_house12_l24_tm_heating_system_type
@@ -6860,6 +6990,7 @@ values
     GLD/M1_ADC18_house12_l24_tm_air_temperature
     GLD/M1_ADC18_house12_l24_tm_mass_temperature
     GLD/M1_ADC18_house12_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l24_tm_is_COOL_on
     GLD/M1_ADC18_house13_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l24_tm_UA
     GLD/M1_ADC18_house13_l24_tm_heating_system_type
@@ -6885,6 +7016,7 @@ values
     GLD/M1_ADC18_house13_l24_tm_air_temperature
     GLD/M1_ADC18_house13_l24_tm_mass_temperature
     GLD/M1_ADC18_house13_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l24_tm_is_COOL_on
     GLD/M1_ADC18_house14_l24_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l24_tm_UA
     GLD/M1_ADC18_house14_l24_tm_heating_system_type
@@ -6910,6 +7042,7 @@ values
     GLD/M1_ADC18_house14_l24_tm_air_temperature
     GLD/M1_ADC18_house14_l24_tm_mass_temperature
     GLD/M1_ADC18_house14_l24_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l24_tm_is_COOL_on
     GLD/M1_ADC18_house0_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l28_tm_UA
     GLD/M1_ADC18_house0_l28_tm_heating_system_type
@@ -6935,6 +7068,7 @@ values
     GLD/M1_ADC18_house0_l28_tm_air_temperature
     GLD/M1_ADC18_house0_l28_tm_mass_temperature
     GLD/M1_ADC18_house0_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l28_tm_is_COOL_on
     GLD/M1_ADC18_house1_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l28_tm_UA
     GLD/M1_ADC18_house1_l28_tm_heating_system_type
@@ -6960,6 +7094,7 @@ values
     GLD/M1_ADC18_house1_l28_tm_air_temperature
     GLD/M1_ADC18_house1_l28_tm_mass_temperature
     GLD/M1_ADC18_house1_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l28_tm_is_COOL_on
     GLD/M1_ADC18_house2_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l28_tm_UA
     GLD/M1_ADC18_house2_l28_tm_heating_system_type
@@ -6985,6 +7120,7 @@ values
     GLD/M1_ADC18_house2_l28_tm_air_temperature
     GLD/M1_ADC18_house2_l28_tm_mass_temperature
     GLD/M1_ADC18_house2_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l28_tm_is_COOL_on
     GLD/M1_ADC18_house4_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l28_tm_UA
     GLD/M1_ADC18_house4_l28_tm_heating_system_type
@@ -7010,6 +7146,7 @@ values
     GLD/M1_ADC18_house4_l28_tm_air_temperature
     GLD/M1_ADC18_house4_l28_tm_mass_temperature
     GLD/M1_ADC18_house4_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l28_tm_is_COOL_on
     GLD/M1_ADC18_house5_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l28_tm_UA
     GLD/M1_ADC18_house5_l28_tm_heating_system_type
@@ -7035,6 +7172,7 @@ values
     GLD/M1_ADC18_house5_l28_tm_air_temperature
     GLD/M1_ADC18_house5_l28_tm_mass_temperature
     GLD/M1_ADC18_house5_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l28_tm_is_COOL_on
     GLD/M1_ADC18_house6_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l28_tm_UA
     GLD/M1_ADC18_house6_l28_tm_heating_system_type
@@ -7060,6 +7198,7 @@ values
     GLD/M1_ADC18_house6_l28_tm_air_temperature
     GLD/M1_ADC18_house6_l28_tm_mass_temperature
     GLD/M1_ADC18_house6_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l28_tm_is_COOL_on
     GLD/M1_ADC18_house7_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l28_tm_UA
     GLD/M1_ADC18_house7_l28_tm_heating_system_type
@@ -7085,6 +7224,7 @@ values
     GLD/M1_ADC18_house7_l28_tm_air_temperature
     GLD/M1_ADC18_house7_l28_tm_mass_temperature
     GLD/M1_ADC18_house7_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l28_tm_is_COOL_on
     GLD/M1_ADC18_house8_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l28_tm_UA
     GLD/M1_ADC18_house8_l28_tm_heating_system_type
@@ -7110,6 +7250,7 @@ values
     GLD/M1_ADC18_house8_l28_tm_air_temperature
     GLD/M1_ADC18_house8_l28_tm_mass_temperature
     GLD/M1_ADC18_house8_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l28_tm_is_COOL_on
     GLD/M1_ADC18_house9_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l28_tm_UA
     GLD/M1_ADC18_house9_l28_tm_heating_system_type
@@ -7135,6 +7276,7 @@ values
     GLD/M1_ADC18_house9_l28_tm_air_temperature
     GLD/M1_ADC18_house9_l28_tm_mass_temperature
     GLD/M1_ADC18_house9_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l28_tm_is_COOL_on
     GLD/M1_ADC18_house10_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l28_tm_UA
     GLD/M1_ADC18_house10_l28_tm_heating_system_type
@@ -7160,6 +7302,7 @@ values
     GLD/M1_ADC18_house10_l28_tm_air_temperature
     GLD/M1_ADC18_house10_l28_tm_mass_temperature
     GLD/M1_ADC18_house10_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l28_tm_is_COOL_on
     GLD/M1_ADC18_house11_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l28_tm_UA
     GLD/M1_ADC18_house11_l28_tm_heating_system_type
@@ -7185,6 +7328,7 @@ values
     GLD/M1_ADC18_house11_l28_tm_air_temperature
     GLD/M1_ADC18_house11_l28_tm_mass_temperature
     GLD/M1_ADC18_house11_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l28_tm_is_COOL_on
     GLD/M1_ADC18_house12_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l28_tm_UA
     GLD/M1_ADC18_house12_l28_tm_heating_system_type
@@ -7210,6 +7354,7 @@ values
     GLD/M1_ADC18_house12_l28_tm_air_temperature
     GLD/M1_ADC18_house12_l28_tm_mass_temperature
     GLD/M1_ADC18_house12_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l28_tm_is_COOL_on
     GLD/M1_ADC18_house13_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l28_tm_UA
     GLD/M1_ADC18_house13_l28_tm_heating_system_type
@@ -7235,6 +7380,7 @@ values
     GLD/M1_ADC18_house13_l28_tm_air_temperature
     GLD/M1_ADC18_house13_l28_tm_mass_temperature
     GLD/M1_ADC18_house13_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l28_tm_is_COOL_on
     GLD/M1_ADC18_house14_l28_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l28_tm_UA
     GLD/M1_ADC18_house14_l28_tm_heating_system_type
@@ -7260,6 +7406,7 @@ values
     GLD/M1_ADC18_house14_l28_tm_air_temperature
     GLD/M1_ADC18_house14_l28_tm_mass_temperature
     GLD/M1_ADC18_house14_l28_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l28_tm_is_COOL_on
     GLD/M1_ADC18_house0_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l29_tm_UA
     GLD/M1_ADC18_house0_l29_tm_heating_system_type
@@ -7285,6 +7432,7 @@ values
     GLD/M1_ADC18_house0_l29_tm_air_temperature
     GLD/M1_ADC18_house0_l29_tm_mass_temperature
     GLD/M1_ADC18_house0_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l29_tm_is_COOL_on
     GLD/M1_ADC18_house1_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l29_tm_UA
     GLD/M1_ADC18_house1_l29_tm_heating_system_type
@@ -7310,6 +7458,7 @@ values
     GLD/M1_ADC18_house1_l29_tm_air_temperature
     GLD/M1_ADC18_house1_l29_tm_mass_temperature
     GLD/M1_ADC18_house1_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l29_tm_is_COOL_on
     GLD/M1_ADC18_house2_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l29_tm_UA
     GLD/M1_ADC18_house2_l29_tm_heating_system_type
@@ -7335,6 +7484,7 @@ values
     GLD/M1_ADC18_house2_l29_tm_air_temperature
     GLD/M1_ADC18_house2_l29_tm_mass_temperature
     GLD/M1_ADC18_house2_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l29_tm_is_COOL_on
     GLD/M1_ADC18_house3_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l29_tm_UA
     GLD/M1_ADC18_house3_l29_tm_heating_system_type
@@ -7360,6 +7510,7 @@ values
     GLD/M1_ADC18_house3_l29_tm_air_temperature
     GLD/M1_ADC18_house3_l29_tm_mass_temperature
     GLD/M1_ADC18_house3_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l29_tm_is_COOL_on
     GLD/M1_ADC18_house4_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l29_tm_UA
     GLD/M1_ADC18_house4_l29_tm_heating_system_type
@@ -7385,6 +7536,7 @@ values
     GLD/M1_ADC18_house4_l29_tm_air_temperature
     GLD/M1_ADC18_house4_l29_tm_mass_temperature
     GLD/M1_ADC18_house4_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l29_tm_is_COOL_on
     GLD/M1_ADC18_house5_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l29_tm_UA
     GLD/M1_ADC18_house5_l29_tm_heating_system_type
@@ -7410,6 +7562,7 @@ values
     GLD/M1_ADC18_house5_l29_tm_air_temperature
     GLD/M1_ADC18_house5_l29_tm_mass_temperature
     GLD/M1_ADC18_house5_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l29_tm_is_COOL_on
     GLD/M1_ADC18_house6_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l29_tm_UA
     GLD/M1_ADC18_house6_l29_tm_heating_system_type
@@ -7435,6 +7588,7 @@ values
     GLD/M1_ADC18_house6_l29_tm_air_temperature
     GLD/M1_ADC18_house6_l29_tm_mass_temperature
     GLD/M1_ADC18_house6_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l29_tm_is_COOL_on
     GLD/M1_ADC18_house7_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l29_tm_UA
     GLD/M1_ADC18_house7_l29_tm_heating_system_type
@@ -7460,6 +7614,7 @@ values
     GLD/M1_ADC18_house7_l29_tm_air_temperature
     GLD/M1_ADC18_house7_l29_tm_mass_temperature
     GLD/M1_ADC18_house7_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l29_tm_is_COOL_on
     GLD/M1_ADC18_house8_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l29_tm_UA
     GLD/M1_ADC18_house8_l29_tm_heating_system_type
@@ -7485,6 +7640,7 @@ values
     GLD/M1_ADC18_house8_l29_tm_air_temperature
     GLD/M1_ADC18_house8_l29_tm_mass_temperature
     GLD/M1_ADC18_house8_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l29_tm_is_COOL_on
     GLD/M1_ADC18_house9_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l29_tm_UA
     GLD/M1_ADC18_house9_l29_tm_heating_system_type
@@ -7510,6 +7666,7 @@ values
     GLD/M1_ADC18_house9_l29_tm_air_temperature
     GLD/M1_ADC18_house9_l29_tm_mass_temperature
     GLD/M1_ADC18_house9_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l29_tm_is_COOL_on
     GLD/M1_ADC18_house10_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l29_tm_UA
     GLD/M1_ADC18_house10_l29_tm_heating_system_type
@@ -7535,6 +7692,7 @@ values
     GLD/M1_ADC18_house10_l29_tm_air_temperature
     GLD/M1_ADC18_house10_l29_tm_mass_temperature
     GLD/M1_ADC18_house10_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l29_tm_is_COOL_on
     GLD/M1_ADC18_house11_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l29_tm_UA
     GLD/M1_ADC18_house11_l29_tm_heating_system_type
@@ -7560,6 +7718,7 @@ values
     GLD/M1_ADC18_house11_l29_tm_air_temperature
     GLD/M1_ADC18_house11_l29_tm_mass_temperature
     GLD/M1_ADC18_house11_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l29_tm_is_COOL_on
     GLD/M1_ADC18_house12_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l29_tm_UA
     GLD/M1_ADC18_house12_l29_tm_heating_system_type
@@ -7585,6 +7744,7 @@ values
     GLD/M1_ADC18_house12_l29_tm_air_temperature
     GLD/M1_ADC18_house12_l29_tm_mass_temperature
     GLD/M1_ADC18_house12_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l29_tm_is_COOL_on
     GLD/M1_ADC18_house13_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l29_tm_UA
     GLD/M1_ADC18_house13_l29_tm_heating_system_type
@@ -7610,6 +7770,7 @@ values
     GLD/M1_ADC18_house13_l29_tm_air_temperature
     GLD/M1_ADC18_house13_l29_tm_mass_temperature
     GLD/M1_ADC18_house13_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l29_tm_is_COOL_on
     GLD/M1_ADC18_house14_l29_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l29_tm_UA
     GLD/M1_ADC18_house14_l29_tm_heating_system_type
@@ -7635,6 +7796,7 @@ values
     GLD/M1_ADC18_house14_l29_tm_air_temperature
     GLD/M1_ADC18_house14_l29_tm_mass_temperature
     GLD/M1_ADC18_house14_l29_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l29_tm_is_COOL_on
     GLD/M1_ADC18_house0_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l30_tm_UA
     GLD/M1_ADC18_house0_l30_tm_heating_system_type
@@ -7660,6 +7822,7 @@ values
     GLD/M1_ADC18_house0_l30_tm_air_temperature
     GLD/M1_ADC18_house0_l30_tm_mass_temperature
     GLD/M1_ADC18_house0_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l30_tm_is_COOL_on
     GLD/M1_ADC18_house1_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l30_tm_UA
     GLD/M1_ADC18_house1_l30_tm_heating_system_type
@@ -7685,6 +7848,7 @@ values
     GLD/M1_ADC18_house1_l30_tm_air_temperature
     GLD/M1_ADC18_house1_l30_tm_mass_temperature
     GLD/M1_ADC18_house1_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l30_tm_is_COOL_on
     GLD/M1_ADC18_house3_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l30_tm_UA
     GLD/M1_ADC18_house3_l30_tm_heating_system_type
@@ -7710,6 +7874,7 @@ values
     GLD/M1_ADC18_house3_l30_tm_air_temperature
     GLD/M1_ADC18_house3_l30_tm_mass_temperature
     GLD/M1_ADC18_house3_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l30_tm_is_COOL_on
     GLD/M1_ADC18_house4_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l30_tm_UA
     GLD/M1_ADC18_house4_l30_tm_heating_system_type
@@ -7735,6 +7900,7 @@ values
     GLD/M1_ADC18_house4_l30_tm_air_temperature
     GLD/M1_ADC18_house4_l30_tm_mass_temperature
     GLD/M1_ADC18_house4_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l30_tm_is_COOL_on
     GLD/M1_ADC18_house5_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l30_tm_UA
     GLD/M1_ADC18_house5_l30_tm_heating_system_type
@@ -7760,6 +7926,7 @@ values
     GLD/M1_ADC18_house5_l30_tm_air_temperature
     GLD/M1_ADC18_house5_l30_tm_mass_temperature
     GLD/M1_ADC18_house5_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l30_tm_is_COOL_on
     GLD/M1_ADC18_house6_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l30_tm_UA
     GLD/M1_ADC18_house6_l30_tm_heating_system_type
@@ -7785,6 +7952,7 @@ values
     GLD/M1_ADC18_house6_l30_tm_air_temperature
     GLD/M1_ADC18_house6_l30_tm_mass_temperature
     GLD/M1_ADC18_house6_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l30_tm_is_COOL_on
     GLD/M1_ADC18_house7_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l30_tm_UA
     GLD/M1_ADC18_house7_l30_tm_heating_system_type
@@ -7810,6 +7978,7 @@ values
     GLD/M1_ADC18_house7_l30_tm_air_temperature
     GLD/M1_ADC18_house7_l30_tm_mass_temperature
     GLD/M1_ADC18_house7_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l30_tm_is_COOL_on
     GLD/M1_ADC18_house8_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l30_tm_UA
     GLD/M1_ADC18_house8_l30_tm_heating_system_type
@@ -7835,6 +8004,7 @@ values
     GLD/M1_ADC18_house8_l30_tm_air_temperature
     GLD/M1_ADC18_house8_l30_tm_mass_temperature
     GLD/M1_ADC18_house8_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l30_tm_is_COOL_on
     GLD/M1_ADC18_house9_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l30_tm_UA
     GLD/M1_ADC18_house9_l30_tm_heating_system_type
@@ -7860,6 +8030,7 @@ values
     GLD/M1_ADC18_house9_l30_tm_air_temperature
     GLD/M1_ADC18_house9_l30_tm_mass_temperature
     GLD/M1_ADC18_house9_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l30_tm_is_COOL_on
     GLD/M1_ADC18_house10_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l30_tm_UA
     GLD/M1_ADC18_house10_l30_tm_heating_system_type
@@ -7885,6 +8056,7 @@ values
     GLD/M1_ADC18_house10_l30_tm_air_temperature
     GLD/M1_ADC18_house10_l30_tm_mass_temperature
     GLD/M1_ADC18_house10_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l30_tm_is_COOL_on
     GLD/M1_ADC18_house11_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l30_tm_UA
     GLD/M1_ADC18_house11_l30_tm_heating_system_type
@@ -7910,6 +8082,7 @@ values
     GLD/M1_ADC18_house11_l30_tm_air_temperature
     GLD/M1_ADC18_house11_l30_tm_mass_temperature
     GLD/M1_ADC18_house11_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l30_tm_is_COOL_on
     GLD/M1_ADC18_house12_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l30_tm_UA
     GLD/M1_ADC18_house12_l30_tm_heating_system_type
@@ -7935,6 +8108,7 @@ values
     GLD/M1_ADC18_house12_l30_tm_air_temperature
     GLD/M1_ADC18_house12_l30_tm_mass_temperature
     GLD/M1_ADC18_house12_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l30_tm_is_COOL_on
     GLD/M1_ADC18_house13_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l30_tm_UA
     GLD/M1_ADC18_house13_l30_tm_heating_system_type
@@ -7960,6 +8134,7 @@ values
     GLD/M1_ADC18_house13_l30_tm_air_temperature
     GLD/M1_ADC18_house13_l30_tm_mass_temperature
     GLD/M1_ADC18_house13_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l30_tm_is_COOL_on
     GLD/M1_ADC18_house14_l30_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l30_tm_UA
     GLD/M1_ADC18_house14_l30_tm_heating_system_type
@@ -7985,6 +8160,7 @@ values
     GLD/M1_ADC18_house14_l30_tm_air_temperature
     GLD/M1_ADC18_house14_l30_tm_mass_temperature
     GLD/M1_ADC18_house14_l30_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l30_tm_is_COOL_on
     GLD/M1_ADC18_house0_l31_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l31_tm_UA
     GLD/M1_ADC18_house0_l31_tm_heating_system_type
@@ -8010,6 +8186,7 @@ values
     GLD/M1_ADC18_house0_l31_tm_air_temperature
     GLD/M1_ADC18_house0_l31_tm_mass_temperature
     GLD/M1_ADC18_house0_l31_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l31_tm_is_COOL_on
     GLD/M1_ADC18_house1_l31_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l31_tm_UA
     GLD/M1_ADC18_house1_l31_tm_heating_system_type
@@ -8035,6 +8212,7 @@ values
     GLD/M1_ADC18_house1_l31_tm_air_temperature
     GLD/M1_ADC18_house1_l31_tm_mass_temperature
     GLD/M1_ADC18_house1_l31_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l31_tm_is_COOL_on
     GLD/M1_ADC18_house3_l31_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l31_tm_UA
     GLD/M1_ADC18_house3_l31_tm_heating_system_type
@@ -8060,6 +8238,7 @@ values
     GLD/M1_ADC18_house3_l31_tm_air_temperature
     GLD/M1_ADC18_house3_l31_tm_mass_temperature
     GLD/M1_ADC18_house3_l31_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l31_tm_is_COOL_on
     GLD/M1_ADC18_house4_l31_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l31_tm_UA
     GLD/M1_ADC18_house4_l31_tm_heating_system_type
@@ -8085,6 +8264,7 @@ values
     GLD/M1_ADC18_house4_l31_tm_air_temperature
     GLD/M1_ADC18_house4_l31_tm_mass_temperature
     GLD/M1_ADC18_house4_l31_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l31_tm_is_COOL_on
     GLD/M1_ADC18_house5_l31_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l31_tm_UA
     GLD/M1_ADC18_house5_l31_tm_heating_system_type
@@ -8110,6 +8290,7 @@ values
     GLD/M1_ADC18_house5_l31_tm_air_temperature
     GLD/M1_ADC18_house5_l31_tm_mass_temperature
     GLD/M1_ADC18_house5_l31_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l31_tm_is_COOL_on
     GLD/M1_ADC18_house6_l31_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l31_tm_UA
     GLD/M1_ADC18_house6_l31_tm_heating_system_type
@@ -8135,6 +8316,7 @@ values
     GLD/M1_ADC18_house6_l31_tm_air_temperature
     GLD/M1_ADC18_house6_l31_tm_mass_temperature
     GLD/M1_ADC18_house6_l31_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l31_tm_is_COOL_on
     GLD/M1_ADC18_house0_l32_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l32_tm_UA
     GLD/M1_ADC18_house0_l32_tm_heating_system_type
@@ -8160,6 +8342,7 @@ values
     GLD/M1_ADC18_house0_l32_tm_air_temperature
     GLD/M1_ADC18_house0_l32_tm_mass_temperature
     GLD/M1_ADC18_house0_l32_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l32_tm_is_COOL_on
     GLD/M1_ADC18_house1_l32_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l32_tm_UA
     GLD/M1_ADC18_house1_l32_tm_heating_system_type
@@ -8185,6 +8368,7 @@ values
     GLD/M1_ADC18_house1_l32_tm_air_temperature
     GLD/M1_ADC18_house1_l32_tm_mass_temperature
     GLD/M1_ADC18_house1_l32_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l32_tm_is_COOL_on
     GLD/M1_ADC18_house3_l32_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l32_tm_UA
     GLD/M1_ADC18_house3_l32_tm_heating_system_type
@@ -8210,6 +8394,7 @@ values
     GLD/M1_ADC18_house3_l32_tm_air_temperature
     GLD/M1_ADC18_house3_l32_tm_mass_temperature
     GLD/M1_ADC18_house3_l32_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l32_tm_is_COOL_on
     GLD/M1_ADC18_house4_l32_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l32_tm_UA
     GLD/M1_ADC18_house4_l32_tm_heating_system_type
@@ -8235,6 +8420,7 @@ values
     GLD/M1_ADC18_house4_l32_tm_air_temperature
     GLD/M1_ADC18_house4_l32_tm_mass_temperature
     GLD/M1_ADC18_house4_l32_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l32_tm_is_COOL_on
     GLD/M1_ADC18_house5_l32_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l32_tm_UA
     GLD/M1_ADC18_house5_l32_tm_heating_system_type
@@ -8260,6 +8446,7 @@ values
     GLD/M1_ADC18_house5_l32_tm_air_temperature
     GLD/M1_ADC18_house5_l32_tm_mass_temperature
     GLD/M1_ADC18_house5_l32_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l32_tm_is_COOL_on
     GLD/M1_ADC18_house6_l32_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l32_tm_UA
     GLD/M1_ADC18_house6_l32_tm_heating_system_type
@@ -8285,6 +8472,7 @@ values
     GLD/M1_ADC18_house6_l32_tm_air_temperature
     GLD/M1_ADC18_house6_l32_tm_mass_temperature
     GLD/M1_ADC18_house6_l32_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l32_tm_is_COOL_on
     GLD/M1_ADC18_house0_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l33_tm_UA
     GLD/M1_ADC18_house0_l33_tm_heating_system_type
@@ -8310,6 +8498,7 @@ values
     GLD/M1_ADC18_house0_l33_tm_air_temperature
     GLD/M1_ADC18_house0_l33_tm_mass_temperature
     GLD/M1_ADC18_house0_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l33_tm_is_COOL_on
     GLD/M1_ADC18_house2_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l33_tm_UA
     GLD/M1_ADC18_house2_l33_tm_heating_system_type
@@ -8335,6 +8524,7 @@ values
     GLD/M1_ADC18_house2_l33_tm_air_temperature
     GLD/M1_ADC18_house2_l33_tm_mass_temperature
     GLD/M1_ADC18_house2_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l33_tm_is_COOL_on
     GLD/M1_ADC18_house3_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l33_tm_UA
     GLD/M1_ADC18_house3_l33_tm_heating_system_type
@@ -8360,6 +8550,7 @@ values
     GLD/M1_ADC18_house3_l33_tm_air_temperature
     GLD/M1_ADC18_house3_l33_tm_mass_temperature
     GLD/M1_ADC18_house3_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l33_tm_is_COOL_on
     GLD/M1_ADC18_house4_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l33_tm_UA
     GLD/M1_ADC18_house4_l33_tm_heating_system_type
@@ -8385,6 +8576,7 @@ values
     GLD/M1_ADC18_house4_l33_tm_air_temperature
     GLD/M1_ADC18_house4_l33_tm_mass_temperature
     GLD/M1_ADC18_house4_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l33_tm_is_COOL_on
     GLD/M1_ADC18_house5_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l33_tm_UA
     GLD/M1_ADC18_house5_l33_tm_heating_system_type
@@ -8410,6 +8602,7 @@ values
     GLD/M1_ADC18_house5_l33_tm_air_temperature
     GLD/M1_ADC18_house5_l33_tm_mass_temperature
     GLD/M1_ADC18_house5_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l33_tm_is_COOL_on
     GLD/M1_ADC18_house6_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l33_tm_UA
     GLD/M1_ADC18_house6_l33_tm_heating_system_type
@@ -8435,6 +8628,7 @@ values
     GLD/M1_ADC18_house6_l33_tm_air_temperature
     GLD/M1_ADC18_house6_l33_tm_mass_temperature
     GLD/M1_ADC18_house6_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l33_tm_is_COOL_on
     GLD/M1_ADC18_house7_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l33_tm_UA
     GLD/M1_ADC18_house7_l33_tm_heating_system_type
@@ -8460,6 +8654,7 @@ values
     GLD/M1_ADC18_house7_l33_tm_air_temperature
     GLD/M1_ADC18_house7_l33_tm_mass_temperature
     GLD/M1_ADC18_house7_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l33_tm_is_COOL_on
     GLD/M1_ADC18_house8_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l33_tm_UA
     GLD/M1_ADC18_house8_l33_tm_heating_system_type
@@ -8485,6 +8680,7 @@ values
     GLD/M1_ADC18_house8_l33_tm_air_temperature
     GLD/M1_ADC18_house8_l33_tm_mass_temperature
     GLD/M1_ADC18_house8_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l33_tm_is_COOL_on
     GLD/M1_ADC18_house10_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l33_tm_UA
     GLD/M1_ADC18_house10_l33_tm_heating_system_type
@@ -8510,6 +8706,7 @@ values
     GLD/M1_ADC18_house10_l33_tm_air_temperature
     GLD/M1_ADC18_house10_l33_tm_mass_temperature
     GLD/M1_ADC18_house10_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l33_tm_is_COOL_on
     GLD/M1_ADC18_house11_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l33_tm_UA
     GLD/M1_ADC18_house11_l33_tm_heating_system_type
@@ -8535,6 +8732,7 @@ values
     GLD/M1_ADC18_house11_l33_tm_air_temperature
     GLD/M1_ADC18_house11_l33_tm_mass_temperature
     GLD/M1_ADC18_house11_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l33_tm_is_COOL_on
     GLD/M1_ADC18_house13_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l33_tm_UA
     GLD/M1_ADC18_house13_l33_tm_heating_system_type
@@ -8560,6 +8758,7 @@ values
     GLD/M1_ADC18_house13_l33_tm_air_temperature
     GLD/M1_ADC18_house13_l33_tm_mass_temperature
     GLD/M1_ADC18_house13_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l33_tm_is_COOL_on
     GLD/M1_ADC18_house14_l33_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l33_tm_UA
     GLD/M1_ADC18_house14_l33_tm_heating_system_type
@@ -8585,6 +8784,7 @@ values
     GLD/M1_ADC18_house14_l33_tm_air_temperature
     GLD/M1_ADC18_house14_l33_tm_mass_temperature
     GLD/M1_ADC18_house14_l33_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l33_tm_is_COOL_on
     GLD/M1_ADC18_house0_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l37_tm_UA
     GLD/M1_ADC18_house0_l37_tm_heating_system_type
@@ -8610,6 +8810,7 @@ values
     GLD/M1_ADC18_house0_l37_tm_air_temperature
     GLD/M1_ADC18_house0_l37_tm_mass_temperature
     GLD/M1_ADC18_house0_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l37_tm_is_COOL_on
     GLD/M1_ADC18_house1_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l37_tm_UA
     GLD/M1_ADC18_house1_l37_tm_heating_system_type
@@ -8635,6 +8836,7 @@ values
     GLD/M1_ADC18_house1_l37_tm_air_temperature
     GLD/M1_ADC18_house1_l37_tm_mass_temperature
     GLD/M1_ADC18_house1_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l37_tm_is_COOL_on
     GLD/M1_ADC18_house2_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l37_tm_UA
     GLD/M1_ADC18_house2_l37_tm_heating_system_type
@@ -8660,6 +8862,7 @@ values
     GLD/M1_ADC18_house2_l37_tm_air_temperature
     GLD/M1_ADC18_house2_l37_tm_mass_temperature
     GLD/M1_ADC18_house2_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l37_tm_is_COOL_on
     GLD/M1_ADC18_house3_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l37_tm_UA
     GLD/M1_ADC18_house3_l37_tm_heating_system_type
@@ -8685,6 +8888,7 @@ values
     GLD/M1_ADC18_house3_l37_tm_air_temperature
     GLD/M1_ADC18_house3_l37_tm_mass_temperature
     GLD/M1_ADC18_house3_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l37_tm_is_COOL_on
     GLD/M1_ADC18_house4_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l37_tm_UA
     GLD/M1_ADC18_house4_l37_tm_heating_system_type
@@ -8710,6 +8914,7 @@ values
     GLD/M1_ADC18_house4_l37_tm_air_temperature
     GLD/M1_ADC18_house4_l37_tm_mass_temperature
     GLD/M1_ADC18_house4_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l37_tm_is_COOL_on
     GLD/M1_ADC18_house5_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l37_tm_UA
     GLD/M1_ADC18_house5_l37_tm_heating_system_type
@@ -8735,6 +8940,7 @@ values
     GLD/M1_ADC18_house5_l37_tm_air_temperature
     GLD/M1_ADC18_house5_l37_tm_mass_temperature
     GLD/M1_ADC18_house5_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l37_tm_is_COOL_on
     GLD/M1_ADC18_house6_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l37_tm_UA
     GLD/M1_ADC18_house6_l37_tm_heating_system_type
@@ -8760,6 +8966,7 @@ values
     GLD/M1_ADC18_house6_l37_tm_air_temperature
     GLD/M1_ADC18_house6_l37_tm_mass_temperature
     GLD/M1_ADC18_house6_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l37_tm_is_COOL_on
     GLD/M1_ADC18_house7_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l37_tm_UA
     GLD/M1_ADC18_house7_l37_tm_heating_system_type
@@ -8785,6 +8992,7 @@ values
     GLD/M1_ADC18_house7_l37_tm_air_temperature
     GLD/M1_ADC18_house7_l37_tm_mass_temperature
     GLD/M1_ADC18_house7_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l37_tm_is_COOL_on
     GLD/M1_ADC18_house8_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l37_tm_UA
     GLD/M1_ADC18_house8_l37_tm_heating_system_type
@@ -8810,6 +9018,7 @@ values
     GLD/M1_ADC18_house8_l37_tm_air_temperature
     GLD/M1_ADC18_house8_l37_tm_mass_temperature
     GLD/M1_ADC18_house8_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l37_tm_is_COOL_on
     GLD/M1_ADC18_house9_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l37_tm_UA
     GLD/M1_ADC18_house9_l37_tm_heating_system_type
@@ -8835,6 +9044,7 @@ values
     GLD/M1_ADC18_house9_l37_tm_air_temperature
     GLD/M1_ADC18_house9_l37_tm_mass_temperature
     GLD/M1_ADC18_house9_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l37_tm_is_COOL_on
     GLD/M1_ADC18_house10_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l37_tm_UA
     GLD/M1_ADC18_house10_l37_tm_heating_system_type
@@ -8860,6 +9070,7 @@ values
     GLD/M1_ADC18_house10_l37_tm_air_temperature
     GLD/M1_ADC18_house10_l37_tm_mass_temperature
     GLD/M1_ADC18_house10_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l37_tm_is_COOL_on
     GLD/M1_ADC18_house11_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l37_tm_UA
     GLD/M1_ADC18_house11_l37_tm_heating_system_type
@@ -8885,6 +9096,7 @@ values
     GLD/M1_ADC18_house11_l37_tm_air_temperature
     GLD/M1_ADC18_house11_l37_tm_mass_temperature
     GLD/M1_ADC18_house11_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l37_tm_is_COOL_on
     GLD/M1_ADC18_house12_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l37_tm_UA
     GLD/M1_ADC18_house12_l37_tm_heating_system_type
@@ -8910,6 +9122,7 @@ values
     GLD/M1_ADC18_house12_l37_tm_air_temperature
     GLD/M1_ADC18_house12_l37_tm_mass_temperature
     GLD/M1_ADC18_house12_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l37_tm_is_COOL_on
     GLD/M1_ADC18_house13_l37_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l37_tm_UA
     GLD/M1_ADC18_house13_l37_tm_heating_system_type
@@ -8935,6 +9148,7 @@ values
     GLD/M1_ADC18_house13_l37_tm_air_temperature
     GLD/M1_ADC18_house13_l37_tm_mass_temperature
     GLD/M1_ADC18_house13_l37_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l37_tm_is_COOL_on
     GLD/M1_ADC18_house0_l38_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l38_tm_UA
     GLD/M1_ADC18_house0_l38_tm_heating_system_type
@@ -8960,6 +9174,7 @@ values
     GLD/M1_ADC18_house0_l38_tm_air_temperature
     GLD/M1_ADC18_house0_l38_tm_mass_temperature
     GLD/M1_ADC18_house0_l38_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l38_tm_is_COOL_on
     GLD/M1_ADC18_house1_l38_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l38_tm_UA
     GLD/M1_ADC18_house1_l38_tm_heating_system_type
@@ -8985,6 +9200,7 @@ values
     GLD/M1_ADC18_house1_l38_tm_air_temperature
     GLD/M1_ADC18_house1_l38_tm_mass_temperature
     GLD/M1_ADC18_house1_l38_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l38_tm_is_COOL_on
     GLD/M1_ADC18_house2_l38_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l38_tm_UA
     GLD/M1_ADC18_house2_l38_tm_heating_system_type
@@ -9010,6 +9226,7 @@ values
     GLD/M1_ADC18_house2_l38_tm_air_temperature
     GLD/M1_ADC18_house2_l38_tm_mass_temperature
     GLD/M1_ADC18_house2_l38_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l38_tm_is_COOL_on
     GLD/M1_ADC18_house3_l38_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l38_tm_UA
     GLD/M1_ADC18_house3_l38_tm_heating_system_type
@@ -9035,6 +9252,7 @@ values
     GLD/M1_ADC18_house3_l38_tm_air_temperature
     GLD/M1_ADC18_house3_l38_tm_mass_temperature
     GLD/M1_ADC18_house3_l38_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l38_tm_is_COOL_on
     GLD/M1_ADC18_house4_l38_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l38_tm_UA
     GLD/M1_ADC18_house4_l38_tm_heating_system_type
@@ -9060,6 +9278,7 @@ values
     GLD/M1_ADC18_house4_l38_tm_air_temperature
     GLD/M1_ADC18_house4_l38_tm_mass_temperature
     GLD/M1_ADC18_house4_l38_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l38_tm_is_COOL_on
     GLD/M1_ADC18_house5_l38_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l38_tm_UA
     GLD/M1_ADC18_house5_l38_tm_heating_system_type
@@ -9085,6 +9304,7 @@ values
     GLD/M1_ADC18_house5_l38_tm_air_temperature
     GLD/M1_ADC18_house5_l38_tm_mass_temperature
     GLD/M1_ADC18_house5_l38_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l38_tm_is_COOL_on
     GLD/M1_ADC18_house6_l38_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l38_tm_UA
     GLD/M1_ADC18_house6_l38_tm_heating_system_type
@@ -9110,6 +9330,7 @@ values
     GLD/M1_ADC18_house6_l38_tm_air_temperature
     GLD/M1_ADC18_house6_l38_tm_mass_temperature
     GLD/M1_ADC18_house6_l38_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l38_tm_is_COOL_on
     GLD/M1_ADC18_house0_l39_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l39_tm_UA
     GLD/M1_ADC18_house0_l39_tm_heating_system_type
@@ -9135,6 +9356,7 @@ values
     GLD/M1_ADC18_house0_l39_tm_air_temperature
     GLD/M1_ADC18_house0_l39_tm_mass_temperature
     GLD/M1_ADC18_house0_l39_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l39_tm_is_COOL_on
     GLD/M1_ADC18_house1_l39_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l39_tm_UA
     GLD/M1_ADC18_house1_l39_tm_heating_system_type
@@ -9160,6 +9382,7 @@ values
     GLD/M1_ADC18_house1_l39_tm_air_temperature
     GLD/M1_ADC18_house1_l39_tm_mass_temperature
     GLD/M1_ADC18_house1_l39_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l39_tm_is_COOL_on
     GLD/M1_ADC18_house2_l39_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l39_tm_UA
     GLD/M1_ADC18_house2_l39_tm_heating_system_type
@@ -9185,6 +9408,7 @@ values
     GLD/M1_ADC18_house2_l39_tm_air_temperature
     GLD/M1_ADC18_house2_l39_tm_mass_temperature
     GLD/M1_ADC18_house2_l39_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l39_tm_is_COOL_on
     GLD/M1_ADC18_house3_l39_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l39_tm_UA
     GLD/M1_ADC18_house3_l39_tm_heating_system_type
@@ -9210,6 +9434,7 @@ values
     GLD/M1_ADC18_house3_l39_tm_air_temperature
     GLD/M1_ADC18_house3_l39_tm_mass_temperature
     GLD/M1_ADC18_house3_l39_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l39_tm_is_COOL_on
     GLD/M1_ADC18_house4_l39_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l39_tm_UA
     GLD/M1_ADC18_house4_l39_tm_heating_system_type
@@ -9235,6 +9460,7 @@ values
     GLD/M1_ADC18_house4_l39_tm_air_temperature
     GLD/M1_ADC18_house4_l39_tm_mass_temperature
     GLD/M1_ADC18_house4_l39_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l39_tm_is_COOL_on
     GLD/M1_ADC18_house5_l39_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l39_tm_UA
     GLD/M1_ADC18_house5_l39_tm_heating_system_type
@@ -9260,6 +9486,7 @@ values
     GLD/M1_ADC18_house5_l39_tm_air_temperature
     GLD/M1_ADC18_house5_l39_tm_mass_temperature
     GLD/M1_ADC18_house5_l39_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l39_tm_is_COOL_on
     GLD/M1_ADC18_house6_l39_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l39_tm_UA
     GLD/M1_ADC18_house6_l39_tm_heating_system_type
@@ -9285,6 +9512,7 @@ values
     GLD/M1_ADC18_house6_l39_tm_air_temperature
     GLD/M1_ADC18_house6_l39_tm_mass_temperature
     GLD/M1_ADC18_house6_l39_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l39_tm_is_COOL_on
     GLD/M1_ADC18_house0_l41_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l41_tm_UA
     GLD/M1_ADC18_house0_l41_tm_heating_system_type
@@ -9310,6 +9538,7 @@ values
     GLD/M1_ADC18_house0_l41_tm_air_temperature
     GLD/M1_ADC18_house0_l41_tm_mass_temperature
     GLD/M1_ADC18_house0_l41_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l41_tm_is_COOL_on
     GLD/M1_ADC18_house1_l41_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l41_tm_UA
     GLD/M1_ADC18_house1_l41_tm_heating_system_type
@@ -9335,6 +9564,7 @@ values
     GLD/M1_ADC18_house1_l41_tm_air_temperature
     GLD/M1_ADC18_house1_l41_tm_mass_temperature
     GLD/M1_ADC18_house1_l41_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l41_tm_is_COOL_on
     GLD/M1_ADC18_house2_l41_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l41_tm_UA
     GLD/M1_ADC18_house2_l41_tm_heating_system_type
@@ -9360,6 +9590,7 @@ values
     GLD/M1_ADC18_house2_l41_tm_air_temperature
     GLD/M1_ADC18_house2_l41_tm_mass_temperature
     GLD/M1_ADC18_house2_l41_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l41_tm_is_COOL_on
     GLD/M1_ADC18_house3_l41_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l41_tm_UA
     GLD/M1_ADC18_house3_l41_tm_heating_system_type
@@ -9385,6 +9616,7 @@ values
     GLD/M1_ADC18_house3_l41_tm_air_temperature
     GLD/M1_ADC18_house3_l41_tm_mass_temperature
     GLD/M1_ADC18_house3_l41_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l41_tm_is_COOL_on
     GLD/M1_ADC18_house4_l41_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l41_tm_UA
     GLD/M1_ADC18_house4_l41_tm_heating_system_type
@@ -9410,6 +9642,7 @@ values
     GLD/M1_ADC18_house4_l41_tm_air_temperature
     GLD/M1_ADC18_house4_l41_tm_mass_temperature
     GLD/M1_ADC18_house4_l41_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l41_tm_is_COOL_on
     GLD/M1_ADC18_house5_l41_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l41_tm_UA
     GLD/M1_ADC18_house5_l41_tm_heating_system_type
@@ -9435,6 +9668,7 @@ values
     GLD/M1_ADC18_house5_l41_tm_air_temperature
     GLD/M1_ADC18_house5_l41_tm_mass_temperature
     GLD/M1_ADC18_house5_l41_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l41_tm_is_COOL_on
     GLD/M1_ADC18_house0_l42_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l42_tm_UA
     GLD/M1_ADC18_house0_l42_tm_heating_system_type
@@ -9460,6 +9694,7 @@ values
     GLD/M1_ADC18_house0_l42_tm_air_temperature
     GLD/M1_ADC18_house0_l42_tm_mass_temperature
     GLD/M1_ADC18_house0_l42_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l42_tm_is_COOL_on
     GLD/M1_ADC18_house1_l42_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l42_tm_UA
     GLD/M1_ADC18_house1_l42_tm_heating_system_type
@@ -9485,6 +9720,7 @@ values
     GLD/M1_ADC18_house1_l42_tm_air_temperature
     GLD/M1_ADC18_house1_l42_tm_mass_temperature
     GLD/M1_ADC18_house1_l42_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l42_tm_is_COOL_on
     GLD/M1_ADC18_house2_l42_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l42_tm_UA
     GLD/M1_ADC18_house2_l42_tm_heating_system_type
@@ -9510,6 +9746,7 @@ values
     GLD/M1_ADC18_house2_l42_tm_air_temperature
     GLD/M1_ADC18_house2_l42_tm_mass_temperature
     GLD/M1_ADC18_house2_l42_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l42_tm_is_COOL_on
     GLD/M1_ADC18_house3_l42_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l42_tm_UA
     GLD/M1_ADC18_house3_l42_tm_heating_system_type
@@ -9535,6 +9772,7 @@ values
     GLD/M1_ADC18_house3_l42_tm_air_temperature
     GLD/M1_ADC18_house3_l42_tm_mass_temperature
     GLD/M1_ADC18_house3_l42_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l42_tm_is_COOL_on
     GLD/M1_ADC18_house4_l42_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l42_tm_UA
     GLD/M1_ADC18_house4_l42_tm_heating_system_type
@@ -9560,6 +9798,7 @@ values
     GLD/M1_ADC18_house4_l42_tm_air_temperature
     GLD/M1_ADC18_house4_l42_tm_mass_temperature
     GLD/M1_ADC18_house4_l42_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l42_tm_is_COOL_on
     GLD/M1_ADC18_house5_l42_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l42_tm_UA
     GLD/M1_ADC18_house5_l42_tm_heating_system_type
@@ -9585,6 +9824,7 @@ values
     GLD/M1_ADC18_house5_l42_tm_air_temperature
     GLD/M1_ADC18_house5_l42_tm_mass_temperature
     GLD/M1_ADC18_house5_l42_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l42_tm_is_COOL_on
     GLD/M1_ADC18_house6_l42_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l42_tm_UA
     GLD/M1_ADC18_house6_l42_tm_heating_system_type
@@ -9610,6 +9850,7 @@ values
     GLD/M1_ADC18_house6_l42_tm_air_temperature
     GLD/M1_ADC18_house6_l42_tm_mass_temperature
     GLD/M1_ADC18_house6_l42_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l42_tm_is_COOL_on
     GLD/M1_ADC18_house0_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l43_tm_UA
     GLD/M1_ADC18_house0_l43_tm_heating_system_type
@@ -9635,6 +9876,7 @@ values
     GLD/M1_ADC18_house0_l43_tm_air_temperature
     GLD/M1_ADC18_house0_l43_tm_mass_temperature
     GLD/M1_ADC18_house0_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l43_tm_is_COOL_on
     GLD/M1_ADC18_house2_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l43_tm_UA
     GLD/M1_ADC18_house2_l43_tm_heating_system_type
@@ -9660,6 +9902,7 @@ values
     GLD/M1_ADC18_house2_l43_tm_air_temperature
     GLD/M1_ADC18_house2_l43_tm_mass_temperature
     GLD/M1_ADC18_house2_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l43_tm_is_COOL_on
     GLD/M1_ADC18_house3_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l43_tm_UA
     GLD/M1_ADC18_house3_l43_tm_heating_system_type
@@ -9685,6 +9928,7 @@ values
     GLD/M1_ADC18_house3_l43_tm_air_temperature
     GLD/M1_ADC18_house3_l43_tm_mass_temperature
     GLD/M1_ADC18_house3_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l43_tm_is_COOL_on
     GLD/M1_ADC18_house4_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l43_tm_UA
     GLD/M1_ADC18_house4_l43_tm_heating_system_type
@@ -9710,6 +9954,7 @@ values
     GLD/M1_ADC18_house4_l43_tm_air_temperature
     GLD/M1_ADC18_house4_l43_tm_mass_temperature
     GLD/M1_ADC18_house4_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l43_tm_is_COOL_on
     GLD/M1_ADC18_house5_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l43_tm_UA
     GLD/M1_ADC18_house5_l43_tm_heating_system_type
@@ -9735,6 +9980,7 @@ values
     GLD/M1_ADC18_house5_l43_tm_air_temperature
     GLD/M1_ADC18_house5_l43_tm_mass_temperature
     GLD/M1_ADC18_house5_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l43_tm_is_COOL_on
     GLD/M1_ADC18_house6_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l43_tm_UA
     GLD/M1_ADC18_house6_l43_tm_heating_system_type
@@ -9760,6 +10006,7 @@ values
     GLD/M1_ADC18_house6_l43_tm_air_temperature
     GLD/M1_ADC18_house6_l43_tm_mass_temperature
     GLD/M1_ADC18_house6_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l43_tm_is_COOL_on
     GLD/M1_ADC18_house7_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l43_tm_UA
     GLD/M1_ADC18_house7_l43_tm_heating_system_type
@@ -9785,6 +10032,7 @@ values
     GLD/M1_ADC18_house7_l43_tm_air_temperature
     GLD/M1_ADC18_house7_l43_tm_mass_temperature
     GLD/M1_ADC18_house7_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l43_tm_is_COOL_on
     GLD/M1_ADC18_house8_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l43_tm_UA
     GLD/M1_ADC18_house8_l43_tm_heating_system_type
@@ -9810,6 +10058,7 @@ values
     GLD/M1_ADC18_house8_l43_tm_air_temperature
     GLD/M1_ADC18_house8_l43_tm_mass_temperature
     GLD/M1_ADC18_house8_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l43_tm_is_COOL_on
     GLD/M1_ADC18_house9_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l43_tm_UA
     GLD/M1_ADC18_house9_l43_tm_heating_system_type
@@ -9835,6 +10084,7 @@ values
     GLD/M1_ADC18_house9_l43_tm_air_temperature
     GLD/M1_ADC18_house9_l43_tm_mass_temperature
     GLD/M1_ADC18_house9_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l43_tm_is_COOL_on
     GLD/M1_ADC18_house10_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l43_tm_UA
     GLD/M1_ADC18_house10_l43_tm_heating_system_type
@@ -9860,6 +10110,7 @@ values
     GLD/M1_ADC18_house10_l43_tm_air_temperature
     GLD/M1_ADC18_house10_l43_tm_mass_temperature
     GLD/M1_ADC18_house10_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l43_tm_is_COOL_on
     GLD/M1_ADC18_house11_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l43_tm_UA
     GLD/M1_ADC18_house11_l43_tm_heating_system_type
@@ -9885,6 +10136,7 @@ values
     GLD/M1_ADC18_house11_l43_tm_air_temperature
     GLD/M1_ADC18_house11_l43_tm_mass_temperature
     GLD/M1_ADC18_house11_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l43_tm_is_COOL_on
     GLD/M1_ADC18_house12_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l43_tm_UA
     GLD/M1_ADC18_house12_l43_tm_heating_system_type
@@ -9910,6 +10162,7 @@ values
     GLD/M1_ADC18_house12_l43_tm_air_temperature
     GLD/M1_ADC18_house12_l43_tm_mass_temperature
     GLD/M1_ADC18_house12_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l43_tm_is_COOL_on
     GLD/M1_ADC18_house13_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l43_tm_UA
     GLD/M1_ADC18_house13_l43_tm_heating_system_type
@@ -9935,6 +10188,7 @@ values
     GLD/M1_ADC18_house13_l43_tm_air_temperature
     GLD/M1_ADC18_house13_l43_tm_mass_temperature
     GLD/M1_ADC18_house13_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l43_tm_is_COOL_on
     GLD/M1_ADC18_house14_l43_tm_mass_heat_coeff
     GLD/M1_ADC18_house14_l43_tm_UA
     GLD/M1_ADC18_house14_l43_tm_heating_system_type
@@ -9960,6 +10214,7 @@ values
     GLD/M1_ADC18_house14_l43_tm_air_temperature
     GLD/M1_ADC18_house14_l43_tm_mass_temperature
     GLD/M1_ADC18_house14_l43_tm_thermostat_mode
+    GLD/M1_ADC18_house14_l43_tm_is_COOL_on
     GLD/M1_ADC18_house0_l45_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l45_tm_UA
     GLD/M1_ADC18_house0_l45_tm_heating_system_type
@@ -9985,6 +10240,7 @@ values
     GLD/M1_ADC18_house0_l45_tm_air_temperature
     GLD/M1_ADC18_house0_l45_tm_mass_temperature
     GLD/M1_ADC18_house0_l45_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l45_tm_is_COOL_on
     GLD/M1_ADC18_house1_l45_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l45_tm_UA
     GLD/M1_ADC18_house1_l45_tm_heating_system_type
@@ -10010,6 +10266,7 @@ values
     GLD/M1_ADC18_house1_l45_tm_air_temperature
     GLD/M1_ADC18_house1_l45_tm_mass_temperature
     GLD/M1_ADC18_house1_l45_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l45_tm_is_COOL_on
     GLD/M1_ADC18_house2_l45_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l45_tm_UA
     GLD/M1_ADC18_house2_l45_tm_heating_system_type
@@ -10035,6 +10292,7 @@ values
     GLD/M1_ADC18_house2_l45_tm_air_temperature
     GLD/M1_ADC18_house2_l45_tm_mass_temperature
     GLD/M1_ADC18_house2_l45_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l45_tm_is_COOL_on
     GLD/M1_ADC18_house3_l45_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l45_tm_UA
     GLD/M1_ADC18_house3_l45_tm_heating_system_type
@@ -10060,6 +10318,7 @@ values
     GLD/M1_ADC18_house3_l45_tm_air_temperature
     GLD/M1_ADC18_house3_l45_tm_mass_temperature
     GLD/M1_ADC18_house3_l45_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l45_tm_is_COOL_on
     GLD/M1_ADC18_house4_l45_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l45_tm_UA
     GLD/M1_ADC18_house4_l45_tm_heating_system_type
@@ -10085,6 +10344,7 @@ values
     GLD/M1_ADC18_house4_l45_tm_air_temperature
     GLD/M1_ADC18_house4_l45_tm_mass_temperature
     GLD/M1_ADC18_house4_l45_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l45_tm_is_COOL_on
     GLD/M1_ADC18_house5_l45_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l45_tm_UA
     GLD/M1_ADC18_house5_l45_tm_heating_system_type
@@ -10110,6 +10370,7 @@ values
     GLD/M1_ADC18_house5_l45_tm_air_temperature
     GLD/M1_ADC18_house5_l45_tm_mass_temperature
     GLD/M1_ADC18_house5_l45_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l45_tm_is_COOL_on
     GLD/M1_ADC18_house6_l45_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l45_tm_UA
     GLD/M1_ADC18_house6_l45_tm_heating_system_type
@@ -10135,6 +10396,7 @@ values
     GLD/M1_ADC18_house6_l45_tm_air_temperature
     GLD/M1_ADC18_house6_l45_tm_mass_temperature
     GLD/M1_ADC18_house6_l45_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l45_tm_is_COOL_on
     GLD/M1_ADC18_house0_l46_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l46_tm_UA
     GLD/M1_ADC18_house0_l46_tm_heating_system_type
@@ -10160,6 +10422,7 @@ values
     GLD/M1_ADC18_house0_l46_tm_air_temperature
     GLD/M1_ADC18_house0_l46_tm_mass_temperature
     GLD/M1_ADC18_house0_l46_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l46_tm_is_COOL_on
     GLD/M1_ADC18_house1_l46_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l46_tm_UA
     GLD/M1_ADC18_house1_l46_tm_heating_system_type
@@ -10185,6 +10448,7 @@ values
     GLD/M1_ADC18_house1_l46_tm_air_temperature
     GLD/M1_ADC18_house1_l46_tm_mass_temperature
     GLD/M1_ADC18_house1_l46_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l46_tm_is_COOL_on
     GLD/M1_ADC18_house2_l46_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l46_tm_UA
     GLD/M1_ADC18_house2_l46_tm_heating_system_type
@@ -10210,6 +10474,7 @@ values
     GLD/M1_ADC18_house2_l46_tm_air_temperature
     GLD/M1_ADC18_house2_l46_tm_mass_temperature
     GLD/M1_ADC18_house2_l46_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l46_tm_is_COOL_on
     GLD/M1_ADC18_house3_l46_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l46_tm_UA
     GLD/M1_ADC18_house3_l46_tm_heating_system_type
@@ -10235,6 +10500,7 @@ values
     GLD/M1_ADC18_house3_l46_tm_air_temperature
     GLD/M1_ADC18_house3_l46_tm_mass_temperature
     GLD/M1_ADC18_house3_l46_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l46_tm_is_COOL_on
     GLD/M1_ADC18_house5_l46_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l46_tm_UA
     GLD/M1_ADC18_house5_l46_tm_heating_system_type
@@ -10260,6 +10526,7 @@ values
     GLD/M1_ADC18_house5_l46_tm_air_temperature
     GLD/M1_ADC18_house5_l46_tm_mass_temperature
     GLD/M1_ADC18_house5_l46_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l46_tm_is_COOL_on
     GLD/M1_ADC18_house6_l46_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l46_tm_UA
     GLD/M1_ADC18_house6_l46_tm_heating_system_type
@@ -10285,6 +10552,7 @@ values
     GLD/M1_ADC18_house6_l46_tm_air_temperature
     GLD/M1_ADC18_house6_l46_tm_mass_temperature
     GLD/M1_ADC18_house6_l46_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l46_tm_is_COOL_on
     GLD/M1_ADC18_house0_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l50_tm_UA
     GLD/M1_ADC18_house0_l50_tm_heating_system_type
@@ -10310,6 +10578,7 @@ values
     GLD/M1_ADC18_house0_l50_tm_air_temperature
     GLD/M1_ADC18_house0_l50_tm_mass_temperature
     GLD/M1_ADC18_house0_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l50_tm_is_COOL_on
     GLD/M1_ADC18_house1_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l50_tm_UA
     GLD/M1_ADC18_house1_l50_tm_heating_system_type
@@ -10335,6 +10604,7 @@ values
     GLD/M1_ADC18_house1_l50_tm_air_temperature
     GLD/M1_ADC18_house1_l50_tm_mass_temperature
     GLD/M1_ADC18_house1_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l50_tm_is_COOL_on
     GLD/M1_ADC18_house2_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l50_tm_UA
     GLD/M1_ADC18_house2_l50_tm_heating_system_type
@@ -10360,6 +10630,7 @@ values
     GLD/M1_ADC18_house2_l50_tm_air_temperature
     GLD/M1_ADC18_house2_l50_tm_mass_temperature
     GLD/M1_ADC18_house2_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l50_tm_is_COOL_on
     GLD/M1_ADC18_house3_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l50_tm_UA
     GLD/M1_ADC18_house3_l50_tm_heating_system_type
@@ -10385,6 +10656,7 @@ values
     GLD/M1_ADC18_house3_l50_tm_air_temperature
     GLD/M1_ADC18_house3_l50_tm_mass_temperature
     GLD/M1_ADC18_house3_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l50_tm_is_COOL_on
     GLD/M1_ADC18_house4_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l50_tm_UA
     GLD/M1_ADC18_house4_l50_tm_heating_system_type
@@ -10410,6 +10682,7 @@ values
     GLD/M1_ADC18_house4_l50_tm_air_temperature
     GLD/M1_ADC18_house4_l50_tm_mass_temperature
     GLD/M1_ADC18_house4_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l50_tm_is_COOL_on
     GLD/M1_ADC18_house5_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l50_tm_UA
     GLD/M1_ADC18_house5_l50_tm_heating_system_type
@@ -10435,6 +10708,7 @@ values
     GLD/M1_ADC18_house5_l50_tm_air_temperature
     GLD/M1_ADC18_house5_l50_tm_mass_temperature
     GLD/M1_ADC18_house5_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l50_tm_is_COOL_on
     GLD/M1_ADC18_house7_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house7_l50_tm_UA
     GLD/M1_ADC18_house7_l50_tm_heating_system_type
@@ -10460,6 +10734,7 @@ values
     GLD/M1_ADC18_house7_l50_tm_air_temperature
     GLD/M1_ADC18_house7_l50_tm_mass_temperature
     GLD/M1_ADC18_house7_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house7_l50_tm_is_COOL_on
     GLD/M1_ADC18_house8_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house8_l50_tm_UA
     GLD/M1_ADC18_house8_l50_tm_heating_system_type
@@ -10485,6 +10760,7 @@ values
     GLD/M1_ADC18_house8_l50_tm_air_temperature
     GLD/M1_ADC18_house8_l50_tm_mass_temperature
     GLD/M1_ADC18_house8_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house8_l50_tm_is_COOL_on
     GLD/M1_ADC18_house9_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house9_l50_tm_UA
     GLD/M1_ADC18_house9_l50_tm_heating_system_type
@@ -10510,6 +10786,7 @@ values
     GLD/M1_ADC18_house9_l50_tm_air_temperature
     GLD/M1_ADC18_house9_l50_tm_mass_temperature
     GLD/M1_ADC18_house9_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house9_l50_tm_is_COOL_on
     GLD/M1_ADC18_house10_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house10_l50_tm_UA
     GLD/M1_ADC18_house10_l50_tm_heating_system_type
@@ -10535,6 +10812,7 @@ values
     GLD/M1_ADC18_house10_l50_tm_air_temperature
     GLD/M1_ADC18_house10_l50_tm_mass_temperature
     GLD/M1_ADC18_house10_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house10_l50_tm_is_COOL_on
     GLD/M1_ADC18_house11_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house11_l50_tm_UA
     GLD/M1_ADC18_house11_l50_tm_heating_system_type
@@ -10560,6 +10838,7 @@ values
     GLD/M1_ADC18_house11_l50_tm_air_temperature
     GLD/M1_ADC18_house11_l50_tm_mass_temperature
     GLD/M1_ADC18_house11_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house11_l50_tm_is_COOL_on
     GLD/M1_ADC18_house12_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house12_l50_tm_UA
     GLD/M1_ADC18_house12_l50_tm_heating_system_type
@@ -10585,6 +10864,7 @@ values
     GLD/M1_ADC18_house12_l50_tm_air_temperature
     GLD/M1_ADC18_house12_l50_tm_mass_temperature
     GLD/M1_ADC18_house12_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house12_l50_tm_is_COOL_on
     GLD/M1_ADC18_house13_l50_tm_mass_heat_coeff
     GLD/M1_ADC18_house13_l50_tm_UA
     GLD/M1_ADC18_house13_l50_tm_heating_system_type
@@ -10610,6 +10890,7 @@ values
     GLD/M1_ADC18_house13_l50_tm_air_temperature
     GLD/M1_ADC18_house13_l50_tm_mass_temperature
     GLD/M1_ADC18_house13_l50_tm_thermostat_mode
+    GLD/M1_ADC18_house13_l50_tm_is_COOL_on
     GLD/M1_ADC18_house0_l51_tm_mass_heat_coeff
     GLD/M1_ADC18_house0_l51_tm_UA
     GLD/M1_ADC18_house0_l51_tm_heating_system_type
@@ -10635,6 +10916,7 @@ values
     GLD/M1_ADC18_house0_l51_tm_air_temperature
     GLD/M1_ADC18_house0_l51_tm_mass_temperature
     GLD/M1_ADC18_house0_l51_tm_thermostat_mode
+    GLD/M1_ADC18_house0_l51_tm_is_COOL_on
     GLD/M1_ADC18_house1_l51_tm_mass_heat_coeff
     GLD/M1_ADC18_house1_l51_tm_UA
     GLD/M1_ADC18_house1_l51_tm_heating_system_type
@@ -10660,6 +10942,7 @@ values
     GLD/M1_ADC18_house1_l51_tm_air_temperature
     GLD/M1_ADC18_house1_l51_tm_mass_temperature
     GLD/M1_ADC18_house1_l51_tm_thermostat_mode
+    GLD/M1_ADC18_house1_l51_tm_is_COOL_on
     GLD/M1_ADC18_house2_l51_tm_mass_heat_coeff
     GLD/M1_ADC18_house2_l51_tm_UA
     GLD/M1_ADC18_house2_l51_tm_heating_system_type
@@ -10685,6 +10968,7 @@ values
     GLD/M1_ADC18_house2_l51_tm_air_temperature
     GLD/M1_ADC18_house2_l51_tm_mass_temperature
     GLD/M1_ADC18_house2_l51_tm_thermostat_mode
+    GLD/M1_ADC18_house2_l51_tm_is_COOL_on
     GLD/M1_ADC18_house3_l51_tm_mass_heat_coeff
     GLD/M1_ADC18_house3_l51_tm_UA
     GLD/M1_ADC18_house3_l51_tm_heating_system_type
@@ -10710,6 +10994,7 @@ values
     GLD/M1_ADC18_house3_l51_tm_air_temperature
     GLD/M1_ADC18_house3_l51_tm_mass_temperature
     GLD/M1_ADC18_house3_l51_tm_thermostat_mode
+    GLD/M1_ADC18_house3_l51_tm_is_COOL_on
     GLD/M1_ADC18_house4_l51_tm_mass_heat_coeff
     GLD/M1_ADC18_house4_l51_tm_UA
     GLD/M1_ADC18_house4_l51_tm_heating_system_type
@@ -10735,6 +11020,7 @@ values
     GLD/M1_ADC18_house4_l51_tm_air_temperature
     GLD/M1_ADC18_house4_l51_tm_mass_temperature
     GLD/M1_ADC18_house4_l51_tm_thermostat_mode
+    GLD/M1_ADC18_house4_l51_tm_is_COOL_on
     GLD/M1_ADC18_house5_l51_tm_mass_heat_coeff
     GLD/M1_ADC18_house5_l51_tm_UA
     GLD/M1_ADC18_house5_l51_tm_heating_system_type
@@ -10760,6 +11046,7 @@ values
     GLD/M1_ADC18_house5_l51_tm_air_temperature
     GLD/M1_ADC18_house5_l51_tm_mass_temperature
     GLD/M1_ADC18_house5_l51_tm_thermostat_mode
+    GLD/M1_ADC18_house5_l51_tm_is_COOL_on
     GLD/M1_ADC18_house6_l51_tm_mass_heat_coeff
     GLD/M1_ADC18_house6_l51_tm_UA
     GLD/M1_ADC18_house6_l51_tm_heating_system_type
@@ -10785,317 +11072,228 @@ values
     GLD/M1_ADC18_house6_l51_tm_air_temperature
     GLD/M1_ADC18_house6_l51_tm_mass_temperature
     GLD/M1_ADC18_house6_l51_tm_thermostat_mode
+    GLD/M1_ADC18_house6_l51_tm_is_COOL_on
     GLD/M1_ADC18_solar_PVinv_house2_l19_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house2_l19_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house2_l19_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house2_l19_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house2_l19_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house2_l19_tm_VA_Out
     GLD/M1_ADC18_PVinv_house2_l19_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house4_l20_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house4_l20_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house4_l20_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house4_l20_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house4_l20_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house4_l20_tm_VA_Out
     GLD/M1_ADC18_PVinv_house4_l20_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house5_l20_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house5_l20_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house5_l20_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house5_l20_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house5_l20_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house5_l20_tm_VA_Out
     GLD/M1_ADC18_PVinv_house5_l20_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house4_l22_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house4_l22_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house4_l22_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house4_l22_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house4_l22_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house4_l22_tm_VA_Out
     GLD/M1_ADC18_PVinv_house4_l22_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house0_l24_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house0_l24_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house0_l24_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house0_l24_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house0_l24_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house0_l24_tm_VA_Out
     GLD/M1_ADC18_PVinv_house0_l24_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house3_l24_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house3_l24_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house3_l24_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house3_l24_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house3_l24_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house3_l24_tm_VA_Out
     GLD/M1_ADC18_PVinv_house3_l24_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house1_l28_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house1_l28_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house1_l28_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house1_l28_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house1_l28_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house1_l28_tm_VA_Out
     GLD/M1_ADC18_PVinv_house1_l28_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house9_l28_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house9_l28_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house9_l28_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house9_l28_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house9_l28_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house9_l28_tm_VA_Out
     GLD/M1_ADC18_PVinv_house9_l28_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house10_l28_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house10_l28_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house10_l28_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house10_l28_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house10_l28_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house10_l28_tm_VA_Out
     GLD/M1_ADC18_PVinv_house10_l28_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house11_l28_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house11_l28_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house11_l28_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house11_l28_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house11_l28_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house11_l28_tm_VA_Out
     GLD/M1_ADC18_PVinv_house11_l28_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house14_l28_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house14_l28_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house14_l28_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house14_l28_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house14_l28_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house14_l28_tm_VA_Out
     GLD/M1_ADC18_PVinv_house14_l28_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house2_l29_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house2_l29_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house2_l29_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house2_l29_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house2_l29_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house2_l29_tm_VA_Out
     GLD/M1_ADC18_PVinv_house2_l29_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house5_l29_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house5_l29_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house5_l29_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house5_l29_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house5_l29_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house5_l29_tm_VA_Out
     GLD/M1_ADC18_PVinv_house5_l29_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house11_l29_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house11_l29_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house11_l29_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house11_l29_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house11_l29_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house11_l29_tm_VA_Out
     GLD/M1_ADC18_PVinv_house11_l29_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house1_l30_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house1_l30_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house1_l30_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house1_l30_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house1_l30_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house1_l30_tm_VA_Out
     GLD/M1_ADC18_PVinv_house1_l30_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house12_l30_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house12_l30_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house12_l30_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house12_l30_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house12_l30_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house12_l30_tm_VA_Out
     GLD/M1_ADC18_PVinv_house12_l30_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house2_l31_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house2_l31_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house2_l31_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house2_l31_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house2_l31_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house2_l31_tm_VA_Out
     GLD/M1_ADC18_PVinv_house2_l31_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house3_l31_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house3_l31_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house3_l31_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house3_l31_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house3_l31_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house3_l31_tm_VA_Out
     GLD/M1_ADC18_PVinv_house3_l31_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house2_l32_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house2_l32_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house2_l32_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house2_l32_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house2_l32_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house2_l32_tm_VA_Out
     GLD/M1_ADC18_PVinv_house2_l32_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house5_l32_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house5_l32_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house5_l32_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house5_l32_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house5_l32_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house5_l32_tm_VA_Out
     GLD/M1_ADC18_PVinv_house5_l32_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house0_l33_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house0_l33_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house0_l33_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house0_l33_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house0_l33_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house0_l33_tm_VA_Out
     GLD/M1_ADC18_PVinv_house0_l33_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house1_l37_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house1_l37_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house1_l37_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house1_l37_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house1_l37_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house1_l37_tm_VA_Out
     GLD/M1_ADC18_PVinv_house1_l37_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house7_l37_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house7_l37_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house7_l37_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house7_l37_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house7_l37_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house7_l37_tm_VA_Out
     GLD/M1_ADC18_PVinv_house7_l37_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house8_l37_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house8_l37_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house8_l37_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house8_l37_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house8_l37_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house8_l37_tm_VA_Out
     GLD/M1_ADC18_PVinv_house8_l37_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house11_l37_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house11_l37_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house11_l37_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house11_l37_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house11_l37_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house11_l37_tm_VA_Out
     GLD/M1_ADC18_PVinv_house11_l37_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house13_l37_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house13_l37_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house13_l37_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house13_l37_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house13_l37_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house13_l37_tm_VA_Out
     GLD/M1_ADC18_PVinv_house13_l37_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house1_l38_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house1_l38_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house1_l38_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house1_l38_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house1_l38_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house1_l38_tm_VA_Out
     GLD/M1_ADC18_PVinv_house1_l38_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house2_l41_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house2_l41_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house2_l41_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house2_l41_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house2_l41_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house2_l41_tm_VA_Out
     GLD/M1_ADC18_PVinv_house2_l41_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house3_l41_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house3_l41_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house3_l41_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house3_l41_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house3_l41_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house3_l41_tm_VA_Out
     GLD/M1_ADC18_PVinv_house3_l41_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house1_l42_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house1_l42_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house1_l42_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house1_l42_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house1_l42_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house1_l42_tm_VA_Out
     GLD/M1_ADC18_PVinv_house1_l42_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house2_l42_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house2_l42_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house2_l42_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house2_l42_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house2_l42_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house2_l42_tm_VA_Out
     GLD/M1_ADC18_PVinv_house2_l42_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house4_l42_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house4_l42_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house4_l42_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house4_l42_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house4_l42_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house4_l42_tm_VA_Out
     GLD/M1_ADC18_PVinv_house4_l42_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house5_l42_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house5_l42_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house5_l42_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house5_l42_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house5_l42_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house5_l42_tm_VA_Out
     GLD/M1_ADC18_PVinv_house5_l42_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house6_l42_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house6_l42_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house6_l42_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house6_l42_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house6_l42_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house6_l42_tm_VA_Out
     GLD/M1_ADC18_PVinv_house6_l42_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house0_l43_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house0_l43_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house0_l43_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house0_l43_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house0_l43_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house0_l43_tm_VA_Out
     GLD/M1_ADC18_PVinv_house0_l43_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house0_l46_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house0_l46_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house0_l46_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house0_l46_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house0_l46_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house0_l46_tm_VA_Out
     GLD/M1_ADC18_PVinv_house0_l46_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house4_l46_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house4_l46_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house4_l46_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house4_l46_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house4_l46_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house4_l46_tm_VA_Out
     GLD/M1_ADC18_PVinv_house4_l46_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house1_l50_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house1_l50_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house1_l50_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house1_l50_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house1_l50_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house1_l50_tm_VA_Out
     GLD/M1_ADC18_PVinv_house1_l50_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house3_l50_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house3_l50_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house3_l50_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house3_l50_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house3_l50_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house3_l50_tm_VA_Out
     GLD/M1_ADC18_PVinv_house3_l50_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house4_l50_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house4_l50_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house4_l50_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house4_l50_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house4_l50_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house4_l50_tm_VA_Out
     GLD/M1_ADC18_PVinv_house4_l50_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house5_l50_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house5_l50_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house5_l50_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house5_l50_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house5_l50_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house5_l50_tm_VA_Out
     GLD/M1_ADC18_PVinv_house5_l50_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house9_l50_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house9_l50_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house9_l50_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house9_l50_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house9_l50_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house9_l50_tm_VA_Out
     GLD/M1_ADC18_PVinv_house9_l50_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house14_l50_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house14_l50_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house14_l50_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house14_l50_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house14_l50_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house14_l50_tm_VA_Out
     GLD/M1_ADC18_PVinv_house14_l50_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house0_l51_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house0_l51_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house0_l51_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house0_l51_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house0_l51_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house0_l51_tm_VA_Out
     GLD/M1_ADC18_PVinv_house0_l51_tm_inverter_efficiency
     GLD/M1_ADC18_solar_PVinv_house3_l51_tm_rated_power
-    GLD/M1_ADC18_solar_PVinv_house3_l51_tm_latitude
-    GLD/M1_ADC18_solar_PVinv_house3_l51_tm_longitude
     GLD/M1_ADC18_solar_PVinv_house3_l51_tm_tilt_angle
     GLD/M1_ADC18_solar_PVinv_house3_l51_tm_orientation_azimuth
     GLD/M1_ADC18_solar_PVinv_house3_l51_tm_VA_Out
@@ -12025,6 +12223,7 @@ values
     GLD/M1_ADC2_house0_l2_tm_air_temperature
     GLD/M1_ADC2_house0_l2_tm_mass_temperature
     GLD/M1_ADC2_house0_l2_tm_thermostat_mode
+    GLD/M1_ADC2_house0_l2_tm_is_COOL_on
     GLD/M1_ADC2_house1_l2_tm_mass_heat_coeff
     GLD/M1_ADC2_house1_l2_tm_UA
     GLD/M1_ADC2_house1_l2_tm_heating_system_type
@@ -12050,6 +12249,7 @@ values
     GLD/M1_ADC2_house1_l2_tm_air_temperature
     GLD/M1_ADC2_house1_l2_tm_mass_temperature
     GLD/M1_ADC2_house1_l2_tm_thermostat_mode
+    GLD/M1_ADC2_house1_l2_tm_is_COOL_on
     GLD/M1_ADC2_house2_l2_tm_mass_heat_coeff
     GLD/M1_ADC2_house2_l2_tm_UA
     GLD/M1_ADC2_house2_l2_tm_heating_system_type
@@ -12075,6 +12275,7 @@ values
     GLD/M1_ADC2_house2_l2_tm_air_temperature
     GLD/M1_ADC2_house2_l2_tm_mass_temperature
     GLD/M1_ADC2_house2_l2_tm_thermostat_mode
+    GLD/M1_ADC2_house2_l2_tm_is_COOL_on
     GLD/M1_ADC2_house3_l2_tm_mass_heat_coeff
     GLD/M1_ADC2_house3_l2_tm_UA
     GLD/M1_ADC2_house3_l2_tm_heating_system_type
@@ -12100,6 +12301,7 @@ values
     GLD/M1_ADC2_house3_l2_tm_air_temperature
     GLD/M1_ADC2_house3_l2_tm_mass_temperature
     GLD/M1_ADC2_house3_l2_tm_thermostat_mode
+    GLD/M1_ADC2_house3_l2_tm_is_COOL_on
     GLD/M1_ADC2_house4_l2_tm_mass_heat_coeff
     GLD/M1_ADC2_house4_l2_tm_UA
     GLD/M1_ADC2_house4_l2_tm_heating_system_type
@@ -12125,6 +12327,7 @@ values
     GLD/M1_ADC2_house4_l2_tm_air_temperature
     GLD/M1_ADC2_house4_l2_tm_mass_temperature
     GLD/M1_ADC2_house4_l2_tm_thermostat_mode
+    GLD/M1_ADC2_house4_l2_tm_is_COOL_on
     GLD/M1_ADC2_house5_l2_tm_mass_heat_coeff
     GLD/M1_ADC2_house5_l2_tm_UA
     GLD/M1_ADC2_house5_l2_tm_heating_system_type
@@ -12150,6 +12353,7 @@ values
     GLD/M1_ADC2_house5_l2_tm_air_temperature
     GLD/M1_ADC2_house5_l2_tm_mass_temperature
     GLD/M1_ADC2_house5_l2_tm_thermostat_mode
+    GLD/M1_ADC2_house5_l2_tm_is_COOL_on
     GLD/M1_ADC2_house6_l2_tm_mass_heat_coeff
     GLD/M1_ADC2_house6_l2_tm_UA
     GLD/M1_ADC2_house6_l2_tm_heating_system_type
@@ -12175,6 +12379,7 @@ values
     GLD/M1_ADC2_house6_l2_tm_air_temperature
     GLD/M1_ADC2_house6_l2_tm_mass_temperature
     GLD/M1_ADC2_house6_l2_tm_thermostat_mode
+    GLD/M1_ADC2_house6_l2_tm_is_COOL_on
     GLD/M1_ADC2_house0_wh_l2_tm_heat_mode
     GLD/M1_ADC2_house0_wh_l2_tm_tank_volume
     GLD/M1_ADC2_house0_wh_l2_tm_tank_height
@@ -12332,6 +12537,7 @@ values
     GLD/M1_ADC3_house1_l4_tm_air_temperature
     GLD/M1_ADC3_house1_l4_tm_mass_temperature
     GLD/M1_ADC3_house1_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house1_l4_tm_is_COOL_on
     GLD/M1_ADC3_house2_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house2_l4_tm_UA
     GLD/M1_ADC3_house2_l4_tm_heating_system_type
@@ -12357,6 +12563,7 @@ values
     GLD/M1_ADC3_house2_l4_tm_air_temperature
     GLD/M1_ADC3_house2_l4_tm_mass_temperature
     GLD/M1_ADC3_house2_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house2_l4_tm_is_COOL_on
     GLD/M1_ADC3_house3_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house3_l4_tm_UA
     GLD/M1_ADC3_house3_l4_tm_heating_system_type
@@ -12382,6 +12589,7 @@ values
     GLD/M1_ADC3_house3_l4_tm_air_temperature
     GLD/M1_ADC3_house3_l4_tm_mass_temperature
     GLD/M1_ADC3_house3_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house3_l4_tm_is_COOL_on
     GLD/M1_ADC3_house4_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house4_l4_tm_UA
     GLD/M1_ADC3_house4_l4_tm_heating_system_type
@@ -12407,6 +12615,7 @@ values
     GLD/M1_ADC3_house4_l4_tm_air_temperature
     GLD/M1_ADC3_house4_l4_tm_mass_temperature
     GLD/M1_ADC3_house4_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house4_l4_tm_is_COOL_on
     GLD/M1_ADC3_house5_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house5_l4_tm_UA
     GLD/M1_ADC3_house5_l4_tm_heating_system_type
@@ -12432,6 +12641,7 @@ values
     GLD/M1_ADC3_house5_l4_tm_air_temperature
     GLD/M1_ADC3_house5_l4_tm_mass_temperature
     GLD/M1_ADC3_house5_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house5_l4_tm_is_COOL_on
     GLD/M1_ADC3_house6_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house6_l4_tm_UA
     GLD/M1_ADC3_house6_l4_tm_heating_system_type
@@ -12457,6 +12667,7 @@ values
     GLD/M1_ADC3_house6_l4_tm_air_temperature
     GLD/M1_ADC3_house6_l4_tm_mass_temperature
     GLD/M1_ADC3_house6_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house6_l4_tm_is_COOL_on
     GLD/M1_ADC3_house7_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house7_l4_tm_UA
     GLD/M1_ADC3_house7_l4_tm_heating_system_type
@@ -12482,6 +12693,7 @@ values
     GLD/M1_ADC3_house7_l4_tm_air_temperature
     GLD/M1_ADC3_house7_l4_tm_mass_temperature
     GLD/M1_ADC3_house7_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house7_l4_tm_is_COOL_on
     GLD/M1_ADC3_house8_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house8_l4_tm_UA
     GLD/M1_ADC3_house8_l4_tm_heating_system_type
@@ -12507,6 +12719,7 @@ values
     GLD/M1_ADC3_house8_l4_tm_air_temperature
     GLD/M1_ADC3_house8_l4_tm_mass_temperature
     GLD/M1_ADC3_house8_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house8_l4_tm_is_COOL_on
     GLD/M1_ADC3_house9_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house9_l4_tm_UA
     GLD/M1_ADC3_house9_l4_tm_heating_system_type
@@ -12532,6 +12745,7 @@ values
     GLD/M1_ADC3_house9_l4_tm_air_temperature
     GLD/M1_ADC3_house9_l4_tm_mass_temperature
     GLD/M1_ADC3_house9_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house9_l4_tm_is_COOL_on
     GLD/M1_ADC3_house10_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house10_l4_tm_UA
     GLD/M1_ADC3_house10_l4_tm_heating_system_type
@@ -12557,6 +12771,7 @@ values
     GLD/M1_ADC3_house10_l4_tm_air_temperature
     GLD/M1_ADC3_house10_l4_tm_mass_temperature
     GLD/M1_ADC3_house10_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house10_l4_tm_is_COOL_on
     GLD/M1_ADC3_house11_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house11_l4_tm_UA
     GLD/M1_ADC3_house11_l4_tm_heating_system_type
@@ -12582,6 +12797,7 @@ values
     GLD/M1_ADC3_house11_l4_tm_air_temperature
     GLD/M1_ADC3_house11_l4_tm_mass_temperature
     GLD/M1_ADC3_house11_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house11_l4_tm_is_COOL_on
     GLD/M1_ADC3_house12_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house12_l4_tm_UA
     GLD/M1_ADC3_house12_l4_tm_heating_system_type
@@ -12607,6 +12823,7 @@ values
     GLD/M1_ADC3_house12_l4_tm_air_temperature
     GLD/M1_ADC3_house12_l4_tm_mass_temperature
     GLD/M1_ADC3_house12_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house12_l4_tm_is_COOL_on
     GLD/M1_ADC3_house13_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house13_l4_tm_UA
     GLD/M1_ADC3_house13_l4_tm_heating_system_type
@@ -12632,6 +12849,7 @@ values
     GLD/M1_ADC3_house13_l4_tm_air_temperature
     GLD/M1_ADC3_house13_l4_tm_mass_temperature
     GLD/M1_ADC3_house13_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house13_l4_tm_is_COOL_on
     GLD/M1_ADC3_house14_l4_tm_mass_heat_coeff
     GLD/M1_ADC3_house14_l4_tm_UA
     GLD/M1_ADC3_house14_l4_tm_heating_system_type
@@ -12657,6 +12875,7 @@ values
     GLD/M1_ADC3_house14_l4_tm_air_temperature
     GLD/M1_ADC3_house14_l4_tm_mass_temperature
     GLD/M1_ADC3_house14_l4_tm_thermostat_mode
+    GLD/M1_ADC3_house14_l4_tm_is_COOL_on
     GLD/M1_ADC3_house0_l5_tm_mass_heat_coeff
     GLD/M1_ADC3_house0_l5_tm_UA
     GLD/M1_ADC3_house0_l5_tm_heating_system_type
@@ -12682,6 +12901,7 @@ values
     GLD/M1_ADC3_house0_l5_tm_air_temperature
     GLD/M1_ADC3_house0_l5_tm_mass_temperature
     GLD/M1_ADC3_house0_l5_tm_thermostat_mode
+    GLD/M1_ADC3_house0_l5_tm_is_COOL_on
     GLD/M1_ADC3_house1_l5_tm_mass_heat_coeff
     GLD/M1_ADC3_house1_l5_tm_UA
     GLD/M1_ADC3_house1_l5_tm_heating_system_type
@@ -12707,6 +12927,7 @@ values
     GLD/M1_ADC3_house1_l5_tm_air_temperature
     GLD/M1_ADC3_house1_l5_tm_mass_temperature
     GLD/M1_ADC3_house1_l5_tm_thermostat_mode
+    GLD/M1_ADC3_house1_l5_tm_is_COOL_on
     GLD/M1_ADC3_house3_l5_tm_mass_heat_coeff
     GLD/M1_ADC3_house3_l5_tm_UA
     GLD/M1_ADC3_house3_l5_tm_heating_system_type
@@ -12732,6 +12953,7 @@ values
     GLD/M1_ADC3_house3_l5_tm_air_temperature
     GLD/M1_ADC3_house3_l5_tm_mass_temperature
     GLD/M1_ADC3_house3_l5_tm_thermostat_mode
+    GLD/M1_ADC3_house3_l5_tm_is_COOL_on
     GLD/M1_ADC3_house4_l5_tm_mass_heat_coeff
     GLD/M1_ADC3_house4_l5_tm_UA
     GLD/M1_ADC3_house4_l5_tm_heating_system_type
@@ -12757,6 +12979,7 @@ values
     GLD/M1_ADC3_house4_l5_tm_air_temperature
     GLD/M1_ADC3_house4_l5_tm_mass_temperature
     GLD/M1_ADC3_house4_l5_tm_thermostat_mode
+    GLD/M1_ADC3_house4_l5_tm_is_COOL_on
     GLD/M1_ADC3_house5_l5_tm_mass_heat_coeff
     GLD/M1_ADC3_house5_l5_tm_UA
     GLD/M1_ADC3_house5_l5_tm_heating_system_type
@@ -12782,6 +13005,7 @@ values
     GLD/M1_ADC3_house5_l5_tm_air_temperature
     GLD/M1_ADC3_house5_l5_tm_mass_temperature
     GLD/M1_ADC3_house5_l5_tm_thermostat_mode
+    GLD/M1_ADC3_house5_l5_tm_is_COOL_on
     GLD/M1_ADC3_house0_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house0_l6_tm_UA
     GLD/M1_ADC3_house0_l6_tm_heating_system_type
@@ -12807,6 +13031,7 @@ values
     GLD/M1_ADC3_house0_l6_tm_air_temperature
     GLD/M1_ADC3_house0_l6_tm_mass_temperature
     GLD/M1_ADC3_house0_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house0_l6_tm_is_COOL_on
     GLD/M1_ADC3_house1_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house1_l6_tm_UA
     GLD/M1_ADC3_house1_l6_tm_heating_system_type
@@ -12832,6 +13057,7 @@ values
     GLD/M1_ADC3_house1_l6_tm_air_temperature
     GLD/M1_ADC3_house1_l6_tm_mass_temperature
     GLD/M1_ADC3_house1_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house1_l6_tm_is_COOL_on
     GLD/M1_ADC3_house2_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house2_l6_tm_UA
     GLD/M1_ADC3_house2_l6_tm_heating_system_type
@@ -12857,6 +13083,7 @@ values
     GLD/M1_ADC3_house2_l6_tm_air_temperature
     GLD/M1_ADC3_house2_l6_tm_mass_temperature
     GLD/M1_ADC3_house2_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house2_l6_tm_is_COOL_on
     GLD/M1_ADC3_house3_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house3_l6_tm_UA
     GLD/M1_ADC3_house3_l6_tm_heating_system_type
@@ -12882,6 +13109,7 @@ values
     GLD/M1_ADC3_house3_l6_tm_air_temperature
     GLD/M1_ADC3_house3_l6_tm_mass_temperature
     GLD/M1_ADC3_house3_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house3_l6_tm_is_COOL_on
     GLD/M1_ADC3_house4_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house4_l6_tm_UA
     GLD/M1_ADC3_house4_l6_tm_heating_system_type
@@ -12907,6 +13135,7 @@ values
     GLD/M1_ADC3_house4_l6_tm_air_temperature
     GLD/M1_ADC3_house4_l6_tm_mass_temperature
     GLD/M1_ADC3_house4_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house4_l6_tm_is_COOL_on
     GLD/M1_ADC3_house5_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house5_l6_tm_UA
     GLD/M1_ADC3_house5_l6_tm_heating_system_type
@@ -12932,6 +13161,7 @@ values
     GLD/M1_ADC3_house5_l6_tm_air_temperature
     GLD/M1_ADC3_house5_l6_tm_mass_temperature
     GLD/M1_ADC3_house5_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house5_l6_tm_is_COOL_on
     GLD/M1_ADC3_house6_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house6_l6_tm_UA
     GLD/M1_ADC3_house6_l6_tm_heating_system_type
@@ -12957,6 +13187,7 @@ values
     GLD/M1_ADC3_house6_l6_tm_air_temperature
     GLD/M1_ADC3_house6_l6_tm_mass_temperature
     GLD/M1_ADC3_house6_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house6_l6_tm_is_COOL_on
     GLD/M1_ADC3_house7_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house7_l6_tm_UA
     GLD/M1_ADC3_house7_l6_tm_heating_system_type
@@ -12982,6 +13213,7 @@ values
     GLD/M1_ADC3_house7_l6_tm_air_temperature
     GLD/M1_ADC3_house7_l6_tm_mass_temperature
     GLD/M1_ADC3_house7_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house7_l6_tm_is_COOL_on
     GLD/M1_ADC3_house8_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house8_l6_tm_UA
     GLD/M1_ADC3_house8_l6_tm_heating_system_type
@@ -13007,6 +13239,7 @@ values
     GLD/M1_ADC3_house8_l6_tm_air_temperature
     GLD/M1_ADC3_house8_l6_tm_mass_temperature
     GLD/M1_ADC3_house8_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house8_l6_tm_is_COOL_on
     GLD/M1_ADC3_house9_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house9_l6_tm_UA
     GLD/M1_ADC3_house9_l6_tm_heating_system_type
@@ -13032,6 +13265,7 @@ values
     GLD/M1_ADC3_house9_l6_tm_air_temperature
     GLD/M1_ADC3_house9_l6_tm_mass_temperature
     GLD/M1_ADC3_house9_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house9_l6_tm_is_COOL_on
     GLD/M1_ADC3_house10_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house10_l6_tm_UA
     GLD/M1_ADC3_house10_l6_tm_heating_system_type
@@ -13057,6 +13291,7 @@ values
     GLD/M1_ADC3_house10_l6_tm_air_temperature
     GLD/M1_ADC3_house10_l6_tm_mass_temperature
     GLD/M1_ADC3_house10_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house10_l6_tm_is_COOL_on
     GLD/M1_ADC3_house11_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house11_l6_tm_UA
     GLD/M1_ADC3_house11_l6_tm_heating_system_type
@@ -13082,6 +13317,7 @@ values
     GLD/M1_ADC3_house11_l6_tm_air_temperature
     GLD/M1_ADC3_house11_l6_tm_mass_temperature
     GLD/M1_ADC3_house11_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house11_l6_tm_is_COOL_on
     GLD/M1_ADC3_house12_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house12_l6_tm_UA
     GLD/M1_ADC3_house12_l6_tm_heating_system_type
@@ -13107,6 +13343,7 @@ values
     GLD/M1_ADC3_house12_l6_tm_air_temperature
     GLD/M1_ADC3_house12_l6_tm_mass_temperature
     GLD/M1_ADC3_house12_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house12_l6_tm_is_COOL_on
     GLD/M1_ADC3_house13_l6_tm_mass_heat_coeff
     GLD/M1_ADC3_house13_l6_tm_UA
     GLD/M1_ADC3_house13_l6_tm_heating_system_type
@@ -13132,37 +13369,28 @@ values
     GLD/M1_ADC3_house13_l6_tm_air_temperature
     GLD/M1_ADC3_house13_l6_tm_mass_temperature
     GLD/M1_ADC3_house13_l6_tm_thermostat_mode
+    GLD/M1_ADC3_house13_l6_tm_is_COOL_on
     GLD/M1_ADC3_solar_PVinv_house3_l4_tm_rated_power
-    GLD/M1_ADC3_solar_PVinv_house3_l4_tm_latitude
-    GLD/M1_ADC3_solar_PVinv_house3_l4_tm_longitude
     GLD/M1_ADC3_solar_PVinv_house3_l4_tm_tilt_angle
     GLD/M1_ADC3_solar_PVinv_house3_l4_tm_orientation_azimuth
     GLD/M1_ADC3_solar_PVinv_house3_l4_tm_VA_Out
     GLD/M1_ADC3_PVinv_house3_l4_tm_inverter_efficiency
     GLD/M1_ADC3_solar_PVinv_house11_l4_tm_rated_power
-    GLD/M1_ADC3_solar_PVinv_house11_l4_tm_latitude
-    GLD/M1_ADC3_solar_PVinv_house11_l4_tm_longitude
     GLD/M1_ADC3_solar_PVinv_house11_l4_tm_tilt_angle
     GLD/M1_ADC3_solar_PVinv_house11_l4_tm_orientation_azimuth
     GLD/M1_ADC3_solar_PVinv_house11_l4_tm_VA_Out
     GLD/M1_ADC3_PVinv_house11_l4_tm_inverter_efficiency
     GLD/M1_ADC3_solar_PVinv_house1_l5_tm_rated_power
-    GLD/M1_ADC3_solar_PVinv_house1_l5_tm_latitude
-    GLD/M1_ADC3_solar_PVinv_house1_l5_tm_longitude
     GLD/M1_ADC3_solar_PVinv_house1_l5_tm_tilt_angle
     GLD/M1_ADC3_solar_PVinv_house1_l5_tm_orientation_azimuth
     GLD/M1_ADC3_solar_PVinv_house1_l5_tm_VA_Out
     GLD/M1_ADC3_PVinv_house1_l5_tm_inverter_efficiency
     GLD/M1_ADC3_solar_PVinv_house4_l6_tm_rated_power
-    GLD/M1_ADC3_solar_PVinv_house4_l6_tm_latitude
-    GLD/M1_ADC3_solar_PVinv_house4_l6_tm_longitude
     GLD/M1_ADC3_solar_PVinv_house4_l6_tm_tilt_angle
     GLD/M1_ADC3_solar_PVinv_house4_l6_tm_orientation_azimuth
     GLD/M1_ADC3_solar_PVinv_house4_l6_tm_VA_Out
     GLD/M1_ADC3_PVinv_house4_l6_tm_inverter_efficiency
     GLD/M1_ADC3_solar_PVinv_house8_l6_tm_rated_power
-    GLD/M1_ADC3_solar_PVinv_house8_l6_tm_latitude
-    GLD/M1_ADC3_solar_PVinv_house8_l6_tm_longitude
     GLD/M1_ADC3_solar_PVinv_house8_l6_tm_tilt_angle
     GLD/M1_ADC3_solar_PVinv_house8_l6_tm_orientation_azimuth
     GLD/M1_ADC3_solar_PVinv_house8_l6_tm_VA_Out
@@ -13514,6 +13742,7 @@ values
     GLD/M1_ADC34_house0_l16_tm_air_temperature
     GLD/M1_ADC34_house0_l16_tm_mass_temperature
     GLD/M1_ADC34_house0_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house0_l16_tm_is_COOL_on
     GLD/M1_ADC34_house1_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house1_l16_tm_UA
     GLD/M1_ADC34_house1_l16_tm_heating_system_type
@@ -13539,6 +13768,7 @@ values
     GLD/M1_ADC34_house1_l16_tm_air_temperature
     GLD/M1_ADC34_house1_l16_tm_mass_temperature
     GLD/M1_ADC34_house1_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house1_l16_tm_is_COOL_on
     GLD/M1_ADC34_house2_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house2_l16_tm_UA
     GLD/M1_ADC34_house2_l16_tm_heating_system_type
@@ -13564,6 +13794,7 @@ values
     GLD/M1_ADC34_house2_l16_tm_air_temperature
     GLD/M1_ADC34_house2_l16_tm_mass_temperature
     GLD/M1_ADC34_house2_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house2_l16_tm_is_COOL_on
     GLD/M1_ADC34_house3_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house3_l16_tm_UA
     GLD/M1_ADC34_house3_l16_tm_heating_system_type
@@ -13589,6 +13820,7 @@ values
     GLD/M1_ADC34_house3_l16_tm_air_temperature
     GLD/M1_ADC34_house3_l16_tm_mass_temperature
     GLD/M1_ADC34_house3_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house3_l16_tm_is_COOL_on
     GLD/M1_ADC34_house4_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house4_l16_tm_UA
     GLD/M1_ADC34_house4_l16_tm_heating_system_type
@@ -13614,6 +13846,7 @@ values
     GLD/M1_ADC34_house4_l16_tm_air_temperature
     GLD/M1_ADC34_house4_l16_tm_mass_temperature
     GLD/M1_ADC34_house4_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house4_l16_tm_is_COOL_on
     GLD/M1_ADC34_house5_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house5_l16_tm_UA
     GLD/M1_ADC34_house5_l16_tm_heating_system_type
@@ -13639,6 +13872,7 @@ values
     GLD/M1_ADC34_house5_l16_tm_air_temperature
     GLD/M1_ADC34_house5_l16_tm_mass_temperature
     GLD/M1_ADC34_house5_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house5_l16_tm_is_COOL_on
     GLD/M1_ADC34_house6_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house6_l16_tm_UA
     GLD/M1_ADC34_house6_l16_tm_heating_system_type
@@ -13664,6 +13898,7 @@ values
     GLD/M1_ADC34_house6_l16_tm_air_temperature
     GLD/M1_ADC34_house6_l16_tm_mass_temperature
     GLD/M1_ADC34_house6_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house6_l16_tm_is_COOL_on
     GLD/M1_ADC34_house7_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house7_l16_tm_UA
     GLD/M1_ADC34_house7_l16_tm_heating_system_type
@@ -13689,6 +13924,7 @@ values
     GLD/M1_ADC34_house7_l16_tm_air_temperature
     GLD/M1_ADC34_house7_l16_tm_mass_temperature
     GLD/M1_ADC34_house7_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house7_l16_tm_is_COOL_on
     GLD/M1_ADC34_house8_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house8_l16_tm_UA
     GLD/M1_ADC34_house8_l16_tm_heating_system_type
@@ -13714,6 +13950,7 @@ values
     GLD/M1_ADC34_house8_l16_tm_air_temperature
     GLD/M1_ADC34_house8_l16_tm_mass_temperature
     GLD/M1_ADC34_house8_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house8_l16_tm_is_COOL_on
     GLD/M1_ADC34_house9_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house9_l16_tm_UA
     GLD/M1_ADC34_house9_l16_tm_heating_system_type
@@ -13739,6 +13976,7 @@ values
     GLD/M1_ADC34_house9_l16_tm_air_temperature
     GLD/M1_ADC34_house9_l16_tm_mass_temperature
     GLD/M1_ADC34_house9_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house9_l16_tm_is_COOL_on
     GLD/M1_ADC34_house10_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house10_l16_tm_UA
     GLD/M1_ADC34_house10_l16_tm_heating_system_type
@@ -13764,6 +14002,7 @@ values
     GLD/M1_ADC34_house10_l16_tm_air_temperature
     GLD/M1_ADC34_house10_l16_tm_mass_temperature
     GLD/M1_ADC34_house10_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house10_l16_tm_is_COOL_on
     GLD/M1_ADC34_house11_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house11_l16_tm_UA
     GLD/M1_ADC34_house11_l16_tm_heating_system_type
@@ -13789,6 +14028,7 @@ values
     GLD/M1_ADC34_house11_l16_tm_air_temperature
     GLD/M1_ADC34_house11_l16_tm_mass_temperature
     GLD/M1_ADC34_house11_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house11_l16_tm_is_COOL_on
     GLD/M1_ADC34_house12_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house12_l16_tm_UA
     GLD/M1_ADC34_house12_l16_tm_heating_system_type
@@ -13814,6 +14054,7 @@ values
     GLD/M1_ADC34_house12_l16_tm_air_temperature
     GLD/M1_ADC34_house12_l16_tm_mass_temperature
     GLD/M1_ADC34_house12_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house12_l16_tm_is_COOL_on
     GLD/M1_ADC34_house13_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house13_l16_tm_UA
     GLD/M1_ADC34_house13_l16_tm_heating_system_type
@@ -13839,6 +14080,7 @@ values
     GLD/M1_ADC34_house13_l16_tm_air_temperature
     GLD/M1_ADC34_house13_l16_tm_mass_temperature
     GLD/M1_ADC34_house13_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house13_l16_tm_is_COOL_on
     GLD/M1_ADC34_house14_l16_tm_mass_heat_coeff
     GLD/M1_ADC34_house14_l16_tm_UA
     GLD/M1_ADC34_house14_l16_tm_heating_system_type
@@ -13864,6 +14106,7 @@ values
     GLD/M1_ADC34_house14_l16_tm_air_temperature
     GLD/M1_ADC34_house14_l16_tm_mass_temperature
     GLD/M1_ADC34_house14_l16_tm_thermostat_mode
+    GLD/M1_ADC34_house14_l16_tm_is_COOL_on
     GLD/M1_ADC34_house0_l17_tm_mass_heat_coeff
     GLD/M1_ADC34_house0_l17_tm_UA
     GLD/M1_ADC34_house0_l17_tm_heating_system_type
@@ -13889,6 +14132,7 @@ values
     GLD/M1_ADC34_house0_l17_tm_air_temperature
     GLD/M1_ADC34_house0_l17_tm_mass_temperature
     GLD/M1_ADC34_house0_l17_tm_thermostat_mode
+    GLD/M1_ADC34_house0_l17_tm_is_COOL_on
     GLD/M1_ADC34_house1_l17_tm_mass_heat_coeff
     GLD/M1_ADC34_house1_l17_tm_UA
     GLD/M1_ADC34_house1_l17_tm_heating_system_type
@@ -13914,6 +14158,7 @@ values
     GLD/M1_ADC34_house1_l17_tm_air_temperature
     GLD/M1_ADC34_house1_l17_tm_mass_temperature
     GLD/M1_ADC34_house1_l17_tm_thermostat_mode
+    GLD/M1_ADC34_house1_l17_tm_is_COOL_on
     GLD/M1_ADC34_house2_l17_tm_mass_heat_coeff
     GLD/M1_ADC34_house2_l17_tm_UA
     GLD/M1_ADC34_house2_l17_tm_heating_system_type
@@ -13939,6 +14184,7 @@ values
     GLD/M1_ADC34_house2_l17_tm_air_temperature
     GLD/M1_ADC34_house2_l17_tm_mass_temperature
     GLD/M1_ADC34_house2_l17_tm_thermostat_mode
+    GLD/M1_ADC34_house2_l17_tm_is_COOL_on
     GLD/M1_ADC34_house4_l17_tm_mass_heat_coeff
     GLD/M1_ADC34_house4_l17_tm_UA
     GLD/M1_ADC34_house4_l17_tm_heating_system_type
@@ -13964,6 +14210,7 @@ values
     GLD/M1_ADC34_house4_l17_tm_air_temperature
     GLD/M1_ADC34_house4_l17_tm_mass_temperature
     GLD/M1_ADC34_house4_l17_tm_thermostat_mode
+    GLD/M1_ADC34_house4_l17_tm_is_COOL_on
     GLD/M1_ADC34_house5_l17_tm_mass_heat_coeff
     GLD/M1_ADC34_house5_l17_tm_UA
     GLD/M1_ADC34_house5_l17_tm_heating_system_type
@@ -13989,6 +14236,7 @@ values
     GLD/M1_ADC34_house5_l17_tm_air_temperature
     GLD/M1_ADC34_house5_l17_tm_mass_temperature
     GLD/M1_ADC34_house5_l17_tm_thermostat_mode
+    GLD/M1_ADC34_house5_l17_tm_is_COOL_on
     GLD/M1_ADC34_house6_l17_tm_mass_heat_coeff
     GLD/M1_ADC34_house6_l17_tm_UA
     GLD/M1_ADC34_house6_l17_tm_heating_system_type
@@ -14014,6 +14262,7 @@ values
     GLD/M1_ADC34_house6_l17_tm_air_temperature
     GLD/M1_ADC34_house6_l17_tm_mass_temperature
     GLD/M1_ADC34_house6_l17_tm_thermostat_mode
+    GLD/M1_ADC34_house6_l17_tm_is_COOL_on
     GLD/M1_ADC34_house0_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house0_l34_tm_UA
     GLD/M1_ADC34_house0_l34_tm_heating_system_type
@@ -14039,6 +14288,7 @@ values
     GLD/M1_ADC34_house0_l34_tm_air_temperature
     GLD/M1_ADC34_house0_l34_tm_mass_temperature
     GLD/M1_ADC34_house0_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house0_l34_tm_is_COOL_on
     GLD/M1_ADC34_house1_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house1_l34_tm_UA
     GLD/M1_ADC34_house1_l34_tm_heating_system_type
@@ -14064,6 +14314,7 @@ values
     GLD/M1_ADC34_house1_l34_tm_air_temperature
     GLD/M1_ADC34_house1_l34_tm_mass_temperature
     GLD/M1_ADC34_house1_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house1_l34_tm_is_COOL_on
     GLD/M1_ADC34_house2_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house2_l34_tm_UA
     GLD/M1_ADC34_house2_l34_tm_heating_system_type
@@ -14089,6 +14340,7 @@ values
     GLD/M1_ADC34_house2_l34_tm_air_temperature
     GLD/M1_ADC34_house2_l34_tm_mass_temperature
     GLD/M1_ADC34_house2_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house2_l34_tm_is_COOL_on
     GLD/M1_ADC34_house3_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house3_l34_tm_UA
     GLD/M1_ADC34_house3_l34_tm_heating_system_type
@@ -14114,6 +14366,7 @@ values
     GLD/M1_ADC34_house3_l34_tm_air_temperature
     GLD/M1_ADC34_house3_l34_tm_mass_temperature
     GLD/M1_ADC34_house3_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house3_l34_tm_is_COOL_on
     GLD/M1_ADC34_house4_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house4_l34_tm_UA
     GLD/M1_ADC34_house4_l34_tm_heating_system_type
@@ -14139,6 +14392,7 @@ values
     GLD/M1_ADC34_house4_l34_tm_air_temperature
     GLD/M1_ADC34_house4_l34_tm_mass_temperature
     GLD/M1_ADC34_house4_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house4_l34_tm_is_COOL_on
     GLD/M1_ADC34_house5_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house5_l34_tm_UA
     GLD/M1_ADC34_house5_l34_tm_heating_system_type
@@ -14164,6 +14418,7 @@ values
     GLD/M1_ADC34_house5_l34_tm_air_temperature
     GLD/M1_ADC34_house5_l34_tm_mass_temperature
     GLD/M1_ADC34_house5_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house5_l34_tm_is_COOL_on
     GLD/M1_ADC34_house6_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house6_l34_tm_UA
     GLD/M1_ADC34_house6_l34_tm_heating_system_type
@@ -14189,6 +14444,7 @@ values
     GLD/M1_ADC34_house6_l34_tm_air_temperature
     GLD/M1_ADC34_house6_l34_tm_mass_temperature
     GLD/M1_ADC34_house6_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house6_l34_tm_is_COOL_on
     GLD/M1_ADC34_house7_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house7_l34_tm_UA
     GLD/M1_ADC34_house7_l34_tm_heating_system_type
@@ -14214,6 +14470,7 @@ values
     GLD/M1_ADC34_house7_l34_tm_air_temperature
     GLD/M1_ADC34_house7_l34_tm_mass_temperature
     GLD/M1_ADC34_house7_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house7_l34_tm_is_COOL_on
     GLD/M1_ADC34_house8_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house8_l34_tm_UA
     GLD/M1_ADC34_house8_l34_tm_heating_system_type
@@ -14239,6 +14496,7 @@ values
     GLD/M1_ADC34_house8_l34_tm_air_temperature
     GLD/M1_ADC34_house8_l34_tm_mass_temperature
     GLD/M1_ADC34_house8_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house8_l34_tm_is_COOL_on
     GLD/M1_ADC34_house10_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house10_l34_tm_UA
     GLD/M1_ADC34_house10_l34_tm_heating_system_type
@@ -14264,6 +14522,7 @@ values
     GLD/M1_ADC34_house10_l34_tm_air_temperature
     GLD/M1_ADC34_house10_l34_tm_mass_temperature
     GLD/M1_ADC34_house10_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house10_l34_tm_is_COOL_on
     GLD/M1_ADC34_house11_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house11_l34_tm_UA
     GLD/M1_ADC34_house11_l34_tm_heating_system_type
@@ -14289,6 +14548,7 @@ values
     GLD/M1_ADC34_house11_l34_tm_air_temperature
     GLD/M1_ADC34_house11_l34_tm_mass_temperature
     GLD/M1_ADC34_house11_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house11_l34_tm_is_COOL_on
     GLD/M1_ADC34_house12_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house12_l34_tm_UA
     GLD/M1_ADC34_house12_l34_tm_heating_system_type
@@ -14314,6 +14574,7 @@ values
     GLD/M1_ADC34_house12_l34_tm_air_temperature
     GLD/M1_ADC34_house12_l34_tm_mass_temperature
     GLD/M1_ADC34_house12_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house12_l34_tm_is_COOL_on
     GLD/M1_ADC34_house13_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house13_l34_tm_UA
     GLD/M1_ADC34_house13_l34_tm_heating_system_type
@@ -14339,6 +14600,7 @@ values
     GLD/M1_ADC34_house13_l34_tm_air_temperature
     GLD/M1_ADC34_house13_l34_tm_mass_temperature
     GLD/M1_ADC34_house13_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house13_l34_tm_is_COOL_on
     GLD/M1_ADC34_house14_l34_tm_mass_heat_coeff
     GLD/M1_ADC34_house14_l34_tm_UA
     GLD/M1_ADC34_house14_l34_tm_heating_system_type
@@ -14364,65 +14626,48 @@ values
     GLD/M1_ADC34_house14_l34_tm_air_temperature
     GLD/M1_ADC34_house14_l34_tm_mass_temperature
     GLD/M1_ADC34_house14_l34_tm_thermostat_mode
+    GLD/M1_ADC34_house14_l34_tm_is_COOL_on
     GLD/M1_ADC34_solar_PVinv_house2_l16_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house2_l16_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house2_l16_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house2_l16_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house2_l16_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house2_l16_tm_VA_Out
     GLD/M1_ADC34_PVinv_house2_l16_tm_inverter_efficiency
     GLD/M1_ADC34_solar_PVinv_house3_l16_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house3_l16_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house3_l16_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house3_l16_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house3_l16_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house3_l16_tm_VA_Out
     GLD/M1_ADC34_PVinv_house3_l16_tm_inverter_efficiency
     GLD/M1_ADC34_solar_PVinv_house4_l16_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house4_l16_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house4_l16_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house4_l16_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house4_l16_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house4_l16_tm_VA_Out
     GLD/M1_ADC34_PVinv_house4_l16_tm_inverter_efficiency
     GLD/M1_ADC34_solar_PVinv_house8_l16_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house8_l16_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house8_l16_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house8_l16_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house8_l16_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house8_l16_tm_VA_Out
     GLD/M1_ADC34_PVinv_house8_l16_tm_inverter_efficiency
     GLD/M1_ADC34_solar_PVinv_house0_l17_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house0_l17_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house0_l17_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house0_l17_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house0_l17_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house0_l17_tm_VA_Out
     GLD/M1_ADC34_PVinv_house0_l17_tm_inverter_efficiency
     GLD/M1_ADC34_solar_PVinv_house1_l17_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house1_l17_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house1_l17_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house1_l17_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house1_l17_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house1_l17_tm_VA_Out
     GLD/M1_ADC34_PVinv_house1_l17_tm_inverter_efficiency
     GLD/M1_ADC34_solar_PVinv_house2_l34_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house2_l34_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house2_l34_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house2_l34_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house2_l34_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house2_l34_tm_VA_Out
     GLD/M1_ADC34_PVinv_house2_l34_tm_inverter_efficiency
     GLD/M1_ADC34_solar_PVinv_house3_l34_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house3_l34_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house3_l34_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house3_l34_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house3_l34_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house3_l34_tm_VA_Out
     GLD/M1_ADC34_PVinv_house3_l34_tm_inverter_efficiency
     GLD/M1_ADC34_solar_PVinv_house4_l34_tm_rated_power
-    GLD/M1_ADC34_solar_PVinv_house4_l34_tm_latitude
-    GLD/M1_ADC34_solar_PVinv_house4_l34_tm_longitude
     GLD/M1_ADC34_solar_PVinv_house4_l34_tm_tilt_angle
     GLD/M1_ADC34_solar_PVinv_house4_l34_tm_orientation_azimuth
     GLD/M1_ADC34_solar_PVinv_house4_l34_tm_VA_Out
@@ -15336,6 +15581,7 @@ values
     GLD/M1_ADC52_house0_l52_tm_air_temperature
     GLD/M1_ADC52_house0_l52_tm_mass_temperature
     GLD/M1_ADC52_house0_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l52_tm_is_COOL_on
     GLD/M1_ADC52_house1_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l52_tm_UA
     GLD/M1_ADC52_house1_l52_tm_heating_system_type
@@ -15361,6 +15607,7 @@ values
     GLD/M1_ADC52_house1_l52_tm_air_temperature
     GLD/M1_ADC52_house1_l52_tm_mass_temperature
     GLD/M1_ADC52_house1_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l52_tm_is_COOL_on
     GLD/M1_ADC52_house2_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house2_l52_tm_UA
     GLD/M1_ADC52_house2_l52_tm_heating_system_type
@@ -15386,6 +15633,7 @@ values
     GLD/M1_ADC52_house2_l52_tm_air_temperature
     GLD/M1_ADC52_house2_l52_tm_mass_temperature
     GLD/M1_ADC52_house2_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house2_l52_tm_is_COOL_on
     GLD/M1_ADC52_house3_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l52_tm_UA
     GLD/M1_ADC52_house3_l52_tm_heating_system_type
@@ -15411,6 +15659,7 @@ values
     GLD/M1_ADC52_house3_l52_tm_air_temperature
     GLD/M1_ADC52_house3_l52_tm_mass_temperature
     GLD/M1_ADC52_house3_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l52_tm_is_COOL_on
     GLD/M1_ADC52_house4_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l52_tm_UA
     GLD/M1_ADC52_house4_l52_tm_heating_system_type
@@ -15436,6 +15685,7 @@ values
     GLD/M1_ADC52_house4_l52_tm_air_temperature
     GLD/M1_ADC52_house4_l52_tm_mass_temperature
     GLD/M1_ADC52_house4_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l52_tm_is_COOL_on
     GLD/M1_ADC52_house5_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l52_tm_UA
     GLD/M1_ADC52_house5_l52_tm_heating_system_type
@@ -15461,6 +15711,7 @@ values
     GLD/M1_ADC52_house5_l52_tm_air_temperature
     GLD/M1_ADC52_house5_l52_tm_mass_temperature
     GLD/M1_ADC52_house5_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l52_tm_is_COOL_on
     GLD/M1_ADC52_house6_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l52_tm_UA
     GLD/M1_ADC52_house6_l52_tm_heating_system_type
@@ -15486,6 +15737,7 @@ values
     GLD/M1_ADC52_house6_l52_tm_air_temperature
     GLD/M1_ADC52_house6_l52_tm_mass_temperature
     GLD/M1_ADC52_house6_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l52_tm_is_COOL_on
     GLD/M1_ADC52_house7_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house7_l52_tm_UA
     GLD/M1_ADC52_house7_l52_tm_heating_system_type
@@ -15511,6 +15763,7 @@ values
     GLD/M1_ADC52_house7_l52_tm_air_temperature
     GLD/M1_ADC52_house7_l52_tm_mass_temperature
     GLD/M1_ADC52_house7_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house7_l52_tm_is_COOL_on
     GLD/M1_ADC52_house8_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house8_l52_tm_UA
     GLD/M1_ADC52_house8_l52_tm_heating_system_type
@@ -15536,6 +15789,7 @@ values
     GLD/M1_ADC52_house8_l52_tm_air_temperature
     GLD/M1_ADC52_house8_l52_tm_mass_temperature
     GLD/M1_ADC52_house8_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house8_l52_tm_is_COOL_on
     GLD/M1_ADC52_house9_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house9_l52_tm_UA
     GLD/M1_ADC52_house9_l52_tm_heating_system_type
@@ -15561,6 +15815,7 @@ values
     GLD/M1_ADC52_house9_l52_tm_air_temperature
     GLD/M1_ADC52_house9_l52_tm_mass_temperature
     GLD/M1_ADC52_house9_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house9_l52_tm_is_COOL_on
     GLD/M1_ADC52_house10_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house10_l52_tm_UA
     GLD/M1_ADC52_house10_l52_tm_heating_system_type
@@ -15586,6 +15841,7 @@ values
     GLD/M1_ADC52_house10_l52_tm_air_temperature
     GLD/M1_ADC52_house10_l52_tm_mass_temperature
     GLD/M1_ADC52_house10_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house10_l52_tm_is_COOL_on
     GLD/M1_ADC52_house11_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house11_l52_tm_UA
     GLD/M1_ADC52_house11_l52_tm_heating_system_type
@@ -15611,6 +15867,7 @@ values
     GLD/M1_ADC52_house11_l52_tm_air_temperature
     GLD/M1_ADC52_house11_l52_tm_mass_temperature
     GLD/M1_ADC52_house11_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house11_l52_tm_is_COOL_on
     GLD/M1_ADC52_house12_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house12_l52_tm_UA
     GLD/M1_ADC52_house12_l52_tm_heating_system_type
@@ -15636,6 +15893,7 @@ values
     GLD/M1_ADC52_house12_l52_tm_air_temperature
     GLD/M1_ADC52_house12_l52_tm_mass_temperature
     GLD/M1_ADC52_house12_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house12_l52_tm_is_COOL_on
     GLD/M1_ADC52_house13_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house13_l52_tm_UA
     GLD/M1_ADC52_house13_l52_tm_heating_system_type
@@ -15661,6 +15919,7 @@ values
     GLD/M1_ADC52_house13_l52_tm_air_temperature
     GLD/M1_ADC52_house13_l52_tm_mass_temperature
     GLD/M1_ADC52_house13_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house13_l52_tm_is_COOL_on
     GLD/M1_ADC52_house14_l52_tm_mass_heat_coeff
     GLD/M1_ADC52_house14_l52_tm_UA
     GLD/M1_ADC52_house14_l52_tm_heating_system_type
@@ -15686,6 +15945,7 @@ values
     GLD/M1_ADC52_house14_l52_tm_air_temperature
     GLD/M1_ADC52_house14_l52_tm_mass_temperature
     GLD/M1_ADC52_house14_l52_tm_thermostat_mode
+    GLD/M1_ADC52_house14_l52_tm_is_COOL_on
     GLD/M1_ADC52_house0_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l53_tm_UA
     GLD/M1_ADC52_house0_l53_tm_heating_system_type
@@ -15711,6 +15971,7 @@ values
     GLD/M1_ADC52_house0_l53_tm_air_temperature
     GLD/M1_ADC52_house0_l53_tm_mass_temperature
     GLD/M1_ADC52_house0_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l53_tm_is_COOL_on
     GLD/M1_ADC52_house1_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l53_tm_UA
     GLD/M1_ADC52_house1_l53_tm_heating_system_type
@@ -15736,6 +15997,7 @@ values
     GLD/M1_ADC52_house1_l53_tm_air_temperature
     GLD/M1_ADC52_house1_l53_tm_mass_temperature
     GLD/M1_ADC52_house1_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l53_tm_is_COOL_on
     GLD/M1_ADC52_house2_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house2_l53_tm_UA
     GLD/M1_ADC52_house2_l53_tm_heating_system_type
@@ -15761,6 +16023,7 @@ values
     GLD/M1_ADC52_house2_l53_tm_air_temperature
     GLD/M1_ADC52_house2_l53_tm_mass_temperature
     GLD/M1_ADC52_house2_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house2_l53_tm_is_COOL_on
     GLD/M1_ADC52_house3_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l53_tm_UA
     GLD/M1_ADC52_house3_l53_tm_heating_system_type
@@ -15786,6 +16049,7 @@ values
     GLD/M1_ADC52_house3_l53_tm_air_temperature
     GLD/M1_ADC52_house3_l53_tm_mass_temperature
     GLD/M1_ADC52_house3_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l53_tm_is_COOL_on
     GLD/M1_ADC52_house4_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l53_tm_UA
     GLD/M1_ADC52_house4_l53_tm_heating_system_type
@@ -15811,6 +16075,7 @@ values
     GLD/M1_ADC52_house4_l53_tm_air_temperature
     GLD/M1_ADC52_house4_l53_tm_mass_temperature
     GLD/M1_ADC52_house4_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l53_tm_is_COOL_on
     GLD/M1_ADC52_house5_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l53_tm_UA
     GLD/M1_ADC52_house5_l53_tm_heating_system_type
@@ -15836,6 +16101,7 @@ values
     GLD/M1_ADC52_house5_l53_tm_air_temperature
     GLD/M1_ADC52_house5_l53_tm_mass_temperature
     GLD/M1_ADC52_house5_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l53_tm_is_COOL_on
     GLD/M1_ADC52_house6_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l53_tm_UA
     GLD/M1_ADC52_house6_l53_tm_heating_system_type
@@ -15861,6 +16127,7 @@ values
     GLD/M1_ADC52_house6_l53_tm_air_temperature
     GLD/M1_ADC52_house6_l53_tm_mass_temperature
     GLD/M1_ADC52_house6_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l53_tm_is_COOL_on
     GLD/M1_ADC52_house7_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house7_l53_tm_UA
     GLD/M1_ADC52_house7_l53_tm_heating_system_type
@@ -15886,6 +16153,7 @@ values
     GLD/M1_ADC52_house7_l53_tm_air_temperature
     GLD/M1_ADC52_house7_l53_tm_mass_temperature
     GLD/M1_ADC52_house7_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house7_l53_tm_is_COOL_on
     GLD/M1_ADC52_house8_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house8_l53_tm_UA
     GLD/M1_ADC52_house8_l53_tm_heating_system_type
@@ -15911,6 +16179,7 @@ values
     GLD/M1_ADC52_house8_l53_tm_air_temperature
     GLD/M1_ADC52_house8_l53_tm_mass_temperature
     GLD/M1_ADC52_house8_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house8_l53_tm_is_COOL_on
     GLD/M1_ADC52_house9_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house9_l53_tm_UA
     GLD/M1_ADC52_house9_l53_tm_heating_system_type
@@ -15936,6 +16205,7 @@ values
     GLD/M1_ADC52_house9_l53_tm_air_temperature
     GLD/M1_ADC52_house9_l53_tm_mass_temperature
     GLD/M1_ADC52_house9_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house9_l53_tm_is_COOL_on
     GLD/M1_ADC52_house10_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house10_l53_tm_UA
     GLD/M1_ADC52_house10_l53_tm_heating_system_type
@@ -15961,6 +16231,7 @@ values
     GLD/M1_ADC52_house10_l53_tm_air_temperature
     GLD/M1_ADC52_house10_l53_tm_mass_temperature
     GLD/M1_ADC52_house10_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house10_l53_tm_is_COOL_on
     GLD/M1_ADC52_house11_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house11_l53_tm_UA
     GLD/M1_ADC52_house11_l53_tm_heating_system_type
@@ -15986,6 +16257,7 @@ values
     GLD/M1_ADC52_house11_l53_tm_air_temperature
     GLD/M1_ADC52_house11_l53_tm_mass_temperature
     GLD/M1_ADC52_house11_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house11_l53_tm_is_COOL_on
     GLD/M1_ADC52_house12_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house12_l53_tm_UA
     GLD/M1_ADC52_house12_l53_tm_heating_system_type
@@ -16011,6 +16283,7 @@ values
     GLD/M1_ADC52_house12_l53_tm_air_temperature
     GLD/M1_ADC52_house12_l53_tm_mass_temperature
     GLD/M1_ADC52_house12_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house12_l53_tm_is_COOL_on
     GLD/M1_ADC52_house13_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house13_l53_tm_UA
     GLD/M1_ADC52_house13_l53_tm_heating_system_type
@@ -16036,6 +16309,7 @@ values
     GLD/M1_ADC52_house13_l53_tm_air_temperature
     GLD/M1_ADC52_house13_l53_tm_mass_temperature
     GLD/M1_ADC52_house13_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house13_l53_tm_is_COOL_on
     GLD/M1_ADC52_house14_l53_tm_mass_heat_coeff
     GLD/M1_ADC52_house14_l53_tm_UA
     GLD/M1_ADC52_house14_l53_tm_heating_system_type
@@ -16061,6 +16335,7 @@ values
     GLD/M1_ADC52_house14_l53_tm_air_temperature
     GLD/M1_ADC52_house14_l53_tm_mass_temperature
     GLD/M1_ADC52_house14_l53_tm_thermostat_mode
+    GLD/M1_ADC52_house14_l53_tm_is_COOL_on
     GLD/M1_ADC52_house0_l55_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l55_tm_UA
     GLD/M1_ADC52_house0_l55_tm_heating_system_type
@@ -16086,6 +16361,7 @@ values
     GLD/M1_ADC52_house0_l55_tm_air_temperature
     GLD/M1_ADC52_house0_l55_tm_mass_temperature
     GLD/M1_ADC52_house0_l55_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l55_tm_is_COOL_on
     GLD/M1_ADC52_house1_l55_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l55_tm_UA
     GLD/M1_ADC52_house1_l55_tm_heating_system_type
@@ -16111,6 +16387,7 @@ values
     GLD/M1_ADC52_house1_l55_tm_air_temperature
     GLD/M1_ADC52_house1_l55_tm_mass_temperature
     GLD/M1_ADC52_house1_l55_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l55_tm_is_COOL_on
     GLD/M1_ADC52_house2_l55_tm_mass_heat_coeff
     GLD/M1_ADC52_house2_l55_tm_UA
     GLD/M1_ADC52_house2_l55_tm_heating_system_type
@@ -16136,6 +16413,7 @@ values
     GLD/M1_ADC52_house2_l55_tm_air_temperature
     GLD/M1_ADC52_house2_l55_tm_mass_temperature
     GLD/M1_ADC52_house2_l55_tm_thermostat_mode
+    GLD/M1_ADC52_house2_l55_tm_is_COOL_on
     GLD/M1_ADC52_house3_l55_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l55_tm_UA
     GLD/M1_ADC52_house3_l55_tm_heating_system_type
@@ -16161,6 +16439,7 @@ values
     GLD/M1_ADC52_house3_l55_tm_air_temperature
     GLD/M1_ADC52_house3_l55_tm_mass_temperature
     GLD/M1_ADC52_house3_l55_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l55_tm_is_COOL_on
     GLD/M1_ADC52_house4_l55_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l55_tm_UA
     GLD/M1_ADC52_house4_l55_tm_heating_system_type
@@ -16186,6 +16465,7 @@ values
     GLD/M1_ADC52_house4_l55_tm_air_temperature
     GLD/M1_ADC52_house4_l55_tm_mass_temperature
     GLD/M1_ADC52_house4_l55_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l55_tm_is_COOL_on
     GLD/M1_ADC52_house5_l55_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l55_tm_UA
     GLD/M1_ADC52_house5_l55_tm_heating_system_type
@@ -16211,6 +16491,7 @@ values
     GLD/M1_ADC52_house5_l55_tm_air_temperature
     GLD/M1_ADC52_house5_l55_tm_mass_temperature
     GLD/M1_ADC52_house5_l55_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l55_tm_is_COOL_on
     GLD/M1_ADC52_house6_l55_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l55_tm_UA
     GLD/M1_ADC52_house6_l55_tm_heating_system_type
@@ -16236,6 +16517,7 @@ values
     GLD/M1_ADC52_house6_l55_tm_air_temperature
     GLD/M1_ADC52_house6_l55_tm_mass_temperature
     GLD/M1_ADC52_house6_l55_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l55_tm_is_COOL_on
     GLD/M1_ADC52_house0_l56_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l56_tm_UA
     GLD/M1_ADC52_house0_l56_tm_heating_system_type
@@ -16261,6 +16543,7 @@ values
     GLD/M1_ADC52_house0_l56_tm_air_temperature
     GLD/M1_ADC52_house0_l56_tm_mass_temperature
     GLD/M1_ADC52_house0_l56_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l56_tm_is_COOL_on
     GLD/M1_ADC52_house1_l56_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l56_tm_UA
     GLD/M1_ADC52_house1_l56_tm_heating_system_type
@@ -16286,6 +16569,7 @@ values
     GLD/M1_ADC52_house1_l56_tm_air_temperature
     GLD/M1_ADC52_house1_l56_tm_mass_temperature
     GLD/M1_ADC52_house1_l56_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l56_tm_is_COOL_on
     GLD/M1_ADC52_house2_l56_tm_mass_heat_coeff
     GLD/M1_ADC52_house2_l56_tm_UA
     GLD/M1_ADC52_house2_l56_tm_heating_system_type
@@ -16311,6 +16595,7 @@ values
     GLD/M1_ADC52_house2_l56_tm_air_temperature
     GLD/M1_ADC52_house2_l56_tm_mass_temperature
     GLD/M1_ADC52_house2_l56_tm_thermostat_mode
+    GLD/M1_ADC52_house2_l56_tm_is_COOL_on
     GLD/M1_ADC52_house3_l56_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l56_tm_UA
     GLD/M1_ADC52_house3_l56_tm_heating_system_type
@@ -16336,6 +16621,7 @@ values
     GLD/M1_ADC52_house3_l56_tm_air_temperature
     GLD/M1_ADC52_house3_l56_tm_mass_temperature
     GLD/M1_ADC52_house3_l56_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l56_tm_is_COOL_on
     GLD/M1_ADC52_house4_l56_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l56_tm_UA
     GLD/M1_ADC52_house4_l56_tm_heating_system_type
@@ -16361,6 +16647,7 @@ values
     GLD/M1_ADC52_house4_l56_tm_air_temperature
     GLD/M1_ADC52_house4_l56_tm_mass_temperature
     GLD/M1_ADC52_house4_l56_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l56_tm_is_COOL_on
     GLD/M1_ADC52_house5_l56_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l56_tm_UA
     GLD/M1_ADC52_house5_l56_tm_heating_system_type
@@ -16386,6 +16673,7 @@ values
     GLD/M1_ADC52_house5_l56_tm_air_temperature
     GLD/M1_ADC52_house5_l56_tm_mass_temperature
     GLD/M1_ADC52_house5_l56_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l56_tm_is_COOL_on
     GLD/M1_ADC52_house0_l58_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l58_tm_UA
     GLD/M1_ADC52_house0_l58_tm_heating_system_type
@@ -16411,6 +16699,7 @@ values
     GLD/M1_ADC52_house0_l58_tm_air_temperature
     GLD/M1_ADC52_house0_l58_tm_mass_temperature
     GLD/M1_ADC52_house0_l58_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l58_tm_is_COOL_on
     GLD/M1_ADC52_house1_l58_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l58_tm_UA
     GLD/M1_ADC52_house1_l58_tm_heating_system_type
@@ -16436,6 +16725,7 @@ values
     GLD/M1_ADC52_house1_l58_tm_air_temperature
     GLD/M1_ADC52_house1_l58_tm_mass_temperature
     GLD/M1_ADC52_house1_l58_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l58_tm_is_COOL_on
     GLD/M1_ADC52_house3_l58_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l58_tm_UA
     GLD/M1_ADC52_house3_l58_tm_heating_system_type
@@ -16461,6 +16751,7 @@ values
     GLD/M1_ADC52_house3_l58_tm_air_temperature
     GLD/M1_ADC52_house3_l58_tm_mass_temperature
     GLD/M1_ADC52_house3_l58_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l58_tm_is_COOL_on
     GLD/M1_ADC52_house4_l58_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l58_tm_UA
     GLD/M1_ADC52_house4_l58_tm_heating_system_type
@@ -16486,6 +16777,7 @@ values
     GLD/M1_ADC52_house4_l58_tm_air_temperature
     GLD/M1_ADC52_house4_l58_tm_mass_temperature
     GLD/M1_ADC52_house4_l58_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l58_tm_is_COOL_on
     GLD/M1_ADC52_house5_l58_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l58_tm_UA
     GLD/M1_ADC52_house5_l58_tm_heating_system_type
@@ -16511,6 +16803,7 @@ values
     GLD/M1_ADC52_house5_l58_tm_air_temperature
     GLD/M1_ADC52_house5_l58_tm_mass_temperature
     GLD/M1_ADC52_house5_l58_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l58_tm_is_COOL_on
     GLD/M1_ADC52_house6_l58_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l58_tm_UA
     GLD/M1_ADC52_house6_l58_tm_heating_system_type
@@ -16536,6 +16829,7 @@ values
     GLD/M1_ADC52_house6_l58_tm_air_temperature
     GLD/M1_ADC52_house6_l58_tm_mass_temperature
     GLD/M1_ADC52_house6_l58_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l58_tm_is_COOL_on
     GLD/M1_ADC52_house1_l59_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l59_tm_UA
     GLD/M1_ADC52_house1_l59_tm_heating_system_type
@@ -16561,6 +16855,7 @@ values
     GLD/M1_ADC52_house1_l59_tm_air_temperature
     GLD/M1_ADC52_house1_l59_tm_mass_temperature
     GLD/M1_ADC52_house1_l59_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l59_tm_is_COOL_on
     GLD/M1_ADC52_house3_l59_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l59_tm_UA
     GLD/M1_ADC52_house3_l59_tm_heating_system_type
@@ -16586,6 +16881,7 @@ values
     GLD/M1_ADC52_house3_l59_tm_air_temperature
     GLD/M1_ADC52_house3_l59_tm_mass_temperature
     GLD/M1_ADC52_house3_l59_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l59_tm_is_COOL_on
     GLD/M1_ADC52_house4_l59_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l59_tm_UA
     GLD/M1_ADC52_house4_l59_tm_heating_system_type
@@ -16611,6 +16907,7 @@ values
     GLD/M1_ADC52_house4_l59_tm_air_temperature
     GLD/M1_ADC52_house4_l59_tm_mass_temperature
     GLD/M1_ADC52_house4_l59_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l59_tm_is_COOL_on
     GLD/M1_ADC52_house5_l59_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l59_tm_UA
     GLD/M1_ADC52_house5_l59_tm_heating_system_type
@@ -16636,6 +16933,7 @@ values
     GLD/M1_ADC52_house5_l59_tm_air_temperature
     GLD/M1_ADC52_house5_l59_tm_mass_temperature
     GLD/M1_ADC52_house5_l59_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l59_tm_is_COOL_on
     GLD/M1_ADC52_house6_l59_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l59_tm_UA
     GLD/M1_ADC52_house6_l59_tm_heating_system_type
@@ -16661,6 +16959,7 @@ values
     GLD/M1_ADC52_house6_l59_tm_air_temperature
     GLD/M1_ADC52_house6_l59_tm_mass_temperature
     GLD/M1_ADC52_house6_l59_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l59_tm_is_COOL_on
     GLD/M1_ADC52_house0_l60_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l60_tm_UA
     GLD/M1_ADC52_house0_l60_tm_heating_system_type
@@ -16686,6 +16985,7 @@ values
     GLD/M1_ADC52_house0_l60_tm_air_temperature
     GLD/M1_ADC52_house0_l60_tm_mass_temperature
     GLD/M1_ADC52_house0_l60_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l60_tm_is_COOL_on
     GLD/M1_ADC52_house1_l60_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l60_tm_UA
     GLD/M1_ADC52_house1_l60_tm_heating_system_type
@@ -16711,6 +17011,7 @@ values
     GLD/M1_ADC52_house1_l60_tm_air_temperature
     GLD/M1_ADC52_house1_l60_tm_mass_temperature
     GLD/M1_ADC52_house1_l60_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l60_tm_is_COOL_on
     GLD/M1_ADC52_house2_l60_tm_mass_heat_coeff
     GLD/M1_ADC52_house2_l60_tm_UA
     GLD/M1_ADC52_house2_l60_tm_heating_system_type
@@ -16736,6 +17037,7 @@ values
     GLD/M1_ADC52_house2_l60_tm_air_temperature
     GLD/M1_ADC52_house2_l60_tm_mass_temperature
     GLD/M1_ADC52_house2_l60_tm_thermostat_mode
+    GLD/M1_ADC52_house2_l60_tm_is_COOL_on
     GLD/M1_ADC52_house3_l60_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l60_tm_UA
     GLD/M1_ADC52_house3_l60_tm_heating_system_type
@@ -16761,6 +17063,7 @@ values
     GLD/M1_ADC52_house3_l60_tm_air_temperature
     GLD/M1_ADC52_house3_l60_tm_mass_temperature
     GLD/M1_ADC52_house3_l60_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l60_tm_is_COOL_on
     GLD/M1_ADC52_house4_l60_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l60_tm_UA
     GLD/M1_ADC52_house4_l60_tm_heating_system_type
@@ -16786,6 +17089,7 @@ values
     GLD/M1_ADC52_house4_l60_tm_air_temperature
     GLD/M1_ADC52_house4_l60_tm_mass_temperature
     GLD/M1_ADC52_house4_l60_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l60_tm_is_COOL_on
     GLD/M1_ADC52_house5_l60_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l60_tm_UA
     GLD/M1_ADC52_house5_l60_tm_heating_system_type
@@ -16811,6 +17115,7 @@ values
     GLD/M1_ADC52_house5_l60_tm_air_temperature
     GLD/M1_ADC52_house5_l60_tm_mass_temperature
     GLD/M1_ADC52_house5_l60_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l60_tm_is_COOL_on
     GLD/M1_ADC52_house6_l60_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l60_tm_UA
     GLD/M1_ADC52_house6_l60_tm_heating_system_type
@@ -16836,6 +17141,7 @@ values
     GLD/M1_ADC52_house6_l60_tm_air_temperature
     GLD/M1_ADC52_house6_l60_tm_mass_temperature
     GLD/M1_ADC52_house6_l60_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l60_tm_is_COOL_on
     GLD/M1_ADC52_house0_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l62_tm_UA
     GLD/M1_ADC52_house0_l62_tm_heating_system_type
@@ -16861,6 +17167,7 @@ values
     GLD/M1_ADC52_house0_l62_tm_air_temperature
     GLD/M1_ADC52_house0_l62_tm_mass_temperature
     GLD/M1_ADC52_house0_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l62_tm_is_COOL_on
     GLD/M1_ADC52_house1_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l62_tm_UA
     GLD/M1_ADC52_house1_l62_tm_heating_system_type
@@ -16886,6 +17193,7 @@ values
     GLD/M1_ADC52_house1_l62_tm_air_temperature
     GLD/M1_ADC52_house1_l62_tm_mass_temperature
     GLD/M1_ADC52_house1_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l62_tm_is_COOL_on
     GLD/M1_ADC52_house3_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l62_tm_UA
     GLD/M1_ADC52_house3_l62_tm_heating_system_type
@@ -16911,6 +17219,7 @@ values
     GLD/M1_ADC52_house3_l62_tm_air_temperature
     GLD/M1_ADC52_house3_l62_tm_mass_temperature
     GLD/M1_ADC52_house3_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l62_tm_is_COOL_on
     GLD/M1_ADC52_house5_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l62_tm_UA
     GLD/M1_ADC52_house5_l62_tm_heating_system_type
@@ -16936,6 +17245,7 @@ values
     GLD/M1_ADC52_house5_l62_tm_air_temperature
     GLD/M1_ADC52_house5_l62_tm_mass_temperature
     GLD/M1_ADC52_house5_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l62_tm_is_COOL_on
     GLD/M1_ADC52_house6_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l62_tm_UA
     GLD/M1_ADC52_house6_l62_tm_heating_system_type
@@ -16961,6 +17271,7 @@ values
     GLD/M1_ADC52_house6_l62_tm_air_temperature
     GLD/M1_ADC52_house6_l62_tm_mass_temperature
     GLD/M1_ADC52_house6_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l62_tm_is_COOL_on
     GLD/M1_ADC52_house8_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house8_l62_tm_UA
     GLD/M1_ADC52_house8_l62_tm_heating_system_type
@@ -16986,6 +17297,7 @@ values
     GLD/M1_ADC52_house8_l62_tm_air_temperature
     GLD/M1_ADC52_house8_l62_tm_mass_temperature
     GLD/M1_ADC52_house8_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house8_l62_tm_is_COOL_on
     GLD/M1_ADC52_house9_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house9_l62_tm_UA
     GLD/M1_ADC52_house9_l62_tm_heating_system_type
@@ -17011,6 +17323,7 @@ values
     GLD/M1_ADC52_house9_l62_tm_air_temperature
     GLD/M1_ADC52_house9_l62_tm_mass_temperature
     GLD/M1_ADC52_house9_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house9_l62_tm_is_COOL_on
     GLD/M1_ADC52_house10_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house10_l62_tm_UA
     GLD/M1_ADC52_house10_l62_tm_heating_system_type
@@ -17036,6 +17349,7 @@ values
     GLD/M1_ADC52_house10_l62_tm_air_temperature
     GLD/M1_ADC52_house10_l62_tm_mass_temperature
     GLD/M1_ADC52_house10_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house10_l62_tm_is_COOL_on
     GLD/M1_ADC52_house12_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house12_l62_tm_UA
     GLD/M1_ADC52_house12_l62_tm_heating_system_type
@@ -17061,6 +17375,7 @@ values
     GLD/M1_ADC52_house12_l62_tm_air_temperature
     GLD/M1_ADC52_house12_l62_tm_mass_temperature
     GLD/M1_ADC52_house12_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house12_l62_tm_is_COOL_on
     GLD/M1_ADC52_house13_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house13_l62_tm_UA
     GLD/M1_ADC52_house13_l62_tm_heating_system_type
@@ -17086,6 +17401,7 @@ values
     GLD/M1_ADC52_house13_l62_tm_air_temperature
     GLD/M1_ADC52_house13_l62_tm_mass_temperature
     GLD/M1_ADC52_house13_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house13_l62_tm_is_COOL_on
     GLD/M1_ADC52_house14_l62_tm_mass_heat_coeff
     GLD/M1_ADC52_house14_l62_tm_UA
     GLD/M1_ADC52_house14_l62_tm_heating_system_type
@@ -17111,6 +17427,7 @@ values
     GLD/M1_ADC52_house14_l62_tm_air_temperature
     GLD/M1_ADC52_house14_l62_tm_mass_temperature
     GLD/M1_ADC52_house14_l62_tm_thermostat_mode
+    GLD/M1_ADC52_house14_l62_tm_is_COOL_on
     GLD/M1_ADC52_house0_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l63_tm_UA
     GLD/M1_ADC52_house0_l63_tm_heating_system_type
@@ -17136,6 +17453,7 @@ values
     GLD/M1_ADC52_house0_l63_tm_air_temperature
     GLD/M1_ADC52_house0_l63_tm_mass_temperature
     GLD/M1_ADC52_house0_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l63_tm_is_COOL_on
     GLD/M1_ADC52_house1_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l63_tm_UA
     GLD/M1_ADC52_house1_l63_tm_heating_system_type
@@ -17161,6 +17479,7 @@ values
     GLD/M1_ADC52_house1_l63_tm_air_temperature
     GLD/M1_ADC52_house1_l63_tm_mass_temperature
     GLD/M1_ADC52_house1_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l63_tm_is_COOL_on
     GLD/M1_ADC52_house2_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house2_l63_tm_UA
     GLD/M1_ADC52_house2_l63_tm_heating_system_type
@@ -17186,6 +17505,7 @@ values
     GLD/M1_ADC52_house2_l63_tm_air_temperature
     GLD/M1_ADC52_house2_l63_tm_mass_temperature
     GLD/M1_ADC52_house2_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house2_l63_tm_is_COOL_on
     GLD/M1_ADC52_house3_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l63_tm_UA
     GLD/M1_ADC52_house3_l63_tm_heating_system_type
@@ -17211,6 +17531,7 @@ values
     GLD/M1_ADC52_house3_l63_tm_air_temperature
     GLD/M1_ADC52_house3_l63_tm_mass_temperature
     GLD/M1_ADC52_house3_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l63_tm_is_COOL_on
     GLD/M1_ADC52_house4_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l63_tm_UA
     GLD/M1_ADC52_house4_l63_tm_heating_system_type
@@ -17236,6 +17557,7 @@ values
     GLD/M1_ADC52_house4_l63_tm_air_temperature
     GLD/M1_ADC52_house4_l63_tm_mass_temperature
     GLD/M1_ADC52_house4_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l63_tm_is_COOL_on
     GLD/M1_ADC52_house5_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l63_tm_UA
     GLD/M1_ADC52_house5_l63_tm_heating_system_type
@@ -17261,6 +17583,7 @@ values
     GLD/M1_ADC52_house5_l63_tm_air_temperature
     GLD/M1_ADC52_house5_l63_tm_mass_temperature
     GLD/M1_ADC52_house5_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l63_tm_is_COOL_on
     GLD/M1_ADC52_house6_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l63_tm_UA
     GLD/M1_ADC52_house6_l63_tm_heating_system_type
@@ -17286,6 +17609,7 @@ values
     GLD/M1_ADC52_house6_l63_tm_air_temperature
     GLD/M1_ADC52_house6_l63_tm_mass_temperature
     GLD/M1_ADC52_house6_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l63_tm_is_COOL_on
     GLD/M1_ADC52_house7_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house7_l63_tm_UA
     GLD/M1_ADC52_house7_l63_tm_heating_system_type
@@ -17311,6 +17635,7 @@ values
     GLD/M1_ADC52_house7_l63_tm_air_temperature
     GLD/M1_ADC52_house7_l63_tm_mass_temperature
     GLD/M1_ADC52_house7_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house7_l63_tm_is_COOL_on
     GLD/M1_ADC52_house8_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house8_l63_tm_UA
     GLD/M1_ADC52_house8_l63_tm_heating_system_type
@@ -17336,6 +17661,7 @@ values
     GLD/M1_ADC52_house8_l63_tm_air_temperature
     GLD/M1_ADC52_house8_l63_tm_mass_temperature
     GLD/M1_ADC52_house8_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house8_l63_tm_is_COOL_on
     GLD/M1_ADC52_house10_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house10_l63_tm_UA
     GLD/M1_ADC52_house10_l63_tm_heating_system_type
@@ -17361,6 +17687,7 @@ values
     GLD/M1_ADC52_house10_l63_tm_air_temperature
     GLD/M1_ADC52_house10_l63_tm_mass_temperature
     GLD/M1_ADC52_house10_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house10_l63_tm_is_COOL_on
     GLD/M1_ADC52_house11_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house11_l63_tm_UA
     GLD/M1_ADC52_house11_l63_tm_heating_system_type
@@ -17386,6 +17713,7 @@ values
     GLD/M1_ADC52_house11_l63_tm_air_temperature
     GLD/M1_ADC52_house11_l63_tm_mass_temperature
     GLD/M1_ADC52_house11_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house11_l63_tm_is_COOL_on
     GLD/M1_ADC52_house12_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house12_l63_tm_UA
     GLD/M1_ADC52_house12_l63_tm_heating_system_type
@@ -17411,6 +17739,7 @@ values
     GLD/M1_ADC52_house12_l63_tm_air_temperature
     GLD/M1_ADC52_house12_l63_tm_mass_temperature
     GLD/M1_ADC52_house12_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house12_l63_tm_is_COOL_on
     GLD/M1_ADC52_house13_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house13_l63_tm_UA
     GLD/M1_ADC52_house13_l63_tm_heating_system_type
@@ -17436,6 +17765,7 @@ values
     GLD/M1_ADC52_house13_l63_tm_air_temperature
     GLD/M1_ADC52_house13_l63_tm_mass_temperature
     GLD/M1_ADC52_house13_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house13_l63_tm_is_COOL_on
     GLD/M1_ADC52_house14_l63_tm_mass_heat_coeff
     GLD/M1_ADC52_house14_l63_tm_UA
     GLD/M1_ADC52_house14_l63_tm_heating_system_type
@@ -17461,6 +17791,7 @@ values
     GLD/M1_ADC52_house14_l63_tm_air_temperature
     GLD/M1_ADC52_house14_l63_tm_mass_temperature
     GLD/M1_ADC52_house14_l63_tm_thermostat_mode
+    GLD/M1_ADC52_house14_l63_tm_is_COOL_on
     GLD/M1_ADC52_house0_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l64_tm_UA
     GLD/M1_ADC52_house0_l64_tm_heating_system_type
@@ -17486,6 +17817,7 @@ values
     GLD/M1_ADC52_house0_l64_tm_air_temperature
     GLD/M1_ADC52_house0_l64_tm_mass_temperature
     GLD/M1_ADC52_house0_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l64_tm_is_COOL_on
     GLD/M1_ADC52_house1_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l64_tm_UA
     GLD/M1_ADC52_house1_l64_tm_heating_system_type
@@ -17511,6 +17843,7 @@ values
     GLD/M1_ADC52_house1_l64_tm_air_temperature
     GLD/M1_ADC52_house1_l64_tm_mass_temperature
     GLD/M1_ADC52_house1_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l64_tm_is_COOL_on
     GLD/M1_ADC52_house2_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house2_l64_tm_UA
     GLD/M1_ADC52_house2_l64_tm_heating_system_type
@@ -17536,6 +17869,7 @@ values
     GLD/M1_ADC52_house2_l64_tm_air_temperature
     GLD/M1_ADC52_house2_l64_tm_mass_temperature
     GLD/M1_ADC52_house2_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house2_l64_tm_is_COOL_on
     GLD/M1_ADC52_house3_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l64_tm_UA
     GLD/M1_ADC52_house3_l64_tm_heating_system_type
@@ -17561,6 +17895,7 @@ values
     GLD/M1_ADC52_house3_l64_tm_air_temperature
     GLD/M1_ADC52_house3_l64_tm_mass_temperature
     GLD/M1_ADC52_house3_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l64_tm_is_COOL_on
     GLD/M1_ADC52_house4_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l64_tm_UA
     GLD/M1_ADC52_house4_l64_tm_heating_system_type
@@ -17586,6 +17921,7 @@ values
     GLD/M1_ADC52_house4_l64_tm_air_temperature
     GLD/M1_ADC52_house4_l64_tm_mass_temperature
     GLD/M1_ADC52_house4_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l64_tm_is_COOL_on
     GLD/M1_ADC52_house6_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house6_l64_tm_UA
     GLD/M1_ADC52_house6_l64_tm_heating_system_type
@@ -17611,6 +17947,7 @@ values
     GLD/M1_ADC52_house6_l64_tm_air_temperature
     GLD/M1_ADC52_house6_l64_tm_mass_temperature
     GLD/M1_ADC52_house6_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house6_l64_tm_is_COOL_on
     GLD/M1_ADC52_house7_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house7_l64_tm_UA
     GLD/M1_ADC52_house7_l64_tm_heating_system_type
@@ -17636,6 +17973,7 @@ values
     GLD/M1_ADC52_house7_l64_tm_air_temperature
     GLD/M1_ADC52_house7_l64_tm_mass_temperature
     GLD/M1_ADC52_house7_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house7_l64_tm_is_COOL_on
     GLD/M1_ADC52_house8_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house8_l64_tm_UA
     GLD/M1_ADC52_house8_l64_tm_heating_system_type
@@ -17661,6 +17999,7 @@ values
     GLD/M1_ADC52_house8_l64_tm_air_temperature
     GLD/M1_ADC52_house8_l64_tm_mass_temperature
     GLD/M1_ADC52_house8_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house8_l64_tm_is_COOL_on
     GLD/M1_ADC52_house9_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house9_l64_tm_UA
     GLD/M1_ADC52_house9_l64_tm_heating_system_type
@@ -17686,6 +18025,7 @@ values
     GLD/M1_ADC52_house9_l64_tm_air_temperature
     GLD/M1_ADC52_house9_l64_tm_mass_temperature
     GLD/M1_ADC52_house9_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house9_l64_tm_is_COOL_on
     GLD/M1_ADC52_house10_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house10_l64_tm_UA
     GLD/M1_ADC52_house10_l64_tm_heating_system_type
@@ -17711,6 +18051,7 @@ values
     GLD/M1_ADC52_house10_l64_tm_air_temperature
     GLD/M1_ADC52_house10_l64_tm_mass_temperature
     GLD/M1_ADC52_house10_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house10_l64_tm_is_COOL_on
     GLD/M1_ADC52_house11_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house11_l64_tm_UA
     GLD/M1_ADC52_house11_l64_tm_heating_system_type
@@ -17736,6 +18077,7 @@ values
     GLD/M1_ADC52_house11_l64_tm_air_temperature
     GLD/M1_ADC52_house11_l64_tm_mass_temperature
     GLD/M1_ADC52_house11_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house11_l64_tm_is_COOL_on
     GLD/M1_ADC52_house12_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house12_l64_tm_UA
     GLD/M1_ADC52_house12_l64_tm_heating_system_type
@@ -17761,6 +18103,7 @@ values
     GLD/M1_ADC52_house12_l64_tm_air_temperature
     GLD/M1_ADC52_house12_l64_tm_mass_temperature
     GLD/M1_ADC52_house12_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house12_l64_tm_is_COOL_on
     GLD/M1_ADC52_house13_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house13_l64_tm_UA
     GLD/M1_ADC52_house13_l64_tm_heating_system_type
@@ -17786,6 +18129,7 @@ values
     GLD/M1_ADC52_house13_l64_tm_air_temperature
     GLD/M1_ADC52_house13_l64_tm_mass_temperature
     GLD/M1_ADC52_house13_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house13_l64_tm_is_COOL_on
     GLD/M1_ADC52_house14_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house14_l64_tm_UA
     GLD/M1_ADC52_house14_l64_tm_heating_system_type
@@ -17811,6 +18155,7 @@ values
     GLD/M1_ADC52_house14_l64_tm_air_temperature
     GLD/M1_ADC52_house14_l64_tm_mass_temperature
     GLD/M1_ADC52_house14_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house14_l64_tm_is_COOL_on
     GLD/M1_ADC52_house15_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house15_l64_tm_UA
     GLD/M1_ADC52_house15_l64_tm_heating_system_type
@@ -17836,6 +18181,7 @@ values
     GLD/M1_ADC52_house15_l64_tm_air_temperature
     GLD/M1_ADC52_house15_l64_tm_mass_temperature
     GLD/M1_ADC52_house15_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house15_l64_tm_is_COOL_on
     GLD/M1_ADC52_house16_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house16_l64_tm_UA
     GLD/M1_ADC52_house16_l64_tm_heating_system_type
@@ -17861,6 +18207,7 @@ values
     GLD/M1_ADC52_house16_l64_tm_air_temperature
     GLD/M1_ADC52_house16_l64_tm_mass_temperature
     GLD/M1_ADC52_house16_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house16_l64_tm_is_COOL_on
     GLD/M1_ADC52_house17_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house17_l64_tm_UA
     GLD/M1_ADC52_house17_l64_tm_heating_system_type
@@ -17886,6 +18233,7 @@ values
     GLD/M1_ADC52_house17_l64_tm_air_temperature
     GLD/M1_ADC52_house17_l64_tm_mass_temperature
     GLD/M1_ADC52_house17_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house17_l64_tm_is_COOL_on
     GLD/M1_ADC52_house18_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house18_l64_tm_UA
     GLD/M1_ADC52_house18_l64_tm_heating_system_type
@@ -17911,6 +18259,7 @@ values
     GLD/M1_ADC52_house18_l64_tm_air_temperature
     GLD/M1_ADC52_house18_l64_tm_mass_temperature
     GLD/M1_ADC52_house18_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house18_l64_tm_is_COOL_on
     GLD/M1_ADC52_house19_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house19_l64_tm_UA
     GLD/M1_ADC52_house19_l64_tm_heating_system_type
@@ -17936,6 +18285,7 @@ values
     GLD/M1_ADC52_house19_l64_tm_air_temperature
     GLD/M1_ADC52_house19_l64_tm_mass_temperature
     GLD/M1_ADC52_house19_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house19_l64_tm_is_COOL_on
     GLD/M1_ADC52_house20_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house20_l64_tm_UA
     GLD/M1_ADC52_house20_l64_tm_heating_system_type
@@ -17961,6 +18311,7 @@ values
     GLD/M1_ADC52_house20_l64_tm_air_temperature
     GLD/M1_ADC52_house20_l64_tm_mass_temperature
     GLD/M1_ADC52_house20_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house20_l64_tm_is_COOL_on
     GLD/M1_ADC52_house21_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house21_l64_tm_UA
     GLD/M1_ADC52_house21_l64_tm_heating_system_type
@@ -17986,6 +18337,7 @@ values
     GLD/M1_ADC52_house21_l64_tm_air_temperature
     GLD/M1_ADC52_house21_l64_tm_mass_temperature
     GLD/M1_ADC52_house21_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house21_l64_tm_is_COOL_on
     GLD/M1_ADC52_house22_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house22_l64_tm_UA
     GLD/M1_ADC52_house22_l64_tm_heating_system_type
@@ -18011,6 +18363,7 @@ values
     GLD/M1_ADC52_house22_l64_tm_air_temperature
     GLD/M1_ADC52_house22_l64_tm_mass_temperature
     GLD/M1_ADC52_house22_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house22_l64_tm_is_COOL_on
     GLD/M1_ADC52_house23_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house23_l64_tm_UA
     GLD/M1_ADC52_house23_l64_tm_heating_system_type
@@ -18036,6 +18389,7 @@ values
     GLD/M1_ADC52_house23_l64_tm_air_temperature
     GLD/M1_ADC52_house23_l64_tm_mass_temperature
     GLD/M1_ADC52_house23_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house23_l64_tm_is_COOL_on
     GLD/M1_ADC52_house24_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house24_l64_tm_UA
     GLD/M1_ADC52_house24_l64_tm_heating_system_type
@@ -18061,6 +18415,7 @@ values
     GLD/M1_ADC52_house24_l64_tm_air_temperature
     GLD/M1_ADC52_house24_l64_tm_mass_temperature
     GLD/M1_ADC52_house24_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house24_l64_tm_is_COOL_on
     GLD/M1_ADC52_house25_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house25_l64_tm_UA
     GLD/M1_ADC52_house25_l64_tm_heating_system_type
@@ -18086,6 +18441,7 @@ values
     GLD/M1_ADC52_house25_l64_tm_air_temperature
     GLD/M1_ADC52_house25_l64_tm_mass_temperature
     GLD/M1_ADC52_house25_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house25_l64_tm_is_COOL_on
     GLD/M1_ADC52_house26_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house26_l64_tm_UA
     GLD/M1_ADC52_house26_l64_tm_heating_system_type
@@ -18111,6 +18467,7 @@ values
     GLD/M1_ADC52_house26_l64_tm_air_temperature
     GLD/M1_ADC52_house26_l64_tm_mass_temperature
     GLD/M1_ADC52_house26_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house26_l64_tm_is_COOL_on
     GLD/M1_ADC52_house27_l64_tm_mass_heat_coeff
     GLD/M1_ADC52_house27_l64_tm_UA
     GLD/M1_ADC52_house27_l64_tm_heating_system_type
@@ -18136,6 +18493,7 @@ values
     GLD/M1_ADC52_house27_l64_tm_air_temperature
     GLD/M1_ADC52_house27_l64_tm_mass_temperature
     GLD/M1_ADC52_house27_l64_tm_thermostat_mode
+    GLD/M1_ADC52_house27_l64_tm_is_COOL_on
     GLD/M1_ADC52_house0_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house0_l66_tm_UA
     GLD/M1_ADC52_house0_l66_tm_heating_system_type
@@ -18161,6 +18519,7 @@ values
     GLD/M1_ADC52_house0_l66_tm_air_temperature
     GLD/M1_ADC52_house0_l66_tm_mass_temperature
     GLD/M1_ADC52_house0_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house0_l66_tm_is_COOL_on
     GLD/M1_ADC52_house1_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house1_l66_tm_UA
     GLD/M1_ADC52_house1_l66_tm_heating_system_type
@@ -18186,6 +18545,7 @@ values
     GLD/M1_ADC52_house1_l66_tm_air_temperature
     GLD/M1_ADC52_house1_l66_tm_mass_temperature
     GLD/M1_ADC52_house1_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house1_l66_tm_is_COOL_on
     GLD/M1_ADC52_house2_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house2_l66_tm_UA
     GLD/M1_ADC52_house2_l66_tm_heating_system_type
@@ -18211,6 +18571,7 @@ values
     GLD/M1_ADC52_house2_l66_tm_air_temperature
     GLD/M1_ADC52_house2_l66_tm_mass_temperature
     GLD/M1_ADC52_house2_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house2_l66_tm_is_COOL_on
     GLD/M1_ADC52_house3_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house3_l66_tm_UA
     GLD/M1_ADC52_house3_l66_tm_heating_system_type
@@ -18236,6 +18597,7 @@ values
     GLD/M1_ADC52_house3_l66_tm_air_temperature
     GLD/M1_ADC52_house3_l66_tm_mass_temperature
     GLD/M1_ADC52_house3_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house3_l66_tm_is_COOL_on
     GLD/M1_ADC52_house4_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house4_l66_tm_UA
     GLD/M1_ADC52_house4_l66_tm_heating_system_type
@@ -18261,6 +18623,7 @@ values
     GLD/M1_ADC52_house4_l66_tm_air_temperature
     GLD/M1_ADC52_house4_l66_tm_mass_temperature
     GLD/M1_ADC52_house4_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house4_l66_tm_is_COOL_on
     GLD/M1_ADC52_house5_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house5_l66_tm_UA
     GLD/M1_ADC52_house5_l66_tm_heating_system_type
@@ -18286,6 +18649,7 @@ values
     GLD/M1_ADC52_house5_l66_tm_air_temperature
     GLD/M1_ADC52_house5_l66_tm_mass_temperature
     GLD/M1_ADC52_house5_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house5_l66_tm_is_COOL_on
     GLD/M1_ADC52_house7_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house7_l66_tm_UA
     GLD/M1_ADC52_house7_l66_tm_heating_system_type
@@ -18311,6 +18675,7 @@ values
     GLD/M1_ADC52_house7_l66_tm_air_temperature
     GLD/M1_ADC52_house7_l66_tm_mass_temperature
     GLD/M1_ADC52_house7_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house7_l66_tm_is_COOL_on
     GLD/M1_ADC52_house8_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house8_l66_tm_UA
     GLD/M1_ADC52_house8_l66_tm_heating_system_type
@@ -18336,6 +18701,7 @@ values
     GLD/M1_ADC52_house8_l66_tm_air_temperature
     GLD/M1_ADC52_house8_l66_tm_mass_temperature
     GLD/M1_ADC52_house8_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house8_l66_tm_is_COOL_on
     GLD/M1_ADC52_house9_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house9_l66_tm_UA
     GLD/M1_ADC52_house9_l66_tm_heating_system_type
@@ -18361,6 +18727,7 @@ values
     GLD/M1_ADC52_house9_l66_tm_air_temperature
     GLD/M1_ADC52_house9_l66_tm_mass_temperature
     GLD/M1_ADC52_house9_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house9_l66_tm_is_COOL_on
     GLD/M1_ADC52_house10_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house10_l66_tm_UA
     GLD/M1_ADC52_house10_l66_tm_heating_system_type
@@ -18386,6 +18753,7 @@ values
     GLD/M1_ADC52_house10_l66_tm_air_temperature
     GLD/M1_ADC52_house10_l66_tm_mass_temperature
     GLD/M1_ADC52_house10_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house10_l66_tm_is_COOL_on
     GLD/M1_ADC52_house11_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house11_l66_tm_UA
     GLD/M1_ADC52_house11_l66_tm_heating_system_type
@@ -18411,6 +18779,7 @@ values
     GLD/M1_ADC52_house11_l66_tm_air_temperature
     GLD/M1_ADC52_house11_l66_tm_mass_temperature
     GLD/M1_ADC52_house11_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house11_l66_tm_is_COOL_on
     GLD/M1_ADC52_house12_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house12_l66_tm_UA
     GLD/M1_ADC52_house12_l66_tm_heating_system_type
@@ -18436,6 +18805,7 @@ values
     GLD/M1_ADC52_house12_l66_tm_air_temperature
     GLD/M1_ADC52_house12_l66_tm_mass_temperature
     GLD/M1_ADC52_house12_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house12_l66_tm_is_COOL_on
     GLD/M1_ADC52_house13_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house13_l66_tm_UA
     GLD/M1_ADC52_house13_l66_tm_heating_system_type
@@ -18461,6 +18831,7 @@ values
     GLD/M1_ADC52_house13_l66_tm_air_temperature
     GLD/M1_ADC52_house13_l66_tm_mass_temperature
     GLD/M1_ADC52_house13_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house13_l66_tm_is_COOL_on
     GLD/M1_ADC52_house14_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house14_l66_tm_UA
     GLD/M1_ADC52_house14_l66_tm_heating_system_type
@@ -18486,6 +18857,7 @@ values
     GLD/M1_ADC52_house14_l66_tm_air_temperature
     GLD/M1_ADC52_house14_l66_tm_mass_temperature
     GLD/M1_ADC52_house14_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house14_l66_tm_is_COOL_on
     GLD/M1_ADC52_house15_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house15_l66_tm_UA
     GLD/M1_ADC52_house15_l66_tm_heating_system_type
@@ -18511,6 +18883,7 @@ values
     GLD/M1_ADC52_house15_l66_tm_air_temperature
     GLD/M1_ADC52_house15_l66_tm_mass_temperature
     GLD/M1_ADC52_house15_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house15_l66_tm_is_COOL_on
     GLD/M1_ADC52_house16_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house16_l66_tm_UA
     GLD/M1_ADC52_house16_l66_tm_heating_system_type
@@ -18536,6 +18909,7 @@ values
     GLD/M1_ADC52_house16_l66_tm_air_temperature
     GLD/M1_ADC52_house16_l66_tm_mass_temperature
     GLD/M1_ADC52_house16_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house16_l66_tm_is_COOL_on
     GLD/M1_ADC52_house17_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house17_l66_tm_UA
     GLD/M1_ADC52_house17_l66_tm_heating_system_type
@@ -18561,6 +18935,7 @@ values
     GLD/M1_ADC52_house17_l66_tm_air_temperature
     GLD/M1_ADC52_house17_l66_tm_mass_temperature
     GLD/M1_ADC52_house17_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house17_l66_tm_is_COOL_on
     GLD/M1_ADC52_house18_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house18_l66_tm_UA
     GLD/M1_ADC52_house18_l66_tm_heating_system_type
@@ -18586,6 +18961,7 @@ values
     GLD/M1_ADC52_house18_l66_tm_air_temperature
     GLD/M1_ADC52_house18_l66_tm_mass_temperature
     GLD/M1_ADC52_house18_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house18_l66_tm_is_COOL_on
     GLD/M1_ADC52_house19_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house19_l66_tm_UA
     GLD/M1_ADC52_house19_l66_tm_heating_system_type
@@ -18611,6 +18987,7 @@ values
     GLD/M1_ADC52_house19_l66_tm_air_temperature
     GLD/M1_ADC52_house19_l66_tm_mass_temperature
     GLD/M1_ADC52_house19_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house19_l66_tm_is_COOL_on
     GLD/M1_ADC52_house20_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house20_l66_tm_UA
     GLD/M1_ADC52_house20_l66_tm_heating_system_type
@@ -18636,6 +19013,7 @@ values
     GLD/M1_ADC52_house20_l66_tm_air_temperature
     GLD/M1_ADC52_house20_l66_tm_mass_temperature
     GLD/M1_ADC52_house20_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house20_l66_tm_is_COOL_on
     GLD/M1_ADC52_house21_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house21_l66_tm_UA
     GLD/M1_ADC52_house21_l66_tm_heating_system_type
@@ -18661,6 +19039,7 @@ values
     GLD/M1_ADC52_house21_l66_tm_air_temperature
     GLD/M1_ADC52_house21_l66_tm_mass_temperature
     GLD/M1_ADC52_house21_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house21_l66_tm_is_COOL_on
     GLD/M1_ADC52_house22_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house22_l66_tm_UA
     GLD/M1_ADC52_house22_l66_tm_heating_system_type
@@ -18686,6 +19065,7 @@ values
     GLD/M1_ADC52_house22_l66_tm_air_temperature
     GLD/M1_ADC52_house22_l66_tm_mass_temperature
     GLD/M1_ADC52_house22_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house22_l66_tm_is_COOL_on
     GLD/M1_ADC52_house23_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house23_l66_tm_UA
     GLD/M1_ADC52_house23_l66_tm_heating_system_type
@@ -18711,6 +19091,7 @@ values
     GLD/M1_ADC52_house23_l66_tm_air_temperature
     GLD/M1_ADC52_house23_l66_tm_mass_temperature
     GLD/M1_ADC52_house23_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house23_l66_tm_is_COOL_on
     GLD/M1_ADC52_house24_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house24_l66_tm_UA
     GLD/M1_ADC52_house24_l66_tm_heating_system_type
@@ -18736,6 +19117,7 @@ values
     GLD/M1_ADC52_house24_l66_tm_air_temperature
     GLD/M1_ADC52_house24_l66_tm_mass_temperature
     GLD/M1_ADC52_house24_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house24_l66_tm_is_COOL_on
     GLD/M1_ADC52_house25_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house25_l66_tm_UA
     GLD/M1_ADC52_house25_l66_tm_heating_system_type
@@ -18761,6 +19143,7 @@ values
     GLD/M1_ADC52_house25_l66_tm_air_temperature
     GLD/M1_ADC52_house25_l66_tm_mass_temperature
     GLD/M1_ADC52_house25_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house25_l66_tm_is_COOL_on
     GLD/M1_ADC52_house26_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house26_l66_tm_UA
     GLD/M1_ADC52_house26_l66_tm_heating_system_type
@@ -18786,6 +19169,7 @@ values
     GLD/M1_ADC52_house26_l66_tm_air_temperature
     GLD/M1_ADC52_house26_l66_tm_mass_temperature
     GLD/M1_ADC52_house26_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house26_l66_tm_is_COOL_on
     GLD/M1_ADC52_house27_l66_tm_mass_heat_coeff
     GLD/M1_ADC52_house27_l66_tm_UA
     GLD/M1_ADC52_house27_l66_tm_heating_system_type
@@ -18811,233 +19195,168 @@ values
     GLD/M1_ADC52_house27_l66_tm_air_temperature
     GLD/M1_ADC52_house27_l66_tm_mass_temperature
     GLD/M1_ADC52_house27_l66_tm_thermostat_mode
+    GLD/M1_ADC52_house27_l66_tm_is_COOL_on
     GLD/M1_ADC52_solar_PVinv_house5_l52_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house5_l52_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house5_l52_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house5_l52_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house5_l52_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house5_l52_tm_VA_Out
     GLD/M1_ADC52_PVinv_house5_l52_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house9_l52_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house9_l52_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house9_l52_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house9_l52_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house9_l52_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house9_l52_tm_VA_Out
     GLD/M1_ADC52_PVinv_house9_l52_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house7_l53_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house7_l53_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house7_l53_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house7_l53_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house7_l53_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house7_l53_tm_VA_Out
     GLD/M1_ADC52_PVinv_house7_l53_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house8_l53_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house8_l53_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house8_l53_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house8_l53_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house8_l53_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house8_l53_tm_VA_Out
     GLD/M1_ADC52_PVinv_house8_l53_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house14_l53_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house14_l53_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house14_l53_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house14_l53_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house14_l53_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house14_l53_tm_VA_Out
     GLD/M1_ADC52_PVinv_house14_l53_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house6_l55_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house6_l55_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house6_l55_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house6_l55_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house6_l55_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house6_l55_tm_VA_Out
     GLD/M1_ADC52_PVinv_house6_l55_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house3_l56_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house3_l56_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house3_l56_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house3_l56_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house3_l56_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house3_l56_tm_VA_Out
     GLD/M1_ADC52_PVinv_house3_l56_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house6_l56_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house6_l56_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house6_l56_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house6_l56_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house6_l56_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house6_l56_tm_VA_Out
     GLD/M1_ADC52_PVinv_house6_l56_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house0_l58_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house0_l58_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house0_l58_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house0_l58_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house0_l58_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house0_l58_tm_VA_Out
     GLD/M1_ADC52_PVinv_house0_l58_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house4_l58_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house4_l58_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house4_l58_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house4_l58_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house4_l58_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house4_l58_tm_VA_Out
     GLD/M1_ADC52_PVinv_house4_l58_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house5_l58_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house5_l58_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house5_l58_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house5_l58_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house5_l58_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house5_l58_tm_VA_Out
     GLD/M1_ADC52_PVinv_house5_l58_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house0_l59_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house0_l59_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house0_l59_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house0_l59_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house0_l59_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house0_l59_tm_VA_Out
     GLD/M1_ADC52_PVinv_house0_l59_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house1_l59_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house1_l59_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house1_l59_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house1_l59_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house1_l59_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house1_l59_tm_VA_Out
     GLD/M1_ADC52_PVinv_house1_l59_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house0_l60_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house0_l60_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house0_l60_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house0_l60_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house0_l60_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house0_l60_tm_VA_Out
     GLD/M1_ADC52_PVinv_house0_l60_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house1_l60_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house1_l60_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house1_l60_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house1_l60_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house1_l60_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house1_l60_tm_VA_Out
     GLD/M1_ADC52_PVinv_house1_l60_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house5_l60_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house5_l60_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house5_l60_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house5_l60_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house5_l60_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house5_l60_tm_VA_Out
     GLD/M1_ADC52_PVinv_house5_l60_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house6_l60_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house6_l60_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house6_l60_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house6_l60_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house6_l60_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house6_l60_tm_VA_Out
     GLD/M1_ADC52_PVinv_house6_l60_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house9_l62_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house9_l62_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house9_l62_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house9_l62_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house9_l62_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house9_l62_tm_VA_Out
     GLD/M1_ADC52_PVinv_house9_l62_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house3_l63_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house3_l63_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house3_l63_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house3_l63_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house3_l63_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house3_l63_tm_VA_Out
     GLD/M1_ADC52_PVinv_house3_l63_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house4_l63_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house4_l63_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house4_l63_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house4_l63_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house4_l63_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house4_l63_tm_VA_Out
     GLD/M1_ADC52_PVinv_house4_l63_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house5_l63_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house5_l63_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house5_l63_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house5_l63_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house5_l63_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house5_l63_tm_VA_Out
     GLD/M1_ADC52_PVinv_house5_l63_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house9_l63_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house9_l63_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house9_l63_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house9_l63_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house9_l63_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house9_l63_tm_VA_Out
     GLD/M1_ADC52_PVinv_house9_l63_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house10_l63_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house10_l63_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house10_l63_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house10_l63_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house10_l63_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house10_l63_tm_VA_Out
     GLD/M1_ADC52_PVinv_house10_l63_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house14_l63_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house14_l63_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house14_l63_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house14_l63_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house14_l63_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house14_l63_tm_VA_Out
     GLD/M1_ADC52_PVinv_house14_l63_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house18_l64_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house18_l64_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house18_l64_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house18_l64_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house18_l64_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house18_l64_tm_VA_Out
     GLD/M1_ADC52_PVinv_house18_l64_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house23_l64_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house23_l64_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house23_l64_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house23_l64_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house23_l64_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house23_l64_tm_VA_Out
     GLD/M1_ADC52_PVinv_house23_l64_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house24_l64_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house24_l64_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house24_l64_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house24_l64_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house24_l64_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house24_l64_tm_VA_Out
     GLD/M1_ADC52_PVinv_house24_l64_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house1_l66_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house1_l66_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house1_l66_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house1_l66_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house1_l66_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house1_l66_tm_VA_Out
     GLD/M1_ADC52_PVinv_house1_l66_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house8_l66_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house8_l66_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house8_l66_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house8_l66_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house8_l66_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house8_l66_tm_VA_Out
     GLD/M1_ADC52_PVinv_house8_l66_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house10_l66_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house10_l66_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house10_l66_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house10_l66_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house10_l66_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house10_l66_tm_VA_Out
     GLD/M1_ADC52_PVinv_house10_l66_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house13_l66_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house13_l66_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house13_l66_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house13_l66_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house13_l66_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house13_l66_tm_VA_Out
     GLD/M1_ADC52_PVinv_house13_l66_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house19_l66_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house19_l66_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house19_l66_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house19_l66_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house19_l66_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house19_l66_tm_VA_Out
     GLD/M1_ADC52_PVinv_house19_l66_tm_inverter_efficiency
     GLD/M1_ADC52_solar_PVinv_house24_l66_tm_rated_power
-    GLD/M1_ADC52_solar_PVinv_house24_l66_tm_latitude
-    GLD/M1_ADC52_solar_PVinv_house24_l66_tm_longitude
     GLD/M1_ADC52_solar_PVinv_house24_l66_tm_tilt_angle
     GLD/M1_ADC52_solar_PVinv_house24_l66_tm_orientation_azimuth
     GLD/M1_ADC52_solar_PVinv_house24_l66_tm_VA_Out
@@ -19913,6 +20232,7 @@ values
     GLD/M1_ADC68_house0_l68_tm_air_temperature
     GLD/M1_ADC68_house0_l68_tm_mass_temperature
     GLD/M1_ADC68_house0_l68_tm_thermostat_mode
+    GLD/M1_ADC68_house0_l68_tm_is_COOL_on
     GLD/M1_ADC68_house1_l68_tm_mass_heat_coeff
     GLD/M1_ADC68_house1_l68_tm_UA
     GLD/M1_ADC68_house1_l68_tm_heating_system_type
@@ -19938,6 +20258,7 @@ values
     GLD/M1_ADC68_house1_l68_tm_air_temperature
     GLD/M1_ADC68_house1_l68_tm_mass_temperature
     GLD/M1_ADC68_house1_l68_tm_thermostat_mode
+    GLD/M1_ADC68_house1_l68_tm_is_COOL_on
     GLD/M1_ADC68_house2_l68_tm_mass_heat_coeff
     GLD/M1_ADC68_house2_l68_tm_UA
     GLD/M1_ADC68_house2_l68_tm_heating_system_type
@@ -19963,6 +20284,7 @@ values
     GLD/M1_ADC68_house2_l68_tm_air_temperature
     GLD/M1_ADC68_house2_l68_tm_mass_temperature
     GLD/M1_ADC68_house2_l68_tm_thermostat_mode
+    GLD/M1_ADC68_house2_l68_tm_is_COOL_on
     GLD/M1_ADC68_house3_l68_tm_mass_heat_coeff
     GLD/M1_ADC68_house3_l68_tm_UA
     GLD/M1_ADC68_house3_l68_tm_heating_system_type
@@ -19988,6 +20310,7 @@ values
     GLD/M1_ADC68_house3_l68_tm_air_temperature
     GLD/M1_ADC68_house3_l68_tm_mass_temperature
     GLD/M1_ADC68_house3_l68_tm_thermostat_mode
+    GLD/M1_ADC68_house3_l68_tm_is_COOL_on
     GLD/M1_ADC68_house4_l68_tm_mass_heat_coeff
     GLD/M1_ADC68_house4_l68_tm_UA
     GLD/M1_ADC68_house4_l68_tm_heating_system_type
@@ -20013,6 +20336,7 @@ values
     GLD/M1_ADC68_house4_l68_tm_air_temperature
     GLD/M1_ADC68_house4_l68_tm_mass_temperature
     GLD/M1_ADC68_house4_l68_tm_thermostat_mode
+    GLD/M1_ADC68_house4_l68_tm_is_COOL_on
     GLD/M1_ADC68_house5_l68_tm_mass_heat_coeff
     GLD/M1_ADC68_house5_l68_tm_UA
     GLD/M1_ADC68_house5_l68_tm_heating_system_type
@@ -20038,6 +20362,7 @@ values
     GLD/M1_ADC68_house5_l68_tm_air_temperature
     GLD/M1_ADC68_house5_l68_tm_mass_temperature
     GLD/M1_ADC68_house5_l68_tm_thermostat_mode
+    GLD/M1_ADC68_house5_l68_tm_is_COOL_on
     GLD/M1_ADC68_house6_l68_tm_mass_heat_coeff
     GLD/M1_ADC68_house6_l68_tm_UA
     GLD/M1_ADC68_house6_l68_tm_heating_system_type
@@ -20063,6 +20388,7 @@ values
     GLD/M1_ADC68_house6_l68_tm_air_temperature
     GLD/M1_ADC68_house6_l68_tm_mass_temperature
     GLD/M1_ADC68_house6_l68_tm_thermostat_mode
+    GLD/M1_ADC68_house6_l68_tm_is_COOL_on
     GLD/M1_ADC68_house0_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house0_l69_tm_UA
     GLD/M1_ADC68_house0_l69_tm_heating_system_type
@@ -20088,6 +20414,7 @@ values
     GLD/M1_ADC68_house0_l69_tm_air_temperature
     GLD/M1_ADC68_house0_l69_tm_mass_temperature
     GLD/M1_ADC68_house0_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house0_l69_tm_is_COOL_on
     GLD/M1_ADC68_house1_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house1_l69_tm_UA
     GLD/M1_ADC68_house1_l69_tm_heating_system_type
@@ -20113,6 +20440,7 @@ values
     GLD/M1_ADC68_house1_l69_tm_air_temperature
     GLD/M1_ADC68_house1_l69_tm_mass_temperature
     GLD/M1_ADC68_house1_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house1_l69_tm_is_COOL_on
     GLD/M1_ADC68_house2_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house2_l69_tm_UA
     GLD/M1_ADC68_house2_l69_tm_heating_system_type
@@ -20138,6 +20466,7 @@ values
     GLD/M1_ADC68_house2_l69_tm_air_temperature
     GLD/M1_ADC68_house2_l69_tm_mass_temperature
     GLD/M1_ADC68_house2_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house2_l69_tm_is_COOL_on
     GLD/M1_ADC68_house3_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house3_l69_tm_UA
     GLD/M1_ADC68_house3_l69_tm_heating_system_type
@@ -20163,6 +20492,7 @@ values
     GLD/M1_ADC68_house3_l69_tm_air_temperature
     GLD/M1_ADC68_house3_l69_tm_mass_temperature
     GLD/M1_ADC68_house3_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house3_l69_tm_is_COOL_on
     GLD/M1_ADC68_house4_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house4_l69_tm_UA
     GLD/M1_ADC68_house4_l69_tm_heating_system_type
@@ -20188,6 +20518,7 @@ values
     GLD/M1_ADC68_house4_l69_tm_air_temperature
     GLD/M1_ADC68_house4_l69_tm_mass_temperature
     GLD/M1_ADC68_house4_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house4_l69_tm_is_COOL_on
     GLD/M1_ADC68_house5_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house5_l69_tm_UA
     GLD/M1_ADC68_house5_l69_tm_heating_system_type
@@ -20213,6 +20544,7 @@ values
     GLD/M1_ADC68_house5_l69_tm_air_temperature
     GLD/M1_ADC68_house5_l69_tm_mass_temperature
     GLD/M1_ADC68_house5_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house5_l69_tm_is_COOL_on
     GLD/M1_ADC68_house6_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house6_l69_tm_UA
     GLD/M1_ADC68_house6_l69_tm_heating_system_type
@@ -20238,6 +20570,7 @@ values
     GLD/M1_ADC68_house6_l69_tm_air_temperature
     GLD/M1_ADC68_house6_l69_tm_mass_temperature
     GLD/M1_ADC68_house6_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house6_l69_tm_is_COOL_on
     GLD/M1_ADC68_house7_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house7_l69_tm_UA
     GLD/M1_ADC68_house7_l69_tm_heating_system_type
@@ -20263,6 +20596,7 @@ values
     GLD/M1_ADC68_house7_l69_tm_air_temperature
     GLD/M1_ADC68_house7_l69_tm_mass_temperature
     GLD/M1_ADC68_house7_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house7_l69_tm_is_COOL_on
     GLD/M1_ADC68_house9_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house9_l69_tm_UA
     GLD/M1_ADC68_house9_l69_tm_heating_system_type
@@ -20288,6 +20622,7 @@ values
     GLD/M1_ADC68_house9_l69_tm_air_temperature
     GLD/M1_ADC68_house9_l69_tm_mass_temperature
     GLD/M1_ADC68_house9_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house9_l69_tm_is_COOL_on
     GLD/M1_ADC68_house10_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house10_l69_tm_UA
     GLD/M1_ADC68_house10_l69_tm_heating_system_type
@@ -20313,6 +20648,7 @@ values
     GLD/M1_ADC68_house10_l69_tm_air_temperature
     GLD/M1_ADC68_house10_l69_tm_mass_temperature
     GLD/M1_ADC68_house10_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house10_l69_tm_is_COOL_on
     GLD/M1_ADC68_house11_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house11_l69_tm_UA
     GLD/M1_ADC68_house11_l69_tm_heating_system_type
@@ -20338,6 +20674,7 @@ values
     GLD/M1_ADC68_house11_l69_tm_air_temperature
     GLD/M1_ADC68_house11_l69_tm_mass_temperature
     GLD/M1_ADC68_house11_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house11_l69_tm_is_COOL_on
     GLD/M1_ADC68_house12_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house12_l69_tm_UA
     GLD/M1_ADC68_house12_l69_tm_heating_system_type
@@ -20363,6 +20700,7 @@ values
     GLD/M1_ADC68_house12_l69_tm_air_temperature
     GLD/M1_ADC68_house12_l69_tm_mass_temperature
     GLD/M1_ADC68_house12_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house12_l69_tm_is_COOL_on
     GLD/M1_ADC68_house13_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house13_l69_tm_UA
     GLD/M1_ADC68_house13_l69_tm_heating_system_type
@@ -20388,6 +20726,7 @@ values
     GLD/M1_ADC68_house13_l69_tm_air_temperature
     GLD/M1_ADC68_house13_l69_tm_mass_temperature
     GLD/M1_ADC68_house13_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house13_l69_tm_is_COOL_on
     GLD/M1_ADC68_house14_l69_tm_mass_heat_coeff
     GLD/M1_ADC68_house14_l69_tm_UA
     GLD/M1_ADC68_house14_l69_tm_heating_system_type
@@ -20413,6 +20752,7 @@ values
     GLD/M1_ADC68_house14_l69_tm_air_temperature
     GLD/M1_ADC68_house14_l69_tm_mass_temperature
     GLD/M1_ADC68_house14_l69_tm_thermostat_mode
+    GLD/M1_ADC68_house14_l69_tm_is_COOL_on
     GLD/M1_ADC68_house0_l70_tm_mass_heat_coeff
     GLD/M1_ADC68_house0_l70_tm_UA
     GLD/M1_ADC68_house0_l70_tm_heating_system_type
@@ -20438,6 +20778,7 @@ values
     GLD/M1_ADC68_house0_l70_tm_air_temperature
     GLD/M1_ADC68_house0_l70_tm_mass_temperature
     GLD/M1_ADC68_house0_l70_tm_thermostat_mode
+    GLD/M1_ADC68_house0_l70_tm_is_COOL_on
     GLD/M1_ADC68_house1_l70_tm_mass_heat_coeff
     GLD/M1_ADC68_house1_l70_tm_UA
     GLD/M1_ADC68_house1_l70_tm_heating_system_type
@@ -20463,6 +20804,7 @@ values
     GLD/M1_ADC68_house1_l70_tm_air_temperature
     GLD/M1_ADC68_house1_l70_tm_mass_temperature
     GLD/M1_ADC68_house1_l70_tm_thermostat_mode
+    GLD/M1_ADC68_house1_l70_tm_is_COOL_on
     GLD/M1_ADC68_house2_l70_tm_mass_heat_coeff
     GLD/M1_ADC68_house2_l70_tm_UA
     GLD/M1_ADC68_house2_l70_tm_heating_system_type
@@ -20488,6 +20830,7 @@ values
     GLD/M1_ADC68_house2_l70_tm_air_temperature
     GLD/M1_ADC68_house2_l70_tm_mass_temperature
     GLD/M1_ADC68_house2_l70_tm_thermostat_mode
+    GLD/M1_ADC68_house2_l70_tm_is_COOL_on
     GLD/M1_ADC68_house3_l70_tm_mass_heat_coeff
     GLD/M1_ADC68_house3_l70_tm_UA
     GLD/M1_ADC68_house3_l70_tm_heating_system_type
@@ -20513,6 +20856,7 @@ values
     GLD/M1_ADC68_house3_l70_tm_air_temperature
     GLD/M1_ADC68_house3_l70_tm_mass_temperature
     GLD/M1_ADC68_house3_l70_tm_thermostat_mode
+    GLD/M1_ADC68_house3_l70_tm_is_COOL_on
     GLD/M1_ADC68_house4_l70_tm_mass_heat_coeff
     GLD/M1_ADC68_house4_l70_tm_UA
     GLD/M1_ADC68_house4_l70_tm_heating_system_type
@@ -20538,6 +20882,7 @@ values
     GLD/M1_ADC68_house4_l70_tm_air_temperature
     GLD/M1_ADC68_house4_l70_tm_mass_temperature
     GLD/M1_ADC68_house4_l70_tm_thermostat_mode
+    GLD/M1_ADC68_house4_l70_tm_is_COOL_on
     GLD/M1_ADC68_house5_l70_tm_mass_heat_coeff
     GLD/M1_ADC68_house5_l70_tm_UA
     GLD/M1_ADC68_house5_l70_tm_heating_system_type
@@ -20563,6 +20908,7 @@ values
     GLD/M1_ADC68_house5_l70_tm_air_temperature
     GLD/M1_ADC68_house5_l70_tm_mass_temperature
     GLD/M1_ADC68_house5_l70_tm_thermostat_mode
+    GLD/M1_ADC68_house5_l70_tm_is_COOL_on
     GLD/M1_ADC68_house1_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house1_l71_tm_UA
     GLD/M1_ADC68_house1_l71_tm_heating_system_type
@@ -20588,6 +20934,7 @@ values
     GLD/M1_ADC68_house1_l71_tm_air_temperature
     GLD/M1_ADC68_house1_l71_tm_mass_temperature
     GLD/M1_ADC68_house1_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house1_l71_tm_is_COOL_on
     GLD/M1_ADC68_house2_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house2_l71_tm_UA
     GLD/M1_ADC68_house2_l71_tm_heating_system_type
@@ -20613,6 +20960,7 @@ values
     GLD/M1_ADC68_house2_l71_tm_air_temperature
     GLD/M1_ADC68_house2_l71_tm_mass_temperature
     GLD/M1_ADC68_house2_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house2_l71_tm_is_COOL_on
     GLD/M1_ADC68_house3_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house3_l71_tm_UA
     GLD/M1_ADC68_house3_l71_tm_heating_system_type
@@ -20638,6 +20986,7 @@ values
     GLD/M1_ADC68_house3_l71_tm_air_temperature
     GLD/M1_ADC68_house3_l71_tm_mass_temperature
     GLD/M1_ADC68_house3_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house3_l71_tm_is_COOL_on
     GLD/M1_ADC68_house4_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house4_l71_tm_UA
     GLD/M1_ADC68_house4_l71_tm_heating_system_type
@@ -20663,6 +21012,7 @@ values
     GLD/M1_ADC68_house4_l71_tm_air_temperature
     GLD/M1_ADC68_house4_l71_tm_mass_temperature
     GLD/M1_ADC68_house4_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house4_l71_tm_is_COOL_on
     GLD/M1_ADC68_house7_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house7_l71_tm_UA
     GLD/M1_ADC68_house7_l71_tm_heating_system_type
@@ -20688,6 +21038,7 @@ values
     GLD/M1_ADC68_house7_l71_tm_air_temperature
     GLD/M1_ADC68_house7_l71_tm_mass_temperature
     GLD/M1_ADC68_house7_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house7_l71_tm_is_COOL_on
     GLD/M1_ADC68_house8_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house8_l71_tm_UA
     GLD/M1_ADC68_house8_l71_tm_heating_system_type
@@ -20713,6 +21064,7 @@ values
     GLD/M1_ADC68_house8_l71_tm_air_temperature
     GLD/M1_ADC68_house8_l71_tm_mass_temperature
     GLD/M1_ADC68_house8_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house8_l71_tm_is_COOL_on
     GLD/M1_ADC68_house9_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house9_l71_tm_UA
     GLD/M1_ADC68_house9_l71_tm_heating_system_type
@@ -20738,6 +21090,7 @@ values
     GLD/M1_ADC68_house9_l71_tm_air_temperature
     GLD/M1_ADC68_house9_l71_tm_mass_temperature
     GLD/M1_ADC68_house9_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house9_l71_tm_is_COOL_on
     GLD/M1_ADC68_house10_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house10_l71_tm_UA
     GLD/M1_ADC68_house10_l71_tm_heating_system_type
@@ -20763,6 +21116,7 @@ values
     GLD/M1_ADC68_house10_l71_tm_air_temperature
     GLD/M1_ADC68_house10_l71_tm_mass_temperature
     GLD/M1_ADC68_house10_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house10_l71_tm_is_COOL_on
     GLD/M1_ADC68_house11_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house11_l71_tm_UA
     GLD/M1_ADC68_house11_l71_tm_heating_system_type
@@ -20788,6 +21142,7 @@ values
     GLD/M1_ADC68_house11_l71_tm_air_temperature
     GLD/M1_ADC68_house11_l71_tm_mass_temperature
     GLD/M1_ADC68_house11_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house11_l71_tm_is_COOL_on
     GLD/M1_ADC68_house12_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house12_l71_tm_UA
     GLD/M1_ADC68_house12_l71_tm_heating_system_type
@@ -20813,6 +21168,7 @@ values
     GLD/M1_ADC68_house12_l71_tm_air_temperature
     GLD/M1_ADC68_house12_l71_tm_mass_temperature
     GLD/M1_ADC68_house12_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house12_l71_tm_is_COOL_on
     GLD/M1_ADC68_house13_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house13_l71_tm_UA
     GLD/M1_ADC68_house13_l71_tm_heating_system_type
@@ -20838,6 +21194,7 @@ values
     GLD/M1_ADC68_house13_l71_tm_air_temperature
     GLD/M1_ADC68_house13_l71_tm_mass_temperature
     GLD/M1_ADC68_house13_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house13_l71_tm_is_COOL_on
     GLD/M1_ADC68_house14_l71_tm_mass_heat_coeff
     GLD/M1_ADC68_house14_l71_tm_UA
     GLD/M1_ADC68_house14_l71_tm_heating_system_type
@@ -20863,72 +21220,53 @@ values
     GLD/M1_ADC68_house14_l71_tm_air_temperature
     GLD/M1_ADC68_house14_l71_tm_mass_temperature
     GLD/M1_ADC68_house14_l71_tm_thermostat_mode
+    GLD/M1_ADC68_house14_l71_tm_is_COOL_on
     GLD/M1_ADC68_solar_PVinv_house4_l69_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house4_l69_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house4_l69_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house4_l69_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house4_l69_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house4_l69_tm_VA_Out
     GLD/M1_ADC68_PVinv_house4_l69_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house6_l69_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house6_l69_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house6_l69_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house6_l69_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house6_l69_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house6_l69_tm_VA_Out
     GLD/M1_ADC68_PVinv_house6_l69_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house0_l70_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house0_l70_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house0_l70_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house0_l70_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house0_l70_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house0_l70_tm_VA_Out
     GLD/M1_ADC68_PVinv_house0_l70_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house1_l70_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house1_l70_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house1_l70_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house1_l70_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house1_l70_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house1_l70_tm_VA_Out
     GLD/M1_ADC68_PVinv_house1_l70_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house3_l70_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house3_l70_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house3_l70_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house3_l70_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house3_l70_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house3_l70_tm_VA_Out
     GLD/M1_ADC68_PVinv_house3_l70_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house4_l70_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house4_l70_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house4_l70_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house4_l70_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house4_l70_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house4_l70_tm_VA_Out
     GLD/M1_ADC68_PVinv_house4_l70_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house6_l70_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house6_l70_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house6_l70_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house6_l70_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house6_l70_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house6_l70_tm_VA_Out
     GLD/M1_ADC68_PVinv_house6_l70_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house2_l71_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house2_l71_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house2_l71_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house2_l71_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house2_l71_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house2_l71_tm_VA_Out
     GLD/M1_ADC68_PVinv_house2_l71_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house3_l71_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house3_l71_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house3_l71_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house3_l71_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house3_l71_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house3_l71_tm_VA_Out
     GLD/M1_ADC68_PVinv_house3_l71_tm_inverter_efficiency
     GLD/M1_ADC68_solar_PVinv_house10_l71_tm_rated_power
-    GLD/M1_ADC68_solar_PVinv_house10_l71_tm_latitude
-    GLD/M1_ADC68_solar_PVinv_house10_l71_tm_longitude
     GLD/M1_ADC68_solar_PVinv_house10_l71_tm_tilt_angle
     GLD/M1_ADC68_solar_PVinv_house10_l71_tm_orientation_azimuth
     GLD/M1_ADC68_solar_PVinv_house10_l71_tm_VA_Out
@@ -21402,6 +21740,7 @@ values
     GLD/M1_ADC73_house1_l73_tm_air_temperature
     GLD/M1_ADC73_house1_l73_tm_mass_temperature
     GLD/M1_ADC73_house1_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house1_l73_tm_is_COOL_on
     GLD/M1_ADC73_house2_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house2_l73_tm_UA
     GLD/M1_ADC73_house2_l73_tm_heating_system_type
@@ -21427,6 +21766,7 @@ values
     GLD/M1_ADC73_house2_l73_tm_air_temperature
     GLD/M1_ADC73_house2_l73_tm_mass_temperature
     GLD/M1_ADC73_house2_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house2_l73_tm_is_COOL_on
     GLD/M1_ADC73_house3_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house3_l73_tm_UA
     GLD/M1_ADC73_house3_l73_tm_heating_system_type
@@ -21452,6 +21792,7 @@ values
     GLD/M1_ADC73_house3_l73_tm_air_temperature
     GLD/M1_ADC73_house3_l73_tm_mass_temperature
     GLD/M1_ADC73_house3_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house3_l73_tm_is_COOL_on
     GLD/M1_ADC73_house4_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house4_l73_tm_UA
     GLD/M1_ADC73_house4_l73_tm_heating_system_type
@@ -21477,6 +21818,7 @@ values
     GLD/M1_ADC73_house4_l73_tm_air_temperature
     GLD/M1_ADC73_house4_l73_tm_mass_temperature
     GLD/M1_ADC73_house4_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house4_l73_tm_is_COOL_on
     GLD/M1_ADC73_house5_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house5_l73_tm_UA
     GLD/M1_ADC73_house5_l73_tm_heating_system_type
@@ -21502,6 +21844,7 @@ values
     GLD/M1_ADC73_house5_l73_tm_air_temperature
     GLD/M1_ADC73_house5_l73_tm_mass_temperature
     GLD/M1_ADC73_house5_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house5_l73_tm_is_COOL_on
     GLD/M1_ADC73_house6_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house6_l73_tm_UA
     GLD/M1_ADC73_house6_l73_tm_heating_system_type
@@ -21527,6 +21870,7 @@ values
     GLD/M1_ADC73_house6_l73_tm_air_temperature
     GLD/M1_ADC73_house6_l73_tm_mass_temperature
     GLD/M1_ADC73_house6_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house6_l73_tm_is_COOL_on
     GLD/M1_ADC73_house7_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house7_l73_tm_UA
     GLD/M1_ADC73_house7_l73_tm_heating_system_type
@@ -21552,6 +21896,7 @@ values
     GLD/M1_ADC73_house7_l73_tm_air_temperature
     GLD/M1_ADC73_house7_l73_tm_mass_temperature
     GLD/M1_ADC73_house7_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house7_l73_tm_is_COOL_on
     GLD/M1_ADC73_house8_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house8_l73_tm_UA
     GLD/M1_ADC73_house8_l73_tm_heating_system_type
@@ -21577,6 +21922,7 @@ values
     GLD/M1_ADC73_house8_l73_tm_air_temperature
     GLD/M1_ADC73_house8_l73_tm_mass_temperature
     GLD/M1_ADC73_house8_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house8_l73_tm_is_COOL_on
     GLD/M1_ADC73_house9_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house9_l73_tm_UA
     GLD/M1_ADC73_house9_l73_tm_heating_system_type
@@ -21602,6 +21948,7 @@ values
     GLD/M1_ADC73_house9_l73_tm_air_temperature
     GLD/M1_ADC73_house9_l73_tm_mass_temperature
     GLD/M1_ADC73_house9_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house9_l73_tm_is_COOL_on
     GLD/M1_ADC73_house10_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house10_l73_tm_UA
     GLD/M1_ADC73_house10_l73_tm_heating_system_type
@@ -21627,6 +21974,7 @@ values
     GLD/M1_ADC73_house10_l73_tm_air_temperature
     GLD/M1_ADC73_house10_l73_tm_mass_temperature
     GLD/M1_ADC73_house10_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house10_l73_tm_is_COOL_on
     GLD/M1_ADC73_house11_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house11_l73_tm_UA
     GLD/M1_ADC73_house11_l73_tm_heating_system_type
@@ -21652,6 +22000,7 @@ values
     GLD/M1_ADC73_house11_l73_tm_air_temperature
     GLD/M1_ADC73_house11_l73_tm_mass_temperature
     GLD/M1_ADC73_house11_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house11_l73_tm_is_COOL_on
     GLD/M1_ADC73_house12_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house12_l73_tm_UA
     GLD/M1_ADC73_house12_l73_tm_heating_system_type
@@ -21677,6 +22026,7 @@ values
     GLD/M1_ADC73_house12_l73_tm_air_temperature
     GLD/M1_ADC73_house12_l73_tm_mass_temperature
     GLD/M1_ADC73_house12_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house12_l73_tm_is_COOL_on
     GLD/M1_ADC73_house13_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house13_l73_tm_UA
     GLD/M1_ADC73_house13_l73_tm_heating_system_type
@@ -21702,6 +22052,7 @@ values
     GLD/M1_ADC73_house13_l73_tm_air_temperature
     GLD/M1_ADC73_house13_l73_tm_mass_temperature
     GLD/M1_ADC73_house13_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house13_l73_tm_is_COOL_on
     GLD/M1_ADC73_house14_l73_tm_mass_heat_coeff
     GLD/M1_ADC73_house14_l73_tm_UA
     GLD/M1_ADC73_house14_l73_tm_heating_system_type
@@ -21727,6 +22078,7 @@ values
     GLD/M1_ADC73_house14_l73_tm_air_temperature
     GLD/M1_ADC73_house14_l73_tm_mass_temperature
     GLD/M1_ADC73_house14_l73_tm_thermostat_mode
+    GLD/M1_ADC73_house14_l73_tm_is_COOL_on
     GLD/M1_ADC73_house0_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house0_l74_tm_UA
     GLD/M1_ADC73_house0_l74_tm_heating_system_type
@@ -21752,6 +22104,7 @@ values
     GLD/M1_ADC73_house0_l74_tm_air_temperature
     GLD/M1_ADC73_house0_l74_tm_mass_temperature
     GLD/M1_ADC73_house0_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house0_l74_tm_is_COOL_on
     GLD/M1_ADC73_house1_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house1_l74_tm_UA
     GLD/M1_ADC73_house1_l74_tm_heating_system_type
@@ -21777,6 +22130,7 @@ values
     GLD/M1_ADC73_house1_l74_tm_air_temperature
     GLD/M1_ADC73_house1_l74_tm_mass_temperature
     GLD/M1_ADC73_house1_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house1_l74_tm_is_COOL_on
     GLD/M1_ADC73_house2_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house2_l74_tm_UA
     GLD/M1_ADC73_house2_l74_tm_heating_system_type
@@ -21802,6 +22156,7 @@ values
     GLD/M1_ADC73_house2_l74_tm_air_temperature
     GLD/M1_ADC73_house2_l74_tm_mass_temperature
     GLD/M1_ADC73_house2_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house2_l74_tm_is_COOL_on
     GLD/M1_ADC73_house3_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house3_l74_tm_UA
     GLD/M1_ADC73_house3_l74_tm_heating_system_type
@@ -21827,6 +22182,7 @@ values
     GLD/M1_ADC73_house3_l74_tm_air_temperature
     GLD/M1_ADC73_house3_l74_tm_mass_temperature
     GLD/M1_ADC73_house3_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house3_l74_tm_is_COOL_on
     GLD/M1_ADC73_house4_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house4_l74_tm_UA
     GLD/M1_ADC73_house4_l74_tm_heating_system_type
@@ -21852,6 +22208,7 @@ values
     GLD/M1_ADC73_house4_l74_tm_air_temperature
     GLD/M1_ADC73_house4_l74_tm_mass_temperature
     GLD/M1_ADC73_house4_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house4_l74_tm_is_COOL_on
     GLD/M1_ADC73_house5_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house5_l74_tm_UA
     GLD/M1_ADC73_house5_l74_tm_heating_system_type
@@ -21877,6 +22234,7 @@ values
     GLD/M1_ADC73_house5_l74_tm_air_temperature
     GLD/M1_ADC73_house5_l74_tm_mass_temperature
     GLD/M1_ADC73_house5_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house5_l74_tm_is_COOL_on
     GLD/M1_ADC73_house6_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house6_l74_tm_UA
     GLD/M1_ADC73_house6_l74_tm_heating_system_type
@@ -21902,6 +22260,7 @@ values
     GLD/M1_ADC73_house6_l74_tm_air_temperature
     GLD/M1_ADC73_house6_l74_tm_mass_temperature
     GLD/M1_ADC73_house6_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house6_l74_tm_is_COOL_on
     GLD/M1_ADC73_house7_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house7_l74_tm_UA
     GLD/M1_ADC73_house7_l74_tm_heating_system_type
@@ -21927,6 +22286,7 @@ values
     GLD/M1_ADC73_house7_l74_tm_air_temperature
     GLD/M1_ADC73_house7_l74_tm_mass_temperature
     GLD/M1_ADC73_house7_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house7_l74_tm_is_COOL_on
     GLD/M1_ADC73_house8_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house8_l74_tm_UA
     GLD/M1_ADC73_house8_l74_tm_heating_system_type
@@ -21952,6 +22312,7 @@ values
     GLD/M1_ADC73_house8_l74_tm_air_temperature
     GLD/M1_ADC73_house8_l74_tm_mass_temperature
     GLD/M1_ADC73_house8_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house8_l74_tm_is_COOL_on
     GLD/M1_ADC73_house9_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house9_l74_tm_UA
     GLD/M1_ADC73_house9_l74_tm_heating_system_type
@@ -21977,6 +22338,7 @@ values
     GLD/M1_ADC73_house9_l74_tm_air_temperature
     GLD/M1_ADC73_house9_l74_tm_mass_temperature
     GLD/M1_ADC73_house9_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house9_l74_tm_is_COOL_on
     GLD/M1_ADC73_house10_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house10_l74_tm_UA
     GLD/M1_ADC73_house10_l74_tm_heating_system_type
@@ -22002,6 +22364,7 @@ values
     GLD/M1_ADC73_house10_l74_tm_air_temperature
     GLD/M1_ADC73_house10_l74_tm_mass_temperature
     GLD/M1_ADC73_house10_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house10_l74_tm_is_COOL_on
     GLD/M1_ADC73_house12_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house12_l74_tm_UA
     GLD/M1_ADC73_house12_l74_tm_heating_system_type
@@ -22027,6 +22390,7 @@ values
     GLD/M1_ADC73_house12_l74_tm_air_temperature
     GLD/M1_ADC73_house12_l74_tm_mass_temperature
     GLD/M1_ADC73_house12_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house12_l74_tm_is_COOL_on
     GLD/M1_ADC73_house13_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house13_l74_tm_UA
     GLD/M1_ADC73_house13_l74_tm_heating_system_type
@@ -22052,6 +22416,7 @@ values
     GLD/M1_ADC73_house13_l74_tm_air_temperature
     GLD/M1_ADC73_house13_l74_tm_mass_temperature
     GLD/M1_ADC73_house13_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house13_l74_tm_is_COOL_on
     GLD/M1_ADC73_house14_l74_tm_mass_heat_coeff
     GLD/M1_ADC73_house14_l74_tm_UA
     GLD/M1_ADC73_house14_l74_tm_heating_system_type
@@ -22077,6 +22442,7 @@ values
     GLD/M1_ADC73_house14_l74_tm_air_temperature
     GLD/M1_ADC73_house14_l74_tm_mass_temperature
     GLD/M1_ADC73_house14_l74_tm_thermostat_mode
+    GLD/M1_ADC73_house14_l74_tm_is_COOL_on
     GLD/M1_ADC73_house0_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house0_l75_tm_UA
     GLD/M1_ADC73_house0_l75_tm_heating_system_type
@@ -22102,6 +22468,7 @@ values
     GLD/M1_ADC73_house0_l75_tm_air_temperature
     GLD/M1_ADC73_house0_l75_tm_mass_temperature
     GLD/M1_ADC73_house0_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house0_l75_tm_is_COOL_on
     GLD/M1_ADC73_house1_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house1_l75_tm_UA
     GLD/M1_ADC73_house1_l75_tm_heating_system_type
@@ -22127,6 +22494,7 @@ values
     GLD/M1_ADC73_house1_l75_tm_air_temperature
     GLD/M1_ADC73_house1_l75_tm_mass_temperature
     GLD/M1_ADC73_house1_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house1_l75_tm_is_COOL_on
     GLD/M1_ADC73_house2_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house2_l75_tm_UA
     GLD/M1_ADC73_house2_l75_tm_heating_system_type
@@ -22152,6 +22520,7 @@ values
     GLD/M1_ADC73_house2_l75_tm_air_temperature
     GLD/M1_ADC73_house2_l75_tm_mass_temperature
     GLD/M1_ADC73_house2_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house2_l75_tm_is_COOL_on
     GLD/M1_ADC73_house3_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house3_l75_tm_UA
     GLD/M1_ADC73_house3_l75_tm_heating_system_type
@@ -22177,6 +22546,7 @@ values
     GLD/M1_ADC73_house3_l75_tm_air_temperature
     GLD/M1_ADC73_house3_l75_tm_mass_temperature
     GLD/M1_ADC73_house3_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house3_l75_tm_is_COOL_on
     GLD/M1_ADC73_house5_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house5_l75_tm_UA
     GLD/M1_ADC73_house5_l75_tm_heating_system_type
@@ -22202,6 +22572,7 @@ values
     GLD/M1_ADC73_house5_l75_tm_air_temperature
     GLD/M1_ADC73_house5_l75_tm_mass_temperature
     GLD/M1_ADC73_house5_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house5_l75_tm_is_COOL_on
     GLD/M1_ADC73_house6_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house6_l75_tm_UA
     GLD/M1_ADC73_house6_l75_tm_heating_system_type
@@ -22227,6 +22598,7 @@ values
     GLD/M1_ADC73_house6_l75_tm_air_temperature
     GLD/M1_ADC73_house6_l75_tm_mass_temperature
     GLD/M1_ADC73_house6_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house6_l75_tm_is_COOL_on
     GLD/M1_ADC73_house7_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house7_l75_tm_UA
     GLD/M1_ADC73_house7_l75_tm_heating_system_type
@@ -22252,6 +22624,7 @@ values
     GLD/M1_ADC73_house7_l75_tm_air_temperature
     GLD/M1_ADC73_house7_l75_tm_mass_temperature
     GLD/M1_ADC73_house7_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house7_l75_tm_is_COOL_on
     GLD/M1_ADC73_house8_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house8_l75_tm_UA
     GLD/M1_ADC73_house8_l75_tm_heating_system_type
@@ -22277,6 +22650,7 @@ values
     GLD/M1_ADC73_house8_l75_tm_air_temperature
     GLD/M1_ADC73_house8_l75_tm_mass_temperature
     GLD/M1_ADC73_house8_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house8_l75_tm_is_COOL_on
     GLD/M1_ADC73_house9_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house9_l75_tm_UA
     GLD/M1_ADC73_house9_l75_tm_heating_system_type
@@ -22302,6 +22676,7 @@ values
     GLD/M1_ADC73_house9_l75_tm_air_temperature
     GLD/M1_ADC73_house9_l75_tm_mass_temperature
     GLD/M1_ADC73_house9_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house9_l75_tm_is_COOL_on
     GLD/M1_ADC73_house10_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house10_l75_tm_UA
     GLD/M1_ADC73_house10_l75_tm_heating_system_type
@@ -22327,6 +22702,7 @@ values
     GLD/M1_ADC73_house10_l75_tm_air_temperature
     GLD/M1_ADC73_house10_l75_tm_mass_temperature
     GLD/M1_ADC73_house10_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house10_l75_tm_is_COOL_on
     GLD/M1_ADC73_house11_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house11_l75_tm_UA
     GLD/M1_ADC73_house11_l75_tm_heating_system_type
@@ -22352,6 +22728,7 @@ values
     GLD/M1_ADC73_house11_l75_tm_air_temperature
     GLD/M1_ADC73_house11_l75_tm_mass_temperature
     GLD/M1_ADC73_house11_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house11_l75_tm_is_COOL_on
     GLD/M1_ADC73_house12_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house12_l75_tm_UA
     GLD/M1_ADC73_house12_l75_tm_heating_system_type
@@ -22377,6 +22754,7 @@ values
     GLD/M1_ADC73_house12_l75_tm_air_temperature
     GLD/M1_ADC73_house12_l75_tm_mass_temperature
     GLD/M1_ADC73_house12_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house12_l75_tm_is_COOL_on
     GLD/M1_ADC73_house13_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house13_l75_tm_UA
     GLD/M1_ADC73_house13_l75_tm_heating_system_type
@@ -22402,6 +22780,7 @@ values
     GLD/M1_ADC73_house13_l75_tm_air_temperature
     GLD/M1_ADC73_house13_l75_tm_mass_temperature
     GLD/M1_ADC73_house13_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house13_l75_tm_is_COOL_on
     GLD/M1_ADC73_house14_l75_tm_mass_heat_coeff
     GLD/M1_ADC73_house14_l75_tm_UA
     GLD/M1_ADC73_house14_l75_tm_heating_system_type
@@ -22427,44 +22806,33 @@ values
     GLD/M1_ADC73_house14_l75_tm_air_temperature
     GLD/M1_ADC73_house14_l75_tm_mass_temperature
     GLD/M1_ADC73_house14_l75_tm_thermostat_mode
+    GLD/M1_ADC73_house14_l75_tm_is_COOL_on
     GLD/M1_ADC73_solar_PVinv_house5_l73_tm_rated_power
-    GLD/M1_ADC73_solar_PVinv_house5_l73_tm_latitude
-    GLD/M1_ADC73_solar_PVinv_house5_l73_tm_longitude
     GLD/M1_ADC73_solar_PVinv_house5_l73_tm_tilt_angle
     GLD/M1_ADC73_solar_PVinv_house5_l73_tm_orientation_azimuth
     GLD/M1_ADC73_solar_PVinv_house5_l73_tm_VA_Out
     GLD/M1_ADC73_PVinv_house5_l73_tm_inverter_efficiency
     GLD/M1_ADC73_solar_PVinv_house14_l73_tm_rated_power
-    GLD/M1_ADC73_solar_PVinv_house14_l73_tm_latitude
-    GLD/M1_ADC73_solar_PVinv_house14_l73_tm_longitude
     GLD/M1_ADC73_solar_PVinv_house14_l73_tm_tilt_angle
     GLD/M1_ADC73_solar_PVinv_house14_l73_tm_orientation_azimuth
     GLD/M1_ADC73_solar_PVinv_house14_l73_tm_VA_Out
     GLD/M1_ADC73_PVinv_house14_l73_tm_inverter_efficiency
     GLD/M1_ADC73_solar_PVinv_house2_l74_tm_rated_power
-    GLD/M1_ADC73_solar_PVinv_house2_l74_tm_latitude
-    GLD/M1_ADC73_solar_PVinv_house2_l74_tm_longitude
     GLD/M1_ADC73_solar_PVinv_house2_l74_tm_tilt_angle
     GLD/M1_ADC73_solar_PVinv_house2_l74_tm_orientation_azimuth
     GLD/M1_ADC73_solar_PVinv_house2_l74_tm_VA_Out
     GLD/M1_ADC73_PVinv_house2_l74_tm_inverter_efficiency
     GLD/M1_ADC73_solar_PVinv_house9_l75_tm_rated_power
-    GLD/M1_ADC73_solar_PVinv_house9_l75_tm_latitude
-    GLD/M1_ADC73_solar_PVinv_house9_l75_tm_longitude
     GLD/M1_ADC73_solar_PVinv_house9_l75_tm_tilt_angle
     GLD/M1_ADC73_solar_PVinv_house9_l75_tm_orientation_azimuth
     GLD/M1_ADC73_solar_PVinv_house9_l75_tm_VA_Out
     GLD/M1_ADC73_PVinv_house9_l75_tm_inverter_efficiency
     GLD/M1_ADC73_solar_PVinv_house10_l75_tm_rated_power
-    GLD/M1_ADC73_solar_PVinv_house10_l75_tm_latitude
-    GLD/M1_ADC73_solar_PVinv_house10_l75_tm_longitude
     GLD/M1_ADC73_solar_PVinv_house10_l75_tm_tilt_angle
     GLD/M1_ADC73_solar_PVinv_house10_l75_tm_orientation_azimuth
     GLD/M1_ADC73_solar_PVinv_house10_l75_tm_VA_Out
     GLD/M1_ADC73_PVinv_house10_l75_tm_inverter_efficiency
     GLD/M1_ADC73_solar_PVinv_house11_l75_tm_rated_power
-    GLD/M1_ADC73_solar_PVinv_house11_l75_tm_latitude
-    GLD/M1_ADC73_solar_PVinv_house11_l75_tm_longitude
     GLD/M1_ADC73_solar_PVinv_house11_l75_tm_tilt_angle
     GLD/M1_ADC73_solar_PVinv_house11_l75_tm_orientation_azimuth
     GLD/M1_ADC73_solar_PVinv_house11_l75_tm_VA_Out
@@ -23126,6 +23494,7 @@ values
     GLD/M1_ADC77_house0_l77_tm_air_temperature
     GLD/M1_ADC77_house0_l77_tm_mass_temperature
     GLD/M1_ADC77_house0_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house0_l77_tm_is_COOL_on
     GLD/M1_ADC77_house2_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house2_l77_tm_UA
     GLD/M1_ADC77_house2_l77_tm_heating_system_type
@@ -23151,6 +23520,7 @@ values
     GLD/M1_ADC77_house2_l77_tm_air_temperature
     GLD/M1_ADC77_house2_l77_tm_mass_temperature
     GLD/M1_ADC77_house2_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house2_l77_tm_is_COOL_on
     GLD/M1_ADC77_house3_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house3_l77_tm_UA
     GLD/M1_ADC77_house3_l77_tm_heating_system_type
@@ -23176,6 +23546,7 @@ values
     GLD/M1_ADC77_house3_l77_tm_air_temperature
     GLD/M1_ADC77_house3_l77_tm_mass_temperature
     GLD/M1_ADC77_house3_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house3_l77_tm_is_COOL_on
     GLD/M1_ADC77_house4_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house4_l77_tm_UA
     GLD/M1_ADC77_house4_l77_tm_heating_system_type
@@ -23201,6 +23572,7 @@ values
     GLD/M1_ADC77_house4_l77_tm_air_temperature
     GLD/M1_ADC77_house4_l77_tm_mass_temperature
     GLD/M1_ADC77_house4_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house4_l77_tm_is_COOL_on
     GLD/M1_ADC77_house6_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house6_l77_tm_UA
     GLD/M1_ADC77_house6_l77_tm_heating_system_type
@@ -23226,6 +23598,7 @@ values
     GLD/M1_ADC77_house6_l77_tm_air_temperature
     GLD/M1_ADC77_house6_l77_tm_mass_temperature
     GLD/M1_ADC77_house6_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house6_l77_tm_is_COOL_on
     GLD/M1_ADC77_house7_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house7_l77_tm_UA
     GLD/M1_ADC77_house7_l77_tm_heating_system_type
@@ -23251,6 +23624,7 @@ values
     GLD/M1_ADC77_house7_l77_tm_air_temperature
     GLD/M1_ADC77_house7_l77_tm_mass_temperature
     GLD/M1_ADC77_house7_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house7_l77_tm_is_COOL_on
     GLD/M1_ADC77_house8_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house8_l77_tm_UA
     GLD/M1_ADC77_house8_l77_tm_heating_system_type
@@ -23276,6 +23650,7 @@ values
     GLD/M1_ADC77_house8_l77_tm_air_temperature
     GLD/M1_ADC77_house8_l77_tm_mass_temperature
     GLD/M1_ADC77_house8_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house8_l77_tm_is_COOL_on
     GLD/M1_ADC77_house9_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house9_l77_tm_UA
     GLD/M1_ADC77_house9_l77_tm_heating_system_type
@@ -23301,6 +23676,7 @@ values
     GLD/M1_ADC77_house9_l77_tm_air_temperature
     GLD/M1_ADC77_house9_l77_tm_mass_temperature
     GLD/M1_ADC77_house9_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house9_l77_tm_is_COOL_on
     GLD/M1_ADC77_house10_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house10_l77_tm_UA
     GLD/M1_ADC77_house10_l77_tm_heating_system_type
@@ -23326,6 +23702,7 @@ values
     GLD/M1_ADC77_house10_l77_tm_air_temperature
     GLD/M1_ADC77_house10_l77_tm_mass_temperature
     GLD/M1_ADC77_house10_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house10_l77_tm_is_COOL_on
     GLD/M1_ADC77_house11_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house11_l77_tm_UA
     GLD/M1_ADC77_house11_l77_tm_heating_system_type
@@ -23351,6 +23728,7 @@ values
     GLD/M1_ADC77_house11_l77_tm_air_temperature
     GLD/M1_ADC77_house11_l77_tm_mass_temperature
     GLD/M1_ADC77_house11_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house11_l77_tm_is_COOL_on
     GLD/M1_ADC77_house12_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house12_l77_tm_UA
     GLD/M1_ADC77_house12_l77_tm_heating_system_type
@@ -23376,6 +23754,7 @@ values
     GLD/M1_ADC77_house12_l77_tm_air_temperature
     GLD/M1_ADC77_house12_l77_tm_mass_temperature
     GLD/M1_ADC77_house12_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house12_l77_tm_is_COOL_on
     GLD/M1_ADC77_house13_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house13_l77_tm_UA
     GLD/M1_ADC77_house13_l77_tm_heating_system_type
@@ -23401,6 +23780,7 @@ values
     GLD/M1_ADC77_house13_l77_tm_air_temperature
     GLD/M1_ADC77_house13_l77_tm_mass_temperature
     GLD/M1_ADC77_house13_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house13_l77_tm_is_COOL_on
     GLD/M1_ADC77_house14_l77_tm_mass_heat_coeff
     GLD/M1_ADC77_house14_l77_tm_UA
     GLD/M1_ADC77_house14_l77_tm_heating_system_type
@@ -23426,6 +23806,7 @@ values
     GLD/M1_ADC77_house14_l77_tm_air_temperature
     GLD/M1_ADC77_house14_l77_tm_mass_temperature
     GLD/M1_ADC77_house14_l77_tm_thermostat_mode
+    GLD/M1_ADC77_house14_l77_tm_is_COOL_on
     GLD/M1_ADC77_house0_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house0_l79_tm_UA
     GLD/M1_ADC77_house0_l79_tm_heating_system_type
@@ -23451,6 +23832,7 @@ values
     GLD/M1_ADC77_house0_l79_tm_air_temperature
     GLD/M1_ADC77_house0_l79_tm_mass_temperature
     GLD/M1_ADC77_house0_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house0_l79_tm_is_COOL_on
     GLD/M1_ADC77_house1_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house1_l79_tm_UA
     GLD/M1_ADC77_house1_l79_tm_heating_system_type
@@ -23476,6 +23858,7 @@ values
     GLD/M1_ADC77_house1_l79_tm_air_temperature
     GLD/M1_ADC77_house1_l79_tm_mass_temperature
     GLD/M1_ADC77_house1_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house1_l79_tm_is_COOL_on
     GLD/M1_ADC77_house3_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house3_l79_tm_UA
     GLD/M1_ADC77_house3_l79_tm_heating_system_type
@@ -23501,6 +23884,7 @@ values
     GLD/M1_ADC77_house3_l79_tm_air_temperature
     GLD/M1_ADC77_house3_l79_tm_mass_temperature
     GLD/M1_ADC77_house3_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house3_l79_tm_is_COOL_on
     GLD/M1_ADC77_house4_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house4_l79_tm_UA
     GLD/M1_ADC77_house4_l79_tm_heating_system_type
@@ -23526,6 +23910,7 @@ values
     GLD/M1_ADC77_house4_l79_tm_air_temperature
     GLD/M1_ADC77_house4_l79_tm_mass_temperature
     GLD/M1_ADC77_house4_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house4_l79_tm_is_COOL_on
     GLD/M1_ADC77_house5_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house5_l79_tm_UA
     GLD/M1_ADC77_house5_l79_tm_heating_system_type
@@ -23551,6 +23936,7 @@ values
     GLD/M1_ADC77_house5_l79_tm_air_temperature
     GLD/M1_ADC77_house5_l79_tm_mass_temperature
     GLD/M1_ADC77_house5_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house5_l79_tm_is_COOL_on
     GLD/M1_ADC77_house6_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house6_l79_tm_UA
     GLD/M1_ADC77_house6_l79_tm_heating_system_type
@@ -23576,6 +23962,7 @@ values
     GLD/M1_ADC77_house6_l79_tm_air_temperature
     GLD/M1_ADC77_house6_l79_tm_mass_temperature
     GLD/M1_ADC77_house6_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house6_l79_tm_is_COOL_on
     GLD/M1_ADC77_house7_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house7_l79_tm_UA
     GLD/M1_ADC77_house7_l79_tm_heating_system_type
@@ -23601,6 +23988,7 @@ values
     GLD/M1_ADC77_house7_l79_tm_air_temperature
     GLD/M1_ADC77_house7_l79_tm_mass_temperature
     GLD/M1_ADC77_house7_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house7_l79_tm_is_COOL_on
     GLD/M1_ADC77_house8_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house8_l79_tm_UA
     GLD/M1_ADC77_house8_l79_tm_heating_system_type
@@ -23626,6 +24014,7 @@ values
     GLD/M1_ADC77_house8_l79_tm_air_temperature
     GLD/M1_ADC77_house8_l79_tm_mass_temperature
     GLD/M1_ADC77_house8_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house8_l79_tm_is_COOL_on
     GLD/M1_ADC77_house9_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house9_l79_tm_UA
     GLD/M1_ADC77_house9_l79_tm_heating_system_type
@@ -23651,6 +24040,7 @@ values
     GLD/M1_ADC77_house9_l79_tm_air_temperature
     GLD/M1_ADC77_house9_l79_tm_mass_temperature
     GLD/M1_ADC77_house9_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house9_l79_tm_is_COOL_on
     GLD/M1_ADC77_house10_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house10_l79_tm_UA
     GLD/M1_ADC77_house10_l79_tm_heating_system_type
@@ -23676,6 +24066,7 @@ values
     GLD/M1_ADC77_house10_l79_tm_air_temperature
     GLD/M1_ADC77_house10_l79_tm_mass_temperature
     GLD/M1_ADC77_house10_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house10_l79_tm_is_COOL_on
     GLD/M1_ADC77_house11_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house11_l79_tm_UA
     GLD/M1_ADC77_house11_l79_tm_heating_system_type
@@ -23701,6 +24092,7 @@ values
     GLD/M1_ADC77_house11_l79_tm_air_temperature
     GLD/M1_ADC77_house11_l79_tm_mass_temperature
     GLD/M1_ADC77_house11_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house11_l79_tm_is_COOL_on
     GLD/M1_ADC77_house12_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house12_l79_tm_UA
     GLD/M1_ADC77_house12_l79_tm_heating_system_type
@@ -23726,6 +24118,7 @@ values
     GLD/M1_ADC77_house12_l79_tm_air_temperature
     GLD/M1_ADC77_house12_l79_tm_mass_temperature
     GLD/M1_ADC77_house12_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house12_l79_tm_is_COOL_on
     GLD/M1_ADC77_house13_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house13_l79_tm_UA
     GLD/M1_ADC77_house13_l79_tm_heating_system_type
@@ -23751,6 +24144,7 @@ values
     GLD/M1_ADC77_house13_l79_tm_air_temperature
     GLD/M1_ADC77_house13_l79_tm_mass_temperature
     GLD/M1_ADC77_house13_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house13_l79_tm_is_COOL_on
     GLD/M1_ADC77_house14_l79_tm_mass_heat_coeff
     GLD/M1_ADC77_house14_l79_tm_UA
     GLD/M1_ADC77_house14_l79_tm_heating_system_type
@@ -23776,6 +24170,7 @@ values
     GLD/M1_ADC77_house14_l79_tm_air_temperature
     GLD/M1_ADC77_house14_l79_tm_mass_temperature
     GLD/M1_ADC77_house14_l79_tm_thermostat_mode
+    GLD/M1_ADC77_house14_l79_tm_is_COOL_on
     GLD/M1_ADC77_house0_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house0_l80_tm_UA
     GLD/M1_ADC77_house0_l80_tm_heating_system_type
@@ -23801,6 +24196,7 @@ values
     GLD/M1_ADC77_house0_l80_tm_air_temperature
     GLD/M1_ADC77_house0_l80_tm_mass_temperature
     GLD/M1_ADC77_house0_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house0_l80_tm_is_COOL_on
     GLD/M1_ADC77_house1_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house1_l80_tm_UA
     GLD/M1_ADC77_house1_l80_tm_heating_system_type
@@ -23826,6 +24222,7 @@ values
     GLD/M1_ADC77_house1_l80_tm_air_temperature
     GLD/M1_ADC77_house1_l80_tm_mass_temperature
     GLD/M1_ADC77_house1_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house1_l80_tm_is_COOL_on
     GLD/M1_ADC77_house2_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house2_l80_tm_UA
     GLD/M1_ADC77_house2_l80_tm_heating_system_type
@@ -23851,6 +24248,7 @@ values
     GLD/M1_ADC77_house2_l80_tm_air_temperature
     GLD/M1_ADC77_house2_l80_tm_mass_temperature
     GLD/M1_ADC77_house2_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house2_l80_tm_is_COOL_on
     GLD/M1_ADC77_house3_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house3_l80_tm_UA
     GLD/M1_ADC77_house3_l80_tm_heating_system_type
@@ -23876,6 +24274,7 @@ values
     GLD/M1_ADC77_house3_l80_tm_air_temperature
     GLD/M1_ADC77_house3_l80_tm_mass_temperature
     GLD/M1_ADC77_house3_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house3_l80_tm_is_COOL_on
     GLD/M1_ADC77_house4_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house4_l80_tm_UA
     GLD/M1_ADC77_house4_l80_tm_heating_system_type
@@ -23901,6 +24300,7 @@ values
     GLD/M1_ADC77_house4_l80_tm_air_temperature
     GLD/M1_ADC77_house4_l80_tm_mass_temperature
     GLD/M1_ADC77_house4_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house4_l80_tm_is_COOL_on
     GLD/M1_ADC77_house5_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house5_l80_tm_UA
     GLD/M1_ADC77_house5_l80_tm_heating_system_type
@@ -23926,6 +24326,7 @@ values
     GLD/M1_ADC77_house5_l80_tm_air_temperature
     GLD/M1_ADC77_house5_l80_tm_mass_temperature
     GLD/M1_ADC77_house5_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house5_l80_tm_is_COOL_on
     GLD/M1_ADC77_house6_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house6_l80_tm_UA
     GLD/M1_ADC77_house6_l80_tm_heating_system_type
@@ -23951,6 +24352,7 @@ values
     GLD/M1_ADC77_house6_l80_tm_air_temperature
     GLD/M1_ADC77_house6_l80_tm_mass_temperature
     GLD/M1_ADC77_house6_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house6_l80_tm_is_COOL_on
     GLD/M1_ADC77_house7_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house7_l80_tm_UA
     GLD/M1_ADC77_house7_l80_tm_heating_system_type
@@ -23976,6 +24378,7 @@ values
     GLD/M1_ADC77_house7_l80_tm_air_temperature
     GLD/M1_ADC77_house7_l80_tm_mass_temperature
     GLD/M1_ADC77_house7_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house7_l80_tm_is_COOL_on
     GLD/M1_ADC77_house8_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house8_l80_tm_UA
     GLD/M1_ADC77_house8_l80_tm_heating_system_type
@@ -24001,6 +24404,7 @@ values
     GLD/M1_ADC77_house8_l80_tm_air_temperature
     GLD/M1_ADC77_house8_l80_tm_mass_temperature
     GLD/M1_ADC77_house8_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house8_l80_tm_is_COOL_on
     GLD/M1_ADC77_house9_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house9_l80_tm_UA
     GLD/M1_ADC77_house9_l80_tm_heating_system_type
@@ -24026,6 +24430,7 @@ values
     GLD/M1_ADC77_house9_l80_tm_air_temperature
     GLD/M1_ADC77_house9_l80_tm_mass_temperature
     GLD/M1_ADC77_house9_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house9_l80_tm_is_COOL_on
     GLD/M1_ADC77_house10_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house10_l80_tm_UA
     GLD/M1_ADC77_house10_l80_tm_heating_system_type
@@ -24051,6 +24456,7 @@ values
     GLD/M1_ADC77_house10_l80_tm_air_temperature
     GLD/M1_ADC77_house10_l80_tm_mass_temperature
     GLD/M1_ADC77_house10_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house10_l80_tm_is_COOL_on
     GLD/M1_ADC77_house11_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house11_l80_tm_UA
     GLD/M1_ADC77_house11_l80_tm_heating_system_type
@@ -24076,6 +24482,7 @@ values
     GLD/M1_ADC77_house11_l80_tm_air_temperature
     GLD/M1_ADC77_house11_l80_tm_mass_temperature
     GLD/M1_ADC77_house11_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house11_l80_tm_is_COOL_on
     GLD/M1_ADC77_house12_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house12_l80_tm_UA
     GLD/M1_ADC77_house12_l80_tm_heating_system_type
@@ -24101,6 +24508,7 @@ values
     GLD/M1_ADC77_house12_l80_tm_air_temperature
     GLD/M1_ADC77_house12_l80_tm_mass_temperature
     GLD/M1_ADC77_house12_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house12_l80_tm_is_COOL_on
     GLD/M1_ADC77_house13_l80_tm_mass_heat_coeff
     GLD/M1_ADC77_house13_l80_tm_UA
     GLD/M1_ADC77_house13_l80_tm_heating_system_type
@@ -24126,6 +24534,7 @@ values
     GLD/M1_ADC77_house13_l80_tm_air_temperature
     GLD/M1_ADC77_house13_l80_tm_mass_temperature
     GLD/M1_ADC77_house13_l80_tm_thermostat_mode
+    GLD/M1_ADC77_house13_l80_tm_is_COOL_on
     GLD/M1_ADC77_house0_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house0_l82_tm_UA
     GLD/M1_ADC77_house0_l82_tm_heating_system_type
@@ -24151,6 +24560,7 @@ values
     GLD/M1_ADC77_house0_l82_tm_air_temperature
     GLD/M1_ADC77_house0_l82_tm_mass_temperature
     GLD/M1_ADC77_house0_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house0_l82_tm_is_COOL_on
     GLD/M1_ADC77_house1_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house1_l82_tm_UA
     GLD/M1_ADC77_house1_l82_tm_heating_system_type
@@ -24176,6 +24586,7 @@ values
     GLD/M1_ADC77_house1_l82_tm_air_temperature
     GLD/M1_ADC77_house1_l82_tm_mass_temperature
     GLD/M1_ADC77_house1_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house1_l82_tm_is_COOL_on
     GLD/M1_ADC77_house2_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house2_l82_tm_UA
     GLD/M1_ADC77_house2_l82_tm_heating_system_type
@@ -24201,6 +24612,7 @@ values
     GLD/M1_ADC77_house2_l82_tm_air_temperature
     GLD/M1_ADC77_house2_l82_tm_mass_temperature
     GLD/M1_ADC77_house2_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house2_l82_tm_is_COOL_on
     GLD/M1_ADC77_house3_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house3_l82_tm_UA
     GLD/M1_ADC77_house3_l82_tm_heating_system_type
@@ -24226,6 +24638,7 @@ values
     GLD/M1_ADC77_house3_l82_tm_air_temperature
     GLD/M1_ADC77_house3_l82_tm_mass_temperature
     GLD/M1_ADC77_house3_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house3_l82_tm_is_COOL_on
     GLD/M1_ADC77_house5_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house5_l82_tm_UA
     GLD/M1_ADC77_house5_l82_tm_heating_system_type
@@ -24251,6 +24664,7 @@ values
     GLD/M1_ADC77_house5_l82_tm_air_temperature
     GLD/M1_ADC77_house5_l82_tm_mass_temperature
     GLD/M1_ADC77_house5_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house5_l82_tm_is_COOL_on
     GLD/M1_ADC77_house7_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house7_l82_tm_UA
     GLD/M1_ADC77_house7_l82_tm_heating_system_type
@@ -24276,6 +24690,7 @@ values
     GLD/M1_ADC77_house7_l82_tm_air_temperature
     GLD/M1_ADC77_house7_l82_tm_mass_temperature
     GLD/M1_ADC77_house7_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house7_l82_tm_is_COOL_on
     GLD/M1_ADC77_house8_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house8_l82_tm_UA
     GLD/M1_ADC77_house8_l82_tm_heating_system_type
@@ -24301,6 +24716,7 @@ values
     GLD/M1_ADC77_house8_l82_tm_air_temperature
     GLD/M1_ADC77_house8_l82_tm_mass_temperature
     GLD/M1_ADC77_house8_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house8_l82_tm_is_COOL_on
     GLD/M1_ADC77_house9_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house9_l82_tm_UA
     GLD/M1_ADC77_house9_l82_tm_heating_system_type
@@ -24326,6 +24742,7 @@ values
     GLD/M1_ADC77_house9_l82_tm_air_temperature
     GLD/M1_ADC77_house9_l82_tm_mass_temperature
     GLD/M1_ADC77_house9_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house9_l82_tm_is_COOL_on
     GLD/M1_ADC77_house10_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house10_l82_tm_UA
     GLD/M1_ADC77_house10_l82_tm_heating_system_type
@@ -24351,6 +24768,7 @@ values
     GLD/M1_ADC77_house10_l82_tm_air_temperature
     GLD/M1_ADC77_house10_l82_tm_mass_temperature
     GLD/M1_ADC77_house10_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house10_l82_tm_is_COOL_on
     GLD/M1_ADC77_house11_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house11_l82_tm_UA
     GLD/M1_ADC77_house11_l82_tm_heating_system_type
@@ -24376,6 +24794,7 @@ values
     GLD/M1_ADC77_house11_l82_tm_air_temperature
     GLD/M1_ADC77_house11_l82_tm_mass_temperature
     GLD/M1_ADC77_house11_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house11_l82_tm_is_COOL_on
     GLD/M1_ADC77_house12_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house12_l82_tm_UA
     GLD/M1_ADC77_house12_l82_tm_heating_system_type
@@ -24401,6 +24820,7 @@ values
     GLD/M1_ADC77_house12_l82_tm_air_temperature
     GLD/M1_ADC77_house12_l82_tm_mass_temperature
     GLD/M1_ADC77_house12_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house12_l82_tm_is_COOL_on
     GLD/M1_ADC77_house13_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house13_l82_tm_UA
     GLD/M1_ADC77_house13_l82_tm_heating_system_type
@@ -24426,6 +24846,7 @@ values
     GLD/M1_ADC77_house13_l82_tm_air_temperature
     GLD/M1_ADC77_house13_l82_tm_mass_temperature
     GLD/M1_ADC77_house13_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house13_l82_tm_is_COOL_on
     GLD/M1_ADC77_house14_l82_tm_mass_heat_coeff
     GLD/M1_ADC77_house14_l82_tm_UA
     GLD/M1_ADC77_house14_l82_tm_heating_system_type
@@ -24451,6 +24872,7 @@ values
     GLD/M1_ADC77_house14_l82_tm_air_temperature
     GLD/M1_ADC77_house14_l82_tm_mass_temperature
     GLD/M1_ADC77_house14_l82_tm_thermostat_mode
+    GLD/M1_ADC77_house14_l82_tm_is_COOL_on
     GLD/M1_ADC77_house0_l83_tm_mass_heat_coeff
     GLD/M1_ADC77_house0_l83_tm_UA
     GLD/M1_ADC77_house0_l83_tm_heating_system_type
@@ -24476,6 +24898,7 @@ values
     GLD/M1_ADC77_house0_l83_tm_air_temperature
     GLD/M1_ADC77_house0_l83_tm_mass_temperature
     GLD/M1_ADC77_house0_l83_tm_thermostat_mode
+    GLD/M1_ADC77_house0_l83_tm_is_COOL_on
     GLD/M1_ADC77_house1_l83_tm_mass_heat_coeff
     GLD/M1_ADC77_house1_l83_tm_UA
     GLD/M1_ADC77_house1_l83_tm_heating_system_type
@@ -24501,6 +24924,7 @@ values
     GLD/M1_ADC77_house1_l83_tm_air_temperature
     GLD/M1_ADC77_house1_l83_tm_mass_temperature
     GLD/M1_ADC77_house1_l83_tm_thermostat_mode
+    GLD/M1_ADC77_house1_l83_tm_is_COOL_on
     GLD/M1_ADC77_house2_l83_tm_mass_heat_coeff
     GLD/M1_ADC77_house2_l83_tm_UA
     GLD/M1_ADC77_house2_l83_tm_heating_system_type
@@ -24526,6 +24950,7 @@ values
     GLD/M1_ADC77_house2_l83_tm_air_temperature
     GLD/M1_ADC77_house2_l83_tm_mass_temperature
     GLD/M1_ADC77_house2_l83_tm_thermostat_mode
+    GLD/M1_ADC77_house2_l83_tm_is_COOL_on
     GLD/M1_ADC77_house3_l83_tm_mass_heat_coeff
     GLD/M1_ADC77_house3_l83_tm_UA
     GLD/M1_ADC77_house3_l83_tm_heating_system_type
@@ -24551,6 +24976,7 @@ values
     GLD/M1_ADC77_house3_l83_tm_air_temperature
     GLD/M1_ADC77_house3_l83_tm_mass_temperature
     GLD/M1_ADC77_house3_l83_tm_thermostat_mode
+    GLD/M1_ADC77_house3_l83_tm_is_COOL_on
     GLD/M1_ADC77_house4_l83_tm_mass_heat_coeff
     GLD/M1_ADC77_house4_l83_tm_UA
     GLD/M1_ADC77_house4_l83_tm_heating_system_type
@@ -24576,6 +25002,7 @@ values
     GLD/M1_ADC77_house4_l83_tm_air_temperature
     GLD/M1_ADC77_house4_l83_tm_mass_temperature
     GLD/M1_ADC77_house4_l83_tm_thermostat_mode
+    GLD/M1_ADC77_house4_l83_tm_is_COOL_on
     GLD/M1_ADC77_house5_l83_tm_mass_heat_coeff
     GLD/M1_ADC77_house5_l83_tm_UA
     GLD/M1_ADC77_house5_l83_tm_heating_system_type
@@ -24601,6 +25028,7 @@ values
     GLD/M1_ADC77_house5_l83_tm_air_temperature
     GLD/M1_ADC77_house5_l83_tm_mass_temperature
     GLD/M1_ADC77_house5_l83_tm_thermostat_mode
+    GLD/M1_ADC77_house5_l83_tm_is_COOL_on
     GLD/M1_ADC77_house6_l83_tm_mass_heat_coeff
     GLD/M1_ADC77_house6_l83_tm_UA
     GLD/M1_ADC77_house6_l83_tm_heating_system_type
@@ -24626,6 +25054,7 @@ values
     GLD/M1_ADC77_house6_l83_tm_air_temperature
     GLD/M1_ADC77_house6_l83_tm_mass_temperature
     GLD/M1_ADC77_house6_l83_tm_thermostat_mode
+    GLD/M1_ADC77_house6_l83_tm_is_COOL_on
     GLD/M1_ADC77_house0_l84_tm_mass_heat_coeff
     GLD/M1_ADC77_house0_l84_tm_UA
     GLD/M1_ADC77_house0_l84_tm_heating_system_type
@@ -24651,6 +25080,7 @@ values
     GLD/M1_ADC77_house0_l84_tm_air_temperature
     GLD/M1_ADC77_house0_l84_tm_mass_temperature
     GLD/M1_ADC77_house0_l84_tm_thermostat_mode
+    GLD/M1_ADC77_house0_l84_tm_is_COOL_on
     GLD/M1_ADC77_house1_l84_tm_mass_heat_coeff
     GLD/M1_ADC77_house1_l84_tm_UA
     GLD/M1_ADC77_house1_l84_tm_heating_system_type
@@ -24676,6 +25106,7 @@ values
     GLD/M1_ADC77_house1_l84_tm_air_temperature
     GLD/M1_ADC77_house1_l84_tm_mass_temperature
     GLD/M1_ADC77_house1_l84_tm_thermostat_mode
+    GLD/M1_ADC77_house1_l84_tm_is_COOL_on
     GLD/M1_ADC77_house2_l84_tm_mass_heat_coeff
     GLD/M1_ADC77_house2_l84_tm_UA
     GLD/M1_ADC77_house2_l84_tm_heating_system_type
@@ -24701,6 +25132,7 @@ values
     GLD/M1_ADC77_house2_l84_tm_air_temperature
     GLD/M1_ADC77_house2_l84_tm_mass_temperature
     GLD/M1_ADC77_house2_l84_tm_thermostat_mode
+    GLD/M1_ADC77_house2_l84_tm_is_COOL_on
     GLD/M1_ADC77_house3_l84_tm_mass_heat_coeff
     GLD/M1_ADC77_house3_l84_tm_UA
     GLD/M1_ADC77_house3_l84_tm_heating_system_type
@@ -24726,6 +25158,7 @@ values
     GLD/M1_ADC77_house3_l84_tm_air_temperature
     GLD/M1_ADC77_house3_l84_tm_mass_temperature
     GLD/M1_ADC77_house3_l84_tm_thermostat_mode
+    GLD/M1_ADC77_house3_l84_tm_is_COOL_on
     GLD/M1_ADC77_house4_l84_tm_mass_heat_coeff
     GLD/M1_ADC77_house4_l84_tm_UA
     GLD/M1_ADC77_house4_l84_tm_heating_system_type
@@ -24751,6 +25184,7 @@ values
     GLD/M1_ADC77_house4_l84_tm_air_temperature
     GLD/M1_ADC77_house4_l84_tm_mass_temperature
     GLD/M1_ADC77_house4_l84_tm_thermostat_mode
+    GLD/M1_ADC77_house4_l84_tm_is_COOL_on
     GLD/M1_ADC77_house5_l84_tm_mass_heat_coeff
     GLD/M1_ADC77_house5_l84_tm_UA
     GLD/M1_ADC77_house5_l84_tm_heating_system_type
@@ -24776,6 +25210,7 @@ values
     GLD/M1_ADC77_house5_l84_tm_air_temperature
     GLD/M1_ADC77_house5_l84_tm_mass_temperature
     GLD/M1_ADC77_house5_l84_tm_thermostat_mode
+    GLD/M1_ADC77_house5_l84_tm_is_COOL_on
     GLD/M1_ADC77_house6_l84_tm_mass_heat_coeff
     GLD/M1_ADC77_house6_l84_tm_UA
     GLD/M1_ADC77_house6_l84_tm_heating_system_type
@@ -24801,6 +25236,7 @@ values
     GLD/M1_ADC77_house6_l84_tm_air_temperature
     GLD/M1_ADC77_house6_l84_tm_mass_temperature
     GLD/M1_ADC77_house6_l84_tm_thermostat_mode
+    GLD/M1_ADC77_house6_l84_tm_is_COOL_on
     GLD/M1_ADC77_house0_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house0_l85_tm_UA
     GLD/M1_ADC77_house0_l85_tm_heating_system_type
@@ -24826,6 +25262,7 @@ values
     GLD/M1_ADC77_house0_l85_tm_air_temperature
     GLD/M1_ADC77_house0_l85_tm_mass_temperature
     GLD/M1_ADC77_house0_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house0_l85_tm_is_COOL_on
     GLD/M1_ADC77_house1_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house1_l85_tm_UA
     GLD/M1_ADC77_house1_l85_tm_heating_system_type
@@ -24851,6 +25288,7 @@ values
     GLD/M1_ADC77_house1_l85_tm_air_temperature
     GLD/M1_ADC77_house1_l85_tm_mass_temperature
     GLD/M1_ADC77_house1_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house1_l85_tm_is_COOL_on
     GLD/M1_ADC77_house2_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house2_l85_tm_UA
     GLD/M1_ADC77_house2_l85_tm_heating_system_type
@@ -24876,6 +25314,7 @@ values
     GLD/M1_ADC77_house2_l85_tm_air_temperature
     GLD/M1_ADC77_house2_l85_tm_mass_temperature
     GLD/M1_ADC77_house2_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house2_l85_tm_is_COOL_on
     GLD/M1_ADC77_house3_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house3_l85_tm_UA
     GLD/M1_ADC77_house3_l85_tm_heating_system_type
@@ -24901,6 +25340,7 @@ values
     GLD/M1_ADC77_house3_l85_tm_air_temperature
     GLD/M1_ADC77_house3_l85_tm_mass_temperature
     GLD/M1_ADC77_house3_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house3_l85_tm_is_COOL_on
     GLD/M1_ADC77_house4_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house4_l85_tm_UA
     GLD/M1_ADC77_house4_l85_tm_heating_system_type
@@ -24926,6 +25366,7 @@ values
     GLD/M1_ADC77_house4_l85_tm_air_temperature
     GLD/M1_ADC77_house4_l85_tm_mass_temperature
     GLD/M1_ADC77_house4_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house4_l85_tm_is_COOL_on
     GLD/M1_ADC77_house6_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house6_l85_tm_UA
     GLD/M1_ADC77_house6_l85_tm_heating_system_type
@@ -24951,6 +25392,7 @@ values
     GLD/M1_ADC77_house6_l85_tm_air_temperature
     GLD/M1_ADC77_house6_l85_tm_mass_temperature
     GLD/M1_ADC77_house6_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house6_l85_tm_is_COOL_on
     GLD/M1_ADC77_house7_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house7_l85_tm_UA
     GLD/M1_ADC77_house7_l85_tm_heating_system_type
@@ -24976,6 +25418,7 @@ values
     GLD/M1_ADC77_house7_l85_tm_air_temperature
     GLD/M1_ADC77_house7_l85_tm_mass_temperature
     GLD/M1_ADC77_house7_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house7_l85_tm_is_COOL_on
     GLD/M1_ADC77_house8_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house8_l85_tm_UA
     GLD/M1_ADC77_house8_l85_tm_heating_system_type
@@ -25001,6 +25444,7 @@ values
     GLD/M1_ADC77_house8_l85_tm_air_temperature
     GLD/M1_ADC77_house8_l85_tm_mass_temperature
     GLD/M1_ADC77_house8_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house8_l85_tm_is_COOL_on
     GLD/M1_ADC77_house9_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house9_l85_tm_UA
     GLD/M1_ADC77_house9_l85_tm_heating_system_type
@@ -25026,6 +25470,7 @@ values
     GLD/M1_ADC77_house9_l85_tm_air_temperature
     GLD/M1_ADC77_house9_l85_tm_mass_temperature
     GLD/M1_ADC77_house9_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house9_l85_tm_is_COOL_on
     GLD/M1_ADC77_house10_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house10_l85_tm_UA
     GLD/M1_ADC77_house10_l85_tm_heating_system_type
@@ -25051,6 +25496,7 @@ values
     GLD/M1_ADC77_house10_l85_tm_air_temperature
     GLD/M1_ADC77_house10_l85_tm_mass_temperature
     GLD/M1_ADC77_house10_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house10_l85_tm_is_COOL_on
     GLD/M1_ADC77_house11_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house11_l85_tm_UA
     GLD/M1_ADC77_house11_l85_tm_heating_system_type
@@ -25076,6 +25522,7 @@ values
     GLD/M1_ADC77_house11_l85_tm_air_temperature
     GLD/M1_ADC77_house11_l85_tm_mass_temperature
     GLD/M1_ADC77_house11_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house11_l85_tm_is_COOL_on
     GLD/M1_ADC77_house12_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house12_l85_tm_UA
     GLD/M1_ADC77_house12_l85_tm_heating_system_type
@@ -25101,6 +25548,7 @@ values
     GLD/M1_ADC77_house12_l85_tm_air_temperature
     GLD/M1_ADC77_house12_l85_tm_mass_temperature
     GLD/M1_ADC77_house12_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house12_l85_tm_is_COOL_on
     GLD/M1_ADC77_house13_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house13_l85_tm_UA
     GLD/M1_ADC77_house13_l85_tm_heating_system_type
@@ -25126,6 +25574,7 @@ values
     GLD/M1_ADC77_house13_l85_tm_air_temperature
     GLD/M1_ADC77_house13_l85_tm_mass_temperature
     GLD/M1_ADC77_house13_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house13_l85_tm_is_COOL_on
     GLD/M1_ADC77_house14_l85_tm_mass_heat_coeff
     GLD/M1_ADC77_house14_l85_tm_UA
     GLD/M1_ADC77_house14_l85_tm_heating_system_type
@@ -25151,114 +25600,83 @@ values
     GLD/M1_ADC77_house14_l85_tm_air_temperature
     GLD/M1_ADC77_house14_l85_tm_mass_temperature
     GLD/M1_ADC77_house14_l85_tm_thermostat_mode
+    GLD/M1_ADC77_house14_l85_tm_is_COOL_on
     GLD/M1_ADC77_solar_PVinv_house4_l77_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house4_l77_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house4_l77_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house4_l77_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house4_l77_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house4_l77_tm_VA_Out
     GLD/M1_ADC77_PVinv_house4_l77_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house8_l77_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house8_l77_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house8_l77_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house8_l77_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house8_l77_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house8_l77_tm_VA_Out
     GLD/M1_ADC77_PVinv_house8_l77_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house9_l77_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house9_l77_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house9_l77_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house9_l77_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house9_l77_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house9_l77_tm_VA_Out
     GLD/M1_ADC77_PVinv_house9_l77_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house5_l79_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house5_l79_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house5_l79_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house5_l79_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house5_l79_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house5_l79_tm_VA_Out
     GLD/M1_ADC77_PVinv_house5_l79_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house7_l79_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house7_l79_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house7_l79_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house7_l79_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house7_l79_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house7_l79_tm_VA_Out
     GLD/M1_ADC77_PVinv_house7_l79_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house8_l79_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house8_l79_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house8_l79_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house8_l79_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house8_l79_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house8_l79_tm_VA_Out
     GLD/M1_ADC77_PVinv_house8_l79_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house12_l79_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house12_l79_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house12_l79_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house12_l79_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house12_l79_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house12_l79_tm_VA_Out
     GLD/M1_ADC77_PVinv_house12_l79_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house2_l80_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house2_l80_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house2_l80_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house2_l80_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house2_l80_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house2_l80_tm_VA_Out
     GLD/M1_ADC77_PVinv_house2_l80_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house6_l80_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house6_l80_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house6_l80_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house6_l80_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house6_l80_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house6_l80_tm_VA_Out
     GLD/M1_ADC77_PVinv_house6_l80_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house7_l80_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house7_l80_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house7_l80_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house7_l80_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house7_l80_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house7_l80_tm_VA_Out
     GLD/M1_ADC77_PVinv_house7_l80_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house7_l82_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house7_l82_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house7_l82_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house7_l82_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house7_l82_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house7_l82_tm_VA_Out
     GLD/M1_ADC77_PVinv_house7_l82_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house1_l83_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house1_l83_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house1_l83_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house1_l83_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house1_l83_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house1_l83_tm_VA_Out
     GLD/M1_ADC77_PVinv_house1_l83_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house3_l83_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house3_l83_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house3_l83_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house3_l83_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house3_l83_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house3_l83_tm_VA_Out
     GLD/M1_ADC77_PVinv_house3_l83_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house6_l85_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house6_l85_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house6_l85_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house6_l85_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house6_l85_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house6_l85_tm_VA_Out
     GLD/M1_ADC77_PVinv_house6_l85_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house7_l85_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house7_l85_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house7_l85_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house7_l85_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house7_l85_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house7_l85_tm_VA_Out
     GLD/M1_ADC77_PVinv_house7_l85_tm_inverter_efficiency
     GLD/M1_ADC77_solar_PVinv_house9_l85_tm_rated_power
-    GLD/M1_ADC77_solar_PVinv_house9_l85_tm_latitude
-    GLD/M1_ADC77_solar_PVinv_house9_l85_tm_longitude
     GLD/M1_ADC77_solar_PVinv_house9_l85_tm_tilt_angle
     GLD/M1_ADC77_solar_PVinv_house9_l85_tm_orientation_azimuth
     GLD/M1_ADC77_solar_PVinv_house9_l85_tm_VA_Out
@@ -25766,6 +26184,7 @@ values
     GLD/M1_ADC88_house0_l88_tm_air_temperature
     GLD/M1_ADC88_house0_l88_tm_mass_temperature
     GLD/M1_ADC88_house0_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house0_l88_tm_is_COOL_on
     GLD/M1_ADC88_house1_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house1_l88_tm_UA
     GLD/M1_ADC88_house1_l88_tm_heating_system_type
@@ -25791,6 +26210,7 @@ values
     GLD/M1_ADC88_house1_l88_tm_air_temperature
     GLD/M1_ADC88_house1_l88_tm_mass_temperature
     GLD/M1_ADC88_house1_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house1_l88_tm_is_COOL_on
     GLD/M1_ADC88_house2_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house2_l88_tm_UA
     GLD/M1_ADC88_house2_l88_tm_heating_system_type
@@ -25816,6 +26236,7 @@ values
     GLD/M1_ADC88_house2_l88_tm_air_temperature
     GLD/M1_ADC88_house2_l88_tm_mass_temperature
     GLD/M1_ADC88_house2_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house2_l88_tm_is_COOL_on
     GLD/M1_ADC88_house3_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house3_l88_tm_UA
     GLD/M1_ADC88_house3_l88_tm_heating_system_type
@@ -25841,6 +26262,7 @@ values
     GLD/M1_ADC88_house3_l88_tm_air_temperature
     GLD/M1_ADC88_house3_l88_tm_mass_temperature
     GLD/M1_ADC88_house3_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house3_l88_tm_is_COOL_on
     GLD/M1_ADC88_house4_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house4_l88_tm_UA
     GLD/M1_ADC88_house4_l88_tm_heating_system_type
@@ -25866,6 +26288,7 @@ values
     GLD/M1_ADC88_house4_l88_tm_air_temperature
     GLD/M1_ADC88_house4_l88_tm_mass_temperature
     GLD/M1_ADC88_house4_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house4_l88_tm_is_COOL_on
     GLD/M1_ADC88_house5_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house5_l88_tm_UA
     GLD/M1_ADC88_house5_l88_tm_heating_system_type
@@ -25891,6 +26314,7 @@ values
     GLD/M1_ADC88_house5_l88_tm_air_temperature
     GLD/M1_ADC88_house5_l88_tm_mass_temperature
     GLD/M1_ADC88_house5_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house5_l88_tm_is_COOL_on
     GLD/M1_ADC88_house7_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house7_l88_tm_UA
     GLD/M1_ADC88_house7_l88_tm_heating_system_type
@@ -25916,6 +26340,7 @@ values
     GLD/M1_ADC88_house7_l88_tm_air_temperature
     GLD/M1_ADC88_house7_l88_tm_mass_temperature
     GLD/M1_ADC88_house7_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house7_l88_tm_is_COOL_on
     GLD/M1_ADC88_house8_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house8_l88_tm_UA
     GLD/M1_ADC88_house8_l88_tm_heating_system_type
@@ -25941,6 +26366,7 @@ values
     GLD/M1_ADC88_house8_l88_tm_air_temperature
     GLD/M1_ADC88_house8_l88_tm_mass_temperature
     GLD/M1_ADC88_house8_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house8_l88_tm_is_COOL_on
     GLD/M1_ADC88_house9_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house9_l88_tm_UA
     GLD/M1_ADC88_house9_l88_tm_heating_system_type
@@ -25966,6 +26392,7 @@ values
     GLD/M1_ADC88_house9_l88_tm_air_temperature
     GLD/M1_ADC88_house9_l88_tm_mass_temperature
     GLD/M1_ADC88_house9_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house9_l88_tm_is_COOL_on
     GLD/M1_ADC88_house10_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house10_l88_tm_UA
     GLD/M1_ADC88_house10_l88_tm_heating_system_type
@@ -25991,6 +26418,7 @@ values
     GLD/M1_ADC88_house10_l88_tm_air_temperature
     GLD/M1_ADC88_house10_l88_tm_mass_temperature
     GLD/M1_ADC88_house10_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house10_l88_tm_is_COOL_on
     GLD/M1_ADC88_house11_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house11_l88_tm_UA
     GLD/M1_ADC88_house11_l88_tm_heating_system_type
@@ -26016,6 +26444,7 @@ values
     GLD/M1_ADC88_house11_l88_tm_air_temperature
     GLD/M1_ADC88_house11_l88_tm_mass_temperature
     GLD/M1_ADC88_house11_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house11_l88_tm_is_COOL_on
     GLD/M1_ADC88_house12_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house12_l88_tm_UA
     GLD/M1_ADC88_house12_l88_tm_heating_system_type
@@ -26041,6 +26470,7 @@ values
     GLD/M1_ADC88_house12_l88_tm_air_temperature
     GLD/M1_ADC88_house12_l88_tm_mass_temperature
     GLD/M1_ADC88_house12_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house12_l88_tm_is_COOL_on
     GLD/M1_ADC88_house13_l88_tm_mass_heat_coeff
     GLD/M1_ADC88_house13_l88_tm_UA
     GLD/M1_ADC88_house13_l88_tm_heating_system_type
@@ -26066,9 +26496,8 @@ values
     GLD/M1_ADC88_house13_l88_tm_air_temperature
     GLD/M1_ADC88_house13_l88_tm_mass_temperature
     GLD/M1_ADC88_house13_l88_tm_thermostat_mode
+    GLD/M1_ADC88_house13_l88_tm_is_COOL_on
     GLD/M1_ADC88_solar_PVinv_house4_l88_tm_rated_power
-    GLD/M1_ADC88_solar_PVinv_house4_l88_tm_latitude
-    GLD/M1_ADC88_solar_PVinv_house4_l88_tm_longitude
     GLD/M1_ADC88_solar_PVinv_house4_l88_tm_tilt_angle
     GLD/M1_ADC88_solar_PVinv_house4_l88_tm_orientation_azimuth
     GLD/M1_ADC88_solar_PVinv_house4_l88_tm_VA_Out
@@ -26386,6 +26815,7 @@ values
     GLD/M1_ADC9_house0_l9_tm_air_temperature
     GLD/M1_ADC9_house0_l9_tm_mass_temperature
     GLD/M1_ADC9_house0_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house0_l9_tm_is_COOL_on
     GLD/M1_ADC9_house1_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house1_l9_tm_UA
     GLD/M1_ADC9_house1_l9_tm_heating_system_type
@@ -26411,6 +26841,7 @@ values
     GLD/M1_ADC9_house1_l9_tm_air_temperature
     GLD/M1_ADC9_house1_l9_tm_mass_temperature
     GLD/M1_ADC9_house1_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house1_l9_tm_is_COOL_on
     GLD/M1_ADC9_house2_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house2_l9_tm_UA
     GLD/M1_ADC9_house2_l9_tm_heating_system_type
@@ -26436,6 +26867,7 @@ values
     GLD/M1_ADC9_house2_l9_tm_air_temperature
     GLD/M1_ADC9_house2_l9_tm_mass_temperature
     GLD/M1_ADC9_house2_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house2_l9_tm_is_COOL_on
     GLD/M1_ADC9_house3_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house3_l9_tm_UA
     GLD/M1_ADC9_house3_l9_tm_heating_system_type
@@ -26461,6 +26893,7 @@ values
     GLD/M1_ADC9_house3_l9_tm_air_temperature
     GLD/M1_ADC9_house3_l9_tm_mass_temperature
     GLD/M1_ADC9_house3_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house3_l9_tm_is_COOL_on
     GLD/M1_ADC9_house4_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house4_l9_tm_UA
     GLD/M1_ADC9_house4_l9_tm_heating_system_type
@@ -26486,6 +26919,7 @@ values
     GLD/M1_ADC9_house4_l9_tm_air_temperature
     GLD/M1_ADC9_house4_l9_tm_mass_temperature
     GLD/M1_ADC9_house4_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house4_l9_tm_is_COOL_on
     GLD/M1_ADC9_house5_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house5_l9_tm_UA
     GLD/M1_ADC9_house5_l9_tm_heating_system_type
@@ -26511,6 +26945,7 @@ values
     GLD/M1_ADC9_house5_l9_tm_air_temperature
     GLD/M1_ADC9_house5_l9_tm_mass_temperature
     GLD/M1_ADC9_house5_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house5_l9_tm_is_COOL_on
     GLD/M1_ADC9_house6_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house6_l9_tm_UA
     GLD/M1_ADC9_house6_l9_tm_heating_system_type
@@ -26536,6 +26971,7 @@ values
     GLD/M1_ADC9_house6_l9_tm_air_temperature
     GLD/M1_ADC9_house6_l9_tm_mass_temperature
     GLD/M1_ADC9_house6_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house6_l9_tm_is_COOL_on
     GLD/M1_ADC9_house7_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house7_l9_tm_UA
     GLD/M1_ADC9_house7_l9_tm_heating_system_type
@@ -26561,6 +26997,7 @@ values
     GLD/M1_ADC9_house7_l9_tm_air_temperature
     GLD/M1_ADC9_house7_l9_tm_mass_temperature
     GLD/M1_ADC9_house7_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house7_l9_tm_is_COOL_on
     GLD/M1_ADC9_house8_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house8_l9_tm_UA
     GLD/M1_ADC9_house8_l9_tm_heating_system_type
@@ -26586,6 +27023,7 @@ values
     GLD/M1_ADC9_house8_l9_tm_air_temperature
     GLD/M1_ADC9_house8_l9_tm_mass_temperature
     GLD/M1_ADC9_house8_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house8_l9_tm_is_COOL_on
     GLD/M1_ADC9_house9_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house9_l9_tm_UA
     GLD/M1_ADC9_house9_l9_tm_heating_system_type
@@ -26611,6 +27049,7 @@ values
     GLD/M1_ADC9_house9_l9_tm_air_temperature
     GLD/M1_ADC9_house9_l9_tm_mass_temperature
     GLD/M1_ADC9_house9_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house9_l9_tm_is_COOL_on
     GLD/M1_ADC9_house10_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house10_l9_tm_UA
     GLD/M1_ADC9_house10_l9_tm_heating_system_type
@@ -26636,6 +27075,7 @@ values
     GLD/M1_ADC9_house10_l9_tm_air_temperature
     GLD/M1_ADC9_house10_l9_tm_mass_temperature
     GLD/M1_ADC9_house10_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house10_l9_tm_is_COOL_on
     GLD/M1_ADC9_house11_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house11_l9_tm_UA
     GLD/M1_ADC9_house11_l9_tm_heating_system_type
@@ -26661,6 +27101,7 @@ values
     GLD/M1_ADC9_house11_l9_tm_air_temperature
     GLD/M1_ADC9_house11_l9_tm_mass_temperature
     GLD/M1_ADC9_house11_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house11_l9_tm_is_COOL_on
     GLD/M1_ADC9_house12_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house12_l9_tm_UA
     GLD/M1_ADC9_house12_l9_tm_heating_system_type
@@ -26686,6 +27127,7 @@ values
     GLD/M1_ADC9_house12_l9_tm_air_temperature
     GLD/M1_ADC9_house12_l9_tm_mass_temperature
     GLD/M1_ADC9_house12_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house12_l9_tm_is_COOL_on
     GLD/M1_ADC9_house13_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house13_l9_tm_UA
     GLD/M1_ADC9_house13_l9_tm_heating_system_type
@@ -26711,6 +27153,7 @@ values
     GLD/M1_ADC9_house13_l9_tm_air_temperature
     GLD/M1_ADC9_house13_l9_tm_mass_temperature
     GLD/M1_ADC9_house13_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house13_l9_tm_is_COOL_on
     GLD/M1_ADC9_house14_l9_tm_mass_heat_coeff
     GLD/M1_ADC9_house14_l9_tm_UA
     GLD/M1_ADC9_house14_l9_tm_heating_system_type
@@ -26736,6 +27179,7 @@ values
     GLD/M1_ADC9_house14_l9_tm_air_temperature
     GLD/M1_ADC9_house14_l9_tm_mass_temperature
     GLD/M1_ADC9_house14_l9_tm_thermostat_mode
+    GLD/M1_ADC9_house14_l9_tm_is_COOL_on
     GLD/M1_ADC9_house0_l10_tm_mass_heat_coeff
     GLD/M1_ADC9_house0_l10_tm_UA
     GLD/M1_ADC9_house0_l10_tm_heating_system_type
@@ -26761,6 +27205,7 @@ values
     GLD/M1_ADC9_house0_l10_tm_air_temperature
     GLD/M1_ADC9_house0_l10_tm_mass_temperature
     GLD/M1_ADC9_house0_l10_tm_thermostat_mode
+    GLD/M1_ADC9_house0_l10_tm_is_COOL_on
     GLD/M1_ADC9_house1_l10_tm_mass_heat_coeff
     GLD/M1_ADC9_house1_l10_tm_UA
     GLD/M1_ADC9_house1_l10_tm_heating_system_type
@@ -26786,6 +27231,7 @@ values
     GLD/M1_ADC9_house1_l10_tm_air_temperature
     GLD/M1_ADC9_house1_l10_tm_mass_temperature
     GLD/M1_ADC9_house1_l10_tm_thermostat_mode
+    GLD/M1_ADC9_house1_l10_tm_is_COOL_on
     GLD/M1_ADC9_house3_l10_tm_mass_heat_coeff
     GLD/M1_ADC9_house3_l10_tm_UA
     GLD/M1_ADC9_house3_l10_tm_heating_system_type
@@ -26811,6 +27257,7 @@ values
     GLD/M1_ADC9_house3_l10_tm_air_temperature
     GLD/M1_ADC9_house3_l10_tm_mass_temperature
     GLD/M1_ADC9_house3_l10_tm_thermostat_mode
+    GLD/M1_ADC9_house3_l10_tm_is_COOL_on
     GLD/M1_ADC9_house4_l10_tm_mass_heat_coeff
     GLD/M1_ADC9_house4_l10_tm_UA
     GLD/M1_ADC9_house4_l10_tm_heating_system_type
@@ -26836,6 +27283,7 @@ values
     GLD/M1_ADC9_house4_l10_tm_air_temperature
     GLD/M1_ADC9_house4_l10_tm_mass_temperature
     GLD/M1_ADC9_house4_l10_tm_thermostat_mode
+    GLD/M1_ADC9_house4_l10_tm_is_COOL_on
     GLD/M1_ADC9_house5_l10_tm_mass_heat_coeff
     GLD/M1_ADC9_house5_l10_tm_UA
     GLD/M1_ADC9_house5_l10_tm_heating_system_type
@@ -26861,6 +27309,7 @@ values
     GLD/M1_ADC9_house5_l10_tm_air_temperature
     GLD/M1_ADC9_house5_l10_tm_mass_temperature
     GLD/M1_ADC9_house5_l10_tm_thermostat_mode
+    GLD/M1_ADC9_house5_l10_tm_is_COOL_on
     GLD/M1_ADC9_house6_l10_tm_mass_heat_coeff
     GLD/M1_ADC9_house6_l10_tm_UA
     GLD/M1_ADC9_house6_l10_tm_heating_system_type
@@ -26886,6 +27335,7 @@ values
     GLD/M1_ADC9_house6_l10_tm_air_temperature
     GLD/M1_ADC9_house6_l10_tm_mass_temperature
     GLD/M1_ADC9_house6_l10_tm_thermostat_mode
+    GLD/M1_ADC9_house6_l10_tm_is_COOL_on
     GLD/M1_ADC9_house0_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house0_l11_tm_UA
     GLD/M1_ADC9_house0_l11_tm_heating_system_type
@@ -26911,6 +27361,7 @@ values
     GLD/M1_ADC9_house0_l11_tm_air_temperature
     GLD/M1_ADC9_house0_l11_tm_mass_temperature
     GLD/M1_ADC9_house0_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house0_l11_tm_is_COOL_on
     GLD/M1_ADC9_house1_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house1_l11_tm_UA
     GLD/M1_ADC9_house1_l11_tm_heating_system_type
@@ -26936,6 +27387,7 @@ values
     GLD/M1_ADC9_house1_l11_tm_air_temperature
     GLD/M1_ADC9_house1_l11_tm_mass_temperature
     GLD/M1_ADC9_house1_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house1_l11_tm_is_COOL_on
     GLD/M1_ADC9_house2_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house2_l11_tm_UA
     GLD/M1_ADC9_house2_l11_tm_heating_system_type
@@ -26961,6 +27413,7 @@ values
     GLD/M1_ADC9_house2_l11_tm_air_temperature
     GLD/M1_ADC9_house2_l11_tm_mass_temperature
     GLD/M1_ADC9_house2_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house2_l11_tm_is_COOL_on
     GLD/M1_ADC9_house3_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house3_l11_tm_UA
     GLD/M1_ADC9_house3_l11_tm_heating_system_type
@@ -26986,6 +27439,7 @@ values
     GLD/M1_ADC9_house3_l11_tm_air_temperature
     GLD/M1_ADC9_house3_l11_tm_mass_temperature
     GLD/M1_ADC9_house3_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house3_l11_tm_is_COOL_on
     GLD/M1_ADC9_house4_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house4_l11_tm_UA
     GLD/M1_ADC9_house4_l11_tm_heating_system_type
@@ -27011,6 +27465,7 @@ values
     GLD/M1_ADC9_house4_l11_tm_air_temperature
     GLD/M1_ADC9_house4_l11_tm_mass_temperature
     GLD/M1_ADC9_house4_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house4_l11_tm_is_COOL_on
     GLD/M1_ADC9_house5_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house5_l11_tm_UA
     GLD/M1_ADC9_house5_l11_tm_heating_system_type
@@ -27036,6 +27491,7 @@ values
     GLD/M1_ADC9_house5_l11_tm_air_temperature
     GLD/M1_ADC9_house5_l11_tm_mass_temperature
     GLD/M1_ADC9_house5_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house5_l11_tm_is_COOL_on
     GLD/M1_ADC9_house6_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house6_l11_tm_UA
     GLD/M1_ADC9_house6_l11_tm_heating_system_type
@@ -27061,6 +27517,7 @@ values
     GLD/M1_ADC9_house6_l11_tm_air_temperature
     GLD/M1_ADC9_house6_l11_tm_mass_temperature
     GLD/M1_ADC9_house6_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house6_l11_tm_is_COOL_on
     GLD/M1_ADC9_house7_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house7_l11_tm_UA
     GLD/M1_ADC9_house7_l11_tm_heating_system_type
@@ -27086,6 +27543,7 @@ values
     GLD/M1_ADC9_house7_l11_tm_air_temperature
     GLD/M1_ADC9_house7_l11_tm_mass_temperature
     GLD/M1_ADC9_house7_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house7_l11_tm_is_COOL_on
     GLD/M1_ADC9_house8_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house8_l11_tm_UA
     GLD/M1_ADC9_house8_l11_tm_heating_system_type
@@ -27111,6 +27569,7 @@ values
     GLD/M1_ADC9_house8_l11_tm_air_temperature
     GLD/M1_ADC9_house8_l11_tm_mass_temperature
     GLD/M1_ADC9_house8_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house8_l11_tm_is_COOL_on
     GLD/M1_ADC9_house9_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house9_l11_tm_UA
     GLD/M1_ADC9_house9_l11_tm_heating_system_type
@@ -27136,6 +27595,7 @@ values
     GLD/M1_ADC9_house9_l11_tm_air_temperature
     GLD/M1_ADC9_house9_l11_tm_mass_temperature
     GLD/M1_ADC9_house9_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house9_l11_tm_is_COOL_on
     GLD/M1_ADC9_house11_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house11_l11_tm_UA
     GLD/M1_ADC9_house11_l11_tm_heating_system_type
@@ -27161,6 +27621,7 @@ values
     GLD/M1_ADC9_house11_l11_tm_air_temperature
     GLD/M1_ADC9_house11_l11_tm_mass_temperature
     GLD/M1_ADC9_house11_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house11_l11_tm_is_COOL_on
     GLD/M1_ADC9_house12_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house12_l11_tm_UA
     GLD/M1_ADC9_house12_l11_tm_heating_system_type
@@ -27186,6 +27647,7 @@ values
     GLD/M1_ADC9_house12_l11_tm_air_temperature
     GLD/M1_ADC9_house12_l11_tm_mass_temperature
     GLD/M1_ADC9_house12_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house12_l11_tm_is_COOL_on
     GLD/M1_ADC9_house13_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house13_l11_tm_UA
     GLD/M1_ADC9_house13_l11_tm_heating_system_type
@@ -27211,6 +27673,7 @@ values
     GLD/M1_ADC9_house13_l11_tm_air_temperature
     GLD/M1_ADC9_house13_l11_tm_mass_temperature
     GLD/M1_ADC9_house13_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house13_l11_tm_is_COOL_on
     GLD/M1_ADC9_house14_l11_tm_mass_heat_coeff
     GLD/M1_ADC9_house14_l11_tm_UA
     GLD/M1_ADC9_house14_l11_tm_heating_system_type
@@ -27236,37 +27699,28 @@ values
     GLD/M1_ADC9_house14_l11_tm_air_temperature
     GLD/M1_ADC9_house14_l11_tm_mass_temperature
     GLD/M1_ADC9_house14_l11_tm_thermostat_mode
+    GLD/M1_ADC9_house14_l11_tm_is_COOL_on
     GLD/M1_ADC9_solar_PVinv_house3_l9_tm_rated_power
-    GLD/M1_ADC9_solar_PVinv_house3_l9_tm_latitude
-    GLD/M1_ADC9_solar_PVinv_house3_l9_tm_longitude
     GLD/M1_ADC9_solar_PVinv_house3_l9_tm_tilt_angle
     GLD/M1_ADC9_solar_PVinv_house3_l9_tm_orientation_azimuth
     GLD/M1_ADC9_solar_PVinv_house3_l9_tm_VA_Out
     GLD/M1_ADC9_PVinv_house3_l9_tm_inverter_efficiency
     GLD/M1_ADC9_solar_PVinv_house3_l11_tm_rated_power
-    GLD/M1_ADC9_solar_PVinv_house3_l11_tm_latitude
-    GLD/M1_ADC9_solar_PVinv_house3_l11_tm_longitude
     GLD/M1_ADC9_solar_PVinv_house3_l11_tm_tilt_angle
     GLD/M1_ADC9_solar_PVinv_house3_l11_tm_orientation_azimuth
     GLD/M1_ADC9_solar_PVinv_house3_l11_tm_VA_Out
     GLD/M1_ADC9_PVinv_house3_l11_tm_inverter_efficiency
     GLD/M1_ADC9_solar_PVinv_house8_l11_tm_rated_power
-    GLD/M1_ADC9_solar_PVinv_house8_l11_tm_latitude
-    GLD/M1_ADC9_solar_PVinv_house8_l11_tm_longitude
     GLD/M1_ADC9_solar_PVinv_house8_l11_tm_tilt_angle
     GLD/M1_ADC9_solar_PVinv_house8_l11_tm_orientation_azimuth
     GLD/M1_ADC9_solar_PVinv_house8_l11_tm_VA_Out
     GLD/M1_ADC9_PVinv_house8_l11_tm_inverter_efficiency
     GLD/M1_ADC9_solar_PVinv_house13_l11_tm_rated_power
-    GLD/M1_ADC9_solar_PVinv_house13_l11_tm_latitude
-    GLD/M1_ADC9_solar_PVinv_house13_l11_tm_longitude
     GLD/M1_ADC9_solar_PVinv_house13_l11_tm_tilt_angle
     GLD/M1_ADC9_solar_PVinv_house13_l11_tm_orientation_azimuth
     GLD/M1_ADC9_solar_PVinv_house13_l11_tm_VA_Out
     GLD/M1_ADC9_PVinv_house13_l11_tm_inverter_efficiency
     GLD/M1_ADC9_solar_PVinv_house14_l11_tm_rated_power
-    GLD/M1_ADC9_solar_PVinv_house14_l11_tm_latitude
-    GLD/M1_ADC9_solar_PVinv_house14_l11_tm_longitude
     GLD/M1_ADC9_solar_PVinv_house14_l11_tm_tilt_angle
     GLD/M1_ADC9_solar_PVinv_house14_l11_tm_orientation_azimuth
     GLD/M1_ADC9_solar_PVinv_house14_l11_tm_VA_Out
@@ -27510,6 +27964,7 @@ values
     GLD/M1_ADC90_house0_l90_tm_air_temperature
     GLD/M1_ADC90_house0_l90_tm_mass_temperature
     GLD/M1_ADC90_house0_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house0_l90_tm_is_COOL_on
     GLD/M1_ADC90_house2_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house2_l90_tm_UA
     GLD/M1_ADC90_house2_l90_tm_heating_system_type
@@ -27535,6 +27990,7 @@ values
     GLD/M1_ADC90_house2_l90_tm_air_temperature
     GLD/M1_ADC90_house2_l90_tm_mass_temperature
     GLD/M1_ADC90_house2_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house2_l90_tm_is_COOL_on
     GLD/M1_ADC90_house3_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house3_l90_tm_UA
     GLD/M1_ADC90_house3_l90_tm_heating_system_type
@@ -27560,6 +28016,7 @@ values
     GLD/M1_ADC90_house3_l90_tm_air_temperature
     GLD/M1_ADC90_house3_l90_tm_mass_temperature
     GLD/M1_ADC90_house3_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house3_l90_tm_is_COOL_on
     GLD/M1_ADC90_house4_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house4_l90_tm_UA
     GLD/M1_ADC90_house4_l90_tm_heating_system_type
@@ -27585,6 +28042,7 @@ values
     GLD/M1_ADC90_house4_l90_tm_air_temperature
     GLD/M1_ADC90_house4_l90_tm_mass_temperature
     GLD/M1_ADC90_house4_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house4_l90_tm_is_COOL_on
     GLD/M1_ADC90_house5_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house5_l90_tm_UA
     GLD/M1_ADC90_house5_l90_tm_heating_system_type
@@ -27610,6 +28068,7 @@ values
     GLD/M1_ADC90_house5_l90_tm_air_temperature
     GLD/M1_ADC90_house5_l90_tm_mass_temperature
     GLD/M1_ADC90_house5_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house5_l90_tm_is_COOL_on
     GLD/M1_ADC90_house6_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house6_l90_tm_UA
     GLD/M1_ADC90_house6_l90_tm_heating_system_type
@@ -27635,6 +28094,7 @@ values
     GLD/M1_ADC90_house6_l90_tm_air_temperature
     GLD/M1_ADC90_house6_l90_tm_mass_temperature
     GLD/M1_ADC90_house6_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house6_l90_tm_is_COOL_on
     GLD/M1_ADC90_house7_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house7_l90_tm_UA
     GLD/M1_ADC90_house7_l90_tm_heating_system_type
@@ -27660,6 +28120,7 @@ values
     GLD/M1_ADC90_house7_l90_tm_air_temperature
     GLD/M1_ADC90_house7_l90_tm_mass_temperature
     GLD/M1_ADC90_house7_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house7_l90_tm_is_COOL_on
     GLD/M1_ADC90_house8_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house8_l90_tm_UA
     GLD/M1_ADC90_house8_l90_tm_heating_system_type
@@ -27685,6 +28146,7 @@ values
     GLD/M1_ADC90_house8_l90_tm_air_temperature
     GLD/M1_ADC90_house8_l90_tm_mass_temperature
     GLD/M1_ADC90_house8_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house8_l90_tm_is_COOL_on
     GLD/M1_ADC90_house10_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house10_l90_tm_UA
     GLD/M1_ADC90_house10_l90_tm_heating_system_type
@@ -27710,6 +28172,7 @@ values
     GLD/M1_ADC90_house10_l90_tm_air_temperature
     GLD/M1_ADC90_house10_l90_tm_mass_temperature
     GLD/M1_ADC90_house10_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house10_l90_tm_is_COOL_on
     GLD/M1_ADC90_house11_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house11_l90_tm_UA
     GLD/M1_ADC90_house11_l90_tm_heating_system_type
@@ -27735,6 +28198,7 @@ values
     GLD/M1_ADC90_house11_l90_tm_air_temperature
     GLD/M1_ADC90_house11_l90_tm_mass_temperature
     GLD/M1_ADC90_house11_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house11_l90_tm_is_COOL_on
     GLD/M1_ADC90_house12_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house12_l90_tm_UA
     GLD/M1_ADC90_house12_l90_tm_heating_system_type
@@ -27760,6 +28224,7 @@ values
     GLD/M1_ADC90_house12_l90_tm_air_temperature
     GLD/M1_ADC90_house12_l90_tm_mass_temperature
     GLD/M1_ADC90_house12_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house12_l90_tm_is_COOL_on
     GLD/M1_ADC90_house13_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house13_l90_tm_UA
     GLD/M1_ADC90_house13_l90_tm_heating_system_type
@@ -27785,6 +28250,7 @@ values
     GLD/M1_ADC90_house13_l90_tm_air_temperature
     GLD/M1_ADC90_house13_l90_tm_mass_temperature
     GLD/M1_ADC90_house13_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house13_l90_tm_is_COOL_on
     GLD/M1_ADC90_house14_l90_tm_mass_heat_coeff
     GLD/M1_ADC90_house14_l90_tm_UA
     GLD/M1_ADC90_house14_l90_tm_heating_system_type
@@ -27810,30 +28276,23 @@ values
     GLD/M1_ADC90_house14_l90_tm_air_temperature
     GLD/M1_ADC90_house14_l90_tm_mass_temperature
     GLD/M1_ADC90_house14_l90_tm_thermostat_mode
+    GLD/M1_ADC90_house14_l90_tm_is_COOL_on
     GLD/M1_ADC90_solar_PVinv_house1_l90_tm_rated_power
-    GLD/M1_ADC90_solar_PVinv_house1_l90_tm_latitude
-    GLD/M1_ADC90_solar_PVinv_house1_l90_tm_longitude
     GLD/M1_ADC90_solar_PVinv_house1_l90_tm_tilt_angle
     GLD/M1_ADC90_solar_PVinv_house1_l90_tm_orientation_azimuth
     GLD/M1_ADC90_solar_PVinv_house1_l90_tm_VA_Out
     GLD/M1_ADC90_PVinv_house1_l90_tm_inverter_efficiency
     GLD/M1_ADC90_solar_PVinv_house2_l90_tm_rated_power
-    GLD/M1_ADC90_solar_PVinv_house2_l90_tm_latitude
-    GLD/M1_ADC90_solar_PVinv_house2_l90_tm_longitude
     GLD/M1_ADC90_solar_PVinv_house2_l90_tm_tilt_angle
     GLD/M1_ADC90_solar_PVinv_house2_l90_tm_orientation_azimuth
     GLD/M1_ADC90_solar_PVinv_house2_l90_tm_VA_Out
     GLD/M1_ADC90_PVinv_house2_l90_tm_inverter_efficiency
     GLD/M1_ADC90_solar_PVinv_house3_l90_tm_rated_power
-    GLD/M1_ADC90_solar_PVinv_house3_l90_tm_latitude
-    GLD/M1_ADC90_solar_PVinv_house3_l90_tm_longitude
     GLD/M1_ADC90_solar_PVinv_house3_l90_tm_tilt_angle
     GLD/M1_ADC90_solar_PVinv_house3_l90_tm_orientation_azimuth
     GLD/M1_ADC90_solar_PVinv_house3_l90_tm_VA_Out
     GLD/M1_ADC90_PVinv_house3_l90_tm_inverter_efficiency
     GLD/M1_ADC90_solar_PVinv_house6_l90_tm_rated_power
-    GLD/M1_ADC90_solar_PVinv_house6_l90_tm_latitude
-    GLD/M1_ADC90_solar_PVinv_house6_l90_tm_longitude
     GLD/M1_ADC90_solar_PVinv_house6_l90_tm_tilt_angle
     GLD/M1_ADC90_solar_PVinv_house6_l90_tm_orientation_azimuth
     GLD/M1_ADC90_solar_PVinv_house6_l90_tm_VA_Out
@@ -28019,6 +28478,7 @@ values
     GLD/M1_ADC92_house1_l92_tm_air_temperature
     GLD/M1_ADC92_house1_l92_tm_mass_temperature
     GLD/M1_ADC92_house1_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house1_l92_tm_is_COOL_on
     GLD/M1_ADC92_house2_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house2_l92_tm_UA
     GLD/M1_ADC92_house2_l92_tm_heating_system_type
@@ -28044,6 +28504,7 @@ values
     GLD/M1_ADC92_house2_l92_tm_air_temperature
     GLD/M1_ADC92_house2_l92_tm_mass_temperature
     GLD/M1_ADC92_house2_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house2_l92_tm_is_COOL_on
     GLD/M1_ADC92_house3_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house3_l92_tm_UA
     GLD/M1_ADC92_house3_l92_tm_heating_system_type
@@ -28069,6 +28530,7 @@ values
     GLD/M1_ADC92_house3_l92_tm_air_temperature
     GLD/M1_ADC92_house3_l92_tm_mass_temperature
     GLD/M1_ADC92_house3_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house3_l92_tm_is_COOL_on
     GLD/M1_ADC92_house4_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house4_l92_tm_UA
     GLD/M1_ADC92_house4_l92_tm_heating_system_type
@@ -28094,6 +28556,7 @@ values
     GLD/M1_ADC92_house4_l92_tm_air_temperature
     GLD/M1_ADC92_house4_l92_tm_mass_temperature
     GLD/M1_ADC92_house4_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house4_l92_tm_is_COOL_on
     GLD/M1_ADC92_house5_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house5_l92_tm_UA
     GLD/M1_ADC92_house5_l92_tm_heating_system_type
@@ -28119,6 +28582,7 @@ values
     GLD/M1_ADC92_house5_l92_tm_air_temperature
     GLD/M1_ADC92_house5_l92_tm_mass_temperature
     GLD/M1_ADC92_house5_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house5_l92_tm_is_COOL_on
     GLD/M1_ADC92_house6_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house6_l92_tm_UA
     GLD/M1_ADC92_house6_l92_tm_heating_system_type
@@ -28144,6 +28608,7 @@ values
     GLD/M1_ADC92_house6_l92_tm_air_temperature
     GLD/M1_ADC92_house6_l92_tm_mass_temperature
     GLD/M1_ADC92_house6_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house6_l92_tm_is_COOL_on
     GLD/M1_ADC92_house7_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house7_l92_tm_UA
     GLD/M1_ADC92_house7_l92_tm_heating_system_type
@@ -28169,6 +28634,7 @@ values
     GLD/M1_ADC92_house7_l92_tm_air_temperature
     GLD/M1_ADC92_house7_l92_tm_mass_temperature
     GLD/M1_ADC92_house7_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house7_l92_tm_is_COOL_on
     GLD/M1_ADC92_house8_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house8_l92_tm_UA
     GLD/M1_ADC92_house8_l92_tm_heating_system_type
@@ -28194,6 +28660,7 @@ values
     GLD/M1_ADC92_house8_l92_tm_air_temperature
     GLD/M1_ADC92_house8_l92_tm_mass_temperature
     GLD/M1_ADC92_house8_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house8_l92_tm_is_COOL_on
     GLD/M1_ADC92_house9_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house9_l92_tm_UA
     GLD/M1_ADC92_house9_l92_tm_heating_system_type
@@ -28219,6 +28686,7 @@ values
     GLD/M1_ADC92_house9_l92_tm_air_temperature
     GLD/M1_ADC92_house9_l92_tm_mass_temperature
     GLD/M1_ADC92_house9_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house9_l92_tm_is_COOL_on
     GLD/M1_ADC92_house10_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house10_l92_tm_UA
     GLD/M1_ADC92_house10_l92_tm_heating_system_type
@@ -28244,6 +28712,7 @@ values
     GLD/M1_ADC92_house10_l92_tm_air_temperature
     GLD/M1_ADC92_house10_l92_tm_mass_temperature
     GLD/M1_ADC92_house10_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house10_l92_tm_is_COOL_on
     GLD/M1_ADC92_house11_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house11_l92_tm_UA
     GLD/M1_ADC92_house11_l92_tm_heating_system_type
@@ -28269,6 +28738,7 @@ values
     GLD/M1_ADC92_house11_l92_tm_air_temperature
     GLD/M1_ADC92_house11_l92_tm_mass_temperature
     GLD/M1_ADC92_house11_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house11_l92_tm_is_COOL_on
     GLD/M1_ADC92_house12_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house12_l92_tm_UA
     GLD/M1_ADC92_house12_l92_tm_heating_system_type
@@ -28294,6 +28764,7 @@ values
     GLD/M1_ADC92_house12_l92_tm_air_temperature
     GLD/M1_ADC92_house12_l92_tm_mass_temperature
     GLD/M1_ADC92_house12_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house12_l92_tm_is_COOL_on
     GLD/M1_ADC92_house13_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house13_l92_tm_UA
     GLD/M1_ADC92_house13_l92_tm_heating_system_type
@@ -28319,6 +28790,7 @@ values
     GLD/M1_ADC92_house13_l92_tm_air_temperature
     GLD/M1_ADC92_house13_l92_tm_mass_temperature
     GLD/M1_ADC92_house13_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house13_l92_tm_is_COOL_on
     GLD/M1_ADC92_house14_l92_tm_mass_heat_coeff
     GLD/M1_ADC92_house14_l92_tm_UA
     GLD/M1_ADC92_house14_l92_tm_heating_system_type
@@ -28344,16 +28816,13 @@ values
     GLD/M1_ADC92_house14_l92_tm_air_temperature
     GLD/M1_ADC92_house14_l92_tm_mass_temperature
     GLD/M1_ADC92_house14_l92_tm_thermostat_mode
+    GLD/M1_ADC92_house14_l92_tm_is_COOL_on
     GLD/M1_ADC92_solar_PVinv_house8_l92_tm_rated_power
-    GLD/M1_ADC92_solar_PVinv_house8_l92_tm_latitude
-    GLD/M1_ADC92_solar_PVinv_house8_l92_tm_longitude
     GLD/M1_ADC92_solar_PVinv_house8_l92_tm_tilt_angle
     GLD/M1_ADC92_solar_PVinv_house8_l92_tm_orientation_azimuth
     GLD/M1_ADC92_solar_PVinv_house8_l92_tm_VA_Out
     GLD/M1_ADC92_PVinv_house8_l92_tm_inverter_efficiency
     GLD/M1_ADC92_solar_PVinv_house12_l92_tm_rated_power
-    GLD/M1_ADC92_solar_PVinv_house12_l92_tm_latitude
-    GLD/M1_ADC92_solar_PVinv_house12_l92_tm_longitude
     GLD/M1_ADC92_solar_PVinv_house12_l92_tm_tilt_angle
     GLD/M1_ADC92_solar_PVinv_house12_l92_tm_orientation_azimuth
     GLD/M1_ADC92_solar_PVinv_house12_l92_tm_VA_Out
@@ -28549,6 +29018,7 @@ values
     GLD/M1_ADC94_house0_l94_tm_air_temperature
     GLD/M1_ADC94_house0_l94_tm_mass_temperature
     GLD/M1_ADC94_house0_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house0_l94_tm_is_COOL_on
     GLD/M1_ADC94_house1_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house1_l94_tm_UA
     GLD/M1_ADC94_house1_l94_tm_heating_system_type
@@ -28574,6 +29044,7 @@ values
     GLD/M1_ADC94_house1_l94_tm_air_temperature
     GLD/M1_ADC94_house1_l94_tm_mass_temperature
     GLD/M1_ADC94_house1_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house1_l94_tm_is_COOL_on
     GLD/M1_ADC94_house2_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house2_l94_tm_UA
     GLD/M1_ADC94_house2_l94_tm_heating_system_type
@@ -28599,6 +29070,7 @@ values
     GLD/M1_ADC94_house2_l94_tm_air_temperature
     GLD/M1_ADC94_house2_l94_tm_mass_temperature
     GLD/M1_ADC94_house2_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house2_l94_tm_is_COOL_on
     GLD/M1_ADC94_house3_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house3_l94_tm_UA
     GLD/M1_ADC94_house3_l94_tm_heating_system_type
@@ -28624,6 +29096,7 @@ values
     GLD/M1_ADC94_house3_l94_tm_air_temperature
     GLD/M1_ADC94_house3_l94_tm_mass_temperature
     GLD/M1_ADC94_house3_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house3_l94_tm_is_COOL_on
     GLD/M1_ADC94_house4_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house4_l94_tm_UA
     GLD/M1_ADC94_house4_l94_tm_heating_system_type
@@ -28649,6 +29122,7 @@ values
     GLD/M1_ADC94_house4_l94_tm_air_temperature
     GLD/M1_ADC94_house4_l94_tm_mass_temperature
     GLD/M1_ADC94_house4_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house4_l94_tm_is_COOL_on
     GLD/M1_ADC94_house5_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house5_l94_tm_UA
     GLD/M1_ADC94_house5_l94_tm_heating_system_type
@@ -28674,6 +29148,7 @@ values
     GLD/M1_ADC94_house5_l94_tm_air_temperature
     GLD/M1_ADC94_house5_l94_tm_mass_temperature
     GLD/M1_ADC94_house5_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house5_l94_tm_is_COOL_on
     GLD/M1_ADC94_house6_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house6_l94_tm_UA
     GLD/M1_ADC94_house6_l94_tm_heating_system_type
@@ -28699,6 +29174,7 @@ values
     GLD/M1_ADC94_house6_l94_tm_air_temperature
     GLD/M1_ADC94_house6_l94_tm_mass_temperature
     GLD/M1_ADC94_house6_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house6_l94_tm_is_COOL_on
     GLD/M1_ADC94_house7_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house7_l94_tm_UA
     GLD/M1_ADC94_house7_l94_tm_heating_system_type
@@ -28724,6 +29200,7 @@ values
     GLD/M1_ADC94_house7_l94_tm_air_temperature
     GLD/M1_ADC94_house7_l94_tm_mass_temperature
     GLD/M1_ADC94_house7_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house7_l94_tm_is_COOL_on
     GLD/M1_ADC94_house8_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house8_l94_tm_UA
     GLD/M1_ADC94_house8_l94_tm_heating_system_type
@@ -28749,6 +29226,7 @@ values
     GLD/M1_ADC94_house8_l94_tm_air_temperature
     GLD/M1_ADC94_house8_l94_tm_mass_temperature
     GLD/M1_ADC94_house8_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house8_l94_tm_is_COOL_on
     GLD/M1_ADC94_house9_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house9_l94_tm_UA
     GLD/M1_ADC94_house9_l94_tm_heating_system_type
@@ -28774,6 +29252,7 @@ values
     GLD/M1_ADC94_house9_l94_tm_air_temperature
     GLD/M1_ADC94_house9_l94_tm_mass_temperature
     GLD/M1_ADC94_house9_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house9_l94_tm_is_COOL_on
     GLD/M1_ADC94_house10_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house10_l94_tm_UA
     GLD/M1_ADC94_house10_l94_tm_heating_system_type
@@ -28799,6 +29278,7 @@ values
     GLD/M1_ADC94_house10_l94_tm_air_temperature
     GLD/M1_ADC94_house10_l94_tm_mass_temperature
     GLD/M1_ADC94_house10_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house10_l94_tm_is_COOL_on
     GLD/M1_ADC94_house11_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house11_l94_tm_UA
     GLD/M1_ADC94_house11_l94_tm_heating_system_type
@@ -28824,6 +29304,7 @@ values
     GLD/M1_ADC94_house11_l94_tm_air_temperature
     GLD/M1_ADC94_house11_l94_tm_mass_temperature
     GLD/M1_ADC94_house11_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house11_l94_tm_is_COOL_on
     GLD/M1_ADC94_house12_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house12_l94_tm_UA
     GLD/M1_ADC94_house12_l94_tm_heating_system_type
@@ -28849,6 +29330,7 @@ values
     GLD/M1_ADC94_house12_l94_tm_air_temperature
     GLD/M1_ADC94_house12_l94_tm_mass_temperature
     GLD/M1_ADC94_house12_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house12_l94_tm_is_COOL_on
     GLD/M1_ADC94_house13_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house13_l94_tm_UA
     GLD/M1_ADC94_house13_l94_tm_heating_system_type
@@ -28874,6 +29356,7 @@ values
     GLD/M1_ADC94_house13_l94_tm_air_temperature
     GLD/M1_ADC94_house13_l94_tm_mass_temperature
     GLD/M1_ADC94_house13_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house13_l94_tm_is_COOL_on
     GLD/M1_ADC94_house14_l94_tm_mass_heat_coeff
     GLD/M1_ADC94_house14_l94_tm_UA
     GLD/M1_ADC94_house14_l94_tm_heating_system_type
@@ -28899,30 +29382,23 @@ values
     GLD/M1_ADC94_house14_l94_tm_air_temperature
     GLD/M1_ADC94_house14_l94_tm_mass_temperature
     GLD/M1_ADC94_house14_l94_tm_thermostat_mode
+    GLD/M1_ADC94_house14_l94_tm_is_COOL_on
     GLD/M1_ADC94_solar_PVinv_house0_l94_tm_rated_power
-    GLD/M1_ADC94_solar_PVinv_house0_l94_tm_latitude
-    GLD/M1_ADC94_solar_PVinv_house0_l94_tm_longitude
     GLD/M1_ADC94_solar_PVinv_house0_l94_tm_tilt_angle
     GLD/M1_ADC94_solar_PVinv_house0_l94_tm_orientation_azimuth
     GLD/M1_ADC94_solar_PVinv_house0_l94_tm_VA_Out
     GLD/M1_ADC94_PVinv_house0_l94_tm_inverter_efficiency
     GLD/M1_ADC94_solar_PVinv_house5_l94_tm_rated_power
-    GLD/M1_ADC94_solar_PVinv_house5_l94_tm_latitude
-    GLD/M1_ADC94_solar_PVinv_house5_l94_tm_longitude
     GLD/M1_ADC94_solar_PVinv_house5_l94_tm_tilt_angle
     GLD/M1_ADC94_solar_PVinv_house5_l94_tm_orientation_azimuth
     GLD/M1_ADC94_solar_PVinv_house5_l94_tm_VA_Out
     GLD/M1_ADC94_PVinv_house5_l94_tm_inverter_efficiency
     GLD/M1_ADC94_solar_PVinv_house9_l94_tm_rated_power
-    GLD/M1_ADC94_solar_PVinv_house9_l94_tm_latitude
-    GLD/M1_ADC94_solar_PVinv_house9_l94_tm_longitude
     GLD/M1_ADC94_solar_PVinv_house9_l94_tm_tilt_angle
     GLD/M1_ADC94_solar_PVinv_house9_l94_tm_orientation_azimuth
     GLD/M1_ADC94_solar_PVinv_house9_l94_tm_VA_Out
     GLD/M1_ADC94_PVinv_house9_l94_tm_inverter_efficiency
     GLD/M1_ADC94_solar_PVinv_house14_l94_tm_rated_power
-    GLD/M1_ADC94_solar_PVinv_house14_l94_tm_latitude
-    GLD/M1_ADC94_solar_PVinv_house14_l94_tm_longitude
     GLD/M1_ADC94_solar_PVinv_house14_l94_tm_tilt_angle
     GLD/M1_ADC94_solar_PVinv_house14_l94_tm_orientation_azimuth
     GLD/M1_ADC94_solar_PVinv_house14_l94_tm_VA_Out
@@ -29030,6 +29506,7 @@ values
     GLD/M1_ADC96_house0_l96_tm_air_temperature
     GLD/M1_ADC96_house0_l96_tm_mass_temperature
     GLD/M1_ADC96_house0_l96_tm_thermostat_mode
+    GLD/M1_ADC96_house0_l96_tm_is_COOL_on
     GLD/M1_ADC96_house1_l96_tm_mass_heat_coeff
     GLD/M1_ADC96_house1_l96_tm_UA
     GLD/M1_ADC96_house1_l96_tm_heating_system_type
@@ -29055,6 +29532,7 @@ values
     GLD/M1_ADC96_house1_l96_tm_air_temperature
     GLD/M1_ADC96_house1_l96_tm_mass_temperature
     GLD/M1_ADC96_house1_l96_tm_thermostat_mode
+    GLD/M1_ADC96_house1_l96_tm_is_COOL_on
     GLD/M1_ADC96_house2_l96_tm_mass_heat_coeff
     GLD/M1_ADC96_house2_l96_tm_UA
     GLD/M1_ADC96_house2_l96_tm_heating_system_type
@@ -29080,6 +29558,7 @@ values
     GLD/M1_ADC96_house2_l96_tm_air_temperature
     GLD/M1_ADC96_house2_l96_tm_mass_temperature
     GLD/M1_ADC96_house2_l96_tm_thermostat_mode
+    GLD/M1_ADC96_house2_l96_tm_is_COOL_on
     GLD/M1_ADC96_house3_l96_tm_mass_heat_coeff
     GLD/M1_ADC96_house3_l96_tm_UA
     GLD/M1_ADC96_house3_l96_tm_heating_system_type
@@ -29105,6 +29584,7 @@ values
     GLD/M1_ADC96_house3_l96_tm_air_temperature
     GLD/M1_ADC96_house3_l96_tm_mass_temperature
     GLD/M1_ADC96_house3_l96_tm_thermostat_mode
+    GLD/M1_ADC96_house3_l96_tm_is_COOL_on
     GLD/M1_ADC96_house4_l96_tm_mass_heat_coeff
     GLD/M1_ADC96_house4_l96_tm_UA
     GLD/M1_ADC96_house4_l96_tm_heating_system_type
@@ -29130,6 +29610,7 @@ values
     GLD/M1_ADC96_house4_l96_tm_air_temperature
     GLD/M1_ADC96_house4_l96_tm_mass_temperature
     GLD/M1_ADC96_house4_l96_tm_thermostat_mode
+    GLD/M1_ADC96_house4_l96_tm_is_COOL_on
     GLD/M1_ADC96_house5_l96_tm_mass_heat_coeff
     GLD/M1_ADC96_house5_l96_tm_UA
     GLD/M1_ADC96_house5_l96_tm_heating_system_type
@@ -29155,6 +29636,7 @@ values
     GLD/M1_ADC96_house5_l96_tm_air_temperature
     GLD/M1_ADC96_house5_l96_tm_mass_temperature
     GLD/M1_ADC96_house5_l96_tm_thermostat_mode
+    GLD/M1_ADC96_house5_l96_tm_is_COOL_on
     GLD/M1_ADC96_house6_l96_tm_mass_heat_coeff
     GLD/M1_ADC96_house6_l96_tm_UA
     GLD/M1_ADC96_house6_l96_tm_heating_system_type
@@ -29180,6 +29662,7 @@ values
     GLD/M1_ADC96_house6_l96_tm_air_temperature
     GLD/M1_ADC96_house6_l96_tm_mass_temperature
     GLD/M1_ADC96_house6_l96_tm_thermostat_mode
+    GLD/M1_ADC96_house6_l96_tm_is_COOL_on
     GLD/M1_ADC96_house1_wh_l96_tm_heat_mode
     GLD/M1_ADC96_house1_wh_l96_tm_tank_volume
     GLD/M1_ADC96_house1_wh_l96_tm_tank_height
@@ -29649,6 +30132,7 @@ values
     GLD/M1_ADCNONE_house0_l1_tm_air_temperature
     GLD/M1_ADCNONE_house0_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house0_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house0_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house1_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house1_l1_tm_UA
     GLD/M1_ADCNONE_house1_l1_tm_heating_system_type
@@ -29674,6 +30158,7 @@ values
     GLD/M1_ADCNONE_house1_l1_tm_air_temperature
     GLD/M1_ADCNONE_house1_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house1_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house1_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house2_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house2_l1_tm_UA
     GLD/M1_ADCNONE_house2_l1_tm_heating_system_type
@@ -29699,6 +30184,7 @@ values
     GLD/M1_ADCNONE_house2_l1_tm_air_temperature
     GLD/M1_ADCNONE_house2_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house2_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house2_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house3_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house3_l1_tm_UA
     GLD/M1_ADCNONE_house3_l1_tm_heating_system_type
@@ -29724,6 +30210,7 @@ values
     GLD/M1_ADCNONE_house3_l1_tm_air_temperature
     GLD/M1_ADCNONE_house3_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house3_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house3_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house4_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house4_l1_tm_UA
     GLD/M1_ADCNONE_house4_l1_tm_heating_system_type
@@ -29749,6 +30236,7 @@ values
     GLD/M1_ADCNONE_house4_l1_tm_air_temperature
     GLD/M1_ADCNONE_house4_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house4_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house4_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house5_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house5_l1_tm_UA
     GLD/M1_ADCNONE_house5_l1_tm_heating_system_type
@@ -29774,6 +30262,7 @@ values
     GLD/M1_ADCNONE_house5_l1_tm_air_temperature
     GLD/M1_ADCNONE_house5_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house5_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house5_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house6_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house6_l1_tm_UA
     GLD/M1_ADCNONE_house6_l1_tm_heating_system_type
@@ -29799,6 +30288,7 @@ values
     GLD/M1_ADCNONE_house6_l1_tm_air_temperature
     GLD/M1_ADCNONE_house6_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house6_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house6_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house7_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house7_l1_tm_UA
     GLD/M1_ADCNONE_house7_l1_tm_heating_system_type
@@ -29824,6 +30314,7 @@ values
     GLD/M1_ADCNONE_house7_l1_tm_air_temperature
     GLD/M1_ADCNONE_house7_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house7_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house7_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house8_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house8_l1_tm_UA
     GLD/M1_ADCNONE_house8_l1_tm_heating_system_type
@@ -29849,6 +30340,7 @@ values
     GLD/M1_ADCNONE_house8_l1_tm_air_temperature
     GLD/M1_ADCNONE_house8_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house8_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house8_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house9_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house9_l1_tm_UA
     GLD/M1_ADCNONE_house9_l1_tm_heating_system_type
@@ -29874,6 +30366,7 @@ values
     GLD/M1_ADCNONE_house9_l1_tm_air_temperature
     GLD/M1_ADCNONE_house9_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house9_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house9_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house10_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house10_l1_tm_UA
     GLD/M1_ADCNONE_house10_l1_tm_heating_system_type
@@ -29899,6 +30392,7 @@ values
     GLD/M1_ADCNONE_house10_l1_tm_air_temperature
     GLD/M1_ADCNONE_house10_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house10_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house10_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house11_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house11_l1_tm_UA
     GLD/M1_ADCNONE_house11_l1_tm_heating_system_type
@@ -29924,6 +30418,7 @@ values
     GLD/M1_ADCNONE_house11_l1_tm_air_temperature
     GLD/M1_ADCNONE_house11_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house11_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house11_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house13_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house13_l1_tm_UA
     GLD/M1_ADCNONE_house13_l1_tm_heating_system_type
@@ -29949,6 +30444,7 @@ values
     GLD/M1_ADCNONE_house13_l1_tm_air_temperature
     GLD/M1_ADCNONE_house13_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house13_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house13_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house14_l1_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house14_l1_tm_UA
     GLD/M1_ADCNONE_house14_l1_tm_heating_system_type
@@ -29974,6 +30470,7 @@ values
     GLD/M1_ADCNONE_house14_l1_tm_air_temperature
     GLD/M1_ADCNONE_house14_l1_tm_mass_temperature
     GLD/M1_ADCNONE_house14_l1_tm_thermostat_mode
+    GLD/M1_ADCNONE_house14_l1_tm_is_COOL_on
     GLD/M1_ADCNONE_house0_l7_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house0_l7_tm_UA
     GLD/M1_ADCNONE_house0_l7_tm_heating_system_type
@@ -29999,6 +30496,7 @@ values
     GLD/M1_ADCNONE_house0_l7_tm_air_temperature
     GLD/M1_ADCNONE_house0_l7_tm_mass_temperature
     GLD/M1_ADCNONE_house0_l7_tm_thermostat_mode
+    GLD/M1_ADCNONE_house0_l7_tm_is_COOL_on
     GLD/M1_ADCNONE_house1_l7_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house1_l7_tm_UA
     GLD/M1_ADCNONE_house1_l7_tm_heating_system_type
@@ -30024,6 +30522,7 @@ values
     GLD/M1_ADCNONE_house1_l7_tm_air_temperature
     GLD/M1_ADCNONE_house1_l7_tm_mass_temperature
     GLD/M1_ADCNONE_house1_l7_tm_thermostat_mode
+    GLD/M1_ADCNONE_house1_l7_tm_is_COOL_on
     GLD/M1_ADCNONE_house2_l7_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house2_l7_tm_UA
     GLD/M1_ADCNONE_house2_l7_tm_heating_system_type
@@ -30049,6 +30548,7 @@ values
     GLD/M1_ADCNONE_house2_l7_tm_air_temperature
     GLD/M1_ADCNONE_house2_l7_tm_mass_temperature
     GLD/M1_ADCNONE_house2_l7_tm_thermostat_mode
+    GLD/M1_ADCNONE_house2_l7_tm_is_COOL_on
     GLD/M1_ADCNONE_house3_l7_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house3_l7_tm_UA
     GLD/M1_ADCNONE_house3_l7_tm_heating_system_type
@@ -30074,6 +30574,7 @@ values
     GLD/M1_ADCNONE_house3_l7_tm_air_temperature
     GLD/M1_ADCNONE_house3_l7_tm_mass_temperature
     GLD/M1_ADCNONE_house3_l7_tm_thermostat_mode
+    GLD/M1_ADCNONE_house3_l7_tm_is_COOL_on
     GLD/M1_ADCNONE_house4_l7_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house4_l7_tm_UA
     GLD/M1_ADCNONE_house4_l7_tm_heating_system_type
@@ -30099,6 +30600,7 @@ values
     GLD/M1_ADCNONE_house4_l7_tm_air_temperature
     GLD/M1_ADCNONE_house4_l7_tm_mass_temperature
     GLD/M1_ADCNONE_house4_l7_tm_thermostat_mode
+    GLD/M1_ADCNONE_house4_l7_tm_is_COOL_on
     GLD/M1_ADCNONE_house5_l7_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house5_l7_tm_UA
     GLD/M1_ADCNONE_house5_l7_tm_heating_system_type
@@ -30124,6 +30626,7 @@ values
     GLD/M1_ADCNONE_house5_l7_tm_air_temperature
     GLD/M1_ADCNONE_house5_l7_tm_mass_temperature
     GLD/M1_ADCNONE_house5_l7_tm_thermostat_mode
+    GLD/M1_ADCNONE_house5_l7_tm_is_COOL_on
     GLD/M1_ADCNONE_house6_l7_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house6_l7_tm_UA
     GLD/M1_ADCNONE_house6_l7_tm_heating_system_type
@@ -30149,6 +30652,7 @@ values
     GLD/M1_ADCNONE_house6_l7_tm_air_temperature
     GLD/M1_ADCNONE_house6_l7_tm_mass_temperature
     GLD/M1_ADCNONE_house6_l7_tm_thermostat_mode
+    GLD/M1_ADCNONE_house6_l7_tm_is_COOL_on
     GLD/M1_ADCNONE_house0_l86_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house0_l86_tm_UA
     GLD/M1_ADCNONE_house0_l86_tm_heating_system_type
@@ -30174,6 +30678,7 @@ values
     GLD/M1_ADCNONE_house0_l86_tm_air_temperature
     GLD/M1_ADCNONE_house0_l86_tm_mass_temperature
     GLD/M1_ADCNONE_house0_l86_tm_thermostat_mode
+    GLD/M1_ADCNONE_house0_l86_tm_is_COOL_on
     GLD/M1_ADCNONE_house1_l86_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house1_l86_tm_UA
     GLD/M1_ADCNONE_house1_l86_tm_heating_system_type
@@ -30199,6 +30704,7 @@ values
     GLD/M1_ADCNONE_house1_l86_tm_air_temperature
     GLD/M1_ADCNONE_house1_l86_tm_mass_temperature
     GLD/M1_ADCNONE_house1_l86_tm_thermostat_mode
+    GLD/M1_ADCNONE_house1_l86_tm_is_COOL_on
     GLD/M1_ADCNONE_house2_l86_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house2_l86_tm_UA
     GLD/M1_ADCNONE_house2_l86_tm_heating_system_type
@@ -30224,6 +30730,7 @@ values
     GLD/M1_ADCNONE_house2_l86_tm_air_temperature
     GLD/M1_ADCNONE_house2_l86_tm_mass_temperature
     GLD/M1_ADCNONE_house2_l86_tm_thermostat_mode
+    GLD/M1_ADCNONE_house2_l86_tm_is_COOL_on
     GLD/M1_ADCNONE_house3_l86_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house3_l86_tm_UA
     GLD/M1_ADCNONE_house3_l86_tm_heating_system_type
@@ -30249,6 +30756,7 @@ values
     GLD/M1_ADCNONE_house3_l86_tm_air_temperature
     GLD/M1_ADCNONE_house3_l86_tm_mass_temperature
     GLD/M1_ADCNONE_house3_l86_tm_thermostat_mode
+    GLD/M1_ADCNONE_house3_l86_tm_is_COOL_on
     GLD/M1_ADCNONE_house4_l86_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house4_l86_tm_UA
     GLD/M1_ADCNONE_house4_l86_tm_heating_system_type
@@ -30274,6 +30782,7 @@ values
     GLD/M1_ADCNONE_house4_l86_tm_air_temperature
     GLD/M1_ADCNONE_house4_l86_tm_mass_temperature
     GLD/M1_ADCNONE_house4_l86_tm_thermostat_mode
+    GLD/M1_ADCNONE_house4_l86_tm_is_COOL_on
     GLD/M1_ADCNONE_house5_l86_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house5_l86_tm_UA
     GLD/M1_ADCNONE_house5_l86_tm_heating_system_type
@@ -30299,6 +30808,7 @@ values
     GLD/M1_ADCNONE_house5_l86_tm_air_temperature
     GLD/M1_ADCNONE_house5_l86_tm_mass_temperature
     GLD/M1_ADCNONE_house5_l86_tm_thermostat_mode
+    GLD/M1_ADCNONE_house5_l86_tm_is_COOL_on
     GLD/M1_ADCNONE_house6_l86_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house6_l86_tm_UA
     GLD/M1_ADCNONE_house6_l86_tm_heating_system_type
@@ -30324,6 +30834,7 @@ values
     GLD/M1_ADCNONE_house6_l86_tm_air_temperature
     GLD/M1_ADCNONE_house6_l86_tm_mass_temperature
     GLD/M1_ADCNONE_house6_l86_tm_thermostat_mode
+    GLD/M1_ADCNONE_house6_l86_tm_is_COOL_on
     GLD/M1_ADCNONE_house0_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house0_l87_tm_UA
     GLD/M1_ADCNONE_house0_l87_tm_heating_system_type
@@ -30349,6 +30860,7 @@ values
     GLD/M1_ADCNONE_house0_l87_tm_air_temperature
     GLD/M1_ADCNONE_house0_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house0_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house0_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house1_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house1_l87_tm_UA
     GLD/M1_ADCNONE_house1_l87_tm_heating_system_type
@@ -30374,6 +30886,7 @@ values
     GLD/M1_ADCNONE_house1_l87_tm_air_temperature
     GLD/M1_ADCNONE_house1_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house1_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house1_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house2_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house2_l87_tm_UA
     GLD/M1_ADCNONE_house2_l87_tm_heating_system_type
@@ -30399,6 +30912,7 @@ values
     GLD/M1_ADCNONE_house2_l87_tm_air_temperature
     GLD/M1_ADCNONE_house2_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house2_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house2_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house3_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house3_l87_tm_UA
     GLD/M1_ADCNONE_house3_l87_tm_heating_system_type
@@ -30424,6 +30938,7 @@ values
     GLD/M1_ADCNONE_house3_l87_tm_air_temperature
     GLD/M1_ADCNONE_house3_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house3_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house3_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house4_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house4_l87_tm_UA
     GLD/M1_ADCNONE_house4_l87_tm_heating_system_type
@@ -30449,6 +30964,7 @@ values
     GLD/M1_ADCNONE_house4_l87_tm_air_temperature
     GLD/M1_ADCNONE_house4_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house4_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house4_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house5_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house5_l87_tm_UA
     GLD/M1_ADCNONE_house5_l87_tm_heating_system_type
@@ -30474,6 +30990,7 @@ values
     GLD/M1_ADCNONE_house5_l87_tm_air_temperature
     GLD/M1_ADCNONE_house5_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house5_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house5_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house6_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house6_l87_tm_UA
     GLD/M1_ADCNONE_house6_l87_tm_heating_system_type
@@ -30499,6 +31016,7 @@ values
     GLD/M1_ADCNONE_house6_l87_tm_air_temperature
     GLD/M1_ADCNONE_house6_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house6_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house6_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house7_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house7_l87_tm_UA
     GLD/M1_ADCNONE_house7_l87_tm_heating_system_type
@@ -30524,6 +31042,7 @@ values
     GLD/M1_ADCNONE_house7_l87_tm_air_temperature
     GLD/M1_ADCNONE_house7_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house7_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house7_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house8_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house8_l87_tm_UA
     GLD/M1_ADCNONE_house8_l87_tm_heating_system_type
@@ -30549,6 +31068,7 @@ values
     GLD/M1_ADCNONE_house8_l87_tm_air_temperature
     GLD/M1_ADCNONE_house8_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house8_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house8_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house9_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house9_l87_tm_UA
     GLD/M1_ADCNONE_house9_l87_tm_heating_system_type
@@ -30574,6 +31094,7 @@ values
     GLD/M1_ADCNONE_house9_l87_tm_air_temperature
     GLD/M1_ADCNONE_house9_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house9_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house9_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house10_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house10_l87_tm_UA
     GLD/M1_ADCNONE_house10_l87_tm_heating_system_type
@@ -30599,6 +31120,7 @@ values
     GLD/M1_ADCNONE_house10_l87_tm_air_temperature
     GLD/M1_ADCNONE_house10_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house10_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house10_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house11_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house11_l87_tm_UA
     GLD/M1_ADCNONE_house11_l87_tm_heating_system_type
@@ -30624,6 +31146,7 @@ values
     GLD/M1_ADCNONE_house11_l87_tm_air_temperature
     GLD/M1_ADCNONE_house11_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house11_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house11_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house12_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house12_l87_tm_UA
     GLD/M1_ADCNONE_house12_l87_tm_heating_system_type
@@ -30649,6 +31172,7 @@ values
     GLD/M1_ADCNONE_house12_l87_tm_air_temperature
     GLD/M1_ADCNONE_house12_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house12_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house12_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house13_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house13_l87_tm_UA
     GLD/M1_ADCNONE_house13_l87_tm_heating_system_type
@@ -30674,6 +31198,7 @@ values
     GLD/M1_ADCNONE_house13_l87_tm_air_temperature
     GLD/M1_ADCNONE_house13_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house13_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house13_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house14_l87_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house14_l87_tm_UA
     GLD/M1_ADCNONE_house14_l87_tm_heating_system_type
@@ -30699,6 +31224,7 @@ values
     GLD/M1_ADCNONE_house14_l87_tm_air_temperature
     GLD/M1_ADCNONE_house14_l87_tm_mass_temperature
     GLD/M1_ADCNONE_house14_l87_tm_thermostat_mode
+    GLD/M1_ADCNONE_house14_l87_tm_is_COOL_on
     GLD/M1_ADCNONE_house0_l95_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house0_l95_tm_UA
     GLD/M1_ADCNONE_house0_l95_tm_heating_system_type
@@ -30724,6 +31250,7 @@ values
     GLD/M1_ADCNONE_house0_l95_tm_air_temperature
     GLD/M1_ADCNONE_house0_l95_tm_mass_temperature
     GLD/M1_ADCNONE_house0_l95_tm_thermostat_mode
+    GLD/M1_ADCNONE_house0_l95_tm_is_COOL_on
     GLD/M1_ADCNONE_house1_l95_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house1_l95_tm_UA
     GLD/M1_ADCNONE_house1_l95_tm_heating_system_type
@@ -30749,6 +31276,7 @@ values
     GLD/M1_ADCNONE_house1_l95_tm_air_temperature
     GLD/M1_ADCNONE_house1_l95_tm_mass_temperature
     GLD/M1_ADCNONE_house1_l95_tm_thermostat_mode
+    GLD/M1_ADCNONE_house1_l95_tm_is_COOL_on
     GLD/M1_ADCNONE_house2_l95_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house2_l95_tm_UA
     GLD/M1_ADCNONE_house2_l95_tm_heating_system_type
@@ -30774,6 +31302,7 @@ values
     GLD/M1_ADCNONE_house2_l95_tm_air_temperature
     GLD/M1_ADCNONE_house2_l95_tm_mass_temperature
     GLD/M1_ADCNONE_house2_l95_tm_thermostat_mode
+    GLD/M1_ADCNONE_house2_l95_tm_is_COOL_on
     GLD/M1_ADCNONE_house3_l95_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house3_l95_tm_UA
     GLD/M1_ADCNONE_house3_l95_tm_heating_system_type
@@ -30799,6 +31328,7 @@ values
     GLD/M1_ADCNONE_house3_l95_tm_air_temperature
     GLD/M1_ADCNONE_house3_l95_tm_mass_temperature
     GLD/M1_ADCNONE_house3_l95_tm_thermostat_mode
+    GLD/M1_ADCNONE_house3_l95_tm_is_COOL_on
     GLD/M1_ADCNONE_house4_l95_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house4_l95_tm_UA
     GLD/M1_ADCNONE_house4_l95_tm_heating_system_type
@@ -30824,6 +31354,7 @@ values
     GLD/M1_ADCNONE_house4_l95_tm_air_temperature
     GLD/M1_ADCNONE_house4_l95_tm_mass_temperature
     GLD/M1_ADCNONE_house4_l95_tm_thermostat_mode
+    GLD/M1_ADCNONE_house4_l95_tm_is_COOL_on
     GLD/M1_ADCNONE_house5_l95_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house5_l95_tm_UA
     GLD/M1_ADCNONE_house5_l95_tm_heating_system_type
@@ -30849,6 +31380,7 @@ values
     GLD/M1_ADCNONE_house5_l95_tm_air_temperature
     GLD/M1_ADCNONE_house5_l95_tm_mass_temperature
     GLD/M1_ADCNONE_house5_l95_tm_thermostat_mode
+    GLD/M1_ADCNONE_house5_l95_tm_is_COOL_on
     GLD/M1_ADCNONE_house6_l95_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house6_l95_tm_UA
     GLD/M1_ADCNONE_house6_l95_tm_heating_system_type
@@ -30874,6 +31406,7 @@ values
     GLD/M1_ADCNONE_house6_l95_tm_air_temperature
     GLD/M1_ADCNONE_house6_l95_tm_mass_temperature
     GLD/M1_ADCNONE_house6_l95_tm_thermostat_mode
+    GLD/M1_ADCNONE_house6_l95_tm_is_COOL_on
     GLD/M1_ADCNONE_house0_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house0_l98_tm_UA
     GLD/M1_ADCNONE_house0_l98_tm_heating_system_type
@@ -30899,6 +31432,7 @@ values
     GLD/M1_ADCNONE_house0_l98_tm_air_temperature
     GLD/M1_ADCNONE_house0_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house0_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house0_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house1_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house1_l98_tm_UA
     GLD/M1_ADCNONE_house1_l98_tm_heating_system_type
@@ -30924,6 +31458,7 @@ values
     GLD/M1_ADCNONE_house1_l98_tm_air_temperature
     GLD/M1_ADCNONE_house1_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house1_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house1_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house2_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house2_l98_tm_UA
     GLD/M1_ADCNONE_house2_l98_tm_heating_system_type
@@ -30949,6 +31484,7 @@ values
     GLD/M1_ADCNONE_house2_l98_tm_air_temperature
     GLD/M1_ADCNONE_house2_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house2_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house2_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house3_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house3_l98_tm_UA
     GLD/M1_ADCNONE_house3_l98_tm_heating_system_type
@@ -30974,6 +31510,7 @@ values
     GLD/M1_ADCNONE_house3_l98_tm_air_temperature
     GLD/M1_ADCNONE_house3_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house3_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house3_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house4_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house4_l98_tm_UA
     GLD/M1_ADCNONE_house4_l98_tm_heating_system_type
@@ -30999,6 +31536,7 @@ values
     GLD/M1_ADCNONE_house4_l98_tm_air_temperature
     GLD/M1_ADCNONE_house4_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house4_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house4_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house5_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house5_l98_tm_UA
     GLD/M1_ADCNONE_house5_l98_tm_heating_system_type
@@ -31024,6 +31562,7 @@ values
     GLD/M1_ADCNONE_house5_l98_tm_air_temperature
     GLD/M1_ADCNONE_house5_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house5_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house5_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house6_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house6_l98_tm_UA
     GLD/M1_ADCNONE_house6_l98_tm_heating_system_type
@@ -31049,6 +31588,7 @@ values
     GLD/M1_ADCNONE_house6_l98_tm_air_temperature
     GLD/M1_ADCNONE_house6_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house6_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house6_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house7_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house7_l98_tm_UA
     GLD/M1_ADCNONE_house7_l98_tm_heating_system_type
@@ -31074,6 +31614,7 @@ values
     GLD/M1_ADCNONE_house7_l98_tm_air_temperature
     GLD/M1_ADCNONE_house7_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house7_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house7_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house8_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house8_l98_tm_UA
     GLD/M1_ADCNONE_house8_l98_tm_heating_system_type
@@ -31099,6 +31640,7 @@ values
     GLD/M1_ADCNONE_house8_l98_tm_air_temperature
     GLD/M1_ADCNONE_house8_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house8_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house8_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house9_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house9_l98_tm_UA
     GLD/M1_ADCNONE_house9_l98_tm_heating_system_type
@@ -31124,6 +31666,7 @@ values
     GLD/M1_ADCNONE_house9_l98_tm_air_temperature
     GLD/M1_ADCNONE_house9_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house9_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house9_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house10_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house10_l98_tm_UA
     GLD/M1_ADCNONE_house10_l98_tm_heating_system_type
@@ -31149,6 +31692,7 @@ values
     GLD/M1_ADCNONE_house10_l98_tm_air_temperature
     GLD/M1_ADCNONE_house10_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house10_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house10_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house11_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house11_l98_tm_UA
     GLD/M1_ADCNONE_house11_l98_tm_heating_system_type
@@ -31174,6 +31718,7 @@ values
     GLD/M1_ADCNONE_house11_l98_tm_air_temperature
     GLD/M1_ADCNONE_house11_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house11_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house11_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house12_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house12_l98_tm_UA
     GLD/M1_ADCNONE_house12_l98_tm_heating_system_type
@@ -31199,6 +31744,7 @@ values
     GLD/M1_ADCNONE_house12_l98_tm_air_temperature
     GLD/M1_ADCNONE_house12_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house12_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house12_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house13_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house13_l98_tm_UA
     GLD/M1_ADCNONE_house13_l98_tm_heating_system_type
@@ -31224,6 +31770,7 @@ values
     GLD/M1_ADCNONE_house13_l98_tm_air_temperature
     GLD/M1_ADCNONE_house13_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house13_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house13_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house14_l98_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house14_l98_tm_UA
     GLD/M1_ADCNONE_house14_l98_tm_heating_system_type
@@ -31249,6 +31796,7 @@ values
     GLD/M1_ADCNONE_house14_l98_tm_air_temperature
     GLD/M1_ADCNONE_house14_l98_tm_mass_temperature
     GLD/M1_ADCNONE_house14_l98_tm_thermostat_mode
+    GLD/M1_ADCNONE_house14_l98_tm_is_COOL_on
     GLD/M1_ADCNONE_house0_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house0_l99_tm_UA
     GLD/M1_ADCNONE_house0_l99_tm_heating_system_type
@@ -31274,6 +31822,7 @@ values
     GLD/M1_ADCNONE_house0_l99_tm_air_temperature
     GLD/M1_ADCNONE_house0_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house0_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house0_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house1_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house1_l99_tm_UA
     GLD/M1_ADCNONE_house1_l99_tm_heating_system_type
@@ -31299,6 +31848,7 @@ values
     GLD/M1_ADCNONE_house1_l99_tm_air_temperature
     GLD/M1_ADCNONE_house1_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house1_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house1_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house2_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house2_l99_tm_UA
     GLD/M1_ADCNONE_house2_l99_tm_heating_system_type
@@ -31324,6 +31874,7 @@ values
     GLD/M1_ADCNONE_house2_l99_tm_air_temperature
     GLD/M1_ADCNONE_house2_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house2_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house2_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house3_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house3_l99_tm_UA
     GLD/M1_ADCNONE_house3_l99_tm_heating_system_type
@@ -31349,6 +31900,7 @@ values
     GLD/M1_ADCNONE_house3_l99_tm_air_temperature
     GLD/M1_ADCNONE_house3_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house3_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house3_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house4_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house4_l99_tm_UA
     GLD/M1_ADCNONE_house4_l99_tm_heating_system_type
@@ -31374,6 +31926,7 @@ values
     GLD/M1_ADCNONE_house4_l99_tm_air_temperature
     GLD/M1_ADCNONE_house4_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house4_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house4_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house5_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house5_l99_tm_UA
     GLD/M1_ADCNONE_house5_l99_tm_heating_system_type
@@ -31399,6 +31952,7 @@ values
     GLD/M1_ADCNONE_house5_l99_tm_air_temperature
     GLD/M1_ADCNONE_house5_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house5_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house5_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house6_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house6_l99_tm_UA
     GLD/M1_ADCNONE_house6_l99_tm_heating_system_type
@@ -31424,6 +31978,7 @@ values
     GLD/M1_ADCNONE_house6_l99_tm_air_temperature
     GLD/M1_ADCNONE_house6_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house6_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house6_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house7_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house7_l99_tm_UA
     GLD/M1_ADCNONE_house7_l99_tm_heating_system_type
@@ -31449,6 +32004,7 @@ values
     GLD/M1_ADCNONE_house7_l99_tm_air_temperature
     GLD/M1_ADCNONE_house7_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house7_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house7_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house8_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house8_l99_tm_UA
     GLD/M1_ADCNONE_house8_l99_tm_heating_system_type
@@ -31474,6 +32030,7 @@ values
     GLD/M1_ADCNONE_house8_l99_tm_air_temperature
     GLD/M1_ADCNONE_house8_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house8_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house8_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house9_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house9_l99_tm_UA
     GLD/M1_ADCNONE_house9_l99_tm_heating_system_type
@@ -31499,6 +32056,7 @@ values
     GLD/M1_ADCNONE_house9_l99_tm_air_temperature
     GLD/M1_ADCNONE_house9_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house9_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house9_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house10_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house10_l99_tm_UA
     GLD/M1_ADCNONE_house10_l99_tm_heating_system_type
@@ -31524,6 +32082,7 @@ values
     GLD/M1_ADCNONE_house10_l99_tm_air_temperature
     GLD/M1_ADCNONE_house10_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house10_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house10_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house11_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house11_l99_tm_UA
     GLD/M1_ADCNONE_house11_l99_tm_heating_system_type
@@ -31549,6 +32108,7 @@ values
     GLD/M1_ADCNONE_house11_l99_tm_air_temperature
     GLD/M1_ADCNONE_house11_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house11_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house11_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house12_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house12_l99_tm_UA
     GLD/M1_ADCNONE_house12_l99_tm_heating_system_type
@@ -31574,6 +32134,7 @@ values
     GLD/M1_ADCNONE_house12_l99_tm_air_temperature
     GLD/M1_ADCNONE_house12_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house12_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house12_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house13_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house13_l99_tm_UA
     GLD/M1_ADCNONE_house13_l99_tm_heating_system_type
@@ -31599,6 +32160,7 @@ values
     GLD/M1_ADCNONE_house13_l99_tm_air_temperature
     GLD/M1_ADCNONE_house13_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house13_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house13_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house14_l99_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house14_l99_tm_UA
     GLD/M1_ADCNONE_house14_l99_tm_heating_system_type
@@ -31624,6 +32186,7 @@ values
     GLD/M1_ADCNONE_house14_l99_tm_air_temperature
     GLD/M1_ADCNONE_house14_l99_tm_mass_temperature
     GLD/M1_ADCNONE_house14_l99_tm_thermostat_mode
+    GLD/M1_ADCNONE_house14_l99_tm_is_COOL_on
     GLD/M1_ADCNONE_house0_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house0_l100_tm_UA
     GLD/M1_ADCNONE_house0_l100_tm_heating_system_type
@@ -31649,6 +32212,7 @@ values
     GLD/M1_ADCNONE_house0_l100_tm_air_temperature
     GLD/M1_ADCNONE_house0_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house0_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house0_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house1_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house1_l100_tm_UA
     GLD/M1_ADCNONE_house1_l100_tm_heating_system_type
@@ -31674,6 +32238,7 @@ values
     GLD/M1_ADCNONE_house1_l100_tm_air_temperature
     GLD/M1_ADCNONE_house1_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house1_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house1_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house2_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house2_l100_tm_UA
     GLD/M1_ADCNONE_house2_l100_tm_heating_system_type
@@ -31699,6 +32264,7 @@ values
     GLD/M1_ADCNONE_house2_l100_tm_air_temperature
     GLD/M1_ADCNONE_house2_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house2_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house2_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house3_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house3_l100_tm_UA
     GLD/M1_ADCNONE_house3_l100_tm_heating_system_type
@@ -31724,6 +32290,7 @@ values
     GLD/M1_ADCNONE_house3_l100_tm_air_temperature
     GLD/M1_ADCNONE_house3_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house3_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house3_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house4_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house4_l100_tm_UA
     GLD/M1_ADCNONE_house4_l100_tm_heating_system_type
@@ -31749,6 +32316,7 @@ values
     GLD/M1_ADCNONE_house4_l100_tm_air_temperature
     GLD/M1_ADCNONE_house4_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house4_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house4_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house5_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house5_l100_tm_UA
     GLD/M1_ADCNONE_house5_l100_tm_heating_system_type
@@ -31774,6 +32342,7 @@ values
     GLD/M1_ADCNONE_house5_l100_tm_air_temperature
     GLD/M1_ADCNONE_house5_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house5_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house5_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house6_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house6_l100_tm_UA
     GLD/M1_ADCNONE_house6_l100_tm_heating_system_type
@@ -31799,6 +32368,7 @@ values
     GLD/M1_ADCNONE_house6_l100_tm_air_temperature
     GLD/M1_ADCNONE_house6_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house6_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house6_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house7_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house7_l100_tm_UA
     GLD/M1_ADCNONE_house7_l100_tm_heating_system_type
@@ -31824,6 +32394,7 @@ values
     GLD/M1_ADCNONE_house7_l100_tm_air_temperature
     GLD/M1_ADCNONE_house7_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house7_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house7_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house8_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house8_l100_tm_UA
     GLD/M1_ADCNONE_house8_l100_tm_heating_system_type
@@ -31849,6 +32420,7 @@ values
     GLD/M1_ADCNONE_house8_l100_tm_air_temperature
     GLD/M1_ADCNONE_house8_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house8_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house8_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house9_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house9_l100_tm_UA
     GLD/M1_ADCNONE_house9_l100_tm_heating_system_type
@@ -31874,6 +32446,7 @@ values
     GLD/M1_ADCNONE_house9_l100_tm_air_temperature
     GLD/M1_ADCNONE_house9_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house9_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house9_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house10_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house10_l100_tm_UA
     GLD/M1_ADCNONE_house10_l100_tm_heating_system_type
@@ -31899,6 +32472,7 @@ values
     GLD/M1_ADCNONE_house10_l100_tm_air_temperature
     GLD/M1_ADCNONE_house10_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house10_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house10_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house11_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house11_l100_tm_UA
     GLD/M1_ADCNONE_house11_l100_tm_heating_system_type
@@ -31924,6 +32498,7 @@ values
     GLD/M1_ADCNONE_house11_l100_tm_air_temperature
     GLD/M1_ADCNONE_house11_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house11_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house11_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house12_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house12_l100_tm_UA
     GLD/M1_ADCNONE_house12_l100_tm_heating_system_type
@@ -31949,6 +32524,7 @@ values
     GLD/M1_ADCNONE_house12_l100_tm_air_temperature
     GLD/M1_ADCNONE_house12_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house12_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house12_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_house14_l100_tm_mass_heat_coeff
     GLD/M1_ADCNONE_house14_l100_tm_UA
     GLD/M1_ADCNONE_house14_l100_tm_heating_system_type
@@ -31974,51 +32550,38 @@ values
     GLD/M1_ADCNONE_house14_l100_tm_air_temperature
     GLD/M1_ADCNONE_house14_l100_tm_mass_temperature
     GLD/M1_ADCNONE_house14_l100_tm_thermostat_mode
+    GLD/M1_ADCNONE_house14_l100_tm_is_COOL_on
     GLD/M1_ADCNONE_solar_PVinv_house1_l87_tm_rated_power
-    GLD/M1_ADCNONE_solar_PVinv_house1_l87_tm_latitude
-    GLD/M1_ADCNONE_solar_PVinv_house1_l87_tm_longitude
     GLD/M1_ADCNONE_solar_PVinv_house1_l87_tm_tilt_angle
     GLD/M1_ADCNONE_solar_PVinv_house1_l87_tm_orientation_azimuth
     GLD/M1_ADCNONE_solar_PVinv_house1_l87_tm_VA_Out
     GLD/M1_ADCNONE_PVinv_house1_l87_tm_inverter_efficiency
     GLD/M1_ADCNONE_solar_PVinv_house4_l87_tm_rated_power
-    GLD/M1_ADCNONE_solar_PVinv_house4_l87_tm_latitude
-    GLD/M1_ADCNONE_solar_PVinv_house4_l87_tm_longitude
     GLD/M1_ADCNONE_solar_PVinv_house4_l87_tm_tilt_angle
     GLD/M1_ADCNONE_solar_PVinv_house4_l87_tm_orientation_azimuth
     GLD/M1_ADCNONE_solar_PVinv_house4_l87_tm_VA_Out
     GLD/M1_ADCNONE_PVinv_house4_l87_tm_inverter_efficiency
     GLD/M1_ADCNONE_solar_PVinv_house2_l95_tm_rated_power
-    GLD/M1_ADCNONE_solar_PVinv_house2_l95_tm_latitude
-    GLD/M1_ADCNONE_solar_PVinv_house2_l95_tm_longitude
     GLD/M1_ADCNONE_solar_PVinv_house2_l95_tm_tilt_angle
     GLD/M1_ADCNONE_solar_PVinv_house2_l95_tm_orientation_azimuth
     GLD/M1_ADCNONE_solar_PVinv_house2_l95_tm_VA_Out
     GLD/M1_ADCNONE_PVinv_house2_l95_tm_inverter_efficiency
     GLD/M1_ADCNONE_solar_PVinv_house4_l95_tm_rated_power
-    GLD/M1_ADCNONE_solar_PVinv_house4_l95_tm_latitude
-    GLD/M1_ADCNONE_solar_PVinv_house4_l95_tm_longitude
     GLD/M1_ADCNONE_solar_PVinv_house4_l95_tm_tilt_angle
     GLD/M1_ADCNONE_solar_PVinv_house4_l95_tm_orientation_azimuth
     GLD/M1_ADCNONE_solar_PVinv_house4_l95_tm_VA_Out
     GLD/M1_ADCNONE_PVinv_house4_l95_tm_inverter_efficiency
     GLD/M1_ADCNONE_solar_PVinv_house5_l95_tm_rated_power
-    GLD/M1_ADCNONE_solar_PVinv_house5_l95_tm_latitude
-    GLD/M1_ADCNONE_solar_PVinv_house5_l95_tm_longitude
     GLD/M1_ADCNONE_solar_PVinv_house5_l95_tm_tilt_angle
     GLD/M1_ADCNONE_solar_PVinv_house5_l95_tm_orientation_azimuth
     GLD/M1_ADCNONE_solar_PVinv_house5_l95_tm_VA_Out
     GLD/M1_ADCNONE_PVinv_house5_l95_tm_inverter_efficiency
     GLD/M1_ADCNONE_solar_PVinv_house11_l98_tm_rated_power
-    GLD/M1_ADCNONE_solar_PVinv_house11_l98_tm_latitude
-    GLD/M1_ADCNONE_solar_PVinv_house11_l98_tm_longitude
     GLD/M1_ADCNONE_solar_PVinv_house11_l98_tm_tilt_angle
     GLD/M1_ADCNONE_solar_PVinv_house11_l98_tm_orientation_azimuth
     GLD/M1_ADCNONE_solar_PVinv_house11_l98_tm_VA_Out
     GLD/M1_ADCNONE_PVinv_house11_l98_tm_inverter_efficiency
     GLD/M1_ADCNONE_solar_PVinv_house5_l100_tm_rated_power
-    GLD/M1_ADCNONE_solar_PVinv_house5_l100_tm_latitude
-    GLD/M1_ADCNONE_solar_PVinv_house5_l100_tm_longitude
     GLD/M1_ADCNONE_solar_PVinv_house5_l100_tm_tilt_angle
     GLD/M1_ADCNONE_solar_PVinv_house5_l100_tm_orientation_azimuth
     GLD/M1_ADCNONE_solar_PVinv_house5_l100_tm_VA_Out
@@ -32415,3 +32978,4 @@ values
     GLD/M1_ADCNONE_house14_wh_l100_tm_temperature
     GLD/M1_ADCNONE_house14_wh_l100_tm_height
     GLD/M1_ADCNONE_house14_wh_l100_tm_is_waterheater_on
+

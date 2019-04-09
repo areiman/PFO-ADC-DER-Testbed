@@ -16,8 +16,9 @@ def synch(keys,vals):
 	for idx in range(len(keys)):
 		# parse the key
 		key = keys[idx]
-#		print(key)
-		m = re.match('(M[^_]+_ADC[^_]+)_(.+?_tm)_(\S+)',key)
+		print(key)
+		# m = re.match('(M[^_]+_ADC[^_]+)_(.+?_tm)_(\S+)',key)
+		m = re.search('(M[^_]+_ADC[^_]+)_(.+?_tm)_(\S+)', key)
 		adc = m.group(1)
 		der = m.group(2)
 		param = m.group(3)

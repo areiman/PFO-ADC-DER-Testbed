@@ -1,10 +1,12 @@
 # file...... output/IEEE_123_feeder_0_climate.csv
-# date...... Thu May  3 14:06:01 2018
-# user...... gld
+# date...... Thu Apr  4 13:44:11 2019
+# user...... ankit
 # host...... (null)
 # target.... climate 1
 # trigger... (none)
-# interval.. 60
+# interval.. 1
 # limit..... 0
 # timestamp,temperature,humidity
-2013-07-29 00:00:00 PST,+91.042,+0.37
+2013-07-29 14:00:00 PST,+102.922,+0.28
+2013-07-29 14:00:01 PST,+102.922,+0.28
+2013-07-29 14:00:02 PST,+102.922,+0.28

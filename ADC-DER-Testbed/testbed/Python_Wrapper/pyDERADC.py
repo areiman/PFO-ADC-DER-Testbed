@@ -156,7 +156,7 @@ while time_granted < time_stop:
 					ewh_on_ctr += 1
 		print(ewh_state)
 		print(str(ewh_on_ctr)+" of "+str(ewh_ctr)+\
-			" or "+str(ewh_on_ctr/ewh_ctr*100)+"% of ACs are on")
+			" or "+str(ewh_on_ctr/ewh_ctr*100)+"% of EWHs are on")
 		# determine and report the number of ACs on
 		ac_ctr = 0
 		ac_on_ctr = 0
