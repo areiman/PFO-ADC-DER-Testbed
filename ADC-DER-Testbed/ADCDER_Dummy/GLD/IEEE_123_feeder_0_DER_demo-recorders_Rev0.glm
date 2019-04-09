@@ -14,21 +14,16 @@ clock {
 #set suppress_repeat_messages=TRUE
 
 module market;
-
 module tape;
-
 module climate;
-
 module residential {
 	implicit_enduses NONE;
 };
-
 module powerflow {
 	solver_method FBS;
 	line_limits TRUE;
 	default_maximum_voltage_error 1e-4;
 };
-
 module generators;
 module connection {
     security STANDARD;
@@ -38,7 +33,7 @@ module connection {
 object fncs_msg {
 	 name GLD;
 	 option "transport:hostname localhost, port 5570";
-	 configure fncs_configure_Mar7.cfg;
+	 configure fncs_configure_test.cfg;
 }
 
 object climate {
@@ -109940,221 +109935,221 @@ object battery {
 	battery_type LI_ION;
 }
 
-//object group_recorder {
-//	name recorder_wh_heat_mode;
-//	group "class=waterheater";
-//	property heat_mode;
-//	interval 3600;
-//	limit 1;
-//	file recorder_wh_heat_mode.csv;
-//}
+object group_recorder {
+	name recorder_wh_heat_mode;
+	group "class=waterheater";
+	property heat_mode;
+	interval 3600;
+	limit 1;
+	file recorder_wh_heat_mode.csv;
+}
 
-//object group_recorder {
-//	name recorder_wh_tank_volume;
-//	group "class=waterheater";
-//	property tank_volume;
-//	interval 3600;
-//	limit 1;
-//	file recorder_wh_tank_volume.csv;
-//}
+object group_recorder {
+	name recorder_wh_tank_volume;
+	group "class=waterheater";
+	property tank_volume;
+	interval 3600;
+	limit 1;
+	file recorder_wh_tank_volume.csv;
+}
 
-//object group_recorder {
-//	name recorder_wh_tank_height;
-//	group "class=waterheater";
-//	property tank_height;
-//	interval 3600;
-//	limit 1;
-//	file recorder_wh_tank_height.csv;
-//}
+object group_recorder {
+	name recorder_wh_tank_height;
+	group "class=waterheater";
+	property tank_height;
+	interval 3600;
+	limit 1;
+	file recorder_wh_tank_height.csv;
+}
 
-//object group_recorder {
-//	name recorder_wh_heating_element_capacity;
-//	group "class=waterheater";
-//	property heating_element_capacity;
-//	interval 3600;
-//	limit 1;
-//	file recorder_wh_heating_element_capacity.csv;
-//}
+object group_recorder {
+	name recorder_wh_heating_element_capacity;
+	group "class=waterheater";
+	property heating_element_capacity;
+	interval 3600;
+	limit 1;
+	file recorder_wh_heating_element_capacity.csv;
+}
 
-//object group_recorder {
-//	name recorder_wh_thermostat_deadband;
-//	group "class=waterheater";
-//	property thermostat_deadband;
-//	interval 3600;
-//	limit 1;
-//	file recorder_wh_thermostat_deadband.csv;
-//}
+object group_recorder {
+	name recorder_wh_thermostat_deadband;
+	group "class=waterheater";
+	property thermostat_deadband;
+	interval 3600;
+	limit 1;
+	file recorder_wh_thermostat_deadband.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_air_heat_capacity;
-//	group "groupid=Residential";
-//	property air_heat_capacity;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_air_heat_capacity.csv;
-//}
+object group_recorder {
+	name recorder_hvac_air_heat_capacity;
+	group "groupid=Residential";
+	property air_heat_capacity;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_air_heat_capacity.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_mass_heat_capacity;
-//	group "groupid=Residential";
-//	property mass_heat_capacity;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_mass_heat_capacity.csv;
-//}
+object group_recorder {
+	name recorder_hvac_mass_heat_capacity;
+	group "groupid=Residential";
+	property mass_heat_capacity;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_mass_heat_capacity.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_mass_heat_coeff;
-//	group "groupid=Residential";
-//	property mass_heat_coeff;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_mass_heat_coeff.csv;
-//}
+object group_recorder {
+	name recorder_hvac_mass_heat_coeff;
+	group "groupid=Residential";
+	property mass_heat_coeff;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_mass_heat_coeff.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_UA;
-//	group "groupid=Residential";
-//	property UA;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_UA.csv;
-//}
+object group_recorder {
+	name recorder_hvac_UA;
+	group "groupid=Residential";
+	property UA;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_UA.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_heating_system_type;
-//	group "groupid=Residential";
-//	property heating_system_type;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_heating_system_type.csv;
-//}
+object group_recorder {
+	name recorder_hvac_heating_system_type;
+	group "groupid=Residential";
+	property heating_system_type;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_heating_system_type.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_cooling_system_type;
-//	group "groupid=Residential";
-//	property cooling_system_type;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_cooling_system_type.csv;
-//}
+object group_recorder {
+	name recorder_hvac_cooling_system_type;
+	group "groupid=Residential";
+	property cooling_system_type;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_cooling_system_type.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_auxiliary_system_type;
-//	group "groupid=Residential";
-//	property auxiliary_system_type;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_auxiliary_system_type.csv;
-//}
+object group_recorder {
+	name recorder_hvac_auxiliary_system_type;
+	group "groupid=Residential";
+	property auxiliary_system_type;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_auxiliary_system_type.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_design_heating_capacity;
-//	group "groupid=Residential";
-//	property design_heating_capacity;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_design_heating_capacity.csv;
-//}
+object group_recorder {
+	name recorder_hvac_design_heating_capacity;
+	group "groupid=Residential";
+	property design_heating_capacity;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_design_heating_capacity.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_design_cooling_capacity;
-//	group "groupid=Residential";
-//	property design_cooling_capacity;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_design_cooling_capacity.csv;
-//}
+object group_recorder {
+	name recorder_hvac_design_cooling_capacity;
+	group "groupid=Residential";
+	property design_cooling_capacity;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_design_cooling_capacity.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_auxiliary_heat_capacity;
-//	group "groupid=Residential";
-//	property auxiliary_heat_capacity;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_auxiliary_heat_capacity.csv;
-//}
+object group_recorder {
+	name recorder_hvac_auxiliary_heat_capacity;
+	group "groupid=Residential";
+	property auxiliary_heat_capacity;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_auxiliary_heat_capacity.csv;
+}
 
-//object group_recorder {
-//	name recorder_hvac_thermostat_deadband;
-//	group "groupid=Residential";
-//	property thermostat_deadband;
-//	interval 3600;
-//	limit 1;
-//	file recorder_hvac_thermostat_deadband.csv;
-//}
+object group_recorder {
+	name recorder_hvac_thermostat_deadband;
+	group "groupid=Residential";
+	property thermostat_deadband;
+	interval 3600;
+	limit 1;
+	file recorder_hvac_thermostat_deadband.csv;
+}
 
-//object group_recorder {
-//	name recorder_batt_rated_power;
-//	group "class=battery";
-//	property rated_power;
-//	interval 3600;
-//	limit 1;
-//	file recorder_batt_rated_power.csv;
-//}
+object group_recorder {
+	name recorder_batt_rated_power;
+	group "class=battery";
+	property rated_power;
+	interval 3600;
+	limit 1;
+	file recorder_batt_rated_power.csv;
+}
 
-//object group_recorder {
-//	name recorder_batt_battery_capacity;
-//	group "class=battery";
-//	property battery_capacity;
-//	interval 3600;
-//	limit 1;
-//	file recorder_batt_battery_capacity.csv;
-//}
+object group_recorder {
+	name recorder_batt_battery_capacity;
+	group "class=battery";
+	property battery_capacity;
+	interval 3600;
+	limit 1;
+	file recorder_batt_battery_capacity.csv;
+}
 
-//object group_recorder {
-//	name recorder_battInv_rated_power;
-//	group "groupid=battery_inverter";
-//	property rated_power;
-//	interval 3600;
-//	limit 1;
-//	file recorder_battInv_rated_power.csv;
-//}
+object group_recorder {
+	name recorder_battInv_rated_power;
+	group "groupid=battery_inverter";
+	property rated_power;
+	interval 3600;
+	limit 1;
+	file recorder_battInv_rated_power.csv;
+}
 
-//object group_recorder {
-//	name recorder_battInv_inverter_efficiency;
-//	group "groupid=battery_inverter";
-//	property inverter_efficiency;
-//	interval 3600;
-//	limit 1;
-//	file recorder_battInv_inverter_efficiency.csv;
-//}
+object group_recorder {
+	name recorder_battInv_inverter_efficiency;
+	group "groupid=battery_inverter";
+	property inverter_efficiency;
+	interval 3600;
+	limit 1;
+	file recorder_battInv_inverter_efficiency.csv;
+}
 
-//object group_recorder {
-//	name recorder_battInv_max_charge_rate;
-//	group "groupid=battery_inverter";
-//	property max_charge_rate;
-//	interval 3600;
-//	limit 1;
-//	file recorder_battInv_max_charge_rate.csv;
-//}
+object group_recorder {
+	name recorder_battInv_max_charge_rate;
+	group "groupid=battery_inverter";
+	property max_charge_rate;
+	interval 3600;
+	limit 1;
+	file recorder_battInv_max_charge_rate.csv;
+}
 
-//object group_recorder {
-//	name recorder_battInv_max_discharge_rate;
-//	group "groupid=battery_inverter";
-//	property max_discharge_rate;
-//	interval 3600;
-//	limit 1;
-//	file recorder_battInv_max_discharge_rate.csv;
-//}
+object group_recorder {
+	name recorder_battInv_max_discharge_rate;
+	group "groupid=battery_inverter";
+	property max_discharge_rate;
+	interval 3600;
+	limit 1;
+	file recorder_battInv_max_discharge_rate.csv;
+}
 
-//object group_recorder {
-//	name recorder_solar_rated_power;
-//	group "class=solar";
-//	property rated_power;
-//	interval 3600;
-//	limit 1;
-//	file recorder_solar_rated_power.csv;
-//}
+object group_recorder {
+	name recorder_solar_rated_power;
+	group "class=solar";
+	property rated_power;
+	interval 3600;
+	limit 1;
+	file recorder_solar_rated_power.csv;
+}
 
-//object group_recorder {
-//	name recorder_solarInv_inverter_efficiency;
-//	group "groupid=PV_inverter";
-//	property inverter_efficiency;
-//	interval 3600;
-//	limit 1;
-//	file recorder_solarInv_inverter_efficiency.csv;
-//}
+object group_recorder {
+	name recorder_solarInv_inverter_efficiency;
+	group "groupid=PV_inverter";
+	property inverter_efficiency;
+	interval 3600;
+	limit 1;
+	file recorder_solarInv_inverter_efficiency.csv;
+}
 
 
 // ----------------------------------------------------------------------------
