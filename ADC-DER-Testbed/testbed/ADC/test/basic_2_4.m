@@ -4,8 +4,6 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 		ac_temp,ac_heat_set,ac_cool_set,ac_deadband, ...
 		ewh_prated,ewh_qrated,ac_prated,ac_qrated, ...
 		batt_prated,batt_qrated,pv_prated,pv_qrated)
-	Popt
-	Qopt
 
 	% Determine total power and usage ratio
 	prated_tot = 0.0;
@@ -29,14 +27,14 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 		pv_prated_tot = pv_prated_tot + pv_prated{ii};
 		pv_qrated_tot = pv_qrated_tot + pv_qrated{ii};
 	end
-	usage = Popt / prated_tot
+	usage = Popt / prated_tot;
 
 	if usage > 1
-		usage = 1
+		usage = 1;
 	end
 
 	if usage < 0
-		usage = 0
+		usage = 0;
 	end
 
 	% UPDATE THE EWH STATE VECTOR
@@ -133,10 +131,10 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	pv_p = zeros(length(pv_prated),1);
 	pv_q = zeros(length(pv_prated),1);
 	for ii = 1:length(pv_prated)
-		pv_prated{ii}
-		pv_qrated{ii}
-		pv_p(ii) = usage * pv_prated{ii}
-		pv_q(ii) = usage * pv_qrated{ii}
+		pv_prated{ii};
+		pv_qrated{ii};
+		pv_p(ii) = usage * pv_prated{ii};
+		pv_q(ii) = usage * pv_qrated{ii};
 	end
 
 

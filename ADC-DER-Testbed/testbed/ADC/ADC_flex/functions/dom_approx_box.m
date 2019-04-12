@@ -1,5 +1,7 @@
 function [F_adc,D_adc,wh_range,ac_range,pv_range,bat_range] = dom_approx_box(varargin)
 
+tic;
+
 syms p q d
 
 disp('in dom_approx_box');
@@ -88,7 +90,7 @@ end
 aggr_dev(1).params.prated = wh_range(1);
 [aggr_dev(1).constr,~,~] = wh_model(aggr_dev(1).params);
 
-disp('done with wh')
+disp('    done with wh')
 for i = 1:length(ac_pop)
     dev_count = dev_count + 1;
     
@@ -125,7 +127,7 @@ aggr_dev(2).params.prated = ac_range(1);
 aggr_dev(2).params.powfac = ac_range(3)/ac_range(1);
 [aggr_dev(2).constr,~,~] = ac_model(aggr_dev(2).params);
 
-disp('done with ac')
+disp('    done with ac')
 for i = 1:length(pv_pop)
     dev_count = dev_count + 1;
     
@@ -162,7 +164,7 @@ aggr_dev(3).params.pgenmax = -pv_range(2);
 aggr_dev(3).params.invcap = pv_range(3);
 [aggr_dev(3).constr,~,~] = pv_model(aggr_dev(3).params);
 
-disp('done with pv');
+disp('    done with pv');
 for i = 1:length(bat_pop)
     dev_count = dev_count + 1;
     
@@ -199,7 +201,7 @@ aggr_dev(4).params.prated = bat_range(1);
 aggr_dev(4).params.invcap = bat_range(3);
 [aggr_dev(4).constr,~,~] = bat_model(aggr_dev(4).params);
 
-disp('done with bat')
+disp('    done with bat')
 %===================================
 % PROBLEM: Polytope Outer
 %===================================
@@ -209,6 +211,8 @@ disp('done with bat')
 all_range = wh_range + ac_range + pv_range + bat_range;
 F_adc = [1 0; -1 0; 0 1; 0 -1];
 D_adc = [all_range(1) -all_range(2) all_range(3) -all_range(4)]';
+
+toc
 
 end
 

@@ -55,7 +55,6 @@ function [Fout_adc,Dout_adc,ewh_range,ac_range,pv_range,batt_range] = ...
 	end
 
 	% call the function
-	[F,D,ewh_range,ac_range,pv_range,batt_range] = dom_approx_box(ewh_pop,ac_pop,pv_pop,batt_pop)
-	Fout_adc = F
-	Dout_adc = D
+	[Fout_adc,Dout_adc,ewh_range,ac_range,pv_range,batt_range] = ...
+		dom_approx_box(ewh_pop,ac_pop,pv_pop,batt_pop);
 
