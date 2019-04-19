@@ -5,6 +5,7 @@ from matlab import double as MATRIX
 
 import random as rand
 from random import gauss
+from random import uniform
 
 from math import sqrt
 
@@ -21,6 +22,13 @@ def oprint(dat,adc,t,o):
 
 def synch(dat):
 	pub_dat = {}
+	PQ_opt_dict = {} #to store OPF emulator outputs
+
+	eng.eval('addpath ../ADC/test', nargout=0)
+	#	eng.hello('you',nargout=0)
+	eng.eval('addpath ../ADC/ADC_flex', nargout=0)
+	eng.eval('addpath ../ADC/ADC_AC', nargout=0)
+	eng.eval('addpath ../ADC/ADC_NREL', nargout=0)
 	
 	# -------------------------------------------------------------------------
 	# ITERATE OVER ADCS
@@ -128,6 +136,7 @@ def synch(dat):
 			Qopt = 0
 		print("Popt is "+str(Popt))
 		print("Qopt is "+str(Qopt))
+		PQ_opt_dict[adc]=[Popt, Qopt]
 
 		# Call the dummy task 2.4 code
 		eng.eval('help basic_2_4',nargout=0)
@@ -212,5 +221,5 @@ def synch(dat):
 				pub_dat[adc][t][o]["inverter.P_Out"] = pv_p[idx][0]
 				pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q[idx][0]
 
-	return pub_dat
+	return pub_dat, PQ_opt_dict
 
