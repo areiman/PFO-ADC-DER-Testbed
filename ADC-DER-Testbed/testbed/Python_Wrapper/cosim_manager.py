@@ -7,10 +7,12 @@ import time
 import fncs_parser
 import sys
 import fncs
+import json
 
 time_stop = int(sys.argv[1])
 time_granted = 0
 op = open (sys.argv[2], "w")
+PQ_opt_dict={} #to store optimal PQ data from control modules
 
 # requires the zpl/yaml file
 fncs.initialize()
@@ -30,14 +32,16 @@ while time_granted < time_stop:
 		SubKeyVals.append(Temp)
 	print("****SubKeys*****")
 	print(SubKeys)
-	keys,key_val = fncs_parser.synch(SubKeys,SubKeyVals)
-
+	keys,key_val, PQ_opt = fncs_parser.synch(SubKeys,SubKeyVals)
+	PQ_opt_dict[str(time_granted)] = PQ_opt
 	for i in range(len(keys)):
 		print(str(keys[i]))
 		print(str(key_val[i]))
 		fncs.publish(str(keys[i]), str(key_val[i]))
 	time.sleep(5)
 
+with open('cosim_data.json', 'w') as fp:
+    json.dump(PQ_opt_dict, fp, sort_keys=True, indent=4)
 fncs.finalize()
 op.close()
 print('*****FNCS HAS ENDED******')
