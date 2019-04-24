@@ -10,15 +10,19 @@ import copy
 lp = open('./Python_Wrapper/cosim_data.json').read()
 cosim_data = json.loads(lp)
 PQ_opt={}
-for t in cosim_data:
-    for adc_name in cosim_data[t]:
+PQ_opt['time'] = []
+times = list(map(int, list(cosim_data.keys())))
+times.sort()
+for t in times:
+    PQ_opt['time'].append(t)
+    for adc_name in cosim_data[str(t)]:
         adc_num = adc_name.split('_ADC')[1]
         if adc_num not in PQ_opt:
             PQ_opt[adc_num]={}
             PQ_opt[adc_num]['Popt'] = []
             PQ_opt[adc_num]['Qopt'] = []
-        PQ_opt[adc_num]['Popt'].append(cosim_data[t][adc_name][0]/1000)
-        PQ_opt[adc_num]['Qopt'].append(cosim_data[t][adc_name][1]/1000)
+        PQ_opt[adc_num]['Popt'].append(cosim_data[str(t)][adc_name][0]/1000)
+        PQ_opt[adc_num]['Qopt'].append(cosim_data[str(t)][adc_name][1]/1000)
 
 # create mapping of each node to its ADC
 adc_nodes_map=[]
@@ -133,38 +137,38 @@ ax1[0,1].set_title("Aggregated kVar at ADC "+adc_num+" by DER")
 ax1[0,1].legend(loc='best')
 
 ax1[1,0].plot(hrs, np.real(adc_agg[adc_num]['total']), label='ADC output')
-ax1[1,0].plot(np.arange(1,len(PQ_opt[adc_num]['Popt'])+1),np.array(PQ_opt[adc_num]['Popt']),'--',label='ADC set point')
+ax1[1,0].step((PQ_opt['time']),np.array(PQ_opt[adc_num]['Popt']),'k', linestyle='--', where='post', label='ADC set point')
 ax1[1,0].set_ylabel("kW")
 ax1[1,0].set_title("Aggregated P at ADC "+adc_num)
 ax1[1,0].legend(loc='best')
 
 ax1[1,1].plot(hrs, np.imag(adc_agg[adc_num]['total']), label='ADC output')
-ax1[1,1].plot(np.arange(1,len(PQ_opt[adc_num]['Qopt'])+1),np.array(PQ_opt[adc_num]['Qopt']),'--',label='ADC set point')
+ax1[1,1].step(PQ_opt['time'],np.array(PQ_opt[adc_num]['Qopt']),'k--', linestyle='--', where='post',label='ADC set point')
 ax1[1,1].set_ylabel("kVar")
 ax1[1,1].set_title("Aggregated Q at ADC "+adc_num)
 ax1[1,1].legend(loc='best')
 plt.show()
 
-#plot
+# #plot
 # fig2, ax2 = plt.subplots()
 #
 # ax2.plot(hrs, )
 # plt.figure(1)
-# plt.plot(np.arange(168),solarInv_Pout[3,:],label='Pout')
-# plt.plot(np.arange(168),solarInv_Qout[3,:],label='Qout')
-# plt.plot(np.arange(168),np.real(solarInv_VAout[3,:]),'--', label='VAout_real')
-# plt.plot(np.arange(168),np.imag(solarInv_VAout[3,:]),'--', label='VAout_var')
-# plt.plot(np.arange(168), solar_rated[0],'--',label='solar rating')
-# plt.plot(np.arange(168),np.abs(solarInv_VAout[3,:]),'k--',label='VAout_mag')
+# plt.plot(hrs,solarInv_Pout[:,3],label='Pout')
+# plt.plot(hrs,solarInv_Qout[:,3],label='Qout')
+# plt.plot(hrs,np.real(solarInv_power[:,3]),'--', label='VAout_real')
+# plt.plot(hrs,np.imag(solarInv_power[:,3]),'--', label='VAout_var')
+# # plt.plot(np.arange(168), solar_rated[0],'--',label='solar rating')
+# plt.plot(hrs,np.abs(solarInv_power[:,3]),'k--',label='VAout_mag')
 # plt.legend(loc='best')
 #
 # plt.figure(2)
-# plt.plot(np.arange(505), battInv_Pout[3,:], label='Pout')
-# plt.plot(np.arange(505), battInv_Qout[3,:], label='Qout')
-# plt.plot(np.arange(505), np.real(battInv_VAout[3,:]),'--', label='VAout_real')
-# plt.plot(np.arange(505), np.imag(battInv_VAout[3,:]),'--', label='VAout_var')
-# plt.plot(np.arange(505), batt_rated[0],'--',label='battery rating')
-# plt.plot(np.arange(505), battInv_rated[0],'--',label='battery inverter rating')
-# plt.plot(np.arange(505), np.abs(battInv_VAout[3,:]),'k--',label='VAout_mag')
+# plt.plot(hrs, battInv_Pout[:,3], label='Pout')
+# plt.plot(hrs, battInv_Qout[:,3], label='Qout')
+# plt.plot(hrs, np.real(battInv_power[:,3]),'--', label='VAout_real')
+# plt.plot(hrs, np.imag(battInv_power[:,3]),'--', label='VAout_var')
+# # plt.plot(np.arange(505), batt_rated[0],'--',label='battery rating')
+# # plt.plot(np.arange(505), battInv_rated[0],'--',label='battery inverter rating')
+# plt.plot(hrs, np.abs(battInv_power[:,3]),'k--',label='VAout_mag')
 # plt.legend(loc='best')
 # plt.show()
