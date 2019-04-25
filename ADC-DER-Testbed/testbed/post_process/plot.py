@@ -5,9 +5,11 @@ import matplotlib.pyplot as plt;
 import csv
 import time
 import copy
+import os
 
+os.chdir('/home/ankit/PFO-ADC-DER-Testbed/ADC-DER-Testbed/testbed/post_process')
 #loading cosim_manager data
-lp = open('./Python_Wrapper/cosim_data.json').read()
+lp = open('./../Python_Wrapper/cosim_data.json').read()
 cosim_data = json.loads(lp)
 PQ_opt={}
 PQ_opt['time'] = []
@@ -26,7 +28,7 @@ for t in times:
 
 # create mapping of each node to its ADC
 adc_nodes_map=[]
-adc_file = "./../../GLD/initial_scenario/ADC_Location/ADC_Placement_by_Voltage_Drop.csv"
+adc_file = "./../../../GLD/initial_scenario/ADC_Location/ADC_Placement_by_Voltage_Drop.csv"
 with open(adc_file, mode='r') as csv_file:
     for i in range(1):
         next(csv_file)

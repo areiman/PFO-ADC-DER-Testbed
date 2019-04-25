@@ -4,12 +4,15 @@ import sys;
 import numpy as np;
 import csv;
 import glob
+import os
 
-csv_path = './GLD/output/recorder_*.csv'
-skip_filenames = ['./GLD/output/recorder_wh_heat_mode.csv',
-                  './GLD/output/recorder_hvac_cooling_system_type.csv',
-                  './GLD/output/recorder_hvac_auxiliary_system_type.csv',
-                  './GLD/output/recorder_hvac_heating_system_type.csv']
+cwd = os.getcwd()
+os.chdir('/home/ankit/PFO-ADC-DER-Testbed/ADC-DER-Testbed/testbed/post_process')
+csv_path = './../GLD/output/recorder_*.csv'
+skip_filenames = ['./../GLD/output/recorder_wh_heat_mode.csv',
+                  './../GLD/output/recorder_hvac_cooling_system_type.csv',
+                  './../GLD/output/recorder_hvac_auxiliary_system_type.csv',
+                  './../GLD/output/recorder_hvac_heating_system_type.csv']
 # region Reading csv into a dictionary
 temp_dict1={}
 gld_data = {}
@@ -55,7 +58,7 @@ for fname in glob.glob(csv_path):
         temp_dict['time'] = time
     gld_data[DER_type][property] = temp_dict
 
-with open('gld_data.json', 'w') as fp:
+with open('./gld_data.json', 'w') as fp:
     json.dump(gld_data, fp, sort_keys=True, indent=4)
 # endregion
 
