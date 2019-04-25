@@ -24,7 +24,9 @@ def init_adc(adc):
 		fh.write("Timestamp,Popt,Qopt,Popt_WH,Qopt_WH,Popt_HVAC,Qopt_HVAC," +\
 			"Popt_BATT,Qopt_BATT,Popt_PV,Qopt_PV\n")
 
-def archive_pfo(adc,timestamp,P,Q,Pwh,Qwh,Pac,Qac,Pba,Qba,Ppv,Qpv):
+def archive_pfo(adc,timestamp,P,Q,\
+		Pwh=None,Qwh=None,Pac=None,Qac=None,\
+		Pba=None,Qba=None,Ppv=None,Qpv=None):
 	with open("../cosim_dat/" + adc + ".csv" , 'a') as fh:
 		fh.write(str(timestamp) + ',' +\
 		str(P)   + ',' + str(Q)   + ',' +\

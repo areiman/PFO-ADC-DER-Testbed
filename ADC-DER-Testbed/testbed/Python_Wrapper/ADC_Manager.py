@@ -240,6 +240,7 @@ def synch(dat,timestamp=None):
 		# ----------------------------------------------------------------------
 		# DISAGGREGATION
 		# ----------------------------------------------------------------------
+		eng.eval('addpath ../ADC/ADC_flex/functions',nargout=0)
 		disagg_dispatch = eng.disaggregation(MATRIX([[Popt,Qopt]]),\
 			ewh_ranges[adc],ac_ranges[adc],pv_ranges[adc],batt_ranges[adc],\
 			nargout=4)
@@ -264,9 +265,10 @@ def synch(dat,timestamp=None):
 		# ----------------------------------------------------------------------
 		# ARCHIVE AGGREGATE AND DISAGGREGATED PFO OUTPUT
 		# ----------------------------------------------------------------------
-		archive.archive_pfo(adc,timestamp,Popt,Qopt,\
-			Popt_ewh,Qopt_ewh,Popt_ac,\
-			Qopt_ac,Popt_pv,Qopt_pv,Popt_batt,Qopt_batt)
+#		archive.archive_pfo(adc,timestamp,Popt,Qopt,\
+#			Popt_ewh,Qopt_ewh,Popt_ac,\
+#			Qopt_ac,Popt_pv,Qopt_pv,Popt_batt,Qopt_batt)
+		archive.archive_pfo(adc,timestamp,Popt,Qopt)
 
 		# ----------------------------------------------------------------------
 		# DUMMY TASK 2.4 - DER DISPATCH
