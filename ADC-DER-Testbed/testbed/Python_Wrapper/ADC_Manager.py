@@ -11,6 +11,9 @@ from random import uniform
 
 from math import sqrt
 
+# for archiving cosim output - especially PFO output
+import cosim_archiver as archive
+
 
 # Start up the matlab engine
 eng = matlab.engine.start_matlab()
@@ -32,7 +35,7 @@ def oprint(dat,adc,t,o):
 	for p in dat[adc][t][o]:
 		print("\tdat["+adc+"]["+t+"]["+o+"]["+p+"]: "+str(dat[adc][t][o][p]))
 
-def synch(dat):
+def synch(dat,timestamp=None):
 	pub_dat = {}
 
 	eng.eval('addpath ../ADC/test',nargout=0)
@@ -48,6 +51,7 @@ def synch(dat):
 		if not re.search(adc,'NONE'):
 			if adc not in mem:
 				mem[adc] = {}
+				archive.init_adc(adc)
 			for t in dat[adc]:
 				if t not in mem[adc]:
 					mem[adc][t] = {}
@@ -256,6 +260,13 @@ def synch(dat):
 		Qopt_batt = disagg_dispatch[3][0][1]
 		print("    Popt_batt is: "+str(Popt_batt))
 		print("    Qopt_batt is: "+str(Qopt_batt))
+
+		# ----------------------------------------------------------------------
+		# ARCHIVE AGGREGATE AND DISAGGREGATED PFO OUTPUT
+		# ----------------------------------------------------------------------
+		archive.archive_pfo(adc,timestamp,Popt,Qopt,\
+			Popt_ewh,Qopt_ewh,Popt_ac,\
+			Qopt_ac,Popt_pv,Qopt_pv,Popt_batt,Qopt_batt)
 
 		# ----------------------------------------------------------------------
 		# DUMMY TASK 2.4 - DER DISPATCH
