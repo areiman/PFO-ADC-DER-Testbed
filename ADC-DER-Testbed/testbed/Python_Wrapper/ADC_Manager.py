@@ -265,11 +265,13 @@ def synch(dat,timestamp=None):
 		# ----------------------------------------------------------------------
 		# ARCHIVE AGGREGATE AND DISAGGREGATED PFO OUTPUT
 		# ----------------------------------------------------------------------
-#		archive.archive_pfo(adc,timestamp,Popt,Qopt,\
-#			Popt_ewh,Qopt_ewh,Popt_ac,\
-#			Qopt_ac,Popt_pv,Qopt_pv,Popt_batt,Qopt_batt)
-		archive.archive_pfo(adc,timestamp,Popt,Qopt)
+		archive.archive_pfo(adc,timestamp,Popt,Qopt,\
+			Popt_ewh,Qopt_ewh,Popt_ac,\
+			Qopt_ac,Popt_pv,Qopt_pv,Popt_batt,Qopt_batt)
+#		archive.archive_pfo(adc,timestamp,Popt,Qopt)
 
+
+		"""
 		# ----------------------------------------------------------------------
 		# DUMMY TASK 2.4 - DER DISPATCH
 		# ----------------------------------------------------------------------
@@ -350,8 +352,9 @@ def synch(dat,timestamp=None):
 				pub_dat[adc][t][o] = {}
 				pub_dat[adc][t][o]["inverter.P_Out"] = pv_p[idx][0]
 				pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q[idx][0]	
-		
 		"""
+		
+		
 		# ---------------------------------------------------------------------
 		# DER DISPATCH FOR EWH
 		# ---------------------------------------------------------------------
@@ -379,18 +382,17 @@ def synch(dat,timestamp=None):
 		# ----------------------------------------------------------------------
 		# Set up inputs
 		Q_ref = Popt_ac 
-		para = {}
-		para['Tmin'] = []
-		para['Tmax'] = []
-		para['Tdesired'] = []
-		para['ratio'] = []
-		para['power'] = []
-		para['C_a'] = []
-		para['C_m'] = []
-		para['H_m'] = []
-		para['U_A'] = []
-		para['mass_internal_gain_fraction'] = []
-		para['mass_solar_gain_fraction'] = []
+		para_Tmin = []
+		para_Tmax = []
+		para_Tdesired = []
+		para_ratio = []
+		para_power = []
+		para_C_a = []
+		para_C_m = []
+		para_H_m = []
+		para_U_A = []
+		para_mass_internal_gain_fraction = []
+		para_mass_solar_gain_fraction = []
 
 		Q_h = []
 		Q_i = []
@@ -401,6 +403,7 @@ def synch(dat,timestamp=None):
 		P_h = []
 		P_cap = 0
 		mdt = 0
+		T_out = 0
 
 		t = 'HVAC'
 		for o in mem[adc][t]:
@@ -408,28 +411,28 @@ def synch(dat,timestamp=None):
 			# para is a structure of vectors
 
 			# To be randomized?
-			para['Tmin'].append(65)
-			para['Tmax'].append(75)
+			para_Tmin.append(65)
+			para_Tmax.append(75)
 
 			# initial 'cooling_setpoint'
 #			para['Tdesired'].append(buff['AC_Tdesired'][o])
-			para['Tdesired'].append(mem[adc][t][o]['cooling_setpoint'])
+			para_Tdesired.append(mem[adc][t][o]['cooling_setpoint'])
 
 			# [0.5 to 15] uniform distribution -- to be randomized
-			para['ratio'].append(1.0)
+			para_ratio.append(1.0)
 
 			# hvac_load
-			para['power'].append(mem[adc][t][o]['hvac_load'])
+			para_power.append(mem[adc][t][o]['hvac_load'])
 
-			para['C_a'].append(mem[adc][t][o]['air_heat_capacity'])
-			para['C_m'].append(mem[adc][t][o]['mass_heat_capacity'])
-			para['H_m'].append(mem[adc][t][o]['mass_heat_coeff'])
-			para['U_A'].append(mem[adc][t][o]['UA'])
+			para_C_a.append(mem[adc][t][o]['air_heat_capacity'])
+			para_C_m.append(mem[adc][t][o]['mass_heat_capacity'])
+			para_H_m.append(mem[adc][t][o]['mass_heat_coeff'])
+			para_U_A.append(mem[adc][t][o]['UA'])
 
 			# Are these two part of the interface?
-			para['mass_internal_gain_fraction'].\
+			para_mass_internal_gain_fraction.\
 				append(mem[adc][t][o]['mass_internal_gain_fraction'])
-			para['mass_solar_gain_fraction'].\
+			para_mass_solar_gain_fraction.\
 				append(mem[adc][t][o]['mass_solar_gain_fraction'])
 
 			# These two exist
@@ -454,9 +457,17 @@ def synch(dat,timestamp=None):
 			else:
 				Dstatus.append('OFF')
 
-		# Test the struct of vectors
-		eng.PrintStructVec(para,nargout=0)
-		sys.exit()
+			# T_out is the outside temperature - same for all houses
+			if T_out:
+				if T_out != mem[adc][t][o]['outdoor_temperature']:
+					print("WARNING: T_out is not he same for all houses")
+			else:
+				T_out = mem[adc][t][o]['outdoor_temperature']
+
+
+#		# Test the struct of vectors
+#		eng.PrintStructVec(para,nargout=0)
+#		sys.exit()
 
 		# Historical power - vector of past 24 hours @ 5 minutes
 		P_h = (24*12*[0.07])
@@ -474,6 +485,16 @@ def synch(dat,timestamp=None):
 		# Parse outputs from the ac-based task 2.4 code
 #		T_set = out[0]
 #		P_h = out[1]
+		out = eng.Task_2_4_PNNL_vec(Q_ref,\
+			para_Tmin,para_Tmax,para_Tdesired,para_ratio,para_power,\
+			para_C_a,para_C_m,para_H_m,para_U_A,\
+			para_mass_internal_gain_fraction,para_mass_solar_gain_fraction,\
+			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,T_out,nargout=2)
+		
+		T_set = out[0]
+		P_h = out[0]
+		
+		sys.exit()
 
 		# ----------------------------------------------------------------------
 		# TASK 2.4 FOR PV AND BATTERIES
@@ -496,7 +517,7 @@ def synch(dat,timestamp=None):
 
 		# Call the PV and Battery implementation of task 2.4
 		eng.eval('ADC_20180815',nargout=0)
-		"""
+	
 
 	# --------------------------------------------------------------------------
 	# RETURN THE THE PUBLISH OBJECT BACK TO THE PARSER 
