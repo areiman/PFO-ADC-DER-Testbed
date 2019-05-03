@@ -499,25 +499,56 @@ def synch(dat,timestamp=None):
 		# ----------------------------------------------------------------------
 		# TASK 2.4 FOR PV AND BATTERIES
 		# ----------------------------------------------------------------------
-		
+		'''
 		# Control time
-		deltat = 30
+#		deltat = 30
+		deltat = 4		# 4-second control time step
 
 		# Number of PV-inverters and bettery inverters under control
-		n_pv = 10
-		n_ba = 12
+		n_pv = len([])
+		n_ba = len([])
 
-		# PV capacity
-		cap_pv =\
-			 [4410.43,4480.22,4381.46,4462.06,4401.66,\
-			 4439.82,4425.14,4429.96,4495.07,4506.36]
+		# PV parameters
+		cap_pv = []			# PV capacity
+		p_av = [] 			# PV available power
+		t = 'PV'
+		for o in mem[adc][t]:
+#			print(mem[adc][t][o])
+#			sys.exit()
+			cap_pv.append(mem[adc][t][o]['solar.rated_power'])
+			p_av.append(mem[adc][t][o]['solar.VA_Out'])
 
-		# PV available power
-#		pv_av = 
+		# Battery parameters
+		cap_ba = []			# battery capacity
+		p_ba_cha_max = []	# maximum charging rate
+		p_ba_dis_max = []	# maximum discharging rate
+		eff_ba = []			# battery efficiency
+		SOC_set = []		# preferred SOC: 50%
+		SOC_now = []		# current SOC
+		t = 'BATT'
+		for o in mem[adc][t]:
+			print(mem[adc][t][o])
+			sys.exit()
+			cap_ba.append(mem[adc][t][o][''])
+			p_ba_cha_max.append(mem[adc][t][o][''])
+			p_ba_dis_max.append(mem[adc][t][o][''])
+			eff_ba.append(mem[adc][t][o][''])
+			SOC_set.append(mem[adc][t][o][''])
+			SOC_now.append(mem[adc][t][o][''])
 
 		# Call the PV and Battery implementation of task 2.4
-		eng.eval('ADC_20180815',nargout=0)
-	
+#		out = eng.ADC_control_vec(deltat,n_pv,n_ba,cap_pv,p_av,\
+#			cap_ba,p_ba_cha_max,p_ba_dis_max,eff_ba,SOC_set,SOC_now,\
+#			p_opt,q_opt,nargout=3)
+		out = eng.ADC_control(deltat,n_pv,n_ba,MATRIX(cap_pv),MATRIX(p_av),\
+			MATRIX(cap_ba),MATRIX(p_ba_cha_max),MATRIX(p_ba_dis_max),\
+			MATRIX(eff_ba),MATRIX(SOC_set),MATRIX(SOC_now),\
+			p_opt,q_opt,nargout=3)
+
+		p_pv = out[0]
+		q_pv = out[1]
+		p_ba = out[2]
+	'''
 
 	# --------------------------------------------------------------------------
 	# RETURN THE THE PUBLISH OBJECT BACK TO THE PARSER 
