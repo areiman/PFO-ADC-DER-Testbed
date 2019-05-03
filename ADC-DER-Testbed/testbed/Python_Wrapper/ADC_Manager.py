@@ -453,9 +453,9 @@ def synch(dat,timestamp=None):
 			# Device status? what are the options? how do we know? historical term?
 			# should be mem[adc][t][o]['is_COOL_on'] (new parameter)a
 			if mem[adc][t][o]['is_COOL_on']:
-				Dstatus.append('ON')
+				Dstatus.append(1)
 			else:
-				Dstatus.append('OFF')
+				Dstatus.append(0)
 
 			# T_out is the outside temperature - same for all houses
 			if T_out:
