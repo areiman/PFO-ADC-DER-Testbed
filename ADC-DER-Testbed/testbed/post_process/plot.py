@@ -6,25 +6,14 @@ import csv
 import time
 import copy
 import os
+from datetime import datetime
 
 os.chdir('/home/ankit/PFO-ADC-DER-Testbed/ADC-DER-Testbed/testbed/post_process')
 #loading cosim_manager data
-lp = open('./../Python_Wrapper/cosim_data.json').read()
+lp = open('./cosim_data.json').read()
 cosim_data = json.loads(lp)
-PQ_opt={}
-PQ_opt['time'] = []
-times = list(map(int, list(cosim_data.keys())))
-times.sort()
-for t in times:
-    PQ_opt['time'].append(t)
-    for adc_name in cosim_data[str(t)]:
-        adc_num = adc_name.split('_ADC')[1]
-        if adc_num not in PQ_opt:
-            PQ_opt[adc_num]={}
-            PQ_opt[adc_num]['Popt'] = []
-            PQ_opt[adc_num]['Qopt'] = []
-        PQ_opt[adc_num]['Popt'].append(cosim_data[str(t)][adc_name][0]/1000)
-        PQ_opt[adc_num]['Qopt'].append(cosim_data[str(t)][adc_name][1]/1000)
+cosim_time = cosim_data[list(cosim_data)[0]]['Timestamp']
+cosim_data['time'] = np.array([int(i) for i in cosim_time])
 
 # create mapping of each node to its ADC
 adc_nodes_map=[]
@@ -88,7 +77,7 @@ solarInv_Qout = np.array(gld_data['solarInv']['Q_Out']['values']).astype(np.floa
 hvac_seth = np.array(gld_data['hvac']['heating_setpoint']['values']).astype(np.float)
 hvac_setc = np.array(gld_data['hvac']['cooling_setpoint']['values']).astype(np.float)
 wh_tanks = np.array(gld_data['wh']['tank_setpoint']['values']).astype(np.float)
-
+hvac_c_status = np.array(gld_data['hvac']['cooling_status']['values']).astype(np.float)
 # Device Power Outputs
 battInv_power = (np.array(gld_data['battInv']['power']['values'])).astype(np.cfloat)
 solarInv_power = (np.array(gld_data['solarInv']['power']['values'])).astype(np.cfloat)
@@ -119,13 +108,21 @@ print('elapsed time is ',time.time()-t)
 # solar_rated = (np.array(gld_data['solar']['rated_power']['values'])).astype(np.float)
 
 #Plot aggregate devices output at given adc for each der type
-adc_num = '109'
-hrs = np.arange(len(wh_power[:,0]))
+time_format = '%H:%M:%S'
+time_stamp = [t.split(' ')[1] for t in gld_data['wh']['power']['time']]
+time_h = [datetime.strptime(t, '%H:%M:%S') for t in time_stamp]
+hrs = [int((i-time_h[0]).total_seconds()) for i in time_h]
+
+adc_num = '102'
 fig1, ax1 = plt.subplots(2, 2, sharex='col')
 ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['battInv']), label='Battery')
 ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['solarInv']), label='Solar')
 ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['wh']), label='WH')
 ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['hvac']), label='HVAC')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['batt_p'])/1,'k', linestyle='--', where='post', label='battery set point')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['pv_p'])/1,'k', linestyle='--', where='post', label='pv set point')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['ac_p'])/1,'k', linestyle='--', where='post', label='AC set point')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['ewh_p'])/1,'k', linestyle='--', where='post', label='WH set point')
 ax1[0,0].set_ylabel("kW")
 ax1[0,0].set_title("Aggregated kW at ADC "+adc_num+" by DER")
 ax1[0,0].legend(loc='best')
@@ -134,18 +131,23 @@ ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['battInv']), label='Battery')
 ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['solarInv']), label='Solar')
 ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['wh']), label='WH')
 ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['hvac']), label='HVAC')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['batt_q'])/1,'k', linestyle='--', where='post', label='battery set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['pv_q'])/1,'k', linestyle='--', where='post', label='pv set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['ac_q'])/1,'k', linestyle='--', where='post', label='AC set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['ewh_q'])/1,'k', linestyle='--', where='post', label='WH set point')
+
 ax1[0,1].set_ylabel("kVar")
 ax1[0,1].set_title("Aggregated kVar at ADC "+adc_num+" by DER")
 ax1[0,1].legend(loc='best')
 
 ax1[1,0].plot(hrs, np.real(adc_agg[adc_num]['total']), label='ADC output')
-ax1[1,0].step((PQ_opt['time']),np.array(PQ_opt[adc_num]['Popt']),'k', linestyle='--', where='post', label='ADC set point')
+ax1[1,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt'])/1,'k', linestyle='--', where='post', label='ADC set point')
 ax1[1,0].set_ylabel("kW")
 ax1[1,0].set_title("Aggregated P at ADC "+adc_num)
 ax1[1,0].legend(loc='best')
 
 ax1[1,1].plot(hrs, np.imag(adc_agg[adc_num]['total']), label='ADC output')
-ax1[1,1].step(PQ_opt['time'],np.array(PQ_opt[adc_num]['Qopt']),'k--', linestyle='--', where='post',label='ADC set point')
+ax1[1,1].step(cosim_data['time'],np.array(cosim_data[adc_num]['Qopt'])/1,'k--', linestyle='--', where='post',label='ADC set point')
 ax1[1,1].set_ylabel("kVar")
 ax1[1,1].set_title("Aggregated Q at ADC "+adc_num)
 ax1[1,1].legend(loc='best')

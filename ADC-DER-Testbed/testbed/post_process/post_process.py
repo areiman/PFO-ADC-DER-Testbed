@@ -8,6 +8,8 @@ import os
 
 cwd = os.getcwd()
 os.chdir('/home/ankit/PFO-ADC-DER-Testbed/ADC-DER-Testbed/testbed/post_process')
+
+## Readinf gld csv files
 csv_path = './../GLD/output/recorder_*.csv'
 skip_filenames = ['./../GLD/output/recorder_wh_heat_mode.csv',
                   './../GLD/output/recorder_hvac_cooling_system_type.csv',
@@ -62,3 +64,38 @@ with open('./gld_data.json', 'w') as fp:
     json.dump(gld_data, fp, sort_keys=True, indent=4)
 # endregion
 
+# Reading cosim_data csv files from cosim_dat folder
+#os.chdir('/home/ankit/PFO-ADC-DER-Testbed/ADC-DER-Testbed/testbed/post_process')
+csv_path = './../cosim_dat/M1_*.csv'
+skip_filenames = []
+cosim_data={}
+for fname in glob.glob(csv_path):
+    if fname in skip_filenames:
+        continue
+    print(fname)
+    splt = fname.split('M1_')[1]
+    adc_num = splt.split('.')[0][3:]
+    if adc_num not in cosim_data:
+        cosim_data[adc_num] = {}
+        # PQ_opt[adc_num]['Popt'] = []
+        # PQ_opt[adc_num]['Qopt'] = []
+    values = []
+    time =[]
+    temp_dict = {}
+    with open(fname, mode='r') as csv_file:
+        csv_reader = csv.reader(csv_file)
+        header_line = 1
+        for row in csv_reader:
+            if header_line:
+                header = []
+                for i in row:
+                    cosim_data[adc_num][i] = []
+                    header.append(i)
+                header_line = 0
+            else:
+                for j in range(0,len(row)):
+                    if row[j] != 'None':
+                        cosim_data[adc_num][header[j]].append(float(row[j]))
+
+with open('./cosim_data.json', 'w') as fp:
+    json.dump(cosim_data, fp, sort_keys=True, indent=4)
