@@ -207,15 +207,15 @@ def synch(dat, timestamp=None):
                 and Fadc[2][0] == 1.0 and Fadc[2][1] == 0.0 \
                 and Fadc[3][0] == 0.0 and Fadc[3][1] == 1.0:
             Popt = (Dadc[0][0] + Dadc[2][0]) / 2.0 * (1 + gauss(0, 1) / 3.0)
-            if Popt > Dadc[0][0]:
-                Popt = Dadc[0][0]
-            if Popt < -1 * Dadc[2][0]:
-                Popt = -1 * Dadc[2][0]
+            if Popt > Dadc[2][0]:
+                Popt = Dadc[2][0]
+            if Popt < -1 * Dadc[0][0]:
+                Popt = -1 * Dadc[0][0]
             Qopt = (Dadc[1][0] + Dadc[3][0]) / 2.0 * (1 + gauss(0, 1) / 3.0)
-            if Qopt > Dadc[1][0]:
-                Qopt = Dadc[1][0]
-            if Qopt < -1 * Dadc[3][0]:
-                Qpot = -1 * Dadc[3][0]
+            if Qopt > Dadc[3][0]:
+                Qopt = Dadc[3][0]
+            if Qopt < -1 * Dadc[1][0]:
+                Qpot = -1 * Dadc[1][0]
         elif Fadc[0][0] == 1.0 and Fadc[0][1] == 0.0 \
                 and Fadc[1][0] == -1.0 and Fadc[1][1] == 0.0 \
                 and Fadc[2][0] == 0.0 and Fadc[2][1] == 1.0 \
