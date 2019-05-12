@@ -348,15 +348,15 @@ def synch(dat, timestamp=None):
 		if len(batt_names) == 1:
 			o = batt_names[0]
 			pub_dat[adc][t][o] = {}
-			pub_dat[adc][t][o]["inverter.P_Out"] = batt_p
-			pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q
+			pub_dat[adc][t][o]["inverter.P_Out"] = batt_p*1000
+			pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q*1000
 		else:
 			for idx in range(len(batt_names)):
 				# print('\t'+str(idx))
 				o = batt_names[idx]
 				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["inverter.P_Out"] = batt_p[idx][0]
-				pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q[idx][0]
+				pub_dat[adc][t][o]["inverter.P_Out"] = batt_p[idx][0]*1000
+				pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q[idx][0]*1000
 
 		# Populate the PV inverters
 		t = "PV"
@@ -365,15 +365,15 @@ def synch(dat, timestamp=None):
 		if len(pv_names) == 1:
 			o = pv_names[0]
 			pub_dat[adc][t][o] = {}
-			pub_dat[adc][t][o]["inverter.P_Out"] = pv_p
-			pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q
+			pub_dat[adc][t][o]["inverter.P_Out"] = pv_p*1000
+			pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q*1000
 		else:
 			for idx in range(len(pv_names)):
 				# print(idx)
 				o = pv_names[idx]
 				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["inverter.P_Out"] = pv_p[idx][0]
-				pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q[idx][0]	
+				pub_dat[adc][t][o]["inverter.P_Out"] = pv_p[idx][0]*1000
+				pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q[idx][0]*1000
 		"""
 
         # ---------------------------------------------------------------------
