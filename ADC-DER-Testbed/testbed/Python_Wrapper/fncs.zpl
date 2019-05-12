@@ -1,5 +1,5 @@
 name = simDERADC
-time_delta = 1s
+time_delta = 4s
 broker = tcp://localhost:5570
 values
     GLD/M1_ADC102_batt_Binv_house1_l102_tm_rated_power
