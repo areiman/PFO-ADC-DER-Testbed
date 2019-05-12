@@ -8,7 +8,7 @@ import ADC_Manager_dummy
 # defining this here will keep it in memory when this module is imported
 dat = {}
 
-def synch(keys,vals):
+def synch(keys,vals,timestamp=None):
 	if len(keys) != len(vals):
 		print("ERROR: number of keys does not equal number of values")
 		return None
@@ -110,7 +110,8 @@ def synch(keys,vals):
 #	mgr_dat = {}
 
 	# Uncomment this line once ADC_Manager.synch is implemented as described
-	[mgr_dat, PQ_opt] = ADC_Manager_dummy.synch(dat)
+	mgr_dat = ADC_Manager.synch(dat,timestamp=timestamp)
+	# mgr_dat = ADC_Manager.synch(dat, timestamp=timestamp)
 
 
 	# ----------------------------------------------------------------------------
@@ -162,4 +163,4 @@ def synch(keys,vals):
 					print("ERROR: unrecognized pv parameter "+param)
 					return
 
-	return pubkeys , pubvals, PQ_opt
+	return pubkeys , pubvals
