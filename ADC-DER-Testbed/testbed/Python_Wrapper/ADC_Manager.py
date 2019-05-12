@@ -151,18 +151,18 @@ def synch(dat, timestamp=None):
             pv_prated.append(mem[adc][t][o]["solar.rated_power"] / 1000)
             pv_qrated.append(mem[adc][t][o]["solar.rated_power"] / 1000)
 
-        # Run task 2.1 ADC domain approximation
-        #		eng.eval('help basic_2_1',nargout=0)
-        #		eng.eval('help basic_2_1_vec',nargout=0)
-        #		FandD = eng.basic_2_1_vec(ewh_names,ewh_prated,\
-        #			ac_names,ac_prated,ac_powfac,\
-        #			batt_names,batt_prated,batt_invcap,\
-        #			pv_names,pv_pgenmax,pv_invcap,nargout=2)
-        # Fadc = FandD[0]
-        # Dadc = FandD[1]
+        # DUMMY: Run task 2.1 ADC domain approximation
+        eng.eval('help basic_2_1',nargout=0)
+        eng.eval('help basic_2_1_vec',nargout=0)
+        FandD = eng.basic_2_1_vec(ewh_names,ewh_prated,\
+            ac_names,ac_prated,ac_powfac,\
+            batt_names,batt_prated,batt_invcap,\
+            pv_names,pv_pgenmax,pv_invcap,nargout=2)
+        Fadc = FandD[0]
+        Dadc = FandD[1]
 
         # ---- Actual Task 2.1
-
+        """
         print("Device totals:")
         print("    {} electric water heaters".format(len(ewh_names)))
         print("    {} air conditioners".format(len(ac_names)))
@@ -194,7 +194,7 @@ def synch(dat, timestamp=None):
         ac_ranges[adc] = ac_range
         pv_ranges[adc] = pv_range
         batt_ranges[adc] = batt_range
-
+        """
         # ---------------------------------------------------------------------
         # PFO EMULATOR
         # ---------------------------------------------------------------------
@@ -269,26 +269,26 @@ def synch(dat, timestamp=None):
         #                     Qopt_ac, Popt_pv, Qopt_pv, Popt_batt, Qopt_batt)
         #		archive.archive_pfo(adc,timestamp,Popt,Qopt)
 
-        """
-		# ----------------------------------------------------------------------
-		# DUMMY TASK 2.4 - DER DISPATCH
-		# ----------------------------------------------------------------------
-		# Call the dummy task 2.4 code
-		new_state = eng.basic_2_4(Popt,Qopt,ewh_state,\
-			ac_temp,ac_heat_set,ac_cool_set,ac_deadband,\
-			ewh_prated,ewh_qrated,ac_prated,ac_qrated,\
-			batt_prated,batt_qrated,pv_prated,pv_prated,nargout=7)
-		# parse the outputs
-		new_ewh_tank_setpoint = new_state[0]
-		new_ac_heat_set = new_state[1]
-		new_ac_cool_set = new_state[2]
-		batt_p = new_state[3]; batt_q = new_state[4];
-		pv_p = new_state[5]; pv_q = new_state[6];
 
-		# print(new_state)
-		
-		# ----------------------------------------------------------------------
-        # FOR DEBUGGING: ARCHIVE AGGREGATE AND DISAGGREGATED PFO OUTPUT 
+        # ----------------------------------------------------------------------
+        # DUMMY TASK 2.4 - DER DISPATCH
+        # ----------------------------------------------------------------------
+        # Call the dummy task 2.4 code
+        new_state = eng.basic_2_4(Popt, Qopt, ewh_state, \
+                                  ac_temp, ac_heat_set, ac_cool_set, ac_deadband, \
+                                  ewh_prated, ewh_qrated, ac_prated, ac_qrated, \
+                                  batt_prated, batt_qrated, pv_prated, pv_prated, nargout=7)
+        # parse the outputs
+        new_ewh_tank_setpoint = new_state[0]
+        new_ac_heat_set = new_state[1]
+        new_ac_cool_set = new_state[2]
+        batt_p = new_state[3]; batt_q = new_state[4];
+        pv_p = new_state[5]; pv_q = new_state[6];
+
+        # print(new_state)
+
+        # ----------------------------------------------------------------------
+        # FOR DEBUGGING: ARCHIVE AGGREGATE AND DISAGGREGATED PFO OUTPUT
         # NEEDS TO BE DELETED IN PRODUCTION VERSION
         # ----------------------------------------------------------------------
         if adc == 'M1_ADC12':
@@ -311,70 +311,70 @@ def synch(dat, timestamp=None):
         archive.archive_pfo_dummy(adc, timestamp, Popt, Qopt, np.sum(batt_p), np.sum(batt_q), np.sum(pv_p),
                                   np.sum(pv_q), ac_p, ac_q, ewh_p, ewh_q, n_ac_ON, n_ewh_ON)
 
-		# Populate water heaters in the publish object
-		t = "WH"
-		pub_dat[adc][t] = {}
-		# print(new_ewh_tank_setpoint)
-		if len(ewh_names) == 1:
-			o = ewh_names[0]
-			pub_dat[adc][t][o] = {}
-			pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint
-		else:
-			for idx in range(len(ewh_names)):
-				# print('\t'+str(idx))
-				o = ewh_names[idx]
-				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint[idx][0]
+        # Populate water heaters in the publish object
+        t = "WH"
+        pub_dat[adc][t] = {}
+        # print(new_ewh_tank_setpoint)
+        if len(ewh_names) == 1:
+            o = ewh_names[0]
+            pub_dat[adc][t][o] = {}
+            pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint
+        else:
+            for idx in range(len(ewh_names)):
+                # print('\t'+str(idx))
+                o = ewh_names[idx]
+                pub_dat[adc][t][o] = {}
+                pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint[idx][0]
 
-		# Populate the HVACs in the publish object
-		t = "HVAC"
-		pub_dat[adc][t] = {}
-		if len(ac_names) == 1:
-			o = ac_names[0]
-			pub_dat[adc][t][o] = {}
-			pub_dat[adc][t][o]["cooling_setpoint"] = new_ac_cool_set
-			pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set
-		else:
-			for idx in range(len(ac_names)):
-				o = ac_names[idx]
-				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["cooling_setpoint"] = new_ac_cool_set[idx][0]
-				pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set[idx][0]
+        # Populate the HVACs in the publish object
+        t = "HVAC"
+        pub_dat[adc][t] = {}
+        if len(ac_names) == 1:
+            o = ac_names[0]
+            pub_dat[adc][t][o] = {}
+            pub_dat[adc][t][o]["cooling_setpoint"] = new_ac_cool_set
+            pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set
+        else:
+            for idx in range(len(ac_names)):
+                o = ac_names[idx]
+                pub_dat[adc][t][o] = {}
+                pub_dat[adc][t][o]["cooling_setpoint"] = new_ac_cool_set[idx][0]
+                pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set[idx][0]
 
-		# Populate the battery inverters in the publish object
-		t = "BATT"
-		pub_dat[adc][t] = {}
-		# print(batt_p)
-		if len(batt_names) == 1:
-			o = batt_names[0]
-			pub_dat[adc][t][o] = {}
-			pub_dat[adc][t][o]["inverter.P_Out"] = batt_p*1000
-			pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q*1000
-		else:
-			for idx in range(len(batt_names)):
-				# print('\t'+str(idx))
-				o = batt_names[idx]
-				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["inverter.P_Out"] = batt_p[idx][0]*1000
-				pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q[idx][0]*1000
+        # Populate the battery inverters in the publish object
+        t = "BATT"
+        pub_dat[adc][t] = {}
+        # print(batt_p)
+        if len(batt_names) == 1:
+            o = batt_names[0]
+            pub_dat[adc][t][o] = {}
+            pub_dat[adc][t][o]["inverter.P_Out"] = batt_p*1000
+            pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q*1000
+        else:
+            for idx in range(len(batt_names)):
+                # print('\t'+str(idx))
+                o = batt_names[idx]
+                pub_dat[adc][t][o] = {}
+                pub_dat[adc][t][o]["inverter.P_Out"] = batt_p[idx][0]*1000
+                pub_dat[adc][t][o]["inverter.Q_Out"] = batt_q[idx][0]*1000
 
-		# Populate the PV inverters
-		t = "PV"
-		pub_dat[adc][t] = {}
-		# print('\t'+str(pv_p))
-		if len(pv_names) == 1:
-			o = pv_names[0]
-			pub_dat[adc][t][o] = {}
-			pub_dat[adc][t][o]["inverter.P_Out"] = pv_p*1000
-			pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q*1000
-		else:
-			for idx in range(len(pv_names)):
-				# print(idx)
-				o = pv_names[idx]
-				pub_dat[adc][t][o] = {}
-				pub_dat[adc][t][o]["inverter.P_Out"] = pv_p[idx][0]*1000
-				pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q[idx][0]*1000
-		"""
+        # Populate the PV inverters
+        t = "PV"
+        pub_dat[adc][t] = {}
+        # print('\t'+str(pv_p))
+        if len(pv_names) == 1:
+            o = pv_names[0]
+            pub_dat[adc][t][o] = {}
+            pub_dat[adc][t][o]["inverter.P_Out"] = pv_p*1000
+            pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q*1000
+        else:
+            for idx in range(len(pv_names)):
+                # print(idx)
+                o = pv_names[idx]
+                pub_dat[adc][t][o] = {}
+                pub_dat[adc][t][o]["inverter.P_Out"] = pv_p[idx][0]*1000
+                pub_dat[adc][t][o]["inverter.Q_Out"] = pv_q[idx][0]*1000
+
 
         # ---------------------------------------------------------------------
         # DER DISPATCH FOR EWH
@@ -401,6 +401,7 @@ def synch(dat, timestamp=None):
         # ----------------------------------------------------------------------
         # DER DISPATCH FOR HVAC
         # ----------------------------------------------------------------------
+        """
         # Set up inputs
         Q_ref = Popt_ac
         para_Tmin = []
@@ -514,7 +515,7 @@ def synch(dat, timestamp=None):
         P_h = out[0]
 
         sys.exit()
-
+        """
         # ----------------------------------------------------------------------
         # TASK 2.4 FOR PV AND BATTERIES
         # ----------------------------------------------------------------------
