@@ -115,7 +115,7 @@ def synch(dat, timestamp=None):
                 mem[adc][t][o]["cooling_setpoint"] = 72
             # oprint(mem,adc,t,o)
             ac_names.append(o)
-            ac_prated.append(mem[adc][t][o]["design_cooling_capacity"] * 1 / 3412)
+            ac_prated.append(mem[adc][t][o]["cooling_demand"])
             ac_powfac.append(0.6197)
             ac_qrated.append(0.6197 * ac_prated[-1])
             ac_temp.append(mem[adc][t][o]["air_temperature"])
