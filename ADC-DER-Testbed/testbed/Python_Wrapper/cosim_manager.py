@@ -22,33 +22,33 @@ fncs.initialize()
 print('*****FNCS HAS INITIALIZED******')
 print("# time      key       value", file=op)
 
+print("**time stop = ", time_stop)
 while time_granted < time_stop:
-	time_granted = fncs.time_request(time_next)
-	time_delta = time_granted - time_last
-	time_last = time_granted
-	if time_granted == time_next:
-		time_next = time_next + control_timestep
-		events = fncs.get_events()
-		SubKeys = []
-		SubKeyVals = []
-		for key in events:
-			print(time_granted, key.decode(), fncs.get_value(key).decode(), file=op)
-			Temp = str( key.decode())
-			SubKeys.append(Temp)
-			Temp=str( fncs.get_value(key).decode() )
-			SubKeyVals.append(Temp)
-		print("****SubKeys*****")
-		print(SubKeys)
-		keys,key_val, PQ_opt = fncs_parser.synch(SubKeys,SubKeyVals)
-		PQ_opt_dict[str(time_granted)] = PQ_opt
-		for i in range(len(keys)):
-			print(str(keys[i]))
-			print(str(key_val[i]))
-			fncs.publish(str(keys[i]), str(key_val[i]))
-		time.sleep(5)
+    # time_last = time_granted
+    time_granted = fncs.time_request(time_next)
+    # time_delta = time_granted - time_last
+    print ("**time granted =  ", time_granted)
+    print("**time next =  ", time_next)
+    if time_granted == time_next:
+        time_next = time_next + control_timestep
+        events = fncs.get_events()
+        SubKeys = []
+        SubKeyVals = []
+        for key in events:
+            print(time_granted, key.decode(), fncs.get_value(key).decode(), file=op)
+            Temp = str( key.decode())
+            SubKeys.append(Temp)
+            Temp=str( fncs.get_value(key).decode() )
+            SubKeyVals.append(Temp)
+        print("****SubKeys*****")
+        print(SubKeys)
+        keys,key_val = fncs_parser.synch(SubKeys,SubKeyVals, timestamp=time_granted)
+        for i in range(len(keys)):
+            # print(str(keys[i]))
+            # print(str(key_val[i]))
+          fncs.publish(str(keys[i]), str(key_val[i]))
+		# time.sleep(5)
 
-with open('cosim_data.json', 'w') as fp:
-    json.dump(PQ_opt_dict, fp, sort_keys=True, indent=4)
 fncs.finalize()
 op.close()
 print('*****FNCS HAS ENDED******')
