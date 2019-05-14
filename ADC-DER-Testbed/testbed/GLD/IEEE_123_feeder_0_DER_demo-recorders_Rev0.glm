@@ -114241,6 +114241,15 @@ object group_recorder {
 	file output/recorder_solarInv_inverter_efficiency.csv;
 }
 
+//Voltage recorder at all residential meetrs
+object group_recorder {
+	name recorder_residential_voltages;
+	group "groupid=Residential_Meter";
+	property voltage_1;
+	interval 1;
+	file output/recorder_hvac_voltages.csv;
+}
+
 // ----------------------------------------------------------------------------
 // RECORDERS FOR DEMO: Devices Power Outputs
 // ------
