@@ -73,8 +73,8 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	end
 	% create the new ewh state vector
 	new_ewh_tank_setpoint = zeros(length(ewh_state),1);
-	new_ewh_tank_setpoint(on_idxs) = 32;	% freezing setpoint for always on
-	new_ewh_tank_setpoint(off_idxs) = 212;	% boiling setpoint for always off
+	new_ewh_tank_setpoint(on_idxs) = 212;	% boiling setpoint for always on
+	new_ewh_tank_setpoint(off_idxs) = 32;	% freezing setpoint for always off
 
 		
 
@@ -114,7 +114,7 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 	% create the new ac state vector
 	new_ac_heat_set = zeros(num_ac,1);
 	new_ac_cool_set = zeros(num_ac,1);
-	new_ac_heat_set([on_idxs off_idxs]) = 0;	% we aren't using the heater
+	new_ac_heat_set([on_idxs off_idxs]) = 15;	% we aren't using the heater
 	new_ac_cool_set(on_idxs) = 32;				% low setpoint for always on
 	new_ac_cool_set(off_idxs) = 212;			% high setpoint for always off
 
