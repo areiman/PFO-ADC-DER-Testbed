@@ -3,6 +3,7 @@
 import re
 
 import ADC_Manager
+import ADC_Manager_dummy
 
 # defining this here will keep it in memory when this module is imported
 dat = {}
@@ -110,6 +111,7 @@ def synch(keys,vals,timestamp=None):
 
 	# Uncomment this line once ADC_Manager.synch is implemented as described
 	mgr_dat = ADC_Manager.synch(dat,timestamp=timestamp)
+	# mgr_dat = ADC_Manager.synch(dat, timestamp=timestamp)
 
 
 	# ----------------------------------------------------------------------------
