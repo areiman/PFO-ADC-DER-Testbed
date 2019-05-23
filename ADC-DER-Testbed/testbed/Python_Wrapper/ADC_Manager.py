@@ -29,7 +29,6 @@ buff = {}
 buff['AC_Tdesired'] = {}
 buff['AC_P_h'] = {}
 
-
 def oprint(dat, adc, t, o):
     print("Object:")
     for p in dat[adc][t][o]:
@@ -299,17 +298,22 @@ def synch(dat, timestamp=None):
         n_ewh_ON = np.count_nonzero(np.array(new_ewh_tank_setpoint) - ewh_off_set)
         n_ac_ON = np.count_nonzero(np.array(new_ac_cool_set) - ac_off_set)
         # ac_p = np.mean(ac_prated)*n_ac_ON
-        ac_p = sum(np.multiply(np.array(ac_prated), (np.array(new_ac_cool_set._data) - ac_off_set))) / (32 - ac_off_set)
+        ac_p = sum(np.multiply(np.array(ac_prated),\
+			 (np.array(new_ac_cool_set._data) - ac_off_set))) / (32 - ac_off_set)
         # ac_q = np.mean(ac_qrated)*n_ac_ON
-        ac_q = sum(np.multiply(np.array(ac_qrated), (np.array(new_ac_cool_set._data) - ac_off_set))) / (32 - ac_off_set)
+        ac_q = sum(np.multiply(np.array(ac_qrated),\
+			 (np.array(new_ac_cool_set._data) - ac_off_set))) / (32 - ac_off_set)
         # ewh_p = np.mean(ewh_prated)*n_ewh_ON
-        ewh_p = sum(np.multiply(np.array(ewh_prated), (np.array(new_ewh_tank_setpoint._data) - ewh_off_set))) / (
-                    212 - ewh_off_set)
+        ewh_p = sum(np.multiply(np.array(ewh_prated),\
+			 (np.array(new_ewh_tank_setpoint._data) - ewh_off_set))) \
+			  / (212 - ewh_off_set)
         # ewh_q = np.mean(ewh_qrated)*n_ewh_ON
-        ewh_q = sum(np.multiply(np.array(ewh_qrated), (np.array(new_ewh_tank_setpoint._data) - ac_off_set))) / (
-                    212 - ewh_off_set)
-        archive.archive_pfo_dummy(adc, timestamp, Popt, Qopt, np.sum(batt_p), np.sum(batt_q), np.sum(pv_p),
-                                  np.sum(pv_q), ac_p, ac_q, ewh_p, ewh_q, n_ac_ON, n_ewh_ON)
+        ewh_q = sum(np.multiply(np.array(ewh_qrated),\
+			 (np.array(new_ewh_tank_setpoint._data) - ac_off_set))) \
+			 / (212 - ewh_off_set)
+        archive.archive_pfo_dummy(adc, timestamp, Popt, Qopt, np.sum(batt_p),\
+			 np.sum(batt_q), np.sum(pv_p), np.sum(pv_q), \
+			 ac_p, ac_q, ewh_p, ewh_q, n_ac_ON, n_ewh_ON)
 
         # Populate water heaters in the publish object
         t = "WH"
@@ -398,128 +402,129 @@ def synch(dat, timestamp=None):
 				pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint[idx][0]
 		'''
 
-        # ----------------------------------------------------------------------
-        # DER DISPATCH FOR HVAC
-        # ----------------------------------------------------------------------
-        """
-        # Set up inputs
-        Q_ref = Popt_ac
-        para_Tmin = []
-        para_Tmax = []
-        para_Tdesired = []
-        para_ratio = []
-        para_power = []
-        para_C_a = []
-        para_C_m = []
-        para_H_m = []
-        para_U_A = []
-        para_mass_internal_gain_fraction = []
-        para_mass_solar_gain_fraction = []
+		# ----------------------------------------------------------------------
+		# DER DISPATCH FOR HVAC
+		# ----------------------------------------------------------------------
+		# Set up inputs
+		Q_ref = Popt_ac 
+		para_Tmin = []
+		para_Tmax = []
+		para_Tdesired = []
+		para_ratio = []
+		para_power = []
+		para_C_a = []
+		para_C_m = []
+		para_H_m = []
+		para_U_A = []
+		para_mass_internal_gain_fraction = []
+		para_mass_solar_gain_fraction = []
 
-        Q_h = []
-        Q_i = []
-        Q_s = []
-        Dtemp = []
-        halfband = []
-        Dstatus = []
-        P_h = []
-        P_cap = 0
-        mdt = 0
-        T_out = 0
+		Q_h = []
+		Q_i = []
+		Q_s = []
+		Dtemp = []
+		halfband = []
+		Dstatus = []
+		P_h = []
+		P_cap = 0
+		mdt = 0
+		T_out = 0
 
-        t = 'HVAC'
-        for o in mem[adc][t]:
+		t = 'HVAC'
+		for o in mem[adc][t]:
 
-            # para is a structure of vectors
+			# para is a structure of vectors
 
-            # To be randomized?
-            para_Tmin.append(65)
-            para_Tmax.append(75)
+			# To be randomized?
+			para_Tmin.append(65)
+			para_Tmax.append(75)
 
-            # initial 'cooling_setpoint'
-            #			para['Tdesired'].append(buff['AC_Tdesired'][o])
-            para_Tdesired.append(mem[adc][t][o]['cooling_setpoint'])
+			# initial 'cooling_setpoint'
+#			para['Tdesired'].append(buff['AC_Tdesired'][o])
+			para_Tdesired.append(mem[adc][t][o]['cooling_setpoint'])
 
-            # [0.5 to 15] uniform distribution -- to be randomized
-            para_ratio.append(1.0)
+			# [0.5 to 15] uniform distribution -- to be randomized
+			para_ratio.append(1.0)
 
-            # hvac_load
-            para_power.append(mem[adc][t][o]['hvac_load'])
+			# hvac_load
+			para_power.append(mem[adc][t][o]['hvac_load'])
 
-            para_C_a.append(mem[adc][t][o]['air_heat_capacity'])
-            para_C_m.append(mem[adc][t][o]['mass_heat_capacity'])
-            para_H_m.append(mem[adc][t][o]['mass_heat_coeff'])
-            para_U_A.append(mem[adc][t][o]['UA'])
+			para_C_a.append(mem[adc][t][o]['air_heat_capacity'])
+			para_C_m.append(mem[adc][t][o]['mass_heat_capacity'])
+			para_H_m.append(mem[adc][t][o]['mass_heat_coeff'])
+			para_U_A.append(mem[adc][t][o]['UA'])
 
-            # Are these two part of the interface?
-            para_mass_internal_gain_fraction. \
-                append(mem[adc][t][o]['mass_internal_gain_fraction'])
-            para_mass_solar_gain_fraction. \
-                append(mem[adc][t][o]['mass_solar_gain_fraction'])
+			# Are these two part of the interface?
+			para_mass_internal_gain_fraction.\
+				append(mem[adc][t][o]['mass_internal_gain_fraction'])
+			para_mass_solar_gain_fraction.\
+				append(mem[adc][t][o]['mass_solar_gain_fraction'])
 
-            # These two exist
-            Q_h.append(mem[adc][t][o]['Qh'])
-            Q_i.append(mem[adc][t][o]['Qi'])
+			# These two exist
+			Q_h.append(mem[adc][t][o]['Qh'])
+			Q_i.append(mem[adc][t][o]['Qi'])
 
-            # vector of calculated values
-            Q_s.append(mem[adc][t][o]['incident_solar_radiation'] * \
-                       mem[adc][t][o]['solar_heatgain_factor'])
+			# vector of calculated values
+			Q_s.append(mem[adc][t][o]['incident_solar_radiation'] *\
+				mem[adc][t][o]['solar_heatgain_factor'])
 
-            # This is a list/vector of [ air_temperature , mass_temperature ]
-            Dtemp.append([])
-            Dtemp[-1].append(mem[adc][t][o]['air_temperature'])
-            Dtemp[-1].append(mem[adc][t][o]['mass_temperature'])
+			# This is a list/vector of [ air_temperature , mass_temperature ]
+			Dtemp.append([])
+			Dtemp[-1].append( mem[adc][t][o]['air_temperature'] )
+			Dtemp[-1].append( mem[adc][t][o]['mass_temperature'] )
 
-            halfband.append(mem[adc][t][o]['thermostat_deadband'] / 2.0)
+			halfband.append( mem[adc][t][o]['thermostat_deadband'] / 2.0 )
 
-            # Device status? what are the options? how do we know? historical term?
-            # should be mem[adc][t][o]['is_COOL_on'] (new parameter)a
-            if mem[adc][t][o]['is_COOL_on']:
-                Dstatus.append(1)
-            else:
-                Dstatus.append(0)
+			# Device status? what are the options? how do we know? historical term?
+			# should be mem[adc][t][o]['is_COOL_on'] (new parameter)a
+			if mem[adc][t][o]['is_COOL_on']:
+				Dstatus.append(1)
+			else:
+				Dstatus.append(0)
 
-            # T_out is the outside temperature - same for all houses
-            if T_out:
-                if T_out != mem[adc][t][o]['outdoor_temperature']:
-                    print("WARNING: T_out is not he same for all houses")
-            else:
-                T_out = mem[adc][t][o]['outdoor_temperature']
+			# T_out is the outside temperature - same for all houses
+			if T_out:
+				if T_out != mem[adc][t][o]['outdoor_temperature']:
+					print("WARNING: T_out is not he same for all houses")
+			else:
+				T_out = mem[adc][t][o]['outdoor_temperature']
 
-        #		# Test the struct of vectors
-        #		eng.PrintStructVec(para,nargout=0)
-        #		sys.exit()
 
-        # Historical power - vector of past 24 hours @ 5 minutes
-        P_h = (24 * 12 * [0.07])
+#		# Test the struct of vectors
+#		eng.PrintStructVec(para,nargout=0)
+#		sys.exit()
 
-        # P_cap scalar price units /[$/kW] -> 1 for $/kW; 1000 for $/MW
-        P_cap = 1
+		# Historical power - vector of past 24 hours @ 5 minutes
+		P_h = (24*12*[0.07])
 
-        # Market period in hours (@5-min)
-        mdt = 1 / 3600 * 300
 
-        # Call the AC-based task 2.4 code
-        #		out = eng.Task_2_4_PNNL(Q_ref,para,\
-        #			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,nargout=2)
-        # Parse outputs from the ac-based task 2.4 code
-        #		T_set = out[0]
-        #		P_h = out[1]
-        out = eng.Task_2_4_PNNL_vec(Q_ref, \
-                                    para_Tmin, para_Tmax, para_Tdesired, para_ratio, para_power, \
-                                    para_C_a, para_C_m, para_H_m, para_U_A, \
-                                    para_mass_internal_gain_fraction, para_mass_solar_gain_fraction, \
-                                    Q_h, Q_i, Q_s, Dtemp, halfband, Dstatus, P_h, P_cap, mdt, T_out, nargout=2)
+		# P_cap scalar price units /[$/kW] -> 1 for $/kW; 1000 for $/MW
+		P_cap = 1
 
-        T_set = out[0]
-        P_h = out[0]
+		# Market period in hours (@5-min)
+		mdt = 1/3600*300
 
-        sys.exit()
-        """
-        # ----------------------------------------------------------------------
-        # TASK 2.4 FOR PV AND BATTERIES
-        # ----------------------------------------------------------------------
-        '''
+		# Call the AC-based task 2.4 code
+#		out = eng.Task_2_4_PNNL(Q_ref,para,\
+#			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,nargout=2)
+		# Parse outputs from the ac-based task 2.4 code
+#		T_set = out[0]
+#		P_h = out[1]
+		out = eng.Task_2_4_PNNL_vec(Q_ref,\
+			para_Tmin,para_Tmax,para_Tdesired,para_ratio,para_power,\
+			para_C_a,para_C_m,para_H_m,para_U_A,\
+			para_mass_internal_gain_fraction,para_mass_solar_gain_fraction,\
+			Q_h,Q_i,Q_s,Dtemp,halfband,Dstatus,P_h,P_cap,mdt,T_out,nargout=2)
+		
+		T_set = out[0]
+		P_h = out[0]
+		
+		sys.exit()
+
+		# ----------------------------------------------------------------------
+		# TASK 2.4 FOR PV AND BATTERIES
+		# ----------------------------------------------------------------------
+		'''
 		# Control time
 #		deltat = 30
 		deltat = 4		# 4-second control time step
@@ -570,7 +575,8 @@ def synch(dat, timestamp=None):
 		p_ba = out[2]
 	'''
 
-    # --------------------------------------------------------------------------
-    # RETURN THE THE PUBLISH OBJECT BACK TO THE PARSER
-    # --------------------------------------------------------------------------
-    return pub_dat
+	# --------------------------------------------------------------------------
+	# RETURN THE THE PUBLISH OBJECT BACK TO THE PARSER 
+	# --------------------------------------------------------------------------
+	return pub_dat
+
