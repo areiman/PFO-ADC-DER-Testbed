@@ -39,7 +39,7 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 
 	% UPDATE THE EWH STATE VECTOR
 	num_ewh = length(ewh_prated);
-	target_ewh_on = floor( num_ewh * usage );
+	target_ewh_on = round( num_ewh * usage );
 	% determine which devices are already on
 	on_idxs = [];
 	off_idxs = [];
@@ -80,7 +80,7 @@ function [new_ewh_tank_setpoint,new_ac_heat_set,new_ac_cool_set,...
 
 	% UPDATE THE AC STATE VECTOR
 	num_ac = length(ac_prated);
-	target_ac_on = floor( num_ac * usage );
+	target_ac_on = round( num_ac * usage );
 	on_idxs = [];
 	off_idxs = [];
 	for idx = 1:num_ac
