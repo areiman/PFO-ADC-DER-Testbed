@@ -75,7 +75,7 @@ def synch(dat, timestamp=None):
 	# -------------------------------------------------------------------------
 	# ITERATE OVER UPDATED ADCS
 	# -------------------------------------------------------------------------
-	#	print(mem)
+	print(mem)
 	for adc in mem:
 		# Initialize the publish object
 		pub_dat[adc] = {}
@@ -152,17 +152,17 @@ def synch(dat, timestamp=None):
 			pv_qrated.append(mem[adc][t][o]["solar.rated_power"] / 1000)
 
 		# DUMMY: Run task 2.1 ADC domain approximation
-		eng.eval('help basic_2_1',nargout=0)
-		eng.eval('help basic_2_1_vec',nargout=0)
-		FandD = eng.basic_2_1_vec(ewh_names,ewh_prated,\
-			ac_names,ac_prated,ac_powfac,\
-			batt_names,batt_prated,batt_invcap,\
-			pv_names,pv_pgenmax,pv_invcap,nargout=2)
-		Fadc = FandD[0]
-		Dadc = FandD[1]
+		# eng.eval('help basic_2_1',nargout=0)
+		# eng.eval('help basic_2_1_vec',nargout=0)
+		# FandD = eng.basic_2_1_vec(ewh_names,ewh_prated,\
+		# 	ac_names,ac_prated,ac_powfac,\
+		# 	batt_names,batt_prated,batt_invcap,\
+		# 	pv_names,pv_pgenmax,pv_invcap,nargout=2)
+		# Fadc = FandD[0]
+		# Dadc = FandD[1]
 
 		# ---- Actual Task 2.1
-		"""
+		# """
 		print("Device totals:")
 		print("    {} electric water heaters".format(len(ewh_names)))
 		print("    {} air conditioners".format(len(ac_names)))
@@ -194,7 +194,7 @@ def synch(dat, timestamp=None):
 		ac_ranges[adc] = ac_range
 		pv_ranges[adc] = pv_range
 		batt_ranges[adc] = batt_range
-		"""
+		# """
 		# ---------------------------------------------------------------------
 		# PFO EMULATOR
 		# ---------------------------------------------------------------------
@@ -239,27 +239,27 @@ def synch(dat, timestamp=None):
 		# ----------------------------------------------------------------------
 		# DISAGGREGATION
 		# ----------------------------------------------------------------------
-		# eng.eval('addpath ../ADC/ADC_flex/functions', nargout=0)
-		# disagg_dispatch = eng.disaggregation(MATRIX([[Popt, Qopt]]), \
-		#                                      ewh_ranges[adc], ac_ranges[adc], pv_ranges[adc], batt_ranges[adc], \
-		#                                      nargout=4)
-		#
-		# Popt_ewh = disagg_dispatch[0][0][0]
-		# Qopt_ewh = disagg_dispatch[0][0][1]
-		# print("    Popt_ewh is: " + str(Popt_ewh))
-		# print("    Qopt_ewh is: " + str(Qopt_ewh))
-		# Popt_ac = disagg_dispatch[1][0][0]
-		# Qopt_ac = disagg_dispatch[1][0][1]
-		# print("    Popt_ac is: " + str(Popt_ac))
-		# print("    Qopt_ac is: " + str(Qopt_ac))
-		# Popt_pv = disagg_dispatch[2][0][0]
-		# Qopt_pv = disagg_dispatch[2][0][1]
-		# print("    Popt_pv is: " + str(Popt_pv))
-		# print("    Qopt_pv is: " + str(Qopt_pv))
-		# Popt_batt = disagg_dispatch[3][0][0]
-		# Qopt_batt = disagg_dispatch[3][0][1]
-		# print("    Popt_batt is: " + str(Popt_batt))
-		# print("    Qopt_batt is: " + str(Qopt_batt))
+		eng.eval('addpath ../ADC/ADC_flex/functions', nargout=0)
+		disagg_dispatch = eng.disaggregation(MATRIX([[Popt, Qopt]]), \
+		                                     ewh_ranges[adc], ac_ranges[adc], pv_ranges[adc], batt_ranges[adc], \
+		                                     nargout=4)
+
+		Popt_ewh = disagg_dispatch[0][0][0]
+		Qopt_ewh = disagg_dispatch[0][0][1]
+		print("    Popt_ewh is: " + str(Popt_ewh))
+		print("    Qopt_ewh is: " + str(Qopt_ewh))
+		Popt_ac = disagg_dispatch[1][0][0]
+		Qopt_ac = disagg_dispatch[1][0][1]
+		print("    Popt_ac is: " + str(Popt_ac))
+		print("    Qopt_ac is: " + str(Qopt_ac))
+		Popt_pv = disagg_dispatch[2][0][0]
+		Qopt_pv = disagg_dispatch[2][0][1]
+		print("    Popt_pv is: " + str(Popt_pv))
+		print("    Qopt_pv is: " + str(Qopt_pv))
+		Popt_batt = disagg_dispatch[3][0][0]
+		Qopt_batt = disagg_dispatch[3][0][1]
+		print("    Popt_batt is: " + str(Popt_batt))
+		print("    Qopt_batt is: " + str(Qopt_batt))
 
 		# ----------------------------------------------------------------------
 		# ARCHIVE AGGREGATE AND DISAGGREGATED PFO OUTPUT
@@ -282,8 +282,8 @@ def synch(dat, timestamp=None):
 		new_ewh_tank_setpoint = new_state[0]
 		new_ac_heat_set = new_state[1]
 		new_ac_cool_set = new_state[2]
-		batt_p = new_state[3]; batt_q = new_state[4];
-		pv_p = new_state[5]; pv_q = new_state[6];
+		batt_p = new_state[3]; batt_q = new_state[4]
+		pv_p = new_state[5]; pv_q = new_state[6]
 
 		# print(new_state)
 
@@ -409,7 +409,7 @@ def synch(dat, timestamp=None):
 		# ----------------------------------------------------------------------
 		# DER DISPATCH FOR HVAC
 		# ----------------------------------------------------------------------
-		"""
+		# """
 		# Set up inputs
 		Q_ref = Popt_ac
 		para_Tmin = []
@@ -441,8 +441,8 @@ def synch(dat, timestamp=None):
 			# para is a structure of vectors
 
 			# To be randomized?
-			para_Tmin.append(65)
-			para_Tmax.append(75)
+			para_Tmin.append(65) #65
+			para_Tmax.append(75) #75
 
 			# initial 'cooling_setpoint'
 			#			para['Tdesired'].append(buff['AC_Tdesired'][o])
@@ -520,10 +520,24 @@ def synch(dat, timestamp=None):
 									Q_h, Q_i, Q_s, Dtemp, halfband, Dstatus, P_h, P_cap, mdt, T_out, nargout=2)
 
 		T_set = out[0]
-		P_h = out[0]
+		P_h = out[1]
 
-		sys.exit()
-		"""
+		# sys.exit()
+
+		t = "HVAC"
+		pub_dat[adc][t] = {}
+		if len(ac_names) == 1:
+			o = ac_names[0]
+			pub_dat[adc][t][o] = {}
+			pub_dat[adc][t][o]["cooling_setpoint"] = T_set[idx][0]
+			# pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set
+		else:
+			for idx in range(len(ac_names)):
+				o = ac_names[idx]
+				pub_dat[adc][t][o] = {}
+				pub_dat[adc][t][o]["cooling_setpoint"] = T_set[idx][0]
+				# pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set[idx][0]
+		# """
 		# ----------------------------------------------------------------------
 		# TASK 2.4 FOR PV AND BATTERIES
 		# ----------------------------------------------------------------------
