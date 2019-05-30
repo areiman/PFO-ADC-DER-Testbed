@@ -25,7 +25,7 @@ def init_adc(adc):
 		fh.write("Timestamp,Popt,Qopt,Popt_WH,Qopt_WH,Popt_HVAC,Qopt_HVAC," +\
 			"Popt_BATT,Qopt_BATT,Popt_PV,Qopt_PV\n")
 
-def archive_pfo(adc,timestamp,P,Q,\
+	def archive_pfo(adc,timestamp,P,Q,\
 		Pwh=None,Qwh=None,Pac=None,Qac=None,\
 		Pba=None,Qba=None,Ppv=None,Qpv=None):
 	
