@@ -120,47 +120,51 @@ def synch(keys,vals,timestamp=None):
 	pubkeys = []
 	pubvals = []
 	for adc in mgr_dat:
-		for wh in mgr_dat[adc]["WH"]:
-			for param in mgr_dat[adc]["WH"][wh]:
-				pubkeys.append( adc + '_' + wh + '_' + param )
-				pubvals.append( str( mgr_dat[adc]["WH"][wh][param] ) )
-		for hvac in mgr_dat[adc]["HVAC"]:
-			for param in mgr_dat[adc]["HVAC"][hvac]:
-				pubkeys.append( adc + '_' + hvac + '_' + param )
-				pubvals.append( str( mgr_dat[adc]["HVAC"][hvac][param] ) )
-		for batt in mgr_dat[adc]["BATT"]:
-			for param in mgr_dat[adc]["BATT"][batt]:
-				m = re.match("(.+?)\.(.+)",param)
-				if m:
-					if m.group(1) == "inverter":
-						der = batt
-					elif m.group(1) == "battery":
-						der = "batt_"+batt
+		if "WH" in mgr_dat[adc]:
+			for wh in mgr_dat[adc]["WH"]:
+				for param in mgr_dat[adc]["WH"][wh]:
+					pubkeys.append( adc + '_' + wh + '_' + param )
+					pubvals.append( str( mgr_dat[adc]["WH"][wh][param] ) )
+		if "HVAC" in mgr_dat[adc]:
+			for hvac in mgr_dat[adc]["HVAC"]:
+				for param in mgr_dat[adc]["HVAC"][hvac]:
+					pubkeys.append( adc + '_' + hvac + '_' + param )
+					pubvals.append( str( mgr_dat[adc]["HVAC"][hvac][param] ) )
+		if "BATT" in mgr_dat[adc]:
+			for batt in mgr_dat[adc]["BATT"]:
+				for param in mgr_dat[adc]["BATT"][batt]:
+					m = re.match("(.+?)\.(.+)",param)
+					if m:
+						if m.group(1) == "inverter":
+							der = batt
+						elif m.group(1) == "battery":
+							der = "batt_"+batt
+						else:
+							print("ERROR: unrecognized battery parameter "+param)
+							print(m.group(1))
+							print(m.group(2))
+							return
+						pubkeys.append( adc+ '_' + der + '_' + m.group(2) )
+						pubvals.append( str( mgr_dat[adc]["BATT"][batt][param] ) )
 					else:
 						print("ERROR: unrecognized battery parameter "+param)
-						print(m.group(1))
-						print(m.group(2))
 						return
-					pubkeys.append( adc+ '_' + der + '_' + m.group(2) )
-					pubvals.append( str( mgr_dat[adc]["BATT"][batt][param] ) )
-				else:
-					print("ERROR: unrecognized battery parameter "+param)
-					return
-		for pv in mgr_dat[adc]["PV"]:
-			for param in mgr_dat[adc]["PV"][pv]:
-				m = re.match("(.+?)\.(.+)",param)
-				if m:
-					if m.group(1) == "inverter":
-						der = pv
-					elif m.group(1) == "solar":
-						der = "solar_"+pv
+		if "PV" in mgr_dat[adc]:
+			for pv in mgr_dat[adc]["PV"]:
+				for param in mgr_dat[adc]["PV"][pv]:
+					m = re.match("(.+?)\.(.+)",param)
+					if m:
+						if m.group(1) == "inverter":
+							der = pv
+						elif m.group(1) == "solar":
+							der = "solar_"+pv
+						else:
+							print("ERROR: unrecognized pv parameter "+param)
+							return
+						pubkeys.append( adc + '_' + der + '_' + m.group(2) )
+						pubvals.append( str( mgr_dat[adc]["PV"][pv][param] ) )
 					else:
 						print("ERROR: unrecognized pv parameter "+param)
 						return
-					pubkeys.append( adc + '_' + der + '_' + m.group(2) )
-					pubvals.append( str( mgr_dat[adc]["PV"][pv][param] ) )
-				else:
-					print("ERROR: unrecognized pv parameter "+param)
-					return
-
+	
 	return pubkeys , pubvals

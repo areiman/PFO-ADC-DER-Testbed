@@ -17,7 +17,7 @@ for line in fh:
 	if m:
 		key = m.group(1)
 		val = m.group(2)
-		if re.match('2\s',line):
+		if re.match('4\s',line):
 #			print(key+" -> "+val)
 			keys.append(key)
 			vals.append(val)

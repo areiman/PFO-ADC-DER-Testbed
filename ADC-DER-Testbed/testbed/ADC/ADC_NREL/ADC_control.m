@@ -4,17 +4,28 @@
 function [p_pv, q_pv, p_ba] = ADC_control(deltat, n_pv, n_ba, cap_pv, p_av, ...
     cap_ba, p_ba_cha_max, p_ba_dis_max, eff_ba, SOC_set, SOC_now, p_opt, q_opt)
 
-max_iter=30000;
+%fprintf('hi\n');
+%class(deltat)
+%deltat
+%class(cap_ba)
+%cap_ba
+
+max_iter=50000;
 
 % inverter output initialization
 p_pv = p_av;
-q_pv= zeros(n_pv,1);
+% q_pv= zeros(n_pv,1);
+q_pv= zeros(1,n_pv);
+
 % battery initialization
 soc=SOC_now;
-p_ba=zeros(n_ba,1);
+% p_ba=zeros(n_ba,1);
+p_ba=zeros(1,n_ba);
+
 % dual variable associated with tracking discrepancy
 mup=0;
 muq=0;
+
 % constant stepsize for primal and dual; tuned
 epsilonP=0.001;
 epsilonD=0.001;
@@ -35,31 +46,43 @@ cost_bat = deltat*1./power_SOC_rate;
 
 
 for k=1:max_iter
-
     % primal update
     for i=1:n_pv
-        p_pv(i,k+1) = p_pv(i,k) - epsilonP * (2 * cost_p(i) * (-p_av(i) + p_pv(i,k)) + mup(k));
-        q_pv(i,k+1) = q_pv(i,k) - epsilonP * (2 * cost_q(i) * q_pv(i,k) + muq(k));
-        [p_pv(i,k+1), q_pv(i,k+1)] = Proj_inverter( p_pv(i,k+1), q_pv(i,k+1), p_av(i), cap_pv(i));
+%        p_pv(i,k+1) = p_pv(i,k) - epsilonP * (2 * cost_p(i) * (-p_av(i) + p_pv(i,k)) + mup(k));
+%        q_pv(i,k+1) = q_pv(i,k) - epsilonP * (2 * cost_q(i) * q_pv(i,k) + muq(k));
+%        [p_pv(i,k+1), q_pv(i,k+1)] = Proj_inverter( p_pv(i,k+1), q_pv(i,k+1), p_av(i), cap_pv(i));
+        p_pv(i) = p_pv(i) - epsilonP * (2 * cost_p(i) * (-p_av(i) + p_pv(i)) + mup);
+        q_pv(i) = q_pv(i) - epsilonP * (2 * cost_q(i) * q_pv(i) + muq);
+        [p_pv(i), q_pv(i)] = Proj_inverter( p_pv(i), q_pv(i), p_av(i), cap_pv(i));
     end
     for i=1:n_ba
-        p_ba(i,k+1) = p_ba(i,k) -  epsilonP * ( - 2 * eff_ba(i) * power_SOC_rate(i)...
-            * cost_bat(i) * (soc(i) - SOC_set(i) + power_SOC_rate(i)*eff_ba(i)*p_ba(i,k)) + mup(k));
+%         p_ba(i,k+1) = p_ba(i,k) -  epsilonP * ( - 2 * eff_ba(i) * power_SOC_rate(i)...
+%             * cost_bat(i) * (soc(i) - SOC_set(i) + power_SOC_rate(i)*eff_ba(i)*p_ba(i,k)) + mup(k));
+        p_ba(i) = p_ba(i) -  epsilonP * ( - 2 * eff_ba(i) * power_SOC_rate(i)...
+            * cost_bat(i) * (soc(i) - SOC_set(i) + power_SOC_rate(i)*eff_ba(i)*p_ba(i)) + mup);
+
+%         % Battery rates projection
+%         if p_ba(i,k+1) > p_ba_dis_max(i)
+%             p_ba(i,k+1) = p_ba_dis_max(i);
+%         elseif p_ba(i,k+1) < p_ba_cha_max(i)
+%             p_ba(i,k+1) = p_ba_cha_max(i);
+%         end
         % Battery rates projection
-        if p_ba(i,k+1) > p_ba_dis_max(i)
-            p_ba(i,k+1) = p_ba_dis_max(i);
-        elseif p_ba(i,k+1) < p_ba_cha_max(i)
-            p_ba(i,k+1) = p_ba_cha_max(i);
+        if p_ba(i) > p_ba_dis_max(i)
+            p_ba(i) = p_ba_dis_max(i);
+        elseif p_ba(i) < p_ba_cha_max(i)
+            p_ba(i) = p_ba_cha_max(i);
         end
     end
     
     % dual update
-    mup(k+1) = mup(k) + epsilonD * (sum(p_pv(:,k)) + sum(p_ba(:,k)) - p_opt);
-    muq(k+1) = muq(k) + epsilonD * (sum(q_pv(:,k)) - q_opt);
-
+%     mup(k+1) = mup(k) + epsilonD * (sum(p_pv(:,k)) + sum(p_ba(:,k)) - p_opt);
+%     muq(k+1) = muq(k) + epsilonD * (sum(q_pv(:,k)) - q_opt);
+    mup = mup + epsilonD * (sum(p_pv) + sum(p_ba) - p_opt);
+    muq = muq + epsilonD * (sum(q_pv) - q_opt);
 end
 
-plot(mup);hold on; plot(muq);% plot dual variable
-figure; 
-plot(p_ba(5,:));
+% plot(mup);hold on; plot(muq);% plot dual variable
+% figure; 
+% plot(p_ba(5,:));
 end
