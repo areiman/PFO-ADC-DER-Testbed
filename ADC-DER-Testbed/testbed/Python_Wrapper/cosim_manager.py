@@ -29,7 +29,7 @@ while time_granted < time_stop:
     # time_delta = time_granted - time_last
     print ("**time granted =  ", time_granted)
     print("**time next =  ", time_next)
-    if time_granted == time_next:
+    if time_granted == time_next and time_granted < time_stop:
         time_next = time_next + control_timestep
         events = fncs.get_events()
         SubKeys = []
