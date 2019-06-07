@@ -111,8 +111,7 @@ def synch(keys,vals,timestamp=None):
 
 	# Uncomment this line once ADC_Manager.synch is implemented as described
 	mgr_dat = ADC_Manager.synch(dat,timestamp=timestamp)
-	# mgr_dat = ADC_Manager.synch(dat, timestamp=timestamp)
-
+	# mgr_dat = ADC_Manager_dummy.synch(dat, timestamp=timestamp)
 
 	# ----------------------------------------------------------------------------
 	# ASSEMBLE KEY-VALUE PAIRS FROM MGR_DAT
