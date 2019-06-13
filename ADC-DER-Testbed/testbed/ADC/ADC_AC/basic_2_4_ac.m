@@ -94,7 +94,7 @@ function [new_ewh_state,new_ac_state,batt_p,batt_q,pv_p,pv_q] = ...
 			off_idxs(idx) = [];
 		end
 	end
-	if target_ewh_on < length(on_idxs)
+	if target_ac_on < length(on_idxs)
 		% we need to turn devices off
 		for ctr = 1:( length(on_idxs) - target_ac_on )
 			% determine which device to turn off
