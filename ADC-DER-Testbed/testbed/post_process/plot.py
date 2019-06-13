@@ -13,6 +13,14 @@ os.chdir('/home/ankit/PFO-ADC-DER-Testbed/ADC-DER-Testbed/testbed/post_process')
 #loading cosim_manager data
 lp = open('./cosim_data.json').read()
 cosim_data = json.loads(lp)
+## Appending all cosim data with one more entry
+for key, value in cosim_data.items():
+    for k, v in value.items():
+        if k == 'Timestamp':
+            v.append(v[-1]+v[-1]-v[-2]) # adding one more timestamp
+        else:
+            v.append(v[-1]) # repeating the last value again
+        cosim_data[key][k] = v
 cosim_time = cosim_data[list(cosim_data)[0]]['Timestamp']
 cosim_data['time'] = np.array([int(i) for i in cosim_time])
 
@@ -67,7 +75,7 @@ for der in der_type:
         if der[0] not in adc_ind[find_adc(b)]:
             adc_ind[find_adc(b)][der[0]]=[]
         adc_ind[find_adc(b)][der[0]].append(obj.index(a))
-print('elapsed time is ',time.time()-t)
+# print('elapsed time is ',time.time()-t)
 
 #Voltages
 voltages = np.array(gld_data['hvac']['voltages']['values']).astype(np.cfloat)
@@ -135,18 +143,21 @@ time_stamp = [t.split(' ')[1] for t in gld_data['wh']['power']['time']]
 time_h = [datetime.strptime(t, '%H:%M:%S') for t in time_stamp]
 hrs = [int((i-time_h[0]).total_seconds()) for i in time_h]
 
-adc_num = '52'
+adc_num = '90'
 total_rating = sum(wh_rating[0, adc_ind[adc_num]['wh']]) + sum(hvac_rating[0, adc_ind[adc_num]['hvac']]) + sum(
     battInv_rated[0, adc_ind[adc_num]['battInv']]) / 1000 + sum(solar_rated[0, adc_ind[adc_num]['solarInv']]) / 1000
 fig1, ax1 = plt.subplots(2, 2, sharex='col')
-ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['battInv']), label='Battery')
-ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['solarInv']), label='Solar')
-ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['wh']), label='WH')
-ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['hvac']), label='HVAC')
-ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['batt_p'])/1,'k', linestyle='--', where='post', label='battery set point')
-ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['pv_p'])/1,'k', linestyle='--', where='post', label='pv set point')
-ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['ac_p'])/1,'k', linestyle='--', where='post', label='AC set point')
-ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['ewh_p'])/1,'k', linestyle='--', where='post', label='WH set point')
+# ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['battInv']), label='Battery', color='C0')
+# ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['solarInv']), label='Solar', color='C1')
+ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['solarInv'] + adc_agg[adc_num]['battInv']), label='Solar+Battery', color='C2')
+ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['wh']), label='WH', color='C3')
+ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['hvac']), label='HVAC', color='C4')
+
+# ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_BATT'])/1,'k', linestyle='--', color='C0', where='post', label='battery set point')
+# ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_PV'])/1,'k', linestyle='--', color='C1',  where='post', label='pv set point')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_PV']) + np.array(cosim_data[adc_num]['Popt_BATT']),'k', linestyle='--', color='C2',  where='post', label='PV+Batt set point')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_WH'])/1,'k', linestyle='--', color='C3', where='post', label='WH set point')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_HVAC'])/1,'k', linestyle='--', color='C4', where='post', label='AC set point')
 ax1[0,0].set_ylabel("kW")
 ax1[0,0].set_title("Aggregated kW at ADC "+adc_num+" by DER")
 ax1[0,0].legend(loc='best')
@@ -155,10 +166,10 @@ ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['battInv']), label='Battery')
 ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['solarInv']), label='Solar')
 ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['wh']), label='WH')
 ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['hvac']), label='HVAC')
-ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['batt_q'])/1,'k', linestyle='--', where='post', label='battery set point')
-ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['pv_q'])/1,'k', linestyle='--', where='post', label='pv set point')
-ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['ac_q'])/1,'k', linestyle='--', where='post', label='AC set point')
-ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['ewh_q'])/1,'k', linestyle='--', where='post', label='WH set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_BATT'])/1,'k', linestyle='--', color='C0', where='post', label='battery set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_PV'])/1,'k', linestyle='--', color='C1', where='post', label='pv set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_WH'])/1,'k', linestyle='--', color='C2', where='post', label='WH set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_HVAC'])/1,'k', linestyle='--', color='C3', where='post', label='AC set point')
 
 ax1[0,1].set_ylabel("kVar")
 ax1[0,1].set_title("Aggregated kVar at ADC "+adc_num+" by DER")
@@ -177,33 +188,33 @@ ax1[1,1].set_title("Aggregated Q at ADC "+adc_num)
 ax1[1,1].legend(loc='best')
 
 cool_on_ind = np.nonzero(hvac_c_status[-1,:])[0]
-fig2, ax2 = plt.subplots(2, 2, sharex='col')
-# ax2.plot(hrs, np.abs(voltages[:,adc_ind[adc_num]['hvac']])/120
-ax2[1,0].plot(np.abs(voltages[-1,cool_on_ind])/120)
-ax2[1,0].plot(np.ones(len(cool_on_ind), int), 'r--')
-ax2[1,0].set_title("Voltages at all residential meters")
-ax2[1,0].set_ylabel("pu")
-ax2[1,0].set_xlabel("individual devices")
-
-# ax3.plot(hvac_rating[-1,cool_on_ind],linestyle='None', marker = 'o', markersize=2, label='rating')
-# ax3.plot(np.real(hvac_power[-1,cool_on_ind]),linestyle='None', marker = 'o', markersize=2, label='Output')
-ax2[0,0].plot(hvac_rating[-1,cool_on_ind]- np.real(hvac_power[-1,cool_on_ind]), label='rating-output')
-ax2[0,0].set_title("Difference between HVAC Rating and Output (Rating - Output)")
-ax2[0,0].set_ylabel("kW")
-ax2[0,0].set_xlabel("individual devices")
-ax2[0,0].legend(loc='best')
-
-ax2[0,1].plot((hvac_rating[-1,cool_on_ind]- np.real(hvac_power[-1,cool_on_ind]))/hvac_rating[-1,cool_on_ind] *100, label='(rating-output)/rating*100')
-ax2[0,1].set_title("% Error between HVAC Rating and Output (Rating - Output)/Rating")
-ax2[0,1].set_ylabel("%")
-ax2[0,1].set_xlabel("individual devices")
-ax2[0,1].legend(loc='best')
-
-ax2[1,1].plot(np.imag(hvac_power[-1,cool_on_ind])/np.real(hvac_power[-1,cool_on_ind]))
-ax2[1,1].set_title("Q/P")
-ax2[1,1].set_ylabel("ratio")
-ax2[1,1].set_xlabel("individual devices")
-ax2[1,1].legend(loc='best')
+# fig2, ax2 = plt.subplots(2, 2, sharex='col')
+# # ax2.plot(hrs, np.abs(voltages[:,adc_ind[adc_num]['hvac']])/120
+# ax2[1,0].plot(np.abs(voltages[-1,cool_on_ind])/120)
+# ax2[1,0].plot(np.ones(len(cool_on_ind), int), 'r--')
+# ax2[1,0].set_title("Voltages at all residential meters")
+# ax2[1,0].set_ylabel("pu")
+# ax2[1,0].set_xlabel("individual devices")
+#
+# # ax3.plot(hvac_rating[-1,cool_on_ind],linestyle='None', marker = 'o', markersize=2, label='rating')
+# # ax3.plot(np.real(hvac_power[-1,cool_on_ind]),linestyle='None', marker = 'o', markersize=2, label='Output')
+# ax2[0,0].plot(hvac_rating[-1,cool_on_ind]- np.real(hvac_power[-1,cool_on_ind]), label='rating-output')
+# ax2[0,0].set_title("Difference between HVAC Rating and Output (Rating - Output)")
+# ax2[0,0].set_ylabel("kW")
+# ax2[0,0].set_xlabel("individual devices")
+# ax2[0,0].legend(loc='best')
+#
+# ax2[0,1].plot((hvac_rating[-1,cool_on_ind]- np.real(hvac_power[-1,cool_on_ind]))/hvac_rating[-1,cool_on_ind] *100, label='(rating-output)/rating*100')
+# ax2[0,1].set_title("% Error between HVAC Rating and Output (Rating - Output)/Rating")
+# ax2[0,1].set_ylabel("%")
+# ax2[0,1].set_xlabel("individual devices")
+# ax2[0,1].legend(loc='best')
+#
+# ax2[1,1].plot(np.imag(hvac_power[-1,cool_on_ind])/np.real(hvac_power[-1,cool_on_ind]))
+# ax2[1,1].set_title("Q/P")
+# ax2[1,1].set_ylabel("ratio")
+# ax2[1,1].set_xlabel("individual devices")
+# ax2[1,1].legend(loc='best')
 
 plt.show()
 # #plot
