@@ -42,4 +42,4 @@ p_opt = 20000;
 q_opt = 5000;
 
 [p_pv, q_pv, p_ba] = ADC_control(deltat, n_pv, n_ba, cap_pv, p_av, ...
-    cap_ba, p_ba_cha_max, p_ba_dis_max, eff_ba, SOC_set, SOC_now, p_opt, q_opt)
+    cap_ba, p_ba_cha_max, p_ba_dis_max, eff_ba, SOC_set, SOC_now, p_opt, q_opt);
