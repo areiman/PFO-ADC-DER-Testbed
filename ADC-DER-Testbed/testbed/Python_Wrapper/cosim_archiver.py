@@ -41,7 +41,8 @@ def archive_pfo(adc,timestamp,P,Q,\
 def init_adc_dummy(adc):
 	print("creating cosim_data csv file")
 	with open("../cosim_dat/" + adc + ".csv" , 'w') as fh:
-		fh.write("Timestamp,Popt,Qopt,batt_p,batt_q,pv_p,pv_q,ac_p,ac_q,ewh_p,ewh_q,n_ac_ON,n_ewh_ON\n")
+		fh.write(
+			"Timestamp,Popt,Qopt,Popt_BATT,Qopt_BATT,Popt_PV,Qopt_PV,Popt_HVAC,Qopt_HVAC,Popt_WH,Qopt_WH,n_ac_ON,n_ewh_ON\n")
 
 def archive_pfo_dummy(adc, timestamp, P, Q, batt_p, batt_q, pv_p, pv_q, ac_p, ac_q, ewh_p, ewh_q, n_ac_ON, n_ewh_ON):
 	print("inside cosim archiver.....")

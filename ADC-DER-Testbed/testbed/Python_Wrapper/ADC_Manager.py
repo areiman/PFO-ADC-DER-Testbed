@@ -52,7 +52,7 @@ def synch(dat, timestamp=None):
 		if not re.search(adc, 'NONE'):
 			if adc not in mem:
 				mem[adc] = {}
-				archive.init_adc_dummy(adc)
+				archive.init_adc(adc)
 			for t in dat[adc]:
 				if t not in mem[adc]:
 					mem[adc][t] = {}
@@ -266,9 +266,9 @@ def synch(dat, timestamp=None):
 		# ----------------------------------------------------------------------
 		# ARCHIVE AGGREGATE AND DISAGGREGATED PFO OUTPUT
 		# ----------------------------------------------------------------------
-		# archive.archive_pfo(adc, timestamp, Popt, Qopt, \
-		#                     Popt_ewh, Qopt_ewh, Popt_ac, \
-		#                     Qopt_ac, Popt_pv, Qopt_pv, Popt_batt, Qopt_batt)
+		archive.archive_pfo(adc, timestamp, Popt, Qopt, \
+		                    Popt_ewh, Qopt_ewh, Popt_ac, \
+		                    Qopt_ac, Popt_batt, Qopt_batt, Popt_pv, Qopt_pv)
 		#		archive.archive_pfo(adc,timestamp,Popt,Qopt)
 
 
@@ -397,7 +397,10 @@ def synch(dat, timestamp=None):
 		# ---------------------------------------------------------------------
 		# To be taken from dummy implementation
 
-		'''
+		# Call the actual task 2.4 for ewh code
+		new_ewh_tank_setpoint = eng.Task_2_4_ewh(ewh_state, ewh_prated, Popt_ewh)
+		print("**new ewh tank setpoint**")
+		print(new_ewh_tank_setpoint)
 		# Populate water heaters in the publish object
 		t = "WH"
 		pub_dat[adc][t] = {}
@@ -406,18 +409,25 @@ def synch(dat, timestamp=None):
 			o = ewh_names[0]
 			pub_dat[adc][t][o] = {}
 			pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint
+			if new_ewh_tank_setpoint == 212:
+				pub_dat[adc][t][o]["re_override"] = 1
+			elif new_ewh_tank_setpoint == 32:
+				pub_dat[adc][t][o]["re_override"] = 2
 		else:
 			for idx in range(len(ewh_names)):
 				# print('\t'+str(idx))
 				o = ewh_names[idx]
 				pub_dat[adc][t][o] = {}
 				pub_dat[adc][t][o]["tank_setpoint"] = new_ewh_tank_setpoint[idx][0]
-		'''
+				if new_ewh_tank_setpoint[idx][0] == 212:
+					pub_dat[adc][t][o]["re_override"] = 1
+				elif new_ewh_tank_setpoint[idx][0] == 32:
+					pub_dat[adc][t][o]["re_override"] = 2
 
 		# ----------------------------------------------------------------------
 		# DER DISPATCH FOR HVAC
 		# ----------------------------------------------------------------------
-		"""
+
 		# Set up inputs
 		Q_ref = Popt_ac
 		para_Tmin = []
@@ -546,7 +556,7 @@ def synch(dat, timestamp=None):
 				pub_dat[adc][t][o] = {}
 				pub_dat[adc][t][o]["cooling_setpoint"] = T_set[idx][0]
 				# pub_dat[adc][t][o]["heating_setpoint"] = new_ac_heat_set[idx][0]
-		"""
+
 		# ----------------------------------------------------------------------
 		# TASK 2.4 FOR PV AND BATTERIES
 		# ----------------------------------------------------------------------
