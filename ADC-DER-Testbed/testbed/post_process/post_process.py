@@ -14,6 +14,9 @@ csv_path = './../GLD/output/recorder_*.csv'
 skip_filenames = ['./../GLD/output/recorder_wh_heat_mode.csv',
                   './../GLD/output/recorder_hvac_cooling_system_type.csv',
                   './../GLD/output/recorder_hvac_auxiliary_system_type.csv',
+                  './../GLD/output/recorder_battInv_max_charge_rate.csv',
+                  './../GLD/output/recorder_battInv_inverter_efficiency.csv',
+                  './../GLD/output/recorder_batt_battery_capacity.csv',
                   './../GLD/output/recorder_hvac_heating_system_type.csv']
 # region Reading csv into a dictionary
 temp_dict1={}
@@ -50,8 +53,10 @@ for fname in glob.glob(csv_path):
             else:
                 time.append(row[0])
                 values.append(row[1:])
+        if len(values) > 1 and len(values[-1]) != len(values[-2]):
+            values.pop()
         values= np.array(values)
-        if 'i' or 'j' in values[0][0]:
+        if 'i' in values[0][0] or 'j' in values[0][0]:
             values = [[(ss.replace('i', 'j')) for ss in s] for s in values]
             #values = list(map(cfloat, values))
         else:
