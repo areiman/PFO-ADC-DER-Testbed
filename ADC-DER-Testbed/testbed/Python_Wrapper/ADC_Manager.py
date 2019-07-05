@@ -2,6 +2,8 @@ import sys
 # import fncs
 import matlab.engine
 from matlab import double as MATRIX
+import csv
+import numpy as np
 
 import re
 
@@ -27,7 +29,8 @@ batt_ranges = {}
 # This object will track persistent data
 buff = {}
 buff['AC_Tdesired'] = {}
-buff['AC_P_h'] = {}
+buff['ADC_AC_P_h'] = {}
+buff['AC_para_ratio'] = {}
 
 
 def oprint(dat, adc, t, o):
@@ -68,9 +71,16 @@ def synch(dat, timestamp=None):
 		if adc is not 'ADCNONE':
 			for o in dat[adc]['HVAC']:
 				if o not in buff['AC_Tdesired']:
-					#					buff['AC_Tdesired'][o] = dat[adc]['HVAC'][o]['cooling_setpoint']
+					buff['AC_Tdesired'][o] = dat[adc]['HVAC'][o]['cooling_setpoint']
 					# Randomize the desired temperature
-					buff['AC_Tdesired'][o] = uniform(65, 75)
+					# buff['AC_Tdesired'][o] = uniform(65, 75)
+				if o not in buff['AC_para_ratio']:
+					buff['AC_para_ratio'][o] = uniform(0.5, 15)
+			if adc not in buff['ADC_AC_P_h']:
+				with open('Ph_hvac.csv') as csv_file:
+					csv_reader = csv.reader(csv_file)
+					for row in csv_reader:
+						buff['ADC_AC_P_h'][adc] = [float(s) for s in row]
 
 	# -------------------------------------------------------------------------
 	# ITERATE OVER UPDATED ADCS
@@ -267,8 +277,8 @@ def synch(dat, timestamp=None):
 		# ARCHIVE AGGREGATE AND DISAGGREGATED PFO OUTPUT
 		# ----------------------------------------------------------------------
 		archive.archive_pfo(adc, timestamp, Popt, Qopt, \
-		                    Popt_ewh, Qopt_ewh, Popt_ac, \
-		                    Qopt_ac, Popt_batt, Qopt_batt, Popt_pv, Qopt_pv)
+							Popt_ewh, Qopt_ewh, Popt_ac, \
+							Qopt_ac, Popt_batt, Qopt_batt, Popt_pv, Qopt_pv)
 		#		archive.archive_pfo(adc,timestamp,Popt,Qopt)
 
 
@@ -459,18 +469,21 @@ def synch(dat, timestamp=None):
 			# para is a structure of vectors
 
 			# To be randomized?
-			para_Tmin.append(65) #65
-			para_Tmax.append(75) #75
+			para_Tmin.append(65) #65 68
+			para_Tmax.append(75) #75 77
 
 			# initial 'cooling_setpoint'
-			#			para['Tdesired'].append(buff['AC_Tdesired'][o])
-			para_Tdesired.append(mem[adc][t][o]['cooling_setpoint'])
+			para_Tdesired.append(buff['AC_Tdesired'][o])
+			# para_Tdesired.append(mem[adc][t][o]['cooling_setpoint'])
 
 			# [0.5 to 15] uniform distribution -- to be randomized
-			para_ratio.append(1.0)
+			# para_ratio.append(1.0)
+			para_ratio.append(buff['AC_para_ratio'][o])
 
 			# hvac_load
-			para_power.append(mem[adc][t][o]['hvac_load'])
+			# para_power.append(mem[adc][t][o]['hvac_load'])
+			para_power.append(mem[adc][t][o]["cooling_demand"] + \
+							 mem[adc][t][o]["fan_design_power"] / 1000)
 
 			para_C_a.append(mem[adc][t][o]['air_heat_capacity'])
 			para_C_m.append(mem[adc][t][o]['mass_heat_capacity'])
@@ -508,7 +521,7 @@ def synch(dat, timestamp=None):
 			# T_out is the outside temperature - same for all houses
 			if T_out:
 				if T_out != mem[adc][t][o]['outdoor_temperature']:
-					print("WARNING: T_out is not he same for all houses")
+					print("WARNING: T_out is not the same for all houses")
 			else:
 				T_out = mem[adc][t][o]['outdoor_temperature']
 
@@ -517,10 +530,11 @@ def synch(dat, timestamp=None):
 		#		sys.exit()
 
 		# Historical price - vector of past 24 hours @ 5 minutes
-		P_h = (24 * 12 * [0.07])
+		# P_h = (24 * 12 * [0.07])
+		P_h = buff['ADC_AC_P_h'][adc]
 
 		# P_cap scalar price units /[$/kW] -> 1 for $/kW; 1000 for $/MW
-		P_cap = 1
+		P_cap = 1.0
 
 		# Market period in hours (@5-min)
 		mdt = 1 / 3600 * 300
@@ -531,6 +545,28 @@ def synch(dat, timestamp=None):
 		# Parse outputs from the ac-based task 2.4 code
 		#		T_set = out[0]
 		#		P_h = out[1]
+		print('*** Task2.4 Parameters:****')
+		print('		para_Tdesired= ', para_Tdesired)
+		print('		para_ratio= ', para_ratio)
+		print('		para_power= ', para_power)
+		print('		para_C_a= ', para_C_a)
+		print('		para_C_m= ', para_C_m)
+		print('		para_H_m= ', para_H_m)
+		print('		para_U_A= ', para_U_A)
+		print('		para_mass_internal_gain_fraction= ', para_mass_internal_gain_fraction)
+		print('		para_mass_solar_gain_fraction= ', para_mass_solar_gain_fraction)
+		print('		Q_h= ', Q_h)
+		print('		Q_i= ', Q_i)
+		print('		Q_s= ', Q_s)
+		print('		Dtemp= ', Dtemp)
+		print('		halfband= ', halfband)
+		print('		Dstatus= ', Dstatus)
+		print('		P_h= ', P_h)
+		print('		len(P_h)= ', len(P_h))
+		print('		P_cap= ', P_cap)
+		print('		mdt= ', mdt)
+		print('		T_out= ', T_out)
+
 		out = eng.Task_2_4_PNNL_vec(Q_ref, \
 			para_Tmin, para_Tmax, para_Tdesired, para_ratio, para_power, \
 			para_C_a, para_C_m, para_H_m, para_U_A, \
@@ -539,7 +575,11 @@ def synch(dat, timestamp=None):
 			nargout=2)
 
 		T_set = out[0]
-		P_h = out[1]
+		# P_h = out[1][0]
+		# P_h = P_h._data.tolist()
+		buff['ADC_AC_P_h'][adc] = out[1][0]._data.tolist()
+		print("**** ")
+		print("*** HVAC output P_h ****  = ", buff['ADC_AC_P_h'][adc])
 
 		# sys.exit()
 
@@ -578,6 +618,7 @@ def synch(dat, timestamp=None):
 
 		# Battery parameters
 		cap_ba = []			# battery capacity
+		cap_ba_inv = []		# battery inverter rated power
 		p_ba_cha_max = []	# maximum charging rate
 		p_ba_dis_max = []	# maximum discharging rate
 		eff_ba = []			# battery efficiency
@@ -589,6 +630,7 @@ def synch(dat, timestamp=None):
 #			print(mem[adc][t][o])
 #			sys.exit()
 			cap_ba.append(mem[adc][t][o]['battery.battery_capacity'])
+			cap_ba_inv.append(mem[adc][t][o]['inverter.rated_power'])
 			p_ba_cha_max.append(mem[adc][t][o]['battery.rated_power'] * -1.0)
 			p_ba_dis_max.append(mem[adc][t][o]['battery.rated_power'])
 			eff_ba.append(mem[adc][t][o]['inverter.inverter_efficiency'])
@@ -601,30 +643,32 @@ def synch(dat, timestamp=None):
 		print("--p_opt for PV+batt: {0} W".format(p_opt))
 		print("--q_pot for PV+batt: {0} VAR".format(q_opt))
 
-#		print("deltat: {0}".format(deltat))
-#		print("n_pv: {0}".format(n_pv))
-#		print("n_ba: {0}".format(n_ba))
-#		print("cap_pv: {0}".format(cap_pv))
+		print("deltat: {0}".format(deltat))
+		print("n_pv: {0}".format(n_pv))
+		print("n_ba: {0}".format(n_ba))
+		print("cap_pv: {0}".format(cap_pv))
 		print("p_av: {0}".format(p_av))
-#		print("cap_ba: {0}".format(cap_ba))
+		print("cap_ba: {0}".format(cap_ba))
+		print("cap_ba_inv: {0}".format(cap_ba))
 		print("p_ba_cha_max: {0}".format(p_ba_cha_max))
 		print("p_ba_dis_max: {0}".format(p_ba_dis_max))
-#		print("eff_ba: {0}".format(eff_ba))
-#		print("SOC_set: {0}".format(SOC_set))
-#		print("SOC_now: {0}".format(SOC_now))
-#		print("p_opt: {0}".format(p_opt))
-#		print("q_opt: {0}".format(q_opt))
+		print("eff_ba: {0}".format(eff_ba))
+		print("SOC_set: {0}".format(SOC_set))
+		print("SOC_now: {0}".format(SOC_now))
+		print("p_opt: {0}".format(p_opt))
+		print("q_opt: {0}".format(q_opt))
 
 		# Call the PV and Battery implementation of task 2.4
 		out = eng.ADC_control(deltat,n_pv,n_ba,MATRIX(cap_pv),MATRIX(p_av),\
-			MATRIX(cap_ba),MATRIX(p_ba_cha_max),MATRIX(p_ba_dis_max),\
+			MATRIX(cap_ba), MATRIX(cap_ba_inv), MATRIX(p_ba_cha_max),MATRIX(p_ba_dis_max),\
 			MATRIX(eff_ba),MATRIX(SOC_set),MATRIX(SOC_now),\
-			p_opt,q_opt,nargout=3)
+			p_opt,q_opt,nargout=4)
 
 		# Parse outputs
 		p_pv = out[0]
 		q_pv = out[1]
 		p_ba = out[2]
+		q_ba = out[3]
 	
 		# Populate the PV inverters
 		t = "PV"
@@ -658,22 +702,27 @@ def synch(dat, timestamp=None):
 		pub_dat[adc][t] = {}
 		# print(batt_p)
 		tmp_p_ba = 0.0
+		tmp_q_ba = 0.0
 		if len(batt_names) == 1:
 			tmp_p_ba = tmp_p_ba + p_ba
+			tmp_q_ba = tmp_q_ba + q_ba
 			o = batt_names[0]
 			pub_dat[adc][t][o] = {}
 			pub_dat[adc][t][o]["inverter.P_Out"] = p_ba
-			pub_dat[adc][t][o]["inverter.Q_Out"] = 0.0
+			pub_dat[adc][t][o]["inverter.Q_Out"] = q_ba
 		else:
 			for idx in range(len(batt_names)):
 				# print('\t'+str(idx))
 				tmp_p_ba = tmp_p_ba + p_ba[0][idx]
+				tmp_q_ba = tmp_q_ba + q_ba[0][idx]
 				o = batt_names[idx]
 				pub_dat[adc][t][o] = {}
 				pub_dat[adc][t][o]["inverter.P_Out"] = p_ba[0][idx]
-				pub_dat[adc][t][o]["inverter.Q_Out"] = 0.0
+				pub_dat[adc][t][o]["inverter.Q_Out"] = q_ba[0][idx]
 		print('\np_ba:'), print(p_ba)
 		print("--total p_ba: {0}".format(tmp_p_ba))
+		print('\nq_ba:'), print(q_ba)
+		print("--total q_ba: {0}".format(tmp_q_ba))
 
 	# '''
 	# --------------------------------------------------------------------------
