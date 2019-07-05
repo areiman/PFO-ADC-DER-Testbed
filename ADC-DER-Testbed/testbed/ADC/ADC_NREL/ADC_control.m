@@ -1,9 +1,14 @@
 % This code serves as a framework to optimize regional welfare among
 % aggregated customers while tracking the reference point of p* and q*.
 
-function [p_pv, q_pv, p_ba] = ADC_control(deltat, n_pv, n_ba, cap_pv, p_av, ...
-    cap_ba, p_ba_cha_max, p_ba_dis_max, eff_ba, SOC_set, SOC_now, p_opt, q_opt)
+function [p_pv, q_pv, p_ba, q_ba] = ADC_control(deltat, n_pv, n_ba, cap_pv, p_av, ...
+    cap_ba, cap_ba_inverter, p_ba_cha_max, p_ba_dis_max, eff_ba, ...
+    SOC_set, SOC_now, p_opt, q_opt)
 
+p_ba_cha_max = - p_ba_cha_max;
+
+SOC_set;
+SOC_now;
 %fprintf('hi\n');
 %class(deltat)
 %deltat
@@ -21,17 +26,18 @@ q_pv= zeros(1,n_pv);
 soc=SOC_now;
 % p_ba=zeros(n_ba,1);
 p_ba=zeros(1,n_ba);
+q_ba=zeros(1,n_ba);
 
 % dual variable associated with tracking discrepancy
 mup=0;
 muq=0;
 
 % constant stepsize for primal and dual; tuned
-epsilonP=0.001;
-epsilonD=0.001;
+epsilonP=0.005;
+epsilonD=0.005;
 
 %% Cost function parameters for PV inverters
-% C_i^pv(p_i,q_i)=cost_p (p_i^av-p_i)^2+cost_q q_i^2; parameters can be altered for heterogeneous 
+% C_i^pv(p_i,q_i)=cost_p (p_i^av-p_i)^2+cost_q q_i^2; parameters can be altered for heterogeneous
 % inverters
 cost_p = 2 * ones(n_pv,1);
 cost_q = 1 * ones(n_pv,1);
@@ -42,7 +48,7 @@ cost_q = 1 * ones(n_pv,1);
 power_SOC_rate = deltat/60./cap_ba;
 % C_i^b=cost_bat*(SoC-0.5)^2
 cost_bat = deltat*1./power_SOC_rate;
-
+cost_bat_q = 1;
 
 
 for k=1:max_iter
@@ -58,8 +64,10 @@ for k=1:max_iter
     for i=1:n_ba
 %         p_ba(i,k+1) = p_ba(i,k) -  epsilonP * ( - 2 * eff_ba(i) * power_SOC_rate(i)...
 %             * cost_bat(i) * (soc(i) - SOC_set(i) + power_SOC_rate(i)*eff_ba(i)*p_ba(i,k)) + mup(k));
-        p_ba(i) = p_ba(i) -  epsilonP * ( - 2 * eff_ba(i) * power_SOC_rate(i)...
-            * cost_bat(i) * (soc(i) - SOC_set(i) + power_SOC_rate(i)*eff_ba(i)*p_ba(i)) + mup);
+        gradient_ba = - 2 * eff_ba(i) * power_SOC_rate(i) ...
+            * cost_bat(i) * (soc(i) - SOC_set(i) + power_SOC_rate(i)*eff_ba(i));
+        p_ba(i) = p_ba(i) -  epsilonP * ( gradient_ba * p_ba(i) + mup);
+        q_ba(i) = q_ba(i) - epsilonP * ( cost_bat_q * q_ba(i) + muq);
 
 %         % Battery rates projection
 %         if p_ba(i,k+1) > p_ba_dis_max(i)
@@ -68,21 +76,28 @@ for k=1:max_iter
 %             p_ba(i,k+1) = p_ba_cha_max(i);
 %         end
         % Battery rates projection
-        if p_ba(i) > p_ba_dis_max(i)
-            p_ba(i) = p_ba_dis_max(i);
-        elseif p_ba(i) < p_ba_cha_max(i)
-            p_ba(i) = p_ba_cha_max(i);
-        end
+
+        [p_ba(i), q_ba(i)] = Proj_ba_inverter( p_ba(i), q_ba(i), p_ba_dis_max(i), p_ba_cha_max(i), cap_ba_inverter(i));
+
+
+%         if p_ba(i) > p_ba_dis_max(i)
+%             p_ba(i) = p_ba_dis_max(i);
+%         elseif p_ba(i) < p_ba_cha_max(i)
+%             p_ba(i) = p_ba_cha_max(i);
+%         end
     end
-    
+
     % dual update
 %     mup(k+1) = mup(k) + epsilonD * (sum(p_pv(:,k)) + sum(p_ba(:,k)) - p_opt);
 %     muq(k+1) = muq(k) + epsilonD * (sum(q_pv(:,k)) - q_opt);
     mup = mup + epsilonD * (sum(p_pv) + sum(p_ba) - p_opt);
-    muq = muq + epsilonD * (sum(q_pv) - q_opt);
+    muq = muq + epsilonD * (sum(q_pv) + sum(q_ba) - q_opt);
+
 end
 
+% mup = mup
+% muq = muq
 % plot(mup);hold on; plot(muq);% plot dual variable
-% figure; 
+% figure;
 % plot(p_ba(5,:));
 end
