@@ -15,11 +15,12 @@ def calculate(adc_agg, adc_Prating, cosim_data):
     total_rating_der = 0
     num_der = {}
     total_num_der = 0
+    cosim_data
     for adc_num in adc_agg:
-        adc_err_kw["adc_num"].append(adc_num)
+        adc_err_kw["adc_num"].append(adc_num.split('M1_ADC')[1])
         if "battInv" in adc_agg[adc_num]:
             num_der[adc_num] = len(adc_agg[adc_num]['battInv'])
-            temp_err_batt = cosim_data[adc_num]['Popt_BATT'][0:2] - np.real(adc_agg[adc_num]['battInv'])[3:6:2]
+            temp_err_batt = cosim_data[adc_num]['Popt_BATT'][0:-1] - np.real(adc_agg[adc_num]['battInv'])[149::76]
             adc_err_kw['battInv'] = np.append(adc_err_kw['battInv'], (np.sum(abs(temp_err_batt))/len(temp_err_batt)))
             adc_err_pu['battInv'] = np.append(adc_err_pu['battInv'],
                                               (np.sum(abs(temp_err_batt)) / len(temp_err_batt) / adc_Prating[adc_num]['battInv']))
@@ -33,7 +34,7 @@ def calculate(adc_agg, adc_Prating, cosim_data):
 
         if "solarInv" in adc_agg[adc_num]:
             num_der[adc_num] = num_der[adc_num] + len(adc_agg[adc_num]['solarInv'])
-            temp_err_pv = (cosim_data[adc_num]['Popt_PV'][0:2] - np.real(adc_agg[adc_num]['solarInv'])[3:6:2])
+            temp_err_pv = (cosim_data[adc_num]['Popt_PV'][0:-1] - np.real(adc_agg[adc_num]['solarInv'])[149::76])
             adc_err_kw['solarInv'] = np.append(adc_err_kw['solarInv'], (np.sum(abs(temp_err_pv))/len(temp_err_pv)))
             adc_err_pu['solarInv'] = np.append(adc_err_pu['solarInv'],
                                               (np.sum(abs(temp_err_pv)) / len(temp_err_pv) / adc_Prating[adc_num]['solarInv']))
@@ -50,7 +51,13 @@ def calculate(adc_agg, adc_Prating, cosim_data):
 
         if "hvac" in adc_agg[adc_num]:
             num_der[adc_num] = num_der[adc_num] + len(adc_agg[adc_num]['hvac'])
-            temp_err = (cosim_data[adc_num]['Popt_HVAC'][0:2] - np.real(adc_agg[adc_num]['hvac'])[3:6:2])
+            # caclulate average of 5 minutes for hvac
+            mean_hvac = []
+            for i in range(73,450, 76):
+                mean_hvac.append(float(np.mean(np.real(adc_agg[adc_num]['hvac'])[i:i+76])))
+            mean_hvac = np.array(mean_hvac)
+            # temp_err = (cosim_data[adc_num]['Popt_HVAC'][0:-1] - np.real(adc_agg[adc_num]['hvac'])[149::76])
+            temp_err = (cosim_data[adc_num]['Popt_HVAC'][0:-1] - mean_hvac)
             adc_err_kw['hvac'] = np.append(adc_err_kw['hvac'], (np.sum(abs(temp_err))/len(temp_err)))
             adc_err_pu['hvac'] = np.append(adc_err_pu['hvac'],
                                               (np.sum(abs(temp_err)) / len(temp_err) / adc_Prating[adc_num]['hvac']))
@@ -60,7 +67,7 @@ def calculate(adc_agg, adc_Prating, cosim_data):
 
         if "wh" in adc_agg[adc_num]:
             num_der[adc_num] = num_der[adc_num] + len(adc_agg[adc_num]['wh'])
-            temp_err = (cosim_data[adc_num]['Popt_WH'][0:2] - np.real(adc_agg[adc_num]['wh'])[3:6:2])
+            temp_err = (cosim_data[adc_num]['Popt_WH'][0:-1] - np.real(adc_agg[adc_num]['wh'])[149::76])
             adc_err_kw['wh'] = np.append(adc_err_kw['wh'], (np.sum(abs(temp_err))/len(temp_err)))
             adc_err_pu['wh'] = np.append(adc_err_pu['wh'],
                                               (np.sum(abs(temp_err)) / len(temp_err) / adc_Prating[adc_num]['wh']))
@@ -68,7 +75,7 @@ def calculate(adc_agg, adc_Prating, cosim_data):
             adc_err_kw['wh'] = np.append(adc_err_kw['wh'], np.nan)
             adc_err_pu['wh'] = np.append(adc_err_pu['wh'], np.nan)
 
-        temp_err = (cosim_data[adc_num]['Popt'][0:2] - np.real(adc_agg[adc_num]['total'])[3:6:2])
+        temp_err = (cosim_data[adc_num]['Popt'][0:-1] - np.real(adc_agg[adc_num]['total'])[149::76])
         adc_err_kw['total'] = np.append(adc_err_kw['total'], (np.sum(abs(temp_err))/len(temp_err)))
         adc_err_pu['total'] = np.append(adc_err_pu['total'],
                                         (np.sum(abs(temp_err)) / len(temp_err)) / adc_Prating[adc_num]['total'])
@@ -82,8 +89,8 @@ def calculate(adc_agg, adc_Prating, cosim_data):
     print('Net P mismatch index:  ', "{0:.2f}".format(np.nanmean(adc_err_kw['total'])), 'kW     and     ',
           "{0:.2f}".format(np.nanmean(adc_err_pu['total'])), 'pu per ADC')
     print('Individual Control Performance:')
-    print('     solar:    ', "{0:.2f}".format(np.nanmean(adc_err_kw['solarInv']))  , 'kW     |', "{0:.2f}".format(np.nanmean(adc_err_pu['solarInv'])), 'pu per ADC')
-    print('     battery:  ', "{0:.2f}".format(np.nanmean(adc_err_kw['battInv']))   , 'kW     |', "{0:.2f}".format(np.nanmean(adc_err_pu['battInv'])), 'pu per ADC')
+    # print('     solar:    ', "{0:.2f}".format(np.nanmean(adc_err_kw['solarInv']))  , 'kW     |', "{0:.2f}".format(np.nanmean(adc_err_pu['solarInv'])), 'pu per ADC')
+    # print('     battery:  ', "{0:.2f}".format(np.nanmean(adc_err_kw['battInv']))   , 'kW     |', "{0:.2f}".format(np.nanmean(adc_err_pu['battInv'])), 'pu per ADC')
     print('     pv+batt:  ', "{0:.2f}".format(np.nanmean(adc_err_kw['solar_batt'])), 'kW     |', "{0:.2f}".format(np.nanmean(adc_err_pu['solar_batt'])), 'pu per ADC')
     print('     HVAC:     ', "{0:.2f}".format(np.nanmean(adc_err_kw['hvac']))      , 'kW     |', "{0:.2f}".format(np.nanmean(adc_err_pu['hvac'])), 'pu per ADC')
     print('     WH:       ', "{0:.2f}".format(np.nanmean(adc_err_kw['wh']))        , 'kW     |', "{0:.2f}".format(np.nanmean(adc_err_pu['wh'])), 'pu per ADC')
@@ -114,9 +121,9 @@ def calculate(adc_agg, adc_Prating, cosim_data):
     # plt.show()
     #
     # getting the mistmatch error metric per adc as time vector
-    # adc_err_time_vec[adc_num] = abs(cosim_data[adc_num]['Popt'][0:2] - np.real(adc_agg[adc_num]['total'])[3:6:2])
-    # adc_err_time_vec[adc_num] = abs(cosim_data[adc_num]['Popt'][0:2] - np.real(adc_agg[adc_num]['total'])[3:6:2]) / \
-    #                             cosim_data[adc_num]['Popt'][0:2]
+    # adc_err_time_vec[adc_num] = abs(cosim_data[adc_num]['Popt'][0:-1] - np.real(adc_agg[adc_num]['total'])[149::76])
+    # adc_err_time_vec[adc_num] = abs(cosim_data[adc_num]['Popt'][0:-1] - np.real(adc_agg[adc_num]['total'])[149::76]) / \
+    #                             cosim_data[adc_num]['Popt'][0:-1]
 
     # if not total_err_time_vec.any():
     #     total_err_time_vec = adc_err_time_vec[adc_num]  # *num_der[adc_num]

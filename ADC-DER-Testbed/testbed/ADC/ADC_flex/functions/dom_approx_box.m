@@ -2,8 +2,6 @@ function [F_adc,D_adc,wh_range,ac_range,pv_range,bat_range] = dom_approx_box(var
 
 tic;
 
-syms p q d
-
 disp('in dom_approx_box');
 
 %% Input/Output specifications
@@ -29,17 +27,18 @@ wh_pop  = varargin{1};
 ac_pop  = varargin{2};
 pv_pop  = varargin{3};
 bat_pop = varargin{4};
-if nargin>4
-    addpath(genpath(varargin{5}))
+sum_Qmax = varargin{5};
+sum_Qmin = varargin{6};
+scale_factor = sqrt(varargin{7});
+
+if nargin>7
+    addpath(genpath(varargin{8}))
 end
 
 %==========================================================
 % Create a random population of devices
 % Enter the type: battery, ewh, hvac, photovoltaic, wind
 %==========================================================
-p_step = 0.02; % [kW] this is the step-size used to discretize the p-axis
-max_count = Inf;
-
 wh_range = zeros(1,4);
 ac_range = zeros(1,4);
 pv_range = zeros(1,4);
@@ -47,160 +46,57 @@ bat_range = zeros(1,4);
 
 dev_count = 0;
 
-aggr_dev(1).params.prated = 0;      % EWH
-
-aggr_dev(2).params.prated = 0;      % HVAC
-aggr_dev(2).params.powfac = 0;      % HVAC
-
-aggr_dev(3).params.pgenmax = 0;     % PV
-aggr_dev(3).params.invcap = 0;      % PV
-
-aggr_dev(4).params.prated = 0;      % battery
-aggr_dev(4).params.invcap = 0;      % battery
-
 for i = 1:length(wh_pop)
-    dev_count = dev_count + 1;
-    
-    desc_of_dev(dev_count).type = 'ewh';
-    [dev_constr,dev_conv_constr,dev_params] = wh_model(wh_pop(i));
-    desc_of_dev(dev_count).constr       = dev_constr;
-    desc_of_dev(dev_count).conv_constr  = dev_conv_constr;
-    desc_of_dev(dev_count).params       = dev_params;
-    
-    pval = [];  % p-axis discretized in the feasible portion
-    qmax = [];  % max q values at the discrete (feasible) p values
-    qmin = [];  % min q values at the discrete (feasible) p values
-    for j = 1:length(dev_constr)
-        pval_temp = linspace(dev_constr{j}.prange(1),dev_constr{j}.prange(2),min(max_count,1+floor(diff(dev_constr{j}.prange)/p_step)));
-        qmax_temp = double(subs(dev_constr{j}.qrange(2),p,pval_temp));
-        qmin_temp = double(subs(dev_constr{j}.qrange(1),p,pval_temp));
-        
-        pval = [pval pval_temp];
-        qmax = [qmax qmax_temp];
-        qmin = [qmin qmin_temp];
-    end
-    
-    desc_of_dev(dev_count).pval = pval;
-    desc_of_dev(dev_count).qmax = qmax;
-    desc_of_dev(dev_count).qmin = qmin;
-    
-    wh_range = wh_range + [max(pval) min(pval) max(qmax) min(qmin)];
+    dev_count = dev_count + 1;    
+    dev_constr = wh_model(wh_pop(i));    
+    wh_range = wh_range + [dev_constr.prange(2) dev_constr.prange(1) dev_constr.qrange(2) dev_constr.qrange(1)];
 end
-
-aggr_dev(1).params.prated = wh_range(1);
-[aggr_dev(1).constr,~,~] = wh_model(aggr_dev(1).params);
-
+wh_range_old = wh_range;
+    wh_range(1) = (wh_range_old(1)+wh_range_old(2))/2 + scale_factor*(wh_range_old(1)-wh_range_old(2))/2;
+    wh_range(2) = (wh_range_old(1)+wh_range_old(2))/2 - scale_factor*(wh_range_old(1)-wh_range_old(2))/2;
+    wh_range(3) = (wh_range_old(3)+wh_range_old(4))/2 + scale_factor*(wh_range_old(3)-wh_range_old(4))/2;
+    wh_range(4) = (wh_range_old(3)+wh_range_old(4))/2 - scale_factor*(wh_range_old(3)-wh_range_old(4))/2;
 disp('    done with wh')
+
 for i = 1:length(ac_pop)
-    dev_count = dev_count + 1;
-    
-    aggr_dev(2).params.prated = aggr_dev(2).params.prated + ac_pop(i).prated;
-    aggr_dev(2).params.powfac = aggr_dev(2).params.powfac - (aggr_dev(2).params.powfac-ac_pop(i).powfac)*ac_pop(i).prated/aggr_dev(2).params.prated;
-    
-    desc_of_dev(dev_count).type = 'hvac';
-    [dev_constr,dev_conv_constr,dev_params] = ac_model(ac_pop(i));
-    desc_of_dev(dev_count).constr       = dev_constr;
-    desc_of_dev(dev_count).conv_constr  = dev_conv_constr;
-    desc_of_dev(dev_count).params       = dev_params;
-    
-    pval = [];  % p-axis discretized in the feasible portion
-    qmax = [];  % max q values at the discrete (feasible) p values
-    qmin = [];  % min q values at the discrete (feasible) p values
-    for j = 1:length(dev_constr)
-        pval_temp = linspace(dev_constr{j}.prange(1),dev_constr{j}.prange(2),min(max_count,1+floor(diff(dev_constr{j}.prange)/p_step)));
-        qmax_temp = double(subs(dev_constr{j}.qrange(2),p,pval_temp));
-        qmin_temp = double(subs(dev_constr{j}.qrange(1),p,pval_temp));
-        
-        pval = [pval pval_temp];
-        qmax = [qmax qmax_temp];
-        qmin = [qmin qmin_temp];
-    end
-    
-    desc_of_dev(dev_count).pval = pval;
-    desc_of_dev(dev_count).qmax = qmax;
-    desc_of_dev(dev_count).qmin = qmin;
-    
-    ac_range = ac_range + [max(pval) min(pval) max(qmax) min(qmin)];
+    dev_count = dev_count + 1;    
+    dev_constr = ac_model(ac_pop(i));    
+    ac_range = ac_range + [dev_constr.prange(2) dev_constr.prange(1) dev_constr.qrange(2) dev_constr.qrange(1)];
 end
-
-aggr_dev(2).params.prated = ac_range(1);
-aggr_dev(2).params.powfac = ac_range(3)/ac_range(1);
-[aggr_dev(2).constr,~,~] = ac_model(aggr_dev(2).params);
-
+pf_ratio =  ac_range(3)/ac_range(1);
+ac_range(1) = min(ac_range(1), sum_Qmax);
+ac_range(2) = max(ac_range(2), sum_Qmin);
+ac_range(3) = ac_range(1)*pf_ratio;
+ac_range(4) = ac_range(2)*pf_ratio;
+ac_range_old = ac_range;
+    ac_range(1) = (ac_range_old(1)+ac_range_old(2))/2 + scale_factor*(ac_range_old(1)-ac_range_old(2))/2;
+    ac_range(2) = (ac_range_old(1)+ac_range_old(2))/2 - scale_factor*(ac_range_old(1)-ac_range_old(2))/2;
+    ac_range(3) = (ac_range_old(3)+ac_range_old(4))/2 + scale_factor*(ac_range_old(3)-ac_range_old(4))/2;
+    ac_range(4) = (ac_range_old(3)+ac_range_old(4))/2 - scale_factor*(ac_range_old(3)-ac_range_old(4))/2;
 disp('    done with ac')
+
 for i = 1:length(pv_pop)
-    dev_count = dev_count + 1;
-    
-    aggr_dev(3).params.pgenmax = aggr_dev(3).params.pgenmax + pv_pop(i).pgenmax;
-    aggr_dev(3).params.invcap = aggr_dev(3).params.invcap + pv_pop(i).invcap;
-    
-    desc_of_dev(dev_count).type = 'photovoltaic';
-    [dev_constr,dev_conv_constr,dev_params] = pv_model(pv_pop(i));
-    desc_of_dev(dev_count).constr       = dev_constr;
-    desc_of_dev(dev_count).conv_constr  = dev_conv_constr;
-    desc_of_dev(dev_count).params       = dev_params;
-    
-    pval = [];  % p-axis discretized in the feasible portion
-    qmax = [];  % max q values at the discrete (feasible) p values
-    qmin = [];  % min q values at the discrete (feasible) p values
-    for j = 1:length(dev_constr)
-        pval_temp = linspace(dev_constr{j}.prange(1),dev_constr{j}.prange(2),min(max_count,1+floor(diff(dev_constr{j}.prange)/p_step)));
-        qmax_temp = double(subs(dev_constr{j}.qrange(2),p,pval_temp));
-        qmin_temp = double(subs(dev_constr{j}.qrange(1),p,pval_temp));
-        
-        pval = [pval pval_temp];
-        qmax = [qmax qmax_temp];
-        qmin = [qmin qmin_temp];
-    end
-    
-    desc_of_dev(dev_count).pval = pval;
-    desc_of_dev(dev_count).qmax = qmax;
-    desc_of_dev(dev_count).qmin = qmin;
-    
-    pv_range = pv_range + [max(pval) min(pval) max(qmax) min(qmin)];
+    dev_count = dev_count + 1;    
+    dev_constr = pv_model(pv_pop(i));
+    pv_range = pv_range + [dev_constr.prange(2) dev_constr.prange(1) dev_constr.qrange(2) dev_constr.qrange(1)];
 end
-
-aggr_dev(3).params.pgenmax = -pv_range(2);
-aggr_dev(3).params.invcap = pv_range(3);
-[aggr_dev(3).constr,~,~] = pv_model(aggr_dev(3).params);
-
+pv_range_old = pv_range;
+    pv_range(1) = (pv_range_old(1)+pv_range_old(2))/2 + scale_factor*(pv_range_old(1)-pv_range_old(2))/2;
+    pv_range(2) = (pv_range_old(1)+pv_range_old(2))/2 - scale_factor*(pv_range_old(1)-pv_range_old(2))/2;
+    pv_range(3) = (pv_range_old(3)+pv_range_old(4))/2 + scale_factor*(pv_range_old(3)-pv_range_old(4))/2;
+    pv_range(4) = (pv_range_old(3)+pv_range_old(4))/2 - scale_factor*(pv_range_old(3)-pv_range_old(4))/2;
 disp('    done with pv');
+
 for i = 1:length(bat_pop)
-    dev_count = dev_count + 1;
-    
-    aggr_dev(4).params.prated = aggr_dev(4).params.prated + bat_pop(i).prated;
-    aggr_dev(4).params.invcap = aggr_dev(4).params.invcap + bat_pop(i).invcap;
-    
-    desc_of_dev(dev_count).type = 'battery';
-    [dev_constr,dev_conv_constr,dev_params] = bat_model(bat_pop(i));
-    desc_of_dev(dev_count).constr       = dev_constr;
-    desc_of_dev(dev_count).conv_constr  = dev_conv_constr;
-    desc_of_dev(dev_count).params       = dev_params;
-    
-    pval = [];  % p-axis discretized in the feasible portion
-    qmax = [];  % max q values at the discrete (feasible) p values
-    qmin = [];  % min q values at the discrete (feasible) p values
-    for j = 1:length(dev_constr)
-        pval_temp = linspace(dev_constr{j}.prange(1),dev_constr{j}.prange(2),min(max_count,1+floor(diff(dev_constr{j}.prange)/p_step)));
-        qmax_temp = double(subs(dev_constr{j}.qrange(2),p,pval_temp));
-        qmin_temp = double(subs(dev_constr{j}.qrange(1),p,pval_temp));
-        
-        pval = [pval pval_temp];
-        qmax = [qmax qmax_temp];
-        qmin = [qmin qmin_temp];
-    end
-    
-    desc_of_dev(dev_count).pval = pval;
-    desc_of_dev(dev_count).qmax = qmax;
-    desc_of_dev(dev_count).qmin = qmin;
-    
-    bat_range = bat_range + [max(pval) min(pval) max(qmax) min(qmin)];
+    dev_count = dev_count + 1;    
+    dev_constr = bat_model(bat_pop(i));
+    bat_range = bat_range + [dev_constr.prange(2) dev_constr.prange(1) dev_constr.qrange(2) dev_constr.qrange(1)];;
 end
-
-aggr_dev(4).params.prated = bat_range(1);
-aggr_dev(4).params.invcap = bat_range(3);
-[aggr_dev(4).constr,~,~] = bat_model(aggr_dev(4).params);
-
+bat_range_old = bat_range;
+    bat_range(1) = (bat_range_old(1)+bat_range_old(2))/2 + scale_factor*(bat_range_old(1)-bat_range_old(2))/2;
+    bat_range(2) = (bat_range_old(1)+bat_range_old(2))/2 - scale_factor*(bat_range_old(1)-bat_range_old(2))/2;
+    bat_range(3) = (bat_range_old(3)+bat_range_old(4))/2 + scale_factor*(bat_range_old(3)-bat_range_old(4))/2;
+    bat_range(4) = (bat_range_old(3)+bat_range_old(4))/2 - scale_factor*(bat_range_old(3)-bat_range_old(4))/2;
 disp('    done with bat')
 %===================================
 % PROBLEM: Polytope Outer
@@ -214,110 +110,56 @@ D_adc = [all_range(1) -all_range(2) all_range(3) -all_range(4)]';
 
 toc
 
-end
-
-function [constr, conv_constr, parameters] = wh_model(varargin)
-
-syms p q d
-if nargin ==0
-    run('params.m')
-    
-    parameters.prated = prated;
-else
-    parameters = varargin{1};
-    prated = parameters.prated;
-end
-
-constr{1}.prange = [0 0];
-constr{1}.qrange = [0 0];
-constr{1}.dqrange = [0 0];
-
-constr{2}.prange = [prated prated];
-constr{2}.qrange = [0 0];
-constr{2}.dqrange = [0 0];
-
-conv_constr{1}.prange = [0 prated];
-conv_constr{1}.qrange = [0 0];
-conv_constr{1}.dqrange = [0 0];
 
 end
 
-function [constr, conv_constr, parameters] = ac_model(varargin)
+function constr = wh_model(varargin)
 
-syms p q d
-if nargin == 0
-    run('params.m')
-    
-    parameters.prated = prated;
-    parameters.powfac = powfac;
-else
-    parameters = varargin{1};
-    prated = parameters.prated;
-    powfac = parameters.powfac;
-end
+parameters = varargin{1};
+prated = parameters.prated;
 
-constr{1}.prange = [0 0];
-constr{1}.qrange = [0 0];
-constr{1}.dqrange = [0 0];
-
-constr{2}.prange = [prated prated];
-constr{2}.qrange = [powfac*p powfac*p];
-constr{2}.dqrange = [powfac powfac];
-
-conv_constr{1}.prange = [0 prated];
-conv_constr{1}.qrange = [powfac*p powfac*p];
-conv_constr{1}.dqrange = [powfac powfac];
+constr.prange = [0 prated];
+constr.qrange = [0 0];
 
 end
 
-function [constr, conv_constr, parameters] = pv_model(varargin)
+function constr = ac_model(varargin)
 
-syms p q d
-if nargin == 0
-    run('params.m')
-    
-    parameters.pgenmax = pgenmax;
-    parameters.invcap = invcap;
-else
-    parameters = varargin{1};
-    pgenmax = parameters.pgenmax;
-    invcap = parameters.invcap;
+parameters = varargin{1};
+prated = parameters.prated;
+powfac = parameters.powfac;
+
+constr.prange = [0 prated];
+constr.qrange = [0 powfac*prated];
+
 end
+
+function constr = pv_model(varargin)
+
+parameters = varargin{1};
+pgenmax = parameters.pgenmax;
+invcap = parameters.invcap;
 
 if pgenmax >= invcap % under-sized inverter
     pgenmax = (1-1e-6)*invcap;
 end
 
-constr{1}.prange = [-pgenmax 0];
-constr{1}.qrange = [-sqrt(invcap^2-p^2) sqrt(invcap^2-p^2)];
-constr{1}.dqrange = [diff(-sqrt(invcap^2-p^2)) diff(sqrt(invcap^2-p^2))];
-
-conv_constr = constr;
+constr.prange = [-pgenmax 0];
+constr.qrange = [-invcap invcap];
 
 end
 
-function [constr, conv_constr, parameters] = bat_model(varargin)
+function constr = bat_model(varargin)
 
-syms p q d
-if nargin==0
-    run('params.m')
-    
-    parameters.prated = prated;
-    parameters.invcap = invcap;
-else
-    parameters = varargin{1};
-    prated = parameters.prated;
-    invcap = parameters.invcap;
-end
+parameters = varargin{1};
+prated = parameters.prated;
+invcap = parameters.invcap;
 
 if prated >= invcap % under-sized inverter
     prated = (1-1e-6)*invcap;
 end
 
-constr{1}.prange = [-prated prated];
-constr{1}.qrange = [-sqrt(invcap^2-p^2) sqrt(invcap^2-p^2)];
-constr{1}.dqrange = [diff(constr{1}.qrange(1)) diff(constr{1}.qrange(2))];
-
-conv_constr = constr;
+constr.prange = [-prated prated];
+constr.qrange = [-invcap invcap];
 
 end

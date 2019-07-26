@@ -23,11 +23,13 @@ def init_adc(adc):
 	print("creating cosim_data csv file")
 	with open("../cosim_dat/" + adc + ".csv" , 'w') as fh:
 		fh.write("Timestamp,Popt,Qopt,Popt_WH,Qopt_WH,Popt_HVAC,Qopt_HVAC," +\
-			"Popt_BATT,Qopt_BATT,Popt_PV,Qopt_PV\n")
+			"Popt_BATT,Qopt_BATT,Popt_PV,Qopt_PV, Popt_unserved, Qopt_unserved, sum_Qmax, sum_Qmin\n")
 
 def archive_pfo(adc,timestamp,P,Q,\
 		Pwh=None,Qwh=None,Pac=None,Qac=None,\
-		Pba=None,Qba=None,Ppv=None,Qpv=None):
+		Pba=None,Qba=None,Ppv=None,Qpv=None,\
+		Punserved=None, Qunserved=None,\
+		sum_Qmax=None, sum_Qmin=None):
 	
 	with open("../cosim_dat/" + adc + ".csv" , 'a') as fh:
 		print("writing csv file")
@@ -36,7 +38,9 @@ def archive_pfo(adc,timestamp,P,Q,\
 		str(Pwh) + ',' + str(Qwh) + ',' +\
 		str(Pac) + ',' + str(Qac) + ',' +\
 		str(Pba) + ',' + str(Qba) + ',' +\
-		str(Ppv) + ',' + str(Qpv) + '\n')
+		str(Ppv) + ',' + str(Qpv) + ','+\
+		str(Punserved) + ',' + str(Qunserved) + ',' + \
+		str(sum_Qmax) + ',' + str(sum_Qmin) + '\n')
 
 def init_adc_dummy(adc):
 	print("creating cosim_data csv file")
