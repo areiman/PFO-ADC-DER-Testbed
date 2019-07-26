@@ -1,7 +1,7 @@
 import json
 import numpy as np
-import matplotlib as mpl;
-import matplotlib.pyplot as plt;
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 import csv
 import time
 import copy
@@ -9,7 +9,10 @@ import os
 from datetime import datetime
 import error_metrics
 
+global gld_num
+gld_num = '1'
 os.chdir('/home/ankit/PFO-ADC-DER-Testbed/ADC-DER-Testbed/testbed/post_process')
+# discard_time = 3600*4
 ## loading cosim_manager data
 lp = open('./cosim_data.json').read()
 cosim_data = json.loads(lp)
@@ -17,7 +20,8 @@ cosim_data = json.loads(lp)
 for key, value in cosim_data.items():
     for k, v in value.items():
         if k == 'Timestamp':
-            v.append(v[-1]+v[-1]-v[-2]) # adding one more timestamp
+            # v.append(v[-1]+v[-1]-v[-2]) # adding one more timestamp
+            v.append(v[-1] + v[0])
         else:
             v.append(v[-1]) # repeating the last value again
         cosim_data[key][k] = v
@@ -38,10 +42,11 @@ adc_nodes_map = np.array(adc_nodes_map)
 #function to return adc name of the input node
 def find_adc(node, adc_nodes_map=adc_nodes_map):
     ind = np.where(adc_nodes_map[:,0]==node)[0][0]
-    return adc_nodes_map[ind,1]
+    adc_name = 'M' + gld_num + '_ADC' + adc_nodes_map[ind,1]
+    return adc_name
 
 # Loading gld_data.json
-lp = open('gld_data.json').read()
+lp = open('GLD_' + gld_num + '_data.json').read()
 gld_data = json.loads(lp)
 
 # creating a dict to map each adc to the indexes of devices in gld_data for each der type
@@ -70,6 +75,8 @@ for der in der_type:
     for a in obj:
         b = a.split('_')[-2][1:]
         # if 'l102_tm' in a:
+        if find_adc(b) == 'M1_ADCNONE':
+            continue
         if find_adc(b) not in adc_ind:
             adc_ind[find_adc(b)] = {}
         if der[0] not in adc_ind[find_adc(b)]:
@@ -142,61 +149,67 @@ for adc_num in adc_ind:
         adc_Prating[adc_num]["wh"] = np.sum(wh_rating[0, adc_ind[adc_num]['wh']])
         adc_Prating[adc_num]["total"] = adc_Prating[adc_num]["total"] + adc_Prating[adc_num]["wh"]
 
-# error_metrics.calculate(adc_agg, adc_Prating, cosim_data)
+error_metrics.calculate(adc_agg, adc_Prating, cosim_data)
 
 #Plot aggregate devices output at given adc for each der type
 time_format = '%H:%M:%S'
 time_stamp = [t.split(' ')[1] for t in gld_data['wh']['power']['time']]
 time_h = [datetime.strptime(t, '%H:%M:%S') for t in time_stamp]
 hrs = [int((i-time_h[0]).total_seconds()) for i in time_h]
-
-adc_num = '18'
-total_rating = sum(wh_rating[0, adc_ind[adc_num]['wh']]) + sum(hvac_rating[0, adc_ind[adc_num]['hvac']]) + sum(
-    battInv_rated[0, adc_ind[adc_num]['battInv']]) / 1000 + sum(solar_rated[0, adc_ind[adc_num]['solarInv']]) / 1000
+# start_time = 3600*4
+adc_num = 'M1_ADC18'
+# total_rating = sum(wh_rating[0, adc_ind[adc_num]['wh']]) + sum(hvac_rating[0, adc_ind[adc_num]['hvac']]) + sum(
+#     battInv_rated[0, adc_ind[adc_num]['battInv']]) / 1000 + sum(solar_rated[0, adc_ind[adc_num]['solarInv']]) / 1000
 fig1, ax1 = plt.subplots(2, 2, sharex='col')
-ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['batt_Pout']), label='Battery', color='C0')
-ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['solar_Pout']), label='Solar', color='C1')
+# ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['batt_Pout']), label='Battery', color='C0')
+# ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['solar_Pout']), label='Solar', color='C1')
 ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['batt_Pout'] + adc_agg[adc_num]['solar_Pout']), label='Solar+Battery', color='C2')
-# ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['wh']), label='WH', color='C3')
-# ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['hvac']), label='HVAC', color='C4')
+ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['wh']), label='WH', color='C3')
+ax1[0,0].plot(hrs, np.real(adc_agg[adc_num]['hvac']), label='HVAC', color='C4')
 #
 # ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_BATT'])/1,'k', linestyle='--', color='C0', where='post', label='battery set point')
 # ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_PV'])/1,'k', linestyle='--', color='C1',  where='post', label='pv set point')
 ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_PV']) + np.array(cosim_data[adc_num]['Popt_BATT']),'k', linestyle='--', color='C2',  where='post', label='PV+Batt set point')
-# ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_WH'])/1,'k', linestyle='--', color='C3', where='post', label='WH set point')
-# ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_HVAC'])/1,'k', linestyle='--', color='C4', where='post', label='AC set point')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_WH'])/1,'k', linestyle='--', color='C3', where='post', label='WH set point')
+ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_HVAC'])/1,'k', linestyle='--', color='C4', where='post', label='AC set point')
 ax1[0,0].set_ylabel("kW")
 ax1[0,0].set_title("Aggregated kW at ADC "+adc_num+" by DER")
 ax1[0,0].legend(loc='best')
+# plt.xlim(left=start_time)
 
-ax1[0,1].plot(hrs, np.real(adc_agg[adc_num]['batt_Qout']), label='Battery')
-ax1[0,1].plot(hrs, np.real(adc_agg[adc_num]['solar_Qout']), label='Solar')
+# ax1[0,1].plot(hrs, np.real(adc_agg[adc_num]['batt_Qout']), label='Battery')
+# ax1[0,1].plot(hrs, np.real(adc_agg[adc_num]['solar_Qout']), label='Solar')
 ax1[0,1].plot(hrs, np.real(adc_agg[adc_num]['batt_Qout'] + adc_agg[adc_num]['solar_Qout']), label='Solar+Battery', color='C2')
-# ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['wh']), label='WH', color='C3')
-# ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['hvac']), label='HVAC', color='C4')
+ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['wh']), label='WH', color='C3')
+ax1[0,1].plot(hrs, np.imag(adc_agg[adc_num]['hvac']), label='HVAC', color='C4')
 
 # ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_BATT'])/1,'k', linestyle='--', color='C0', where='post', label='battery set point')
 # ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_PV'])/1,'k', linestyle='--', color='C1', where='post', label='pv set point')
 ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_PV']) + np.array(cosim_data[adc_num]['Qopt_BATT']),'k', linestyle='--', color='C2',  where='post', label='PV+Batt set point')
-# ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_WH'])/1,'k', linestyle='--', color='C3', where='post', label='WH set point')
-# ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_HVAC'])/1,'k', linestyle='--', color='C4', where='post', label='AC set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_WH'])/1,'k', linestyle='--', color='C3', where='post', label='WH set point')
+ax1[0,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt_HVAC'])/1,'k', linestyle='--', color='C4', where='post', label='AC set point')
 
 ax1[0,1].set_ylabel("kVar")
 ax1[0,1].set_title("Aggregated kVar at ADC "+adc_num+" by DER")
 ax1[0,1].legend(loc='best')
+# plt.xlim(left=start_time)
 
 ax1[1,0].plot(hrs, np.real(adc_agg[adc_num]['total']), label='ADC output')
-ax1[1,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt'])/1,'k', linestyle='--', where='post', label='ADC set point')
+ax1[1,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt']),'k', linestyle='--', where='post', label='ADC P*')
+ax1[1,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt'])-np.array(cosim_data[adc_num][' Popt_unserved']),'r', linestyle='--', where='post', label='ADC servable setpoint')
 ax1[1,0].set_ylabel("kW")
 ax1[1,0].set_title("Aggregated P at ADC "+adc_num)
 ax1[1,0].legend(loc='best')
+# plt.xlim(left=start_time)
 
 ax1[1,1].plot(hrs, np.imag(adc_agg[adc_num]['total']), label='ADC output')
 ax1[1,1].step(cosim_data['time'],np.array(cosim_data[adc_num]['Qopt'])/1,'k--', linestyle='--', where='post',label='ADC set point')
+ax1[1,1].step((cosim_data['time']),np.array(cosim_data[adc_num]['Qopt'])-np.array(cosim_data[adc_num][' Qopt_unserved']),'r', linestyle='--', where='post', label='ADC servable setpoint')
 ax1[1,1].set_ylabel("kVar")
 ax1[1,1].set_title("Aggregated Q at ADC "+adc_num)
 ax1[1,1].legend(loc='best')
-
+# plt.xlim(left=start_time)
+plt.show()
 cool_on_ind = np.nonzero(hvac_c_status[-1,:])[0]
 # fig2, ax2 = plt.subplots(2, 2, sharex='col')
 # # ax2.plot(hrs, np.abs(voltages[:,adc_ind[adc_num]['hvac']])/120
@@ -273,6 +286,42 @@ cool_on_ind = np.nonzero(hvac_c_status[-1,:])[0]
 # plt.plot(hrs, hvac_setc[:,adc_ind[adc_num]['hvac']])
 # # plt.plot(out_temp)
 
+# *** Plotting bid curves *****
+# fig2, ax2
+# ax1[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_PV']) + np.array(cosim_data[adc_num]['Popt_BATT']),'k', linestyle='--', color='C2',  where='post', label='PV+Batt set point')
+
+#----------------------------------------------------
+## ------ Validation of AC Controller ---------------
+#----------------------------------------------------
+# fig2, ax2 = plt.subplots(2,2, sharex='col')
+# out_temp = (np.array(gld_data['hvac']['outside_temperatrue']['values'])).astype(np.float)
+# inside_temp = (np.array(gld_data['hvac']['air_temperature']['values'])).astype(np.float)
+#
+# ax2[0,0].plot(hrs, np.real(adc_agg[adc_num]['hvac']), label='HVAC', color='C4')
+# ax2[0,0].step((cosim_data['time']),np.array(cosim_data[adc_num]['Popt_HVAC'])/1,'k', linestyle='--', color='C4', where='post', label='AC set point')
+# ax2[0,0].set_ylabel("kW")
+# ax2[0,0].set_title("Aggregated kW at ADC "+adc_num+" by DER")
+# ax2[0,0].legend(loc='best')
+#
+# ax2[1,1].plot(hrs, inside_temp[:,adc_ind[adc_num ]['hvac']])
+# ax2[1,1].set_title("Inside Temperature")
+# ax2[1,1].set_ylabel("degree F")
+# ax2[1,1].set_xlabel("Time (Seconds")
+#
+# ax2[0,1].plot(hrs, hvac_setc[:,adc_ind[adc_num]['hvac']])
+# ax2[0,1].set_title("Cooling setpoint")
+# ax2[0,1].set_ylabel("degree F")
+# ax2[0,1].set_xlabel("Time (Seconds")
+# # ax2[0].plot(out_temp)
+
+# # ax2[1].plot(hrs, hvac_c_status[:,adc_ind[adc_num]['hvac']])
+# ax2[1,0].plot(hrs,np.count_nonzero(hvac_c_status[:,adc_ind[adc_num]['hvac']], 1))
+# ax2[1,0].set_title("Total number of ON AC-devices")
+# ax2[1,0].set_ylabel("#")
+# ax2[1,0].set_xlabel("Time (Seconds")
+#
+plt.show()
+
 ## ***** Feasibility check plot for solar PV and Battery ***********
 # plt.rc('text', usetex=True)
 fig3, ax3 = plt.subplots(2, 2, sharex='col')
@@ -284,6 +333,7 @@ ax3[0,0].step((cosim_data['time']),abs(np.array(cosim_data[adc_num]['Popt_PV']))
 ax3[0,0].set_title("Solar P(kW) set-point feasibility for ADC "+adc_num)
 ax3[0,0].set_ylabel("kW")
 ax3[0,0].legend(loc='best')
+# plt.xlim(left=start_time)
 
 Q_min_av = np.sqrt(np.square(np.ones(len(hrs))*adc_Prating[adc_num]['solarInv'])- np.square(np.real(adc_Prating[adc_num]['solarVA'])))
 Q_max_av = np.sqrt(np.square(np.ones(len(cosim_data['time']))*adc_Prating[adc_num]['solarInv'])- np.square(abs(np.array(cosim_data[adc_num]['Popt_PV']))))
@@ -293,6 +343,7 @@ ax3[0,1].step((cosim_data['time']),abs(np.array(cosim_data[adc_num]['Qopt_PV']))
 ax3[0,1].set_title("Solar Q(kVar) set-point feasibility for ADC "+adc_num)
 ax3[0,1].set_ylabel("kVar")
 ax3[0,1].legend(loc='best')
+# plt.xlim(left=start_time)
 
 temp = (np.square(np.ones(len(cosim_data['time']))*adc_Prating[adc_num]['battInv'])- np.square(abs(np.array(cosim_data[adc_num]['Qopt_BATT']))))
 for ind in range(len(temp)):
@@ -306,7 +357,7 @@ ax3[1,0].set_title("Battery P(kW) set-point feasibility for ADC "+adc_num)
 ax3[1,0].set_ylabel("kW")
 ax3[1,0].set_xlabel("Time (sec)")
 ax3[1,0].legend(loc='best')
-
+# plt.xlim(left=start_time)
 
 # Q_min_av = np.sqrt(np.square(np.ones(len(hrs))*adc_Prating[adc_num]['solarInv'])- np.square(np.real(adc_Prating[adc_num]['solarVA'])))
 Qbatt_max_av = np.sqrt(np.square(np.ones(len(cosim_data['time']))*adc_Prating[adc_num]['battInv'])- np.square(abs(np.array(cosim_data[adc_num]['Popt_BATT']))))
@@ -317,6 +368,7 @@ ax3[1,1].set_title("Battery Q(kVar) set-point feasibility for ADC "+adc_num)
 ax3[1,1].set_ylabel("kVar")
 ax3[1,1].set_xlabel("Time (sec)")
 ax3[1,1].legend(loc='best')
+# plt.xlim(left=start_time)
 
 #TODO: plot battery state of charge
 ## ***** Feasibility check plot for solar PV and Battery ***********
