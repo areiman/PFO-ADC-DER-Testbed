@@ -5,7 +5,7 @@ function [p_pv, q_pv, p_ba, q_ba] = ADC_control(deltat, n_pv, n_ba, cap_pv, p_av
     cap_ba, cap_ba_inverter, p_ba_cha_max, p_ba_dis_max, eff_ba, ...
     SOC_set, SOC_now, p_opt, q_opt)
 
-p_ba_cha_max = - p_ba_cha_max;
+%p_ba_cha_max = - p_ba_cha_max;
 
 SOC_set;
 SOC_now;
@@ -15,7 +15,7 @@ SOC_now;
 %class(cap_ba)
 %cap_ba
 
-max_iter=5000;
+max_iter=50000;
 
 % inverter output initialization
 p_pv = p_av;
@@ -33,8 +33,8 @@ mup=0;
 muq=0;
 
 % constant stepsize for primal and dual; tuned
-epsilonP=0.005;
-epsilonD=0.005;
+epsilonP=0.001;
+epsilonD=0.001;
 
 %% Cost function parameters for PV inverters
 % C_i^pv(p_i,q_i)=cost_p (p_i^av-p_i)^2+cost_q q_i^2; parameters can be altered for heterogeneous
@@ -69,7 +69,9 @@ for k=1:max_iter
     %             * cost_bat(i) * (soc(i) - SOC_set(i) + power_SOC_rate(i)*eff_ba(i)*p_ba(i,k)) + mup(k));
             gradient_ba = - 2 * eff_ba(i) * power_SOC_rate(i) ...
                 * cost_bat(i) * (soc(i) - SOC_set(i) + power_SOC_rate(i)*eff_ba(i)*p_ba(i));
-    % gradient_ba = 2;
+            if n_pv == 0
+                gradient_ba = 2;
+            end
             p_ba(i) = p_ba(i) -  epsilonP * ( gradient_ba * p_ba(i) + mup);
             q_ba(i) = q_ba(i) - epsilonP * ( cost_bat_q * q_ba(i) + muq);
 
@@ -81,12 +83,12 @@ for k=1:max_iter
     mup = mup + epsilonD * (sum(p_pv) + sum(p_ba) - p_opt);
     muq = muq + epsilonD * (sum(q_pv) + sum(q_ba) - q_opt);
 
-   % record_mu(k) = mup;
+    record_mu(k) = mup;
 
 end
 
 
-%plot(record_mu);
+plot(record_mu);
 
 % mup = mup
 % muq = muq
