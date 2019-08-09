@@ -1,5 +1,0 @@
-Pkg.add("CSV")
-Pkg.add("DataFrames")
-Pkg.add("PowerModels")
-Pkg.add("Ipopt")
-Pkg.update()
