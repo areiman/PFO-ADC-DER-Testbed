@@ -1,3 +1,4 @@
+using PowerModelsDistribution
 using PowerModels
 using Ipopt
 using JuMP
@@ -5,52 +6,55 @@ using DataFrames
 using CSV
 
 
-include("post_flex_model.jl")
+PowerModels.logger_config!("error")
 
-filename = ARGS[1]
-ADC_filename = ARGS[2]
+include("post_flex_model_new.jl")
 
-# read data files
-data = PowerModels.parse_file(filename)
-flex_data = CSV.read(ADC_filename)
+data_filename = "data/123Bus_GMLC/IEEE123Master.dss"
+data = PowerModelsDistribution.parse_file(data_filename)
+filename = "data/ADC_Placement_by_Voltage_Drop.csv"
+# filename_flex = "data/ieee123_flex.csv"
 
-# number of loads
-num_load = size(flex_data,1)
-# dictionary contining the A and B matrices
-A = Dict{Int64,Any}()
-B = Dict{Int64,Any}()
+filename_flex = ARGS[1]
+# data_new = data_surgery(data,filename)
+data_new = data_surgery(data, filename, filename_flex)
+# result = run_ac_tp_opf_lm(data, with_optimizer(Ipopt.Optimizer))
 
-# populating the A and B dictionaries
-for i=1:num_load
-    ca = split(flex_data[:A][i][2:end-1], '|')
-    cb = split(flex_data[:b][i][2:end-1], '|')
-    a = zeros(length(ca),2)
-    b = zeros(length(ca))
-    for j=1:length(ca)
-        za = split(ca[j],' ')
-        a[j,:] = parse.(Float64,za)
+# model = PowerModels.build_model(data,ACPPowerModel,post_tp_opf_lm_mod)
+# result = PowerModels.optimize_model!(model,with_optimizer(Ipopt.Optimizer))
+# result_old = _PMs.run_model(data, ACPPowerModel, with_optimizer(Ipopt.Optimizer), post_tp_opf_lm_mod; multiconductor=true, ref_extensions=[ref_add_arcs_trans!])
+
+pm_new = _PMs.build_model(data_new, ACPPowerModel, post_tp_opf_lm_mod; multiconductor=true, ref_extensions=[ref_add_arcs_trans!])
+result_new = _PMs.optimize_model!(pm_new, with_optimizer(Ipopt.Optimizer))
+
+ADC = build_ADC_list(filename)
+ADC_pm = convert_ADC_pm(data,ADC)
+pm_to_source, source_to_pm = build_bus_renaming_dict(data_new)
+bus_loads = build_bus_loads(data_new)
+
+
+to_write = Dict{String,Array{Float64,1}}()
+for adc in keys(ADC)
+    if !(adc in keys(source_to_pm))
+        continue
     end
-    b = parse.(Float64,cb)
-    A[i] = a
-    B[i] = b
+    # @show adc
+    adc_pm = source_to_pm[adc]
+    load = bus_loads[adc_pm][1]
+    load_id = parse(Int64,load)
+    p = zeros(3)
+    q = zeros(3)
+    for i=1:3
+        p[i] = JuMP.value(PowerModels.var(pm_new, 0, i, :pd)[load_id])*1e5
+        q[i] = JuMP.value(PowerModels.var(pm_new, 0, i, :qd)[load_id])*1e5
+    end
+    to_write[adc] = [sum(p),sum(q)]
+end
+
+df = DataFrame(ADC = Int[], P = Float64[], Q = Float64[])
+for (adc, setpoint) in to_write
+    push!(df, Dict(:ADC => parse(Int64,adc), :P => setpoint[1], :Q => setpoint[2]) ) # [parse(Int64,adc), parse)Float64,setpoint[1]), parse(Float64,setpoint[2])])
 end
 
 
-# build base optimization model with loads as variables
-m = JuMP.Model(solver=IpoptSolver())
-model, var_refs = post_ac_opf_withload(data, m, A, B)
-
-# solver the model
-status = solve(model)
-
-# extract solution and write output.csv
-gen_nums = [parse(Int64,i) for (i,gen) in data["gen"]]
-pg = [getvalue(var_refs["pg"][i]) for i in gen_nums]
-qg = [getvalue(var_refs["qg"][i]) for i in gen_nums]
-
-df = DataFrame()
-df[:gen_num] = gen_nums
-df[:active_power] = pg
-df[:reactive_power] = qg
-
-CSV.write("output.csv",df)
+CSV.write("PFO_output.csv", df)
