@@ -1,4 +1,5 @@
 import sys
+import os
 # import fncs
 import matlab.engine
 from matlab import double as MATRIX
@@ -84,6 +85,8 @@ def synch(dat, timestamp=None):
     eng.eval('addpath ../ADC/ADC_AC', nargout=0)
     eng.eval('addpath ../ADC/ADC_NREL', nargout=0)
 
+    with open("../PFO/ieee123_flex.csv", 'w') as flex_in:
+        print("clearing ../PFO/ieee123_flex.csv")
     # -------------------------------------------------------------------------
     # PROCESS UPDATE PERSISTENT DATA
     # -------------------------------------------------------------------------
@@ -132,8 +135,8 @@ def synch(dat, timestamp=None):
             buff['AC_Qh'][headers_toks[idx]] = float(Qh_toks[idx])
     # print(buff['AC_Qh'])
     # sys.exit()
-    with open("../PFO/ieee123_flex.csv", 'w+') as flex_in:
-        flex_in.write("node_name, A, b\n")
+#    with open("../PFO/ieee123_flex.csv", 'w+') as flex_in:
+#        flex_in.write("node_name, A, b\n")
     # -------------------------------------------------------------------------
     # ITERATE OVER UPDATED ADCS
     # -------------------------------------------------------------------------
@@ -314,7 +317,7 @@ def synch(dat, timestamp=None):
                     print("WARNING: T_out is not the same for all houses")
             else:
                 T_out[adc] = mem[adc][t][o]['outdoor_temperature']
-        print(Q_h[adc])
+  #      print(Q_h[adc])
         #		# Test the struct of vectors
         #		eng.PrintStructVec(para,nargout=0)
         #		sys.exit()
@@ -335,60 +338,61 @@ def synch(dat, timestamp=None):
         # Parse outputs from the ac-based task 2.4 code
         #		T_set = out[0]
         #		P_h = out[1]
-        print('*** Task2.4 Parameters bid_vec for time: ', timestamp, ' ****')
-        print('		para_Tdesired= ', para_Tdesired[adc])
-        print('		para_ratio= ', para_ratio[adc])
-        print('		para_power= ', para_power[adc])
-        print('		para_C_a= ', para_C_a[adc])
-        print('		para_C_m= ', para_C_m[adc])
-        print('		para_H_m= ', para_H_m[adc])
-        print('		para_U_A= ', para_U_A[adc])
-        print('		para_mass_internal_gain_fraction= ', para_mass_internal_gain_fraction[adc])
-        print('		para_mass_solar_gain_fraction= ', para_mass_solar_gain_fraction[adc])
-        print('		Q_h= ', Q_h[adc])
-        print('		Q_i= ', Q_i[adc])
-        print('		Q_s= ', Q_s[adc])
-        print('		Dtemp= ', Dtemp[adc])
-        print('		halfband= ', halfband[adc])
-        print('		Dstatus= ', Dstatus[adc])
-        print('		P_h= ', P_h[adc])
-        print('		len(P_h)= ', len(P_h[adc]))
-        print('		P_cap= ', P_cap[adc])
-        print('		mdt= ', mdt[adc])
-        print('		T_out= ', T_out[adc])
+#        print('*** Task2.4 Parameters bid_vec for time: ', timestamp, ' ****')
+#        print('		para_Tdesired= ', para_Tdesired[adc])
+#        print('		para_ratio= ', para_ratio[adc])
+#        print('		para_power= ', para_power[adc])
+#        print('		para_C_a= ', para_C_a[adc])
+#        print('		para_C_m= ', para_C_m[adc])
+#        print('		para_H_m= ', para_H_m[adc])
+#        print('		para_U_A= ', para_U_A[adc])
+#        print('		para_mass_internal_gain_fraction= ', para_mass_internal_gain_fraction[adc])
+#        print('		para_mass_solar_gain_fraction= ', para_mass_solar_gain_fraction[adc])
+#        print('		Q_h= ', Q_h[adc])
+#        print('		Q_i= ', Q_i[adc])
+#        print('		Q_s= ', Q_s[adc])
+#        print('		Dtemp= ', Dtemp[adc])
+#        print('		halfband= ', halfband[adc])
+#        print('		Dstatus= ', Dstatus[adc])
+#        print('		P_h= ', P_h[adc])
+#        print('		len(P_h)= ', len(P_h[adc]))
+#        print('		P_cap= ', P_cap[adc])
+#        print('		mdt= ', mdt[adc])
+#        print('		T_out= ', T_out[adc])
 
-        out = eng.Task_2_4_PNNL_bid_vec(para_Tmin[adc], para_Tmax[adc], para_Tdesired[adc], para_ratio[adc],
-                                        para_power[adc], \
-                                        para_C_a[adc], para_C_m[adc], para_H_m[adc], para_U_A[adc], \
-                                        para_mass_internal_gain_fraction[adc], para_mass_solar_gain_fraction[adc], \
-                                        Q_h[adc], Q_i[adc], Q_s[adc], Dtemp[adc], halfband[adc], Dstatus[adc], P_h[adc],
-                                        P_cap[adc], mdt[adc], T_out[adc], \
-                                        nargout=2)
+        out = eng.Task_2_4_PNNL_bid_vec(para_Tmin[adc], para_Tmax[adc], 
+                para_Tdesired[adc], para_ratio[adc], \
+                para_power[adc], \
+                para_C_a[adc], para_C_m[adc], para_H_m[adc], para_U_A[adc], \
+                para_mass_internal_gain_fraction[adc], para_mass_solar_gain_fraction[adc], \
+                Q_h[adc], Q_i[adc], Q_s[adc], Dtemp[adc], halfband[adc], \
+                Dstatus[adc], P_h[adc], P_cap[adc], mdt[adc], T_out[adc], \
+                nargout=2)
         sum_Qmax[adc] = out[0]
         sum_Qmin[adc] = out[1]
-        print("*** sum_Qmax *** = ", sum_Qmax[adc])
-        print("*** sum_Qmin *** = ", sum_Qmin[adc])
+#        print("*** sum_Qmax *** = ", sum_Qmax[adc])
+#        print("*** sum_Qmin *** = ", sum_Qmin[adc])
         # sys.exit()
 
         # ---------------------------------------------------------------
         # ---- Aggregation Task 2.1
         # ---------------------------------------------------------------
         # """
-        print("Device totals:")
-        print("    {} electric water heaters".format(len(ewh_names[adc])))
-        print("    {} air conditioners".format(len(ac_names[adc])))
-        print("    {} photovoltaic systems".format(len(pv_names[adc])))
-        print("    {} battery systems".format(len(batt_names[adc])))
+#        print("Device totals:")
+#        print("    {} electric water heaters".format(len(ewh_names[adc])))
+#        print("    {} air conditioners".format(len(ac_names[adc])))
+#        print("    {} photovoltaic systems".format(len(pv_names[adc])))
+#        print("    {} battery systems".format(len(batt_names[adc])))
         # print(ewh_names[adc])
-        print(ac_names[adc])
+#        print(ac_names[adc])
         # print(pv_names[adc])
         # print(batt_names[adc])
         area_scale_factor = 0.5
         flex_agg = eng.testbed_2_1_vec(ewh_names[adc], ewh_prated[adc], \
-                                       ac_names[adc], ac_prated, ac_powfac, \
-                                       batt_names[adc], batt_prated, batt_invcap, \
-                                       pv_names[adc], pv_pgenmax, pv_invcap, sum_Qmax[adc], sum_Qmin[adc],
-                                       area_scale_factor, nargout=6)
+                ac_names[adc], ac_prated, ac_powfac, \
+                batt_names[adc], batt_prated, batt_invcap, \
+                pv_names[adc], pv_pgenmax, pv_invcap, sum_Qmax[adc], sum_Qmin[adc],
+                area_scale_factor, nargout=6)
         Fadc = flex_agg[0]
         Dadc = flex_agg[1]
         ewh_range = flex_agg[2]
@@ -399,7 +403,7 @@ def synch(dat, timestamp=None):
         #		print("Dadc is: "+str(Dadc))
         #		print("Ranges:")
         #		print(ewh_range)
-        print(ac_range)
+ #       print(ac_range)
         # print(pv_range)
         # print(batt_range)
 
@@ -420,66 +424,86 @@ def synch(dat, timestamp=None):
         tempF = tempF.replace(',', ' ')
         with open("../PFO/ieee123_flex.csv", 'a+') as flex_in:
             flex_in.write(adc + ',' + tempF + ',' + tempD + '\n')
-    # sys.exit()
-
     # """
+    ## ---------------------------------------------------------------------
+    ## PFO EMULATOR
+    ## ---------------------------------------------------------------------
+    ## Assuming rectangular flexibility
+    #for adc in mem:
+    #    print("\n---------------------------------------")
+    #    print(adc)
+    #    print("\nPFO Emulator")
+    #    print("---------------------------------------")
+    #    rand.seed(None)  # seed with system time
+    #        tmp = MATRIX([[-1.0,0.0],[0.0,-1.0],[1.0,0.0],[0.0,1.0]])
+    #        print(tmp)
+    #    if Fadc_vec[adc][0][0] == -1.0 and Fadc_vec[adc][0][1] == 0.0 \
+    #            and Fadc_vec[adc][1][0] == 0.0 and Fadc_vec[adc][1][1] == -1.0 \
+    #            and Fadc_vec[adc][2][0] == 1.0 and Fadc_vec[adc][2][1] == 0.0 \
+    #            and Fadc_vec[adc][3][0] == 0.0 and Fadc_vec[adc][3][1] == 1.0:
+    #        Popt_vec[adc] = (Dadc_vec[adc][0][0] + Dadc_vec[adc][2][0]) / 2.0 * \
+    #                (1 + gauss(0, 1) / 3.0)
+    #        if Popt_vec[adc] > Dadc_vec[adc][2][0]:
+    #            Popt_vec[adc] = Dadc_vec[adc][2][0]
+    #        if Popt_vec[adc] < -1 * Dadc_vec[adc][0][0]:
+    #            Popt_vec[adc] = -1 * Dadc_vec[adc][0][0]
+    #        Qopt_vec[adc] = (Dadc_vec[adc][1][0] + Dadc_vec[adc][3][0]) / 2.0 * \
+    #                (1 + gauss(0, 1) / 3.0)
+    #        if Qopt_vec[adc] > Dadc_vec[adc][3][0]:
+    #            Qopt_vec[adc] = Dadc_vec[adc][3][0]
+    #        if Qopt_vec[adc] < -1 * Dadc_vec[adc][1][0]:
+    #            Qopt_vec[adc] = -1 * Dadc_vec[adc][1][0]
+    #    elif Fadc_vec[adc][0][0] == 1.0 and Fadc_vec[adc][0][1] == 0.0 \
+    #            and Fadc_vec[adc][1][0] == -1.0 and Fadc_vec[adc][1][1] == 0.0 \
+    #            and Fadc_vec[adc][2][0] == 0.0 and Fadc_vec[adc][2][1] == 1.0 \
+    #            and Fadc_vec[adc][3][0] == 0.0 and Fadc_vec[adc][3][1] == -1.0:
+    #        Popt_vec[adc] = (Dadc_vec[adc][0][0] + Dadc_vec[adc][1][0]) / 2.0 * \
+    #                (1 + gauss(0, 1) / 3.0)
+    #        if Popt_vec[adc] > Dadc_vec[adc][0][0]:
+    #            Popt_vec[adc] = Dadc_vec[adc][0][0]
+    #        if Popt_vec[adc] < -1 * Dadc_vec[adc][1][0]:
+    #            Popt_vec[adc] = -1 * Dadc_vec[adc][1][0]
+    #        Qopt_vec[adc] = (Dadc_vec[adc][2][0] + Dadc_vec[adc][3][0]) / 2.0 * \
+    #                (1 + gauss(0, 1) / 3.0)
+    #        if Qopt_vec[adc] > Dadc_vec[adc][2][0]:
+    #            Qopt_vec[adc] = Dadc_vec[adc][2][0]
+    #        if Qopt_vec[adc] < -1 * Dadc_vec[adc][3][0]:
+    #            Qopt_vec[adc] = -1 * Dadc_vec[adc][3][0]
+    #    else:
+    #        print("Error: unexpected Fadc")
+    #        exit()
+    #    print("Popt is " + str(Popt_vec[adc]))
+    #    print("Qopt is " + str(Qopt_vec[adc]))
+
+
     # ---------------------------------------------------------------------
-    # PFO EMULATOR
+    # FULL PFO
     # ---------------------------------------------------------------------
-    # Assuming rectangular flexibility
-    for adc in mem:
-        print("\n---------------------------------------")
-        print(adc)
-        print("\nPFO Emulator")
-        print("---------------------------------------")
-        rand.seed(None)  # seed with system time
-        #		tmp = MATRIX([[-1.0,0.0],[0.0,-1.0],[1.0,0.0],[0.0,1.0]])
-        #		print(tmp)
-        if Fadc_vec[adc][0][0] == -1.0 and Fadc_vec[adc][0][1] == 0.0 \
-                and Fadc_vec[adc][1][0] == 0.0 and Fadc_vec[adc][1][1] == -1.0 \
-                and Fadc_vec[adc][2][0] == 1.0 and Fadc_vec[adc][2][1] == 0.0 \
-                and Fadc_vec[adc][3][0] == 0.0 and Fadc_vec[adc][3][1] == 1.0:
-            Popt_vec[adc] = (Dadc_vec[adc][0][0] + Dadc_vec[adc][2][0]) / 2.0 * (1 + gauss(0, 1) / 3.0)
-            if Popt_vec[adc] > Dadc_vec[adc][2][0]:
-                Popt_vec[adc] = Dadc_vec[adc][2][0]
-            if Popt_vec[adc] < -1 * Dadc_vec[adc][0][0]:
-                Popt_vec[adc] = -1 * Dadc_vec[adc][0][0]
-            Qopt_vec[adc] = (Dadc_vec[adc][1][0] + Dadc_vec[adc][3][0]) / 2.0 * (1 + gauss(0, 1) / 3.0)
-            if Qopt_vec[adc] > Dadc_vec[adc][3][0]:
-                Qopt_vec[adc] = Dadc_vec[adc][3][0]
-            if Qopt_vec[adc] < -1 * Dadc_vec[adc][1][0]:
-                Qopt_vec[adc] = -1 * Dadc_vec[adc][1][0]
-        elif Fadc_vec[adc][0][0] == 1.0 and Fadc_vec[adc][0][1] == 0.0 \
-                and Fadc_vec[adc][1][0] == -1.0 and Fadc_vec[adc][1][1] == 0.0 \
-                and Fadc_vec[adc][2][0] == 0.0 and Fadc_vec[adc][2][1] == 1.0 \
-                and Fadc_vec[adc][3][0] == 0.0 and Fadc_vec[adc][3][1] == -1.0:
-            Popt_vec[adc] = (Dadc_vec[adc][0][0] + Dadc_vec[adc][1][0]) / 2.0 * (1 + gauss(0, 1) / 3.0)
-            if Popt_vec[adc] > Dadc_vec[adc][0][0]:
-                Popt_vec[adc] = Dadc_vec[adc][0][0]
-            if Popt_vec[adc] < -1 * Dadc_vec[adc][1][0]:
-                Popt_vec[adc] = -1 * Dadc_vec[adc][1][0]
-            Qopt_vec[adc] = (Dadc_vec[adc][2][0] + Dadc_vec[adc][3][0]) / 2.0 * (1 + gauss(0, 1) / 3.0)
-            if Qopt_vec[adc] > Dadc_vec[adc][2][0]:
-                Qopt_vec[adc] = Dadc_vec[adc][2][0]
-            if Qopt_vec[adc] < -1 * Dadc_vec[adc][3][0]:
-                Qopt_vec[adc] = -1 * Dadc_vec[adc][3][0]
-        else:
-            print("Error: unexpected Fadc")
-            exit()
-        print("Popt is " + str(Popt_vec[adc]))
-        print("Qopt is " + str(Qopt_vec[adc]))
+    os.system('echo --- Running Julia PFO ---')
+    os.chdir('../PFO')
+    os.system('pwd')
+    os.system('julia PFO_flex.jl ieee123_flex.csv')
+    os.system('pwd')
+    os.chdir('../Python_Wrapper')
+    os.system('pwd')
+    os.system('echo --- Julia PFO Execution Complete')
 
     # Reading Julia PFO output file
     Popt_vec1 = {}
     Qopt_vec1 = {}
-    with open("../PFO/output.csv", 'r') as pfo_out:
+    with open("../PFO/PFO_output.csv", 'r') as pfo_out:
         next(pfo_out)
         csv_reader = csv.reader(pfo_out)
         for row in csv_reader:
-            Popt_vec1[row[0]] = row[1]
-            Qopt_vec1[row[0]] = row[2]
+            adc = 'M1_ADC'+str(row[0])
+            print(adc)
+            Popt_vec[adc] = float(row[1])
+            print(Popt_vec[adc])
+            Qopt_vec[adc] = float(row[2])
+            print(Qopt_vec[adc])
 
     for adc in mem:
+#    for adc in ['M1_ADC2']:
         # ----------------------------------------------------------------------
         # DISAGGREGATION
         # ----------------------------------------------------------------------
@@ -489,8 +513,8 @@ def synch(dat, timestamp=None):
         print("---------------------------------------")
         eng.eval('addpath ../ADC/ADC_flex/functions', nargout=0)
         disagg_dispatch = eng.disaggregation(MATRIX([[Popt_vec[adc], Qopt_vec[adc]]]), \
-                                             ewh_ranges[adc], ac_ranges[adc], pv_ranges[adc], batt_ranges[adc], \
-                                             nargout=5)
+                ewh_ranges[adc], ac_ranges[adc], pv_ranges[adc], batt_ranges[adc], \
+                nargout=5)
 
         Popt_ewh = disagg_dispatch[0][0][0]
         Qopt_ewh = disagg_dispatch[0][0][1]
@@ -705,12 +729,12 @@ def synch(dat, timestamp=None):
         print('		T_out= ', T_out[adc])
 
         out = eng.Task_2_4_PNNL_clear_vec(Q_ref, \
-                                          para_Tmin[adc], para_Tmax[adc], para_Tdesired[adc], para_ratio[adc],
-                                          para_power[adc], para_C_a[adc], para_C_m[adc], para_H_m[adc], para_U_A[adc], \
-                                          para_mass_internal_gain_fraction[adc], para_mass_solar_gain_fraction[adc], \
-                                          Q_h[adc], Q_i[adc], Q_s[adc], Dtemp[adc], halfband[adc], Dstatus[adc],
-                                          P_h[adc], P_cap[adc], mdt[adc], T_out[adc], \
-                                          nargout=2)
+                para_Tmin[adc], para_Tmax[adc], para_Tdesired[adc], para_ratio[adc], \
+                para_power[adc], para_C_a[adc], para_C_m[adc], para_H_m[adc], para_U_A[adc], \
+                para_mass_internal_gain_fraction[adc], para_mass_solar_gain_fraction[adc], \
+                Q_h[adc], Q_i[adc], Q_s[adc], Dtemp[adc], halfband[adc], Dstatus[adc], \
+                P_h[adc], P_cap[adc], mdt[adc], T_out[adc], \
+                nargout=2)
 
         T_set = out[0]
         # P_h = out[1][0]
@@ -797,9 +821,9 @@ def synch(dat, timestamp=None):
 
         # Call the PV and Battery implementation of task 2.4
         out = eng.ADC_control(deltat, n_pv, n_ba, MATRIX(cap_pv), MATRIX(p_av), \
-                              MATRIX(cap_ba), MATRIX(cap_ba_inv), MATRIX(p_ba_cha_max), MATRIX(p_ba_dis_max), \
-                              MATRIX(eff_ba), MATRIX(SOC_set), MATRIX(SOC_now), \
-                              p_opt, q_opt, nargout=4)
+                MATRIX(cap_ba), MATRIX(cap_ba_inv), MATRIX(p_ba_cha_max), MATRIX(p_ba_dis_max), \
+                MATRIX(eff_ba), MATRIX(SOC_set), MATRIX(SOC_now), \
+                p_opt, q_opt, nargout=4)
 
         # Parse outputs
         p_pv = out[0]
