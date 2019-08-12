@@ -399,13 +399,13 @@ def synch(dat, timestamp=None):
         ac_range = flex_agg[3]
         pv_range = flex_agg[4]
         batt_range = flex_agg[5]
-        #		print("Fadc is: "+str(Fadc))
-        #		print("Dadc is: "+str(Dadc))
-        #		print("Ranges:")
-        #		print(ewh_range)
- #       print(ac_range)
-        # print(pv_range)
-        # print(batt_range)
+        print("Fadc is: "+str(Fadc))
+        print("Dadc is: "+str(Dadc))
+        print("Ranges:")
+        print(ewh_range)
+        print(ac_range)
+        print(pv_range)
+        print(batt_range)
 
         ewh_ranges[adc] = ewh_range
         ac_ranges[adc] = ac_range
@@ -705,28 +705,28 @@ def synch(dat, timestamp=None):
         # Set up inputs
         Q_ref = Popt_ac
 
-        print('*** Task2.4 Parameters clear_vec for time: ', timestamp, ' ****')
-        print('		Q_ref = ', Q_ref)
-        print('		para_Tdesired= ', para_Tdesired[adc])
-        print('		para_ratio= ', para_ratio[adc])
-        print('		para_power= ', para_power[adc])
-        print('		para_C_a= ', para_C_a[adc])
-        print('		para_C_m= ', para_C_m[adc])
-        print('		para_H_m= ', para_H_m[adc])
-        print('		para_U_A= ', para_U_A[adc])
-        print('		para_mass_internal_gain_fraction= ', para_mass_internal_gain_fraction[adc])
-        print('		para_mass_solar_gain_fraction= ', para_mass_solar_gain_fraction[adc])
-        print('		Q_h= ', Q_h[adc])
-        print('		Q_i= ', Q_i[adc])
-        print('		Q_s= ', Q_s[adc])
-        print('		Dtemp= ', Dtemp[adc])
-        print('		halfband= ', halfband[adc])
-        print('		Dstatus= ', Dstatus[adc])
-        print('		P_h= ', P_h[adc])
-        print('		len(P_h)= ', len(P_h[adc]))
-        print('		P_cap= ', P_cap[adc])
-        print('		mdt= ', mdt[adc])
-        print('		T_out= ', T_out[adc])
+#        print('*** Task2.4 Parameters clear_vec for time: ', timestamp, ' ****')
+#        print('		Q_ref = ', Q_ref)
+#        print('		para_Tdesired= ', para_Tdesired[adc])
+#        print('		para_ratio= ', para_ratio[adc])
+#        print('		para_power= ', para_power[adc])
+#        print('		para_C_a= ', para_C_a[adc])
+#        print('		para_C_m= ', para_C_m[adc])
+#        print('		para_H_m= ', para_H_m[adc])
+#        print('		para_U_A= ', para_U_A[adc])
+#        print('		para_mass_internal_gain_fraction= ', para_mass_internal_gain_fraction[adc])
+#        print('		para_mass_solar_gain_fraction= ', para_mass_solar_gain_fraction[adc])
+#        print('		Q_h= ', Q_h[adc])
+#        print('		Q_i= ', Q_i[adc])
+#        print('		Q_s= ', Q_s[adc])
+#        print('		Dtemp= ', Dtemp[adc])
+#        print('		halfband= ', halfband[adc])
+#        print('		Dstatus= ', Dstatus[adc])
+#        print('		P_h= ', P_h[adc])
+#        print('		len(P_h)= ', len(P_h[adc]))
+#        print('		P_cap= ', P_cap[adc])
+#        print('		mdt= ', mdt[adc])
+#        print('		T_out= ', T_out[adc])
 
         out = eng.Task_2_4_PNNL_clear_vec(Q_ref, \
                 para_Tmin[adc], para_Tmax[adc], para_Tdesired[adc], para_ratio[adc], \
@@ -741,7 +741,7 @@ def synch(dat, timestamp=None):
         # P_h = P_h._data.tolist()
         buff['ADC_AC_P_h'][adc] = out[1][0]._data.tolist()
         print("**** ")
-        print("*** HVAC output P_h ****  = ", buff['ADC_AC_P_h'][adc])
+#        print("*** HVAC output P_h ****  = ", buff['ADC_AC_P_h'][adc])
         # sys.exit()
 
         t = "HVAC"
@@ -801,23 +801,23 @@ def synch(dat, timestamp=None):
         # Calculate the combined Popt and Qopt of PV plus batteries
         p_opt = (Popt_pv + Popt_batt) * 1000.0
         q_opt = (Qopt_pv + Qopt_batt) * 1000.0
-        print("--p_opt for PV+batt: {0} W".format(p_opt))
-        print("--q_pot for PV+batt: {0} VAR".format(q_opt))
-
-        print("deltat: {0}".format(deltat))
-        print("n_pv: {0}".format(n_pv))
-        print("n_ba: {0}".format(n_ba))
-        print("cap_pv: {0}".format(cap_pv))
-        print("p_av: {0}".format(p_av))
-        print("cap_ba: {0}".format(cap_ba))
-        print("cap_ba_inv: {0}".format(cap_ba))
-        print("p_ba_cha_max: {0}".format(p_ba_cha_max))
-        print("p_ba_dis_max: {0}".format(p_ba_dis_max))
-        print("eff_ba: {0}".format(eff_ba))
-        print("SOC_set: {0}".format(SOC_set))
-        print("SOC_now: {0}".format(SOC_now))
-        print("p_opt: {0}".format(p_opt))
-        print("q_opt: {0}".format(q_opt))
+#        print("--p_opt for PV+batt: {0} W".format(p_opt))
+#        print("--q_pot for PV+batt: {0} VAR".format(q_opt))
+#
+#        print("deltat: {0}".format(deltat))
+#        print("n_pv: {0}".format(n_pv))
+#        print("n_ba: {0}".format(n_ba))
+#        print("cap_pv: {0}".format(cap_pv))
+#        print("p_av: {0}".format(p_av))
+#        print("cap_ba: {0}".format(cap_ba))
+#        print("cap_ba_inv: {0}".format(cap_ba))
+#        print("p_ba_cha_max: {0}".format(p_ba_cha_max))
+#        print("p_ba_dis_max: {0}".format(p_ba_dis_max))
+#        print("eff_ba: {0}".format(eff_ba))
+#        print("SOC_set: {0}".format(SOC_set))
+#        print("SOC_now: {0}".format(SOC_now))
+#        print("p_opt: {0}".format(p_opt))
+#        print("q_opt: {0}".format(q_opt))
 
         # Call the PV and Battery implementation of task 2.4
         out = eng.ADC_control(deltat, n_pv, n_ba, MATRIX(cap_pv), MATRIX(p_av), \
