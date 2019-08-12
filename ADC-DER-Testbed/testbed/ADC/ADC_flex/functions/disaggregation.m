@@ -30,12 +30,12 @@ bat_dispatch    = rel_dispatch.*(bat_range([1 3])-bat_range([2 4])) + bat_range(
 
 
 % sanity checks
-if max(prod(wh_dispatch(1)-wh_range([1 2])),prod(wh_dispatch(2)-wh_range([3 4])))>=1e-9
+if max(prod(wh_dispatch(1)-wh_range([1 2]))/(wh_range(1)-wh_range(2))^2,prod(wh_dispatch(2)-wh_range([3 4]))/(wh_range(3)-wh_range(4))^2)>=1e-3
     wh_range
     wh_dispatch
     error('Incorrect WH assignment')
 end
-if max(prod(ac_dispatch(1)-ac_range([1 2])),prod(ac_dispatch(2)-ac_range([3 4])))>=1e-9
+if max(prod(ac_dispatch(1)-ac_range([1 2]))/(ac_range(1)-ac_range(2))^2,prod(ac_dispatch(2)-ac_range([3 4]))/(ac_range(3)-ac_range(4))^2)>=1e-3
     ac_range
     ac_dispatch
     error('Incorrect AC assignment')
@@ -44,12 +44,12 @@ end
  %   fprintf(fid, '%f, %f, %f, %f \n %f, %f\n', pv_range(1), pv_range(2), pv_range(3), pv_range(4), pv_dispatch(1), pv_dispatch(2))
 %fprintf(fid, '%f, %f, %f, %f \n %f, %f', bat_range(1), bat_range(2), bat_range(3), bat_range(4), bat_dispatch(1), bat_dispatch(2))
  %   fclose(fid)
-if max(prod(pv_dispatch(1)-pv_range([1 2])),prod(pv_dispatch(2)-pv_range([3 4])))>=1e-9
+if max(prod(pv_dispatch(1)-pv_range([1 2]))/(pv_range(1)-pv_range(2))^2,prod(pv_dispatch(2)-pv_range([3 4]))/(pv_range(3)-pv_range(4))^2)>=1e-3
     pv_range
     pv_dispatch
     error('Incorrect PV assignment')
 end
-if max(prod(bat_dispatch(1)-bat_range([1 2])),prod(bat_dispatch(2)-bat_range([3 4])))>=1e-9
+if max(prod(bat_dispatch(1)-bat_range([1 2]))/(bat_range(1)-bat_range(2))^2,prod(bat_dispatch(2)-bat_range([3 4]))/(bat_range(3)-bat_range(4))^2)>=1e-3
     bat_range
     bat_dispatch
     error('Incorrect BAT assignment')
